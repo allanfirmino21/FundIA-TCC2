@@ -4,6 +4,11 @@ Este guia liga cada avaliação do TCC 2 ao estado do código em que ela foi exe
 e procedimentos usados e aos artefatos preservados. Ele segue o Quadro [m3] do trabalho
 ("Versões do sistema usadas em cada avaliação").
 
+**Commits citados.** Os identificadores de commit deste guia (como `75dbfc4`) pertencem ao
+histórico de desenvolvimento, que é privado e não está nesta distribuição pública. O código de
+cada estado avaliado está em `estados_avaliados/` (tabela ao fim da seção 2). A correspondência
+completa e os meios de conferência estão em `PROVENIENCIA.md`.
+
 ## 1. Princípios
 
 - **Não há um único commit de execução.** O código mudou ao longo do TCC 2, e cada avaliação foi
@@ -45,12 +50,24 @@ e procedimentos usados e aos artefatos preservados. Ele segue o Quadro [m3] do t
 | 2 | `0b05768` | `6f193e23b8b99fd93ba9144fdf8ced0cda971ab29929bd096c5fab1d352946b0` | Segunda rodada |
 | 3 | `269f3f1` | `1e9732698c3a257bd391acdaf190ba9c00dd8b3a33eabe170834b894e7b7e043` | Terceira rodada; execução exploratória; estado atual |
 
+**Código de cada estado nesta distribuição.** O código do sistema fora de `modulos/` não mudou
+ao longo do histórico; cada estado é representado pelo seu `modulos/`.
+
+| Estado do código | Pasta |
+|---|---|
+| `1a08d00` e `6a9fee9` | `estados_avaliados/1a08d00/modulos/` |
+| `58e88f5` e `75dbfc4` | `estados_avaliados/75dbfc4/modulos/` |
+| `183e69f` e `504ce6d` | `estados_avaliados/183e69f/modulos/` |
+| `e4d96e1` e `c5f4464` | `estados_avaliados/e4d96e1/modulos/` |
+| `269f3f1` | `estados_avaliados/269f3f1/modulos/` |
+| `777b256` em diante (inclui `8bf3994` e `f41137d`) | `modulos/` da raiz |
+
 ## 3. Detalhes por avaliação
 
 ### 3.1 Demonstração do fluxo
 
-A execução é do TCC 1 e anterior ao primeiro commit deste repositório. O JSON registra a narrativa
-e a auditoria de uma execução, com 42 valores conformes e um ignorado. O CSV é a trilha exportada
+A execução é do TCC 1 e anterior ao primeiro commit do histórico de desenvolvimento. O JSON
+registra a narrativa e a auditoria de uma execução, com 42 valores conformes e um ignorado. O CSV é a trilha exportada
 de outra execução sobre o mesmo documento, com 47 registros: 46 conformes e um ignorado. A versão
 do documento entregue à CVM não foi registrada, e a reexecução não reproduz as mesmas saídas.
 
@@ -63,8 +80,9 @@ do documento entregue à CVM não foi registrada, e a reexecução não reproduz
 - **Conferência do resumo:** a partir do estado atual,
   `python avaliacao/flash_pro/resumir_experimento_flash_pro.py verificar` recalcula o resumo
   sobre os artefatos e o compara com `avaliacao/flash_pro/resumo_experimento_flash_pro.json`.
-- **Reexecução**, com chave e rede: `git checkout 75dbfc4` e
-  `python avaliacao/experimento_flash_pro.py`. O resultado é uma nova amostra.
+- **Reexecução**, com chave e rede: numa cópia do repositório, substituir `modulos/` por
+  `estados_avaliados/75dbfc4/modulos/` e rodar `python avaliacao/experimento_flash_pro.py`, que
+  não mudou desde a coleta. O resultado é uma nova amostra.
 
 ### 3.3 Validação manual
 
@@ -79,24 +97,28 @@ do documento entregue à CVM não foi registrada, e a reexecução não reproduz
 - `*_v1_pos_cd_conta` (WEGE3, `657a225` com alterações não versionadas);
 - `*_v1_pos_prompt2` (`870542e` com alterações não versionadas, de onde vem o quinto achado);
 - `*_v1_pos_decomposicao` (`c5f4464`, primeira tentativa da correção causal, cujo texto não está
-  no histórico).
+  no histórico de desenvolvimento).
+
+Essas execuções combinaram um commit com alterações não versionadas e não podem ser reconstituídas.
+O estado de base de `657a225` é o de `estados_avaliados/183e69f/modulos/`; o de `870542e` não está
+em `estados_avaliados/`.
 
 **Reprodutibilidade:**
 - As execuções chamaram `modulos.orquestrador.analisar` com período e versão explícitos. O script
   auxiliar que gravou as pastas não está versionado.
-- Com os documentos congelados, o cálculo das métricas é determinístico e pode ser refeito no
-  commit de cada rodada; a narrativa, não.
+- Com os documentos congelados, o cálculo das métricas é determinístico e pode ser refeito com o
+  código de cada rodada em `estados_avaliados/`; a narrativa, não.
 - O estado exato da rodada inicial da WEGE3 inclui alterações não versionadas e não pode ser
-  reconstituído só pelo histórico.
-- O da terceira rodada é reconstituível pelo commit `269f3f1`, nos arquivos alterados. Isso
-  porque o SHA-256 das alterações registrado em `execucao.json` coincide com o de
-  `git diff c5f4464 269f3f1` nesses arquivos.
+  reconstituído, nem pelo histórico de desenvolvimento.
+- O da terceira rodada corresponde a `estados_avaliados/269f3f1/modulos/`. A equivalência foi
+  conferida no histórico de desenvolvimento: o SHA-256 das alterações registrado em
+  `execucao.json` coincide com o de `git diff c5f4464 269f3f1` nos arquivos alterados.
 
 ### 3.4 Respostas diretas (RAGAS)
 
 **Linha do tempo:**
 
-| Commit | Etapa |
+| Commit (histórico de desenvolvimento) | Etapa |
 |---|---|
 | `b17ea73` | Protocolo pré-registrado (`avaliacao/ragas/PROTOCOLO_RAGAS_TCC2.md`) |
 | `a3f424f` | Conjunto de 96 perguntas congelado (`dataset_tcc2.json`) |
@@ -119,9 +141,18 @@ do documento entregue à CVM não foi registrada, e a reexecução não reproduz
 
 **Conferência dos artefatos, sem rede:**
 - `python avaliacao/ragas/avaliacao_tcc2/sintese/sintetizar_resultados_tcc2.py verificar`;
-- `python avaliacao/ragas/avaliacao_tcc2/analise/analisar_resultados_ragas.py verificar`;
 - `python avaliacao/ragas/avaliacao_tcc2/exatidao_emenda5/gerar_exatidao_emenda5.py` (sem
-  `--executar`, apenas confere).
+  `--executar`, apenas confere);
+- a análise, por `python verificar_distribuicao.py`.
+
+O modo `verificar` de `analisar_resultados_ragas.py` compara os 387 arquivos brutos com o commit
+`d78d5a5` por meio do Git e, por isso, falha nesta distribuição. O verificador público substitui
+só essa etapa pela conferência contra `verificacao/ragas_congelados_d78d5a5.sha256`, gerado dos
+blobs daquele commit. Depois, executa o cálculo do script original, sem alterá-lo, e compara as
+três saídas byte a byte.
+
+Pela mesma razão, `coletar_respostas_tcc2.py --execute` recusa uma nova coleta nesta
+distribuição: ele exige que o commit atual descenda de `a3f424f`.
 
 **Reexecução**, com chave e rede: siga `README_COLETA.md` (`--dry-run` antes de `--execute`) e
 `README_AVALIACAO.md`. A coleta e o juiz geram novas amostras.
@@ -148,24 +179,34 @@ atual. Não é experimento nem validação.
 
 ## 4. Verificações que não exigem rede nem chave
 
-Em 21/11/2026, todas as verificações abaixo foram executadas num clone local limpo da branch
-`master` (commit `1039049`), sem chave de API no ambiente e sem acesso à rede pelos scripts. Nenhuma
-delas gravou arquivo, e o clone permaneceu sem alterações depois das execuções.
+`python verificar_distribuicao.py` reúne as conferências abaixo, exceto os testes unitários, e
+não grava arquivos. Com `--rapido`, omite o teste de falso positivo do auditor.
 
-| Verificação | Comando | Resultado em 21/11/2026 |
+Em 22/11/2026, todas foram executadas nesta distribuição, sem chave de API no ambiente e sem
+acesso à rede pelos scripts. A mesma bateria tinha sido executada em 21/11/2026 num clone limpo
+do histórico de desenvolvimento, com os mesmos resultados.
+
+| Verificação | Comando | Resultado em 22/11/2026 |
 |---|---|---|
 | Testes unitários | `python -m unittest discover -s tests` | 395 testes, sem falhas (6 pulados) |
-| Falso positivo do auditor (TCC 1) | `python avaliacao/testar_falso_positivo_auditor.py` | Controle 9/9; falso positivo de 0/400 em percentuais e 123/400 (30,8%) em moedas, idêntico ao arquivado em `avaliacao/resultado_falso_positivo_2026-07-19.txt` |
-| Frases plantadas (TCC 1) | `python avaliacao/testar_auditor_plantado.py` | 5/5 frases com o veredito esperado |
-| Resumo Flash × Pro | ver seção 3.2 | Recalculado e idêntico a `resumo_experimento_flash_pro.json` |
-| Síntese RAGAS | ver seção 3.4 | Recalculada e idêntica a `sintese_resultados_tcc2.json` |
-| Análise RAGAS | ver seção 3.4 | As três saídas recalculadas e idênticas às versionadas |
-| Exatidão com a Emenda 5 (conferência) | ver seção 3.4 | CORRETO em 31/43 aplicáveis no resultado original e 37/43 com a Emenda 5, como registrado; nada gravado |
-| Hashes dos artefatos | conferência dos SHA-256 listados na seção 1 | Coleta RAGAS 100/100, validação manual 16/16, execução exploratória 7/7 e demonstração web 11/11, na cópia de trabalho e no conteúdo versionado |
+| Hashes dos artefatos | `python verificar_distribuicao.py` | Coleta RAGAS 100/100, validação manual 16/16, execução exploratória 7/7, demonstração web 11/11; resultados RAGAS brutos e anotações 392/392 |
+| Estados de código | idem | As cinco pastas de `estados_avaliados/` e o `modulos/` da raiz coincidem com as árvores registradas em `PROVENIENCIA.md` |
+| Primeiro commit público | idem | Árvore `21306229abad…`, idêntica à do último commit do histórico de desenvolvimento |
+| Falso positivo do auditor (TCC 1) | idem, ou `python avaliacao/testar_falso_positivo_auditor.py` | Controle 9/9; falso positivo de 0/400 em percentuais e 123/400 (30,8%) em moedas, idêntico ao arquivado em `avaliacao/resultado_falso_positivo_2026-07-19.txt` |
+| Frases plantadas (TCC 1) | idem, ou `python avaliacao/testar_auditor_plantado.py` | 5/5 frases com o veredito esperado |
+| Resumo Flash × Pro | idem, ou ver seção 3.2 | Recalculado e idêntico a `resumo_experimento_flash_pro.json` |
+| Síntese RAGAS | idem, ou ver seção 3.4 | Recalculada e idêntica a `sintese_resultados_tcc2.json` |
+| Análise RAGAS | idem (ver seção 3.4) | As três saídas recalculadas e idênticas às versionadas |
+| Exatidão com a Emenda 5 (conferência) | idem, ou ver seção 3.4 | CORRETO em 31/43 aplicáveis no resultado original e 37/43 com a Emenda 5, como registrado; nada gravado |
+
+O verificador também foi testado numa cópia adulterada de propósito, com um byte acrescentado num
+resultado RAGAS, num arquivo da demonstração web e num módulo de `estados_avaliados/`. Ele acusou
+as três alterações.
 
 ## 5. Artefatos herdados do TCC 1
 
-Permanecem em `avaliacao/` os artefatos do TCC 1, preservados desde `1a08d00`:
+Permanecem em `avaliacao/` os artefatos do TCC 1, presentes desde o primeiro commit do histórico
+de desenvolvimento (`1a08d00`):
 - o experimento de falso positivo;
 - a avaliação RAGAS com 15 perguntas (`rodar_ragas.py`, `coletar_respostas.py`,
   `injetar_ground_truth.py`, `resultados_ragas.json`, `respostas_coletadas.json`);

@@ -11,3 +11,10 @@ avaliacao/ragas/**           -text
 # Evidência da demonstração web de 11/11/2026: o MANIFESTO registra os SHA-256
 # dos arquivos como foram gravados (CRLF, no Windows).
 avaliacao/demonstracao_web_2026-11-11/** -text
+# Cópias da execução exploratória de 18/10/2026: o MANIFESTO registra os SHA-256
+# dos bytes versionados.
+avaliacao/execucao_exploratoria_2026-10-18/** -text
+# Estados de código das avaliações e manifesto da análise RAGAS: o verificador
+# calcula as árvores e os SHA-256 sobre os bytes exatos da cópia de trabalho.
+estados_avaliados/** -text
+verificacao/**       -text

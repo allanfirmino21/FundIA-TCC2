@@ -1,0 +1,448 @@
+# modulos/prompt2.py
+#
+# Prompt 2 — Narrativa para o investidor iniciante
+#
+# Recebe: JSON do Prompt 1 + trechos narrativos do documento
+# Devolve: análise em linguagem simples, estruturada em 7 seções
+
+import re
+import json
+import os
+import hashlib
+from time import perf_counter
+from google import genai
+from google.genai import types as genai_types
+from config import MODELO_LLM, MAX_TOKENS_NARRATIVA
+
+# ── Prompt ────────────────────────────────────────────────────────────────────
+
+PROMPT_NARRATIVA = """
+Você é um comunicador financeiro. Sua missão é transformar dados de relatórios
+corporativos em uma explicação que qualquer pessoa entenda — sem precisar saber
+nada de finanças ou contabilidade.
+
+## PERFIL DO LEITOR
+Investidor iniciante que:
+- Nunca leu um balanço patrimonial na vida
+- Quer saber em linguagem direta se a empresa foi bem ou mal
+- Precisa de contexto para entender o que os números significam
+- Não quer recomendação de compra ou venda
+
+## REGRAS ABSOLUTAS — VIOLÁ-LAS INVALIDA A ANÁLISE
+1. Use APENAS o que está nos dados e trechos abaixo. Nunca invente, nunca especule.
+2. TERMOS PROIBIDOS sem explicação entre parênteses:
+   EBITDA, DRE, BPA, BPP, DFC, EBIT, LAJIDA, alavancagem, provisão,
+   amortização, depreciação, ativo, passivo, patrimônio líquido, PL,
+   exercício social, resultado financeiro.
+   Se precisar usar algum desses, explique logo depois: "EBITDA (lucro antes de
+   descontar juros, impostos e depreciação)".
+   Para resultado financeiro use: "resultado financeiro (receitas financeiras,
+   como rendimentos de aplicações, menos despesas financeiras, como juros,
+   variação cambial e outros encargos)". Não o chame de "juros".
+3. Não recomende compra, venda, manutenção ou qualquer ação do investidor.
+4. Se os resultados pioraram, diga claramente: "o lucro caiu X%". Nunca suavize.
+5. Campos "nao_disponivel" indicam que o SISTEMA não identificou o valor — não
+   que a empresa deixou de informá-lo. Não os cite no texto e nunca escreva que
+   o relatório "não traz" ou "não apresenta" um dado. A única exceção é a seção
+   LIMITAÇÕES, que usa o campo dados_ausentes.
+   Campos "nao_aplicavel" são DIFERENTES: o indicador não faz sentido para esse
+   tipo de empresa (ex.: dívida líquida para bancos). Explique isso brevemente
+   em vez de tratar como informação faltante, e NUNCA liste "nao_aplicavel"
+   entre as limitações da análise.
+6. Números sempre formatados: "R$ 9,5 bilhões", nunca "9468313000".
+   ATENÇÃO À ESCALA: os valores das tabelas do documento estão em R$ MIL.
+   Uma linha "Despesas Financeiras   165751" significa R$ 165.751 mil, ou seja,
+   R$ 165,8 milhões. NUNCA copie o número bruto da tabela com "R$" na frente —
+   "R$ 165.751" está ERRADO (dá a entender um valor mil vezes menor).
+   Prefira os valores já formatados dos DADOS FINANCEIROS EXTRAÍDOS; se citar
+   um valor que só existe nos trechos do documento, converta para
+   "R$ X,XX milhões/bilhões".
+7. Variações sempre contextualizadas: "cresceu 12%", "caiu 6%", "ficou estável".
+   Nunca escreva apenas o percentual sem o verbo.
+   Quando o item tiver "interpretacao_variacao", use-a para dizer o que
+   aconteceu — não deduza a direção pelo sinal de "variacao_pct". Em contas
+   negativas (custos, despesas), "ficou mais negativo" significa que a despesa
+   aumentou. Quando a interpretação indicar inversão de sinal ou ausência de
+   base, não cite percentual: descreva a mudança com os dois valores.
+8. Use "trimestre" ou "período" — nunca "exercício social".
+9. PERÍODOS DE COMPARAÇÃO: os dados trazem o campo "comparacao" em cada métrica
+   e o bloco "periodos" com os rótulos exatos. Use-os sempre:
+   - Receita e lucro comparam com o campo "comparacao" deles (mesmo período do
+     ano anterior).
+   - Caixa e dívidas comparam com o campo "comparacao" do endividamento
+     (fechamento do exercício anterior, 31/12).
+   - Os itens de "demonstracoes_resumidas" (resultado e fluxos de caixa) trazem
+     o próprio campo "comparacao": fluxos de caixa comparam com o mesmo período
+     do ano anterior, não com 31/12.
+   Nunca escreva apenas "período anterior" quando o rótulo exato existir, e
+   nunca misture as duas bases de comparação como se fossem a mesma.
+10. FONTES E CONTAS:
+   - Use primeiro as métricas principais (receita_principal, lucro_liquido,
+     ebitda, endividamento, outros_destaques, advertencias). Use
+     "demonstracoes_resumidas" para complementar — ex.: as linhas da demonstração
+     de resultado e os fluxos de caixa — sem repetir os mesmos números.
+   - Cite cada valor com o nome da conta de onde ele veio (campo "conta"). Pode
+     explicá-la entre parênteses, mas nunca a descreva como outra conta.
+11. POR QUE O RESULTADO MUDOU — vale para TODAS as seções, inclusive o RESUMO:
+   - Qualquer afirmação sobre causa, contribuição, compensação ou fator da
+     variação do lucro/prejuízo vem exclusivamente de "decomposicao_resultado",
+     e somente quando "fecha" for true. Use as parcelas da "ponte": diga quais
+     aumentaram e quais reduziram o resultado, com a "contribuicao" (em reais,
+     não em percentual) e o "efeito" de cada uma, e as compensações entre elas.
+     Ex.: "o resultado operacional contribuiu com +R$ X, enquanto o resultado
+     financeiro reduziu o resultado em R$ Y".
+   - O campo "efeito" é soberano. Uma parcela com efeito "aumentou o resultado"
+     nunca pode ser apresentada como fator que reduziu o lucro (nem como "menor
+     contribuição" ou "menor impacto" para a queda); uma parcela com efeito
+     "reduziu o resultado" nunca pode ser apresentada como fator que aumentou o
+     lucro. Não deduza o efeito pelo nome da conta, pelo sinal do valor nem pelo
+     percentual: um imposto que "diminuiu" pode ter reduzido o resultado.
+   - Ex.: se "Resultado antes dos Tributos sobre o Lucro" tem contribuição
+     positiva e "Imposto de Renda e Contribuição Social sobre o Lucro" tem
+     contribuição negativa, a queda do lucro se explica pela parcela negativa,
+     ainda que alguma despesa interna tenha aumentado.
+   - "abertura_da_ancora" explica somente como a primeira parcela da ponte se
+     formou. Suas linhas não substituem a contribuição líquida dessa parcela:
+     nunca atribua a variação do resultado final a uma delas.
+   - "subtotais_intermediarios" são informativos: mostram o valor acumulado
+     entre as parcelas indicadas em "apos" e "antes". Apresente cada um nessa
+     posição; eles não são parcelas e não entram na soma.
+   - Se "fecha" for false ou o bloco não existir, não afirme causas: descreva
+     apenas as variações.
+12. FLUXOS DE CAIXA ("demonstracoes_resumidas.fluxo_de_caixa"):
+   - Mostram entradas e saídas de dinheiro no período; não são receita, despesa
+     nem lucro, e nunca explicam o lucro/prejuízo.
+   - Podem ser descritos na seção SAÚDE DO CAIXA E DÍVIDAS, só pelo que
+     aconteceu ("aumentou", "diminuiu", "ficou mais negativo", "passou de
+     negativo para positivo"). Inversão de sinal significa somente inversão de
+     sinal.
+   - Não use "melhora", "piora", "positivo", "negativo", "favorável" ou
+     "desfavorável" para qualificar a direção de um fluxo (descrever o sinal do
+     valor é permitido). Os dados não trazem a interpretação econômica que
+     sustentaria esse julgamento: sem ela, não julgue.
+   - Não coloque um fluxo de caixa em "O QUE FOI POSITIVO" ou "O QUE MERECE
+     ATENÇÃO" por ter aumentado, diminuído ou invertido o sinal.
+   - Em bancos, não descreva o fluxo operacional como "geração de caixa das
+     operações principais".
+
+## FORMATO DE SAÍDA
+Escreva exatamente 7 seções, cada uma começando na forma: ### NOME DA SEÇÃO
+Não omita nenhuma seção. Se faltar dado, diga isso dentro da seção.
+
+---
+
+### RESUMO
+3 a 5 frases. Responda: o que aconteceu com essa empresa nesse período?
+Inclua obrigatoriamente: o nome da empresa, o período exato, se foi um
+resultado melhor ou pior que o anterior, e o principal número que resume tudo.
+Se disser por que o resultado mudou, siga a regra 11.
+Termine com uma frase que indique o que mais merece atenção.
+
+### O QUE A EMPRESA FATURA
+O que a empresa vende ou faz? Quanto faturou nesse período?
+Cresceu ou caiu em relação ao período anterior? Por quantos por cento?
+Explique de forma simples o que representa essa receita para o negócio.
+Se não houver dado de receita: "Não foi possível identificar os dados de
+faturamento com as informações disponíveis neste relatório."
+
+### LUCRO
+Quanto a empresa lucrou? Cresceu ou caiu?
+Sempre contextualize: "a cada R$ 100 que a empresa faturou, sobrou R$ X de lucro".
+Se "decomposicao_resultado" tiver "fecha" = true, mostre como o lucro se formou
+pelas parcelas da "ponte" (regra 11), citando os "subtotais_intermediarios"
+quando existirem, na posição indicada por "apos" e "antes". Não vá além dessa
+composição.
+Se não houver dado de lucro: "Não foi possível identificar dados de lucro
+neste relatório."
+
+### SAÚDE DO CAIXA E DÍVIDAS
+CASO BANCO (dívida marcada como "nao_aplicavel"): explique que dívida líquida
+não é um indicador usado para bancos — captar dinheiro (depósitos de clientes,
+mercado aberto) faz parte do negócio bancário, não é sinal de endividamento.
+Apresente os "depositos" e a "captacao_mercado_aberto" com suas variações como
+referência do tamanho do funding. Não lamente a ausência de dívida líquida.
+CASO EMPRESA COMUM:
+A empresa tem mais dinheiro guardado ou mais dívidas?
+Use a "liquidez_total" (caixa + aplicações financeiras de curto prazo) como o
+"dinheiro disponível" da empresa — explique entre parênteses que inclui
+aplicações de curto prazo.
+A dívida cresceu ou diminuiu em relação ao período de comparação?
+Se houver "passivos_arrendamento", mencione-os: são compromissos de aluguéis
+contratados (semelhantes a dívidas) e cite a "divida_bruta_com_arrendamentos".
+O que isso significa na prática para a empresa?
+Se não houver dados de endividamento: "Não foi possível avaliar a situação
+financeira com os dados disponíveis."
+
+### O QUE FOI POSITIVO
+Lista de 2 a 4 pontos concretos e positivos encontrados nos dados.
+Cada item deve ser uma frase curta e direta, ancorada em um número ou fato.
+Não inclua fluxos de caixa por terem aumentado, diminuído ou invertido o sinal
+(regra 12).
+Comece cada item com "- ".
+Se não houver pontos positivos claros: "- Não foram identificados destaques
+positivos evidentes com os dados disponíveis."
+
+### O QUE MERECE ATENÇÃO
+Lista de 2 a 4 pontos que merecem acompanhamento — quedas, riscos, tendências.
+Baseie-se apenas no que os dados mostram. Não especule sobre causas externas.
+Não inclua fluxos de caixa por terem aumentado, diminuído ou invertido o sinal
+(regra 12).
+Comece cada item com "- ".
+Se não houver dados suficientes: "- Não foi possível identificar pontos de
+atenção com os dados disponíveis."
+
+### LIMITAÇÕES DESTA ANÁLISE
+Use somente o campo "dados_ausentes": para cada item dele, diga que não foi
+possível calculá-lo a partir dos dados estruturados (não que a empresa deixou
+de informá-lo). Nunca transforme em limitação as regras deste prompt, os termos
+da regra 2, nomes de demonstrações, métricas que não foram pedidas, campos
+"nao_aplicavel" ou a ausência de trechos narrativos.
+Se "dados_ausentes" estiver vazio, escreva apenas: "Não foram identificados
+dados ausentes específicos nesta análise." Não liste métricas, demonstrações
+nem indicadores nesse caso.
+Sempre inclua esta frase ao final: "Esta análise é baseada nos dados estruturados
+do relatório da CVM e não substitui a leitura do documento completo."
+
+---
+
+## DADOS FINANCEIROS EXTRAÍDOS
+{dados_json}
+
+## TRECHOS NARRATIVOS DO DOCUMENTO
+{contexto_narrativo}
+
+## CONTEXTO
+Empresa: {nome_empresa} ({ticker})
+Periodo do relatorio: {periodo}
+"""
+
+# Mapeamento canônico: nome exato no prompt → chave do dicionário retornado
+_SECOES_CANONICAS = [
+    "RESUMO",
+    "O QUE A EMPRESA FATURA",
+    "LUCRO",
+    "SAUDE DO CAIXA E DIVIDAS",
+    "O QUE FOI POSITIVO",
+    "O QUE MERECE ATENCAO",
+    "LIMITACOES DESTA ANALISE",
+]
+
+# ── Execução ──────────────────────────────────────────────────────────────────
+
+def executar_prompt_narrativa(
+    dados_extracao:    dict,
+    contexto_narrativo: str,
+    ticker:            str,
+    nome_empresa:      str,
+    periodo:           str = "",
+    retornar_telemetria: bool = False,
+) -> dict:
+    """
+    Gera a narrativa para o investidor usando os dados do Prompt 1.
+    Aceita `periodo` externo (do orquestrador) para não depender do Prompt 1.
+    Sempre retorna um dict com chaves: sucesso, narrativa_completa, secoes, periodo.
+
+    Com `retornar_telemetria=True` o retorno ganha a chave "telemetria" (ver
+    _montar_telemetria) em TODOS os caminhos, inclusive nos de erro — assim quem
+    mede não precisa tratar a ausência da chave. O padrão é False para não
+    alterar o contrato consumido por orquestrador.py, app.py e api.py.
+    """
+    dados   = dados_extracao.get("dados", {})
+    periodo = periodo or dados.get("periodo_referencia", "nao identificado")
+
+    cliente = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    prompt  = PROMPT_NARRATIVA.format(
+        dados_json         = json.dumps(dados, ensure_ascii=False, indent=2),
+        contexto_narrativo = contexto_narrativo,
+        ticker             = ticker,
+        nome_empresa       = nome_empresa,
+        periodo            = periodo,
+    )
+
+    # O modelo é lido do namespace do módulo no INSTANTE da chamada: avaliações
+    # comparativas reatribuem MODELO_LLM em runtime, e é esse valor — não o do
+    # config.py — que precisa constar da telemetria. Passar `modelo_efetivo` ao
+    # generate_content garante que o registrado é literalmente o que foi enviado.
+    modelo_efetivo = MODELO_LLM
+    # Prova de que dois modelos receberam entrada idêntica: hash da string exata.
+    hash_prompt = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+    latencia_s  = None
+
+    try:
+        # A janela de medição cobre APENAS a chamada de rede. Montagem do prompt,
+        # leitura de resp.text e parsing ficam de fora de propósito: o que se quer
+        # comparar entre modelos é o tempo de geração, não o overhead do processo.
+        _t0  = perf_counter()
+        resp = cliente.models.generate_content(
+            model    = modelo_efetivo,
+            contents = prompt,
+            config   = genai_types.GenerateContentConfig(
+                temperature       = 0.3,   # alguma fluidez narrativa, sem alucinação
+                max_output_tokens = MAX_TOKENS_NARRATIVA,
+            ),
+        )
+        latencia_s = perf_counter() - _t0
+        texto = resp.text
+    except Exception as e:
+        erro_str = str(e).lower()
+        if any(k in erro_str for k in ("timeout", "deadline", "timed out", "connection")):
+            msg = (
+                "Tempo limite excedido ao chamar a API Gemini na etapa de narrativa. "
+                "Verifique sua conexão e tente novamente em alguns instantes."
+            )
+        elif any(k in erro_str for k in ("quota", "resource exhausted", "429")):
+            msg = (
+                "Limite de requisições da API Gemini atingido (quota). "
+                "Aguarde alguns minutos e tente novamente."
+            )
+        elif any(k in erro_str for k in ("api key", "invalid key", "401", "403")):
+            msg = "Chave de API Gemini inválida ou sem permissão. Verifique a API Key informada."
+        else:
+            msg = f"Erro na API Gemini ao gerar narrativa: {e}"
+        saida = {
+            "sucesso":            False,
+            "erro":               msg,
+            "narrativa_completa": "",
+            "secoes":             {s: "" for s in _SECOES_CANONICAS},
+            "periodo":            periodo,
+        }
+        if retornar_telemetria:
+            # Sem resposta: tokens e finish_reason ficam None, mas o modelo e o
+            # hash do prompt ainda identificam a tentativa que falhou.
+            saida["telemetria"] = _montar_telemetria(
+                modelo_efetivo, hash_prompt, latencia_s, None, None)
+        return saida
+
+    # Verifica se a resposta foi interrompida pelo limite de tokens
+    finish = "STOP"
+    try:
+        if resp.candidates:
+            finish = resp.candidates[0].finish_reason.name
+    except Exception:
+        pass
+
+    telemetria = (_montar_telemetria(modelo_efetivo, hash_prompt, latencia_s, resp, finish)
+                  if retornar_telemetria else None)
+
+    secoes = _parsear_secoes(texto)
+
+    # Abaixo de 200 caracteres somados, o parser encontrou cabeçalhos mas quase
+    # nenhum texto — geralmente geração truncada. Falhar aqui evita exibir uma
+    # análise vazia como se fosse resultado válido.
+    total_conteudo = sum(len(v) for v in secoes.values())
+    if total_conteudo < 200:
+        if finish == "MAX_TOKENS":
+            msg = (
+                "O modelo atingiu o limite de tokens antes de concluir a narrativa. "
+                "Tente novamente — a geração pode variar entre execuções."
+            )
+        else:
+            msg = (
+                "A narrativa gerada não continha seções legíveis. "
+                "Tente novamente. Se o problema persistir, verifique a API Key."
+            )
+        saida = {
+            "sucesso":            False,
+            "erro":               msg,
+            "narrativa_completa": texto,
+            "secoes":             secoes,
+            "periodo":            periodo,
+        }
+        if telemetria is not None:
+            saida["telemetria"] = telemetria
+        return saida
+
+    saida = {
+        "sucesso":            True,
+        "narrativa_completa": texto,
+        "secoes":             secoes,
+        "periodo":            periodo,
+    }
+    if telemetria is not None:
+        saida["telemetria"] = telemetria
+    return saida
+
+
+def _montar_telemetria(modelo_efetivo: str, hash_prompt: str,
+                       latencia_s, resp, finish) -> dict:
+    """
+    Telemetria da chamada de redação, para comparação entre modelos.
+
+    `tokens_raciocinio` (thoughts_token_count) importa porque os modelos da
+    linha 2.5 raciocinam antes de responder, e esse consumo NÃO aparece em
+    candidates_token_count — ignorá-lo subestima o custo do Pro. Todos os
+    campos de token são lidos defensivamente: a SDK omite os que não se
+    aplicam ao modelo, e ausência vira None, nunca zero (zero seria uma
+    afirmação falsa sobre o consumo).
+    """
+    uso = getattr(resp, "usage_metadata", None) if resp is not None else None
+
+    def _token(campo: str):
+        valor = getattr(uso, campo, None) if uso is not None else None
+        return int(valor) if isinstance(valor, int) else None
+
+    return {
+        "modelo_efetivo":    modelo_efetivo,
+        "hash_prompt":       hash_prompt,
+        "latencia_s":        round(latencia_s, 3) if latencia_s is not None else None,
+        "tokens_prompt":     _token("prompt_token_count"),
+        "tokens_saida":      _token("candidates_token_count"),
+        "tokens_raciocinio": _token("thoughts_token_count"),
+        "tokens_total":      _token("total_token_count"),
+        "finish_reason":     finish,
+    }
+
+
+def _parsear_secoes(texto: str) -> dict:
+    """
+    Extrai seções do texto dividindo em marcadores '### NOME'.
+    Robusto a variações de espaçamento, capitalização e acentuação.
+    Retorna um dict cujas chaves são os nomes normalizados das seções.
+    """
+    # Insere \n antes do primeiro ### para que o split capture tudo
+    partes = re.split(r'\n###\s+', '\n' + texto.strip())
+
+    secoes: dict[str, str] = {}
+    for parte in partes[1:]:   # parte[0] é o texto antes do primeiro ###
+        quebra = parte.find('\n')
+        if quebra == -1:
+            nome_bruto, conteudo = parte.strip(), ""
+        else:
+            nome_bruto = parte[:quebra].strip()
+            conteudo   = parte[quebra:].strip()
+
+        # Normaliza a chave: maiúsculas, sem acentos, sem caracteres especiais
+        chave = _normalizar(nome_bruto)
+        secoes[chave] = conteudo
+
+    # Garante que todas as seções canônicas existem (vazio se o LLM omitiu)
+    for secao in _SECOES_CANONICAS:
+        if secao not in secoes:
+            secoes[secao] = ""
+
+    return secoes
+
+
+def _normalizar(texto: str) -> str:
+    """
+    Converte para maiúsculas, remove acentos e pontuação extra.
+    Usando dict no maketrans para evitar exigência de strings iguais.
+    """
+    mapa = str.maketrans({
+        ord('Á'): 'A', ord('À'): 'A', ord('Ã'): 'A', ord('Â'): 'A', ord('Ä'): 'A',
+        ord('É'): 'E', ord('È'): 'E', ord('Ê'): 'E', ord('Ë'): 'E',
+        ord('Í'): 'I', ord('Ì'): 'I', ord('Î'): 'I', ord('Ï'): 'I',
+        ord('Ó'): 'O', ord('Ò'): 'O', ord('Õ'): 'O', ord('Ô'): 'O', ord('Ö'): 'O',
+        ord('Ú'): 'U', ord('Ù'): 'U', ord('Û'): 'U', ord('Ü'): 'U',
+        ord('Ç'): 'C',
+        # minúsculas (antes do .upper(), por precaução)
+        ord('á'): 'A', ord('à'): 'A', ord('ã'): 'A', ord('â'): 'A', ord('ä'): 'A',
+        ord('é'): 'E', ord('è'): 'E', ord('ê'): 'E', ord('ë'): 'E',
+        ord('í'): 'I', ord('ì'): 'I', ord('î'): 'I', ord('ï'): 'I',
+        ord('ó'): 'O', ord('ò'): 'O', ord('õ'): 'O', ord('ô'): 'O', ord('ö'): 'O',
+        ord('ú'): 'U', ord('ù'): 'U', ord('û'): 'U', ord('ü'): 'U',
+        ord('ç'): 'C',
+    })
+    sem_acento = texto.upper().translate(mapa)
+    # Remove parênteses e pontuação que o LLM possa adicionar
+    return re.sub(r'[^\w\s]', '', sem_acento).strip()

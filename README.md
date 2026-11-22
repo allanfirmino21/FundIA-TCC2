@@ -11,9 +11,14 @@ Dados para Negócios da Universidade Federal da Paraíba (UFPB). Ele reúne o c�
 artefatos das avaliações descritas no trabalho. O texto do TCC não está incluído.
 
 O sistema foi construído no TCC 1, cujo código está em
-[allanfirmino21/TCC-1](https://github.com/allanfirmino21/TCC-1). O histórico deste repositório
-começa no commit `1a08d00`, com conteúdo idêntico ao do commit `7f19e7f` daquele repositório, e
-registra as correções e as avaliações feitas no TCC 2.
+[allanfirmino21/TCC-1](https://github.com/allanfirmino21/TCC-1), e corrigido e avaliado no TCC 2.
+
+**Distribuição pública e histórico de desenvolvimento.** Este repositório é uma distribuição
+consolidada, com histórico Git próprio. O desenvolvimento ocorreu num repositório Git privado,
+preservado integralmente. O primeiro commit deste repositório reproduz, byte a byte, o último
+estado daquele histórico. Os identificadores de commit citados no TCC e nos artefatos (como
+`f41137d`) pertencem ao histórico privado e não estão disponíveis aqui. A correspondência, os
+meios de conferência e o motivo da separação estão em [PROVENIENCIA.md](PROVENIENCIA.md).
 
 > O FundIA é um protótipo acadêmico. A análise gerada não constitui recomendação de investimento
 > e não substitui a leitura do documento entregue à CVM.
@@ -143,8 +148,17 @@ python -m unittest discover -s tests
 A suíte tem 395 testes, cobrindo métricas, auditoria, recuperação, seleção de período e versão,
 regras da instrução de redação e os instrumentos da avaliação RAGAS. Ela usa dados sintéticos e
 fixtures em `tests/fixtures/` e não chama a API do Gemini. Alguns testes carregam o modelo de
-embeddings, que precisa estar disponível localmente ou ser baixado na primeira execução. Na
-máquina de desenvolvimento, em 20/11/2026, a suíte terminou sem falhas (6 testes pulados).
+embeddings, que precisa estar disponível localmente ou ser baixado na primeira execução.
+
+Para conferir os artefatos das avaliações, sem rede e sem chave:
+
+```bash
+python verificar_distribuicao.py
+```
+
+O script confere os SHA-256 registrados e os estados de código de `estados_avaliados/`, e recalcula
+os resumos e as análises com os scripts originais. Os resultados de 22/11/2026 estão em
+[REPRODUTIBILIDADE.md](REPRODUTIBILIDADE.md).
 
 ## Estrutura
 
@@ -155,8 +169,12 @@ frontend/                   interface React (Vite)
 tests/                      testes unitários e fixtures
 dados/ticker_map.csv        mapa ticker -> código CVM (os demais arquivos de dados/ são baixados)
 avaliacao/                  scripts, protocolos e artefatos das avaliações
+estados_avaliados/          modulos/ nos estados de código usados nas avaliações
+verificacao/                manifesto SHA-256 usado pelo verificador
+verificar_distribuicao.py   conferência dos artefatos, sem rede e sem chave
 NOTAS_DESENVOLVIMENTO.md    decisões de critério e histórico técnico
 REPRODUTIBILIDADE.md        guia que liga cada avaliação ao seu estado de código e artefatos
+PROVENIENCIA.md             relação entre esta distribuição e o histórico de desenvolvimento
 ```
 
 Arquivos gerados e não versionados: `dados/cache/`, `dados/meta_*.csv`, `dados/fca_*.csv`,
@@ -166,8 +184,9 @@ Arquivos gerados e não versionados: `dados/cache/`, `dados/meta_*.csv`, `dados/
 
 As avaliações não usaram uma única versão do sistema. O código mudou ao longo do TCC 2, e cada
 avaliação está associada ao estado do código em que foi executada. O guia
-[REPRODUTIBILIDADE.md](REPRODUTIBILIDADE.md) traz, para cada uma, o commit, os scripts, os
-artefatos e o grau de reprodutibilidade:
+[REPRODUTIBILIDADE.md](REPRODUTIBILIDADE.md) traz, para cada uma, o commit do histórico privado,
+a pasta de `estados_avaliados/` com o código correspondente, os scripts, os artefatos e o grau de
+reprodutibilidade:
 - demonstração do fluxo, com a versão do TCC 1;
 - comparação pré-registrada entre o Gemini 2.5 Flash e o Gemini 2.5 Pro;
 - validação manual em três rodadas (WEGE3, BBAS3 e ZAMP3);
@@ -176,9 +195,9 @@ artefatos e o grau de reprodutibilidade:
 - execução exploratória;
 - demonstração funcional da aplicação web.
 
-O commit `f41137d` é a versão documentada no TCC 2. Nele, o código do sistema é idêntico ao do
-commit `777b256`, a última alteração de código (27/09/2026). Ele não é o commit de execução das
-avaliações.
+O commit `f41137d` do histórico privado é a versão documentada no TCC 2. Nele, o código do
+sistema é idêntico ao do commit `777b256`, a última alteração de código (27/09/2026), e ao desta
+distribuição. Ele não é o commit de execução das avaliações.
 
 Em resumo, nas condições examinadas, depois das correções, a leitura manual não encontrou número
 divergente da fonte nem atribuído à conta errada nas narrativas da segunda e da terceira rodadas

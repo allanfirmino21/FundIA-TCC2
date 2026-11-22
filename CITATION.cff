@@ -1,7 +1,5 @@
 # Metadados de citação do FundIA (TCC 2). Formato Citation File Format 1.2.0.
-# Campos a completar antes da publicação: repository-code (endereço do
-# repositório FundIA-TCC2, ainda não criado), version e date-released
-# (definidos com a tag de entrega).
+# Campos a completar com a tag de entrega: version e date-released.
 cff-version: 1.2.0
 message: "Se usar este software, cite-o com os metadados abaixo."
 type: software
@@ -18,6 +16,7 @@ authors:
     given-names: "Allan Vitor Sousa"
     affiliation: "Universidade Federal da Paraíba"
 license: MIT
+repository-code: "https://github.com/allanfirmino21/FundIA-TCC2"
 keywords:
   - auditoria numérica
   - demonstrações financeiras
