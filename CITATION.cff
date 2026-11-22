@@ -1,5 +1,4 @@
 # Metadados de citação do FundIA (TCC 2). Formato Citation File Format 1.2.0.
-# Campos a completar com a tag de entrega: version e date-released.
 cff-version: 1.2.0
 message: "Se usar este software, cite-o com os metadados abaixo."
 type: software
@@ -15,6 +14,8 @@ authors:
   - family-names: "Firmino"
     given-names: "Allan Vitor Sousa"
     affiliation: "Universidade Federal da Paraíba"
+version: "1.0.0"
+date-released: "2026-11-22"
 license: MIT
 repository-code: "https://github.com/allanfirmino21/FundIA-TCC2"
 keywords:
