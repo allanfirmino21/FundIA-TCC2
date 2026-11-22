@@ -1,0 +1,97 @@
+{
+  "esquema": 1,
+  "etapa": "ragas",
+  "case_id": "CEAB3_N4",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "passada": "avaliacao",
+  "score": 0.0,
+  "valido": true,
+  "nan": false,
+  "erros": [],
+  "modelos_retornados": [
+    "gemini-2.5-flash"
+  ],
+  "uso_tokens": {
+    "input_tokens": 4195,
+    "output_tokens": 3227,
+    "total_tokens": 7422
+  },
+  "sha256_resposta": "6cbbd9361f95f4f556f1bafbbe20eb9afd42df4877312fb4e95b4fc8e2198850",
+  "entrada": {
+    "sha256_pergunta": "a1ce7edc2645e37d0384d9c7478880403a13b97c022f59d6d6b59e26677ecf95",
+    "sha256_resposta": "6cbbd9361f95f4f556f1bafbbe20eb9afd42df4877312fb4e95b4fc8e2198850",
+    "sha256_ctx_num": "82517fbdad42e2542a69db903b65bc67c1d4a3f00ca9ad788ade1d77c549643d",
+    "sha256_trechos": [
+      "dc71e8ba7d2a7e02f0599e64ddcf7660ee7cd82d44f6b910d873dea05a09ab2b",
+      "ae5770416159b1cbb044ec975ecd543237da26f268cc72450e918b6bbb858bf0",
+      "86cdb01c080f6c9f7eb2cf3342fd06b2c7fb97d97dab784f4c04a2f4856d10da"
+    ],
+    "sha256_reference": "f6ed0a5291de8721f5e49937eb923a5bdd2a2db1edae00221143c4728c7e52d2",
+    "truncada_na_geracao": true,
+    "disponibilidade": "presente",
+    "categoria": "N4",
+    "estrutura": "nao_financeira",
+    "ticker": "CEAB3"
+  },
+  "avaliador": {
+    "modelo": "gemini-2.5-flash",
+    "temperatura_cliente": 0.0,
+    "temperaturas_efetivas_ragas": {
+      "faithfulness": 0.01,
+      "answer_relevancy": 0.3
+    },
+    "strictness": 3,
+    "run_config": {
+      "timeout": 120,
+      "max_retries": 3,
+      "max_workers": 1
+    },
+    "embeddings": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "revisao_embeddings": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+    "wrapper": "ragas.llms.LangchainLLMWrapper (sem bypass)",
+    "execucao": "ragas.evaluate, 1 métrica, 1 amostra",
+    "dependencias": {
+      "ragas": "0.4.3",
+      "langchain-community": "0.4.2",
+      "langchain-google-genai": "4.4.0",
+      "langchain-core": "1.6.6",
+      "langchain": "1.4.3",
+      "langchain-openai": "1.1.9",
+      "google-genai": "2.25.0",
+      "openai": "1.109.1",
+      "instructor": "1.3.2",
+      "datasets": "5.0.1",
+      "sentence-transformers": "5.5.0",
+      "transformers": "5.3.0",
+      "torch": "2.11.0",
+      "huggingface-hub": "1.8.0",
+      "numpy": "2.2.4"
+    },
+    "temperatura_efetiva": 0.01
+  },
+  "etapas_anteriores_congeladas": {
+    "sha256_resultado_exatidao": "3c3e28c080a9884f53f1197bd0c4106fd414105b2aa4de3ff2928f401a05a6db",
+    "sha256_anotacoes_comportamento": "c83cf6cef724f88ab35ac439978d13f0ad812c0ce25859ab7155eef97627b18f",
+    "sha256_decisoes_sinal": null,
+    "sha256_pendencias_comportamento": "d20f736187f69cd441a53795b4425ff212d54d7ee9274d79c894e02825976b71",
+    "sha256_convencoes_comportamento": "e45f82c4dd46a27a475085ee0e06d4ffc7f1de94b7c15d38e30adfe90a379169",
+    "sha256_ratificacao_comportamento": "eee5e92412a941e1bc090e0338120660f7200c793e1636f72af337454c258c36"
+  },
+  "proveniencia": {
+    "commit": "69b2b4963cf774b8ef188afe96c6416750aa7118",
+    "commit_coleta": "10eee310a6dfd0bc545f6d2a62bd82705b6624e5",
+    "sha256_executor": "6e2a40bd1723b0c4c8da35595cb35573b009a0c8a6309af8fbb4f73f307b1a65",
+    "sha256_protocolo_emendado": "3f6f8e030bf4f44d2882b65005431b8b7ff95df54bb479fa8e53e5a9b2c3925b",
+    "sha256_dataset": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e",
+    "sha256_configuracao_historica_coleta": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+    "sha256_SHA256_COLETA": "b8c016cea3a8903678bc7817f4c5b553c80bb98b6a7a5787d05ea4ce4eca45f2",
+    "sha256_exatidao_py": "2b4b11706841701ed6ffd551a4789431fa9102c65cf1302104cfa600ce432ff0",
+    "sha256_comportamento_py": "d2a3e7e79d2275b9de3dff0b64b0bc3b0455c3fa9090766e068c290117febad2",
+    "python": "3.12.6"
+  },
+  "inicio_utc": "2026-10-04T00:56:05+00:00",
+  "fim_utc": "2026-10-04T00:56:20+00:00",
+  "duracao_s": 15.078,
+  "sha256_registro": "f020af7d066263f6ce63c4e664736d29f89f0ee62af0c21eec85962d8bd7aa8c"
+}

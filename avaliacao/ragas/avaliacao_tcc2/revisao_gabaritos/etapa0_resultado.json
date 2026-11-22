@@ -1,0 +1,5061 @@
+{
+ "sha256_zip": "0e1ef74291d2143e7bb55247b01c8bbd94995d995536f70f0d19de1d79d7e38c",
+ "versoes": {
+  "WEGE3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "159608",
+   "dt_receb": "2026-07-22",
+   "compativel": true
+  },
+  "BBAS3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160511",
+   "dt_receb": "2026-08-12",
+   "compativel": true
+  },
+  "ZAMP3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160323",
+   "dt_receb": "2026-08-07",
+   "compativel": true
+  },
+  "LWSA3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160647",
+   "dt_receb": "2026-08-13",
+   "compativel": true
+  },
+  "VALE3": {
+   "versao_dataset": 3,
+   "versoes_no_indice": [
+    1,
+    2,
+    3
+   ],
+   "versao_mais_recente": 3,
+   "id_doc": "159978",
+   "dt_receb": "2026-07-31",
+   "compativel": true
+  },
+  "ITUB4": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160139",
+   "dt_receb": "2026-08-04",
+   "compativel": true
+  },
+  "LAVV3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160187",
+   "dt_receb": "2026-08-05",
+   "compativel": true
+  },
+  "POMO4": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160105",
+   "dt_receb": "2026-08-03",
+   "compativel": true
+  },
+  "ITSA4": {
+   "versao_dataset": 2,
+   "versoes_no_indice": [
+    1,
+    2
+   ],
+   "versao_mais_recente": 2,
+   "id_doc": "160385",
+   "dt_receb": "2026-08-11",
+   "compativel": true
+  },
+  "IRBR3": {
+   "versao_dataset": 2,
+   "versoes_no_indice": [
+    1,
+    2
+   ],
+   "versao_mais_recente": 2,
+   "id_doc": "160766",
+   "dt_receb": "2026-08-14",
+   "compativel": true
+  },
+  "CEAB3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160145",
+   "dt_receb": "2026-08-04",
+   "compativel": true
+  },
+  "AURE3": {
+   "versao_dataset": 1,
+   "versoes_no_indice": [
+    1
+   ],
+   "versao_mais_recente": 1,
+   "id_doc": "160171",
+   "dt_receb": "2026-08-05",
+   "compativel": true
+  }
+ },
+ "casos": {
+  "WEGE3_N1": {
+   "id": "WEGE3_N1",
+   "ticker": "WEGE3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "19611868",
+      "dataset": "19611868"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 19.611.868 mil (R$ 19,61 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receita de Venda de Bens e/ou Serviços                       19.611.868  (anterior: 20.285.798)"
+  },
+  "WEGE3_N2": {
+   "id": "WEGE3_N2",
+   "ticker": "WEGE3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3226245",
+      "dataset": "3226245"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 3.226.245 mil (R$ 3,23 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                         3.226.245  (anterior: 3.329.842)"
+  },
+  "WEGE3_N3": {
+   "id": "WEGE3_N3",
+   "ticker": "WEGE3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3226245",
+      "dataset": "3226245"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "3329842",
+      "dataset": "3329842"
+     }
+    ],
+    "n3": {
+     "r1": "3226245.0000000000",
+     "r0": "3329842.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 3.226.245 mil; 1S25: R$ 3.329.842 mil; redução, variação de -3,11%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                         3.226.245  (anterior: 3.329.842)"
+  },
+  "WEGE3_N4": {
+   "id": "WEGE3_N4",
+   "ticker": "WEGE3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3805395",
+      "dataset": "3805395"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "3965329",
+      "dataset": "3965329"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "65819",
+      "dataset": "65819"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "47595",
+      "dataset": "47595"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3871214",
+      "dataset": "3871214"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "4012924",
+      "dataset": "4012924"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-644969",
+      "dataset": "-644969"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-683082",
+      "dataset": "-683082"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3226245",
+      "dataset": "3226245"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "3329842",
+      "dataset": "3329842"
+     }
+    ],
+    "n4": {
+     "variacao": "-103597",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "-159934"
+      ],
+      [
+       "IR/CS",
+       "38113"
+      ],
+      [
+       "resultado financeiro",
+       "18224"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 3.329.842 → 3.226.245 (Δ -103.597), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 3.965.329 → 3.805.395 (Δ -159.934); IR/CS: -683.082 → -644.969 (Δ 38.113); resultado financeiro: 47.595 → 65.819 (Δ 18.224).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "WEGE3_N5": {
+   "id": "WEGE3_N5",
+   "ticker": "WEGE3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "7750256",
+      "dataset": "7750256"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 7.750.256 mil (R$ 7,75 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                 7.750.256  (anterior: 6.296.498)"
+  },
+  "WEGE3_E1": {
+   "id": "WEGE3_E1",
+   "ticker": "WEGE3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3226245",
+      "dataset": "3226245"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "19611868",
+      "dataset": "19611868"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 16,45% = 3.226.245 / 19.611.868 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (2/2): receita: [DRE] Receita de Venda de Bens e/ou Serviços                       19.611.868  (anterior: 20.285.798); resultado consolidado: [DRE] Lucro/Prejuízo Consolidado do Período                         3.226.245  (anterior: 3.329.842)."
+  },
+  "WEGE3_E2": {
+   "id": "WEGE3_E2",
+   "ticker": "WEGE3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "valor exigido aparece no contexto em outra linha: [\"1.01.01/ÚLTIMO em 'Saldo Final de Caixa e Equivalentes                         '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "7750256",
+      "dataset": "7750256"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "3163058",
+      "dataset": "3163058"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1903288",
+      "dataset": "1903288"
+     }
+    ],
+    "e2": {
+     "caixa": "7750256.0000000000",
+     "divida": "5066346.0000000000",
+     "conclusao": "mais caixa"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 7.750.256 mil; empréstimos e financiamentos R$ 5.066.346 mil (circulante 3.163.058 + não circulante 1.903.288); mais caixa.",
+   "justificativa_disponibilidade": "Insumos no contexto (1/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                 7.750.256  (anterior: 6.296.498); empréstimos circulante: ausente; empréstimos não circulante: ausente. O BP Passivo, que traz os empréstimos, não está entre as tabelas recuperadas."
+  },
+  "WEGE3_E3": {
+   "id": "WEGE3_E3",
+   "ticker": "WEGE3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "65819",
+      "dataset": "65819"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "47595",
+      "dataset": "47595"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ 65.819 mil; 1S25 R$ 47.595 mil.",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                             65.819  (anterior: 47.595)"
+  },
+  "BBAS3_N1": {
+   "id": "BBAS3_N1",
+   "ticker": "BBAS3",
+   "categoria": "N1",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receitas de Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "160747114",
+      "dataset": "160747114"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receitas de Intermediação Financeira consolidada do 1S26: R$ 160.747.114 mil (R$ 160,75 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receitas de Intermediação Financeira                        160.747.114  (anterior: 149.252.571)"
+  },
+  "BBAS3_N2": {
+   "id": "BBAS3_N2",
+   "ticker": "BBAS3",
+   "categoria": "N2",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro ou Prejuízo Líquido Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6362961",
+      "dataset": "6362961"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 6.362.961 mil (R$ 6,36 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro ou Prejuízo Líquido Consolidado do Período              6.362.961  (anterior: 7.760.116)"
+  },
+  "BBAS3_N3": {
+   "id": "BBAS3_N3",
+   "ticker": "BBAS3",
+   "categoria": "N3",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro ou Prejuízo Líquido Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6362961",
+      "dataset": "6362961"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro ou Prejuízo Líquido Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "7760116",
+      "dataset": "7760116"
+     }
+    ],
+    "n3": {
+     "r1": "6362961.0000000000",
+     "r0": "7760116.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 6.362.961 mil; 1S25: R$ 7.760.116 mil; redução, variação de -18,00%.",
+   "justificativa_disponibilidade": "[DRE] Lucro ou Prejuízo Líquido Consolidado do Período              6.362.961  (anterior: 7.760.116)"
+  },
+  "BBAS3_N4": {
+   "id": "BBAS3_N4",
+   "ticker": "BBAS3",
+   "categoria": "N4",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto de Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "49463309",
+      "dataset": "49463309"
+     },
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto de Intermediação Financeira",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "47964295",
+      "dataset": "47964295"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Outras Despesas e Receitas Operacionais",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-46738182",
+      "dataset": "-46738182"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Outras Despesas e Receitas Operacionais",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-46320925",
+      "dataset": "-46320925"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2725127",
+      "dataset": "2725127"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "1.64337E+6",
+      "dataset": "1.64337E+6"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3637834",
+      "dataset": "3637834"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "6116746",
+      "dataset": "6116746"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Líquido das Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Líquido das Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Participações nos Lucros e Contribuições Estatutárias",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Participações nos Lucros e Contribuições Estatutárias",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro ou Prejuízo Líquido Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6362961",
+      "dataset": "6362961"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro ou Prejuízo Líquido Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "7760116",
+      "dataset": "7760116"
+     }
+    ],
+    "n4": {
+     "variacao": "-1397155",
+     "componentes": [
+      [
+       "IR/CS",
+       "-2478912"
+      ],
+      [
+       "resultado bruto da intermediação financeira",
+       "1499014"
+      ],
+      [
+       "outras despesas e receitas operacionais",
+       "-417257"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 7.760.116 → 6.362.961 (Δ -1.397.155), em R$ mil. Componentes por magnitude da variação: IR/CS: 6.116.746 → 3.637.834 (Δ -2.478.912); resultado bruto da intermediação financeira: 47.964.295 → 49.463.309 (Δ 1.499.014); outras despesas e receitas operacionais: -46.320.925 → -46.738.182 (Δ -417.257).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "BBAS3_N5": {
+   "id": "BBAS3_N5",
+   "ticker": "BBAS3",
+   "categoria": "N5",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "65017849",
+      "dataset": "65017849"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 65.017.849 mil (R$ 65,02 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                65.017.849  (anterior: 59.635.525)"
+  },
+  "BBAS3_E1": {
+   "id": "BBAS3_E1",
+   "ticker": "BBAS3",
+   "categoria": "E1",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto de Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "49463309",
+      "dataset": "49463309"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.03/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado bruto da intermediação financeira do 1S26: R$ 49.463.309 mil (R$ 49,46 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Resultado Bruto de Intermediação Financeira                  49.463.309  (anterior: 47.964.295)"
+  },
+  "BBAS3_E2": {
+   "id": "BBAS3_E2",
+   "ticker": "BBAS3",
+   "categoria": "E2",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "2.02.01",
+      "ds": "Depósitos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "954018837",
+      "dataset": "954018837"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "2.02.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Depósitos em 30/06/2026: R$ 954.018.837 mil (R$ 954,02 bilhões).",
+   "justificativa_disponibilidade": "[BPP] Depósitos                                                   954.018.837  (anterior: 897.937.449)"
+  },
+  "BBAS3_E3": {
+   "id": "BBAS3_E3",
+   "ticker": "BBAS3",
+   "categoria": "E3",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.02",
+      "ds": "Despesas de Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-111283805",
+      "dataset": "-111283805"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.02/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Despesas de intermediação financeira do 1S26: R$ -111.283.805 mil (-R$ 111,28 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Despesas de Intermediação Financeira                       -111.283.805  (anterior: -101.288.276)"
+  },
+  "ZAMP3_N1": {
+   "id": "ZAMP3_N1",
+   "ticker": "ZAMP3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2716534",
+      "dataset": "2716534"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 2.716.534 mil (R$ 2,72 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receita de Venda de Bens e/ou Serviços                        2.716.534  (anterior: 2.442.664)"
+  },
+  "ZAMP3_N2": {
+   "id": "ZAMP3_N2",
+   "ticker": "ZAMP3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-154679",
+      "dataset": "-154679"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Prejuízo consolidado do 1S26: R$ -154.679 mil (-R$ 154,68 milhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                          -154.679  (anterior: -116.011)"
+  },
+  "ZAMP3_N3": {
+   "id": "ZAMP3_N3",
+   "ticker": "ZAMP3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-154679",
+      "dataset": "-154679"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-116011",
+      "dataset": "-116011"
+     }
+    ],
+    "n3": {
+     "r1": "-154679.0000000000",
+     "r0": "-116011.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "prejuízo maior"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ -154.679 mil; 1S25: R$ -116.011 mil; prejuízo maior, variação de 33,33%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                          -154.679  (anterior: -116.011)"
+  },
+  "ZAMP3_N4": {
+   "id": "ZAMP3_N4",
+   "ticker": "ZAMP3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "26758",
+      "dataset": "26758"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "22533",
+      "dataset": "22533"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1.6928E+5",
+      "dataset": "-1.6928E+5"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-144604",
+      "dataset": "-144604"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-142522",
+      "dataset": "-142522"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-122071",
+      "dataset": "-122071"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-12157",
+      "dataset": "-12157"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "6.06E+3",
+      "dataset": "6.06E+3"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-154679",
+      "dataset": "-154679"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-116011",
+      "dataset": "-116011"
+     }
+    ],
+    "n4": {
+     "variacao": "-38668",
+     "componentes": [
+      [
+       "resultado financeiro",
+       "-24676"
+      ],
+      [
+       "IR/CS",
+       "-18217"
+      ],
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "4225"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: -116.011 → -154.679 (Δ -38.668), em R$ mil. Componentes por magnitude da variação: resultado financeiro: -144.604 → -169.280 (Δ -24.676); IR/CS: 6.060 → -12.157 (Δ -18.217); resultado antes do resultado financeiro e dos tributos: 22.533 → 26.758 (Δ 4.225).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "ZAMP3_N5": {
+   "id": "ZAMP3_N5",
+   "ticker": "ZAMP3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "135651",
+      "dataset": "135651"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 135.651 mil (R$ 135,65 milhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                   135.651  (anterior: 208.256)"
+  },
+  "ZAMP3_E1": {
+   "id": "ZAMP3_E1",
+   "ticker": "ZAMP3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-154679",
+      "dataset": "-154679"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2716534",
+      "dataset": "2716534"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: -5,69% = -154.679 / 2.716.534 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (2/2): receita: [DRE] Receita de Venda de Bens e/ou Serviços                        2.716.534  (anterior: 2.442.664); resultado consolidado: [DRE] Lucro/Prejuízo Consolidado do Período                          -154.679  (anterior: -116.011)."
+  },
+  "ZAMP3_E2": {
+   "id": "ZAMP3_E2",
+   "ticker": "ZAMP3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "valor exigido aparece no contexto em outra linha: [\"1.01.01/ÚLTIMO em 'Saldo Final de Caixa e Equivalentes                         '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "135651",
+      "dataset": "135651"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "266761",
+      "dataset": "266761"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1278313",
+      "dataset": "1278313"
+     }
+    ],
+    "e2": {
+     "caixa": "135651.0000000000",
+     "divida": "1545074.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 135.651 mil; empréstimos e financiamentos R$ 1.545.074 mil (circulante 266.761 + não circulante 1.278.313); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (1/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                   135.651  (anterior: 208.256); empréstimos circulante: ausente; empréstimos não circulante: ausente. O BP Passivo, que traz os empréstimos, não está entre as tabelas recuperadas."
+  },
+  "ZAMP3_E3": {
+   "id": "ZAMP3_E3",
+   "ticker": "ZAMP3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1.6928E+5",
+      "dataset": "-1.6928E+5"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-144604",
+      "dataset": "-144604"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ -169.280 mil; 1S25 R$ -144.604 mil.",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                           -169.280  (anterior: -144.604)"
+  },
+  "LWSA3_N1": {
+   "id": "LWSA3_N1",
+   "ticker": "LWSA3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "737983",
+      "dataset": "737983"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 737.983 mil (R$ 737,98 milhões).",
+   "justificativa_disponibilidade": "A DRE não está no contexto; nenhuma outra tabela recuperada traz a linha de topo."
+  },
+  "LWSA3_N2": {
+   "id": "LWSA3_N2",
+   "ticker": "LWSA3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "55841",
+      "dataset": "55841"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 55.841 mil (R$ 55,84 milhões).",
+   "justificativa_disponibilidade": "[DFC] Lucro (prejuízo) antes do imposto de renda e contribuição social          96.428  (anterior: 50.802) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "LWSA3_N3": {
+   "id": "LWSA3_N3",
+   "ticker": "LWSA3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "55841",
+      "dataset": "55841"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "30616",
+      "dataset": "30616"
+     }
+    ],
+    "n3": {
+     "r1": "55841.0000000000",
+     "r0": "30616.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "aumento"
+    },
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "1S26: R$ 55.841 mil; 1S25: R$ 30.616 mil; aumento, variação de 82,39%.",
+   "justificativa_disponibilidade": "[DFC] Lucro (prejuízo) antes do imposto de renda e contribuição social          96.428  (anterior: 50.802) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "LWSA3_N4": {
+   "id": "LWSA3_N4",
+   "ticker": "LWSA3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "90032",
+      "dataset": "90032"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "67192",
+      "dataset": "67192"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6396",
+      "dataset": "6396"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-1.639E+4",
+      "dataset": "-1.639E+4"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "96428",
+      "dataset": "96428"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "50802",
+      "dataset": "50802"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-40587",
+      "dataset": "-40587"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-20186",
+      "dataset": "-20186"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "55841",
+      "dataset": "55841"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "30616",
+      "dataset": "30616"
+     }
+    ],
+    "n4": {
+     "variacao": "25225",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "22840"
+      ],
+      [
+       "resultado financeiro",
+       "22786"
+      ],
+      [
+       "IR/CS",
+       "-20401"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": false,
+     "justificativa": "DRE fora do contexto; 1 nó(s) da cadeia em outra tabela: lair: [DFC] Lucro (prejuízo) antes do imposto de renda e contribuição social          96.428  (anterior: 50.802) (mesmo_sinal)"
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 30.616 → 55.841 (Δ 25.225), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 67.192 → 90.032 (Δ 22.840); resultado financeiro: -16.390 → 6.396 (Δ 22.786); IR/CS: -20.186 → -40.587 (Δ -20.401).",
+   "justificativa_disponibilidade": "DRE fora do contexto; 1 nó(s) da cadeia em outra tabela: lair: [DFC] Lucro (prejuízo) antes do imposto de renda e contribuição social          96.428  (anterior: 50.802) (mesmo_sinal)"
+  },
+  "LWSA3_N5": {
+   "id": "LWSA3_N5",
+   "ticker": "LWSA3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "314495",
+      "dataset": "314495"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 314.495 mil (R$ 314,50 milhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                   314.495  (anterior: 371.931)"
+  },
+  "LWSA3_E1": {
+   "id": "LWSA3_E1",
+   "ticker": "LWSA3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "55841",
+      "dataset": "55841"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "737983",
+      "dataset": "737983"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 7,57% = 55.841 / 737.983 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (0/2): receita: ausente; resultado consolidado: ausente."
+  },
+  "LWSA3_E2": {
+   "id": "LWSA3_E2",
+   "ticker": "LWSA3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "314495",
+      "dataset": "314495"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "19361",
+      "dataset": "19361"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "52554",
+      "dataset": "52554"
+     }
+    ],
+    "e2": {
+     "caixa": "314495.0000000000",
+     "divida": "71915.0000000000",
+     "conclusao": "mais caixa"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO",
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 314.495 mil; empréstimos e financiamentos R$ 71.915 mil (circulante 19.361 + não circulante 52.554); mais caixa.",
+   "justificativa_disponibilidade": "Insumos no contexto (3/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                   314.495  (anterior: 371.931); empréstimos circulante: [BPP] Empréstimos e Financiamentos                                     19.361  (anterior: 18.769); empréstimos não circulante: [BPP] Empréstimos e Financiamentos                                     52.554  (anterior: 56.704)"
+  },
+  "LWSA3_E3": {
+   "id": "LWSA3_E3",
+   "ticker": "LWSA3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6396",
+      "dataset": "6396"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-1.639E+4",
+      "dataset": "-1.639E+4"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ 6.396 mil; 1S25 R$ -16.390 mil.",
+   "justificativa_disponibilidade": "Nenhuma linha de resultado financeiro no contexto."
+  },
+  "VALE3_N1": {
+   "id": "VALE3_N1",
+   "ticker": "VALE3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.01692E+8",
+      "dataset": "1.01692E+8"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 101.692.000 mil (R$ 101,69 bilhões).",
+   "justificativa_disponibilidade": "A DRE não está no contexto; nenhuma outra tabela recuperada traz a linha de topo."
+  },
+  "VALE3_N2": {
+   "id": "VALE3_N2",
+   "ticker": "VALE3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.724E+7",
+      "dataset": "1.724E+7"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 17.240.000 mil (R$ 17,24 bilhões).",
+   "justificativa_disponibilidade": "[DFC] Lucro Líquido antes dos tributos sobre o lucro               21.773.000  (anterior: 24.055.000) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "VALE3_N3": {
+   "id": "VALE3_N3",
+   "ticker": "VALE3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.724E+7",
+      "dataset": "1.724E+7"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.036E+7",
+      "dataset": "2.036E+7"
+     }
+    ],
+    "n3": {
+     "r1": "17240000.0000000000",
+     "r0": "20360000.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "1S26: R$ 17.240.000 mil; 1S25: R$ 20.360.000 mil; redução, variação de -15,32%.",
+   "justificativa_disponibilidade": "[DFC] Lucro Líquido antes dos tributos sobre o lucro               21.773.000  (anterior: 24.055.000) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "VALE3_N4": {
+   "id": "VALE3_N4",
+   "ticker": "VALE3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.401E+7",
+      "dataset": "2.401E+7"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.1869E+7",
+      "dataset": "2.1869E+7"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-2.237E+6",
+      "dataset": "-2.237E+6"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.186E+6",
+      "dataset": "2.186E+6"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.1773E+7",
+      "dataset": "2.1773E+7"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.4055E+7",
+      "dataset": "2.4055E+7"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-4.533E+6",
+      "dataset": "-4.533E+6"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-3.695E+6",
+      "dataset": "-3.695E+6"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.724E+7",
+      "dataset": "1.724E+7"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.036E+7",
+      "dataset": "2.036E+7"
+     }
+    ],
+    "n4": {
+     "variacao": "-3120000",
+     "componentes": [
+      [
+       "resultado financeiro",
+       "-4423000"
+      ],
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "2141000"
+      ],
+      [
+       "IR/CS",
+       "-838000"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": false,
+     "justificativa": "DRE fora do contexto; 2 nó(s) da cadeia em outra tabela: rf: [DFC] Resultado financeiro, líquido                                 2.237.000  (anterior: -2.186.000) (sinal_invertido); lair: [DFC] Lucro "
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 20.360.000 → 17.240.000 (Δ -3.120.000), em R$ mil. Componentes por magnitude da variação: resultado financeiro: 2.186.000 → -2.237.000 (Δ -4.423.000); resultado antes do resultado financeiro e dos tributos: 21.869.000 → 24.010.000 (Δ 2.141.000); IR/CS: -3.695.000 → -4.533.000 (Δ -838.000).",
+   "justificativa_disponibilidade": "DRE fora do contexto; 2 nó(s) da cadeia em outra tabela: rf: [DFC] Resultado financeiro, líquido                                 2.237.000  (anterior: -2.186.000) (sinal_invertido); lair: [DFC] Lucro Líquido antes dos tributos sobre o lucro               21.773.000  (anterior: 24.055.000) (mesmo_sinal)"
+  },
+  "VALE3_N5": {
+   "id": "VALE3_N5",
+   "ticker": "VALE3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2.8871E+7",
+      "dataset": "2.8871E+7"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 28.871.000 mil (R$ 28,87 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                28.871.000  (anterior: 40.563.000)"
+  },
+  "VALE3_E1": {
+   "id": "VALE3_E1",
+   "ticker": "VALE3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.724E+7",
+      "dataset": "1.724E+7"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.01692E+8",
+      "dataset": "1.01692E+8"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 16,95% = 17.240.000 / 101.692.000 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (0/2): receita: ausente; resultado consolidado: ausente."
+  },
+  "VALE3_E2": {
+   "id": "VALE3_E2",
+   "ticker": "VALE3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2.8871E+7",
+      "dataset": "2.8871E+7"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "6.534E+6",
+      "dataset": "6.534E+6"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "9.15E+7",
+      "dataset": "9.15E+7"
+     }
+    ],
+    "e2": {
+     "caixa": "28871000.0000000000",
+     "divida": "98034000.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO",
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 28.871.000 mil; empréstimos e financiamentos R$ 98.034.000 mil (circulante 6.534.000 + não circulante 91.500.000); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (3/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                28.871.000  (anterior: 40.563.000); empréstimos circulante: [BPP] Empréstimos e Financiamentos                                  6.534.000  (anterior: 3.731.000); empréstimos não circulante: [BPP] Empréstimos e Financiamentos                                 91.500.000  (anterior: 99.726.000)"
+  },
+  "VALE3_E3": {
+   "id": "VALE3_E3",
+   "ticker": "VALE3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-2.237E+6",
+      "dataset": "-2.237E+6"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.186E+6",
+      "dataset": "2.186E+6"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ -2.237.000 mil; 1S25 R$ 2.186.000 mil.",
+   "justificativa_disponibilidade": "[DFC] Resultado financeiro, líquido                                 2.237.000  (anterior: -2.186.000) (linha da DFC com sinal invertido — regra 6 da Seção 9)"
+  },
+  "ITUB4_N1": {
+   "id": "ITUB4_N1",
+   "ticker": "ITUB4",
+   "categoria": "N1",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receitas da Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.99118E+8",
+      "dataset": "1.99118E+8"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receitas da Intermediação Financeira consolidada do 1S26: R$ 199.118.000 mil (R$ 199,12 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receitas da Intermediação Financeira                        199.118.000  (anterior: 200.251.000)"
+  },
+  "ITUB4_N2": {
+   "id": "ITUB4_N2",
+   "ticker": "ITUB4",
+   "categoria": "N2",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.09",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.4199E+7",
+      "dataset": "2.4199E+7"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.09/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 24.199.000 mil (R$ 24,20 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                        24.199.000  (anterior: 22.105.000)"
+  },
+  "ITUB4_N3": {
+   "id": "ITUB4_N3",
+   "ticker": "ITUB4",
+   "categoria": "N3",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.09",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.4199E+7",
+      "dataset": "2.4199E+7"
+     },
+     {
+      "conta": "3.09",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.2105E+7",
+      "dataset": "2.2105E+7"
+     }
+    ],
+    "n3": {
+     "r1": "24199000.0000000000",
+     "r0": "22105000.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "aumento"
+    },
+    "disp": {
+     "achados": [
+      "3.09/ÚLTIMO",
+      "3.09/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 24.199.000 mil; 1S25: R$ 22.105.000 mil; aumento, variação de 9,47%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                        24.199.000  (anterior: 22.105.000)"
+  },
+  "ITUB4_N4": {
+   "id": "ITUB4_N4",
+   "ticker": "ITUB4",
+   "categoria": "N4",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "7.1756E+7",
+      "dataset": "7.1756E+7"
+     },
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto Intermediação Financeira",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "6.6989E+7",
+      "dataset": "6.6989E+7"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Outras Despesas/Receitas Operacionais",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-4.4774E+7",
+      "dataset": "-4.4774E+7"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Outras Despesas/Receitas Operacionais",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-4.4446E+7",
+      "dataset": "-4.4446E+7"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.6982E+7",
+      "dataset": "2.6982E+7"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.2543E+7",
+      "dataset": "2.2543E+7"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-2.783E+6",
+      "dataset": "-2.783E+6"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-4.38E+5",
+      "dataset": "-4.38E+5"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Líquido das Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Líquido das Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.09",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.4199E+7",
+      "dataset": "2.4199E+7"
+     },
+     {
+      "conta": "3.09",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "2.2105E+7",
+      "dataset": "2.2105E+7"
+     }
+    ],
+    "n4": {
+     "variacao": "2094000",
+     "componentes": [
+      [
+       "resultado bruto da intermediação financeira",
+       "4767000"
+      ],
+      [
+       "IR/CS",
+       "-2345000"
+      ],
+      [
+       "outras despesas e receitas operacionais",
+       "-328000"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 22.105.000 → 24.199.000 (Δ 2.094.000), em R$ mil. Componentes por magnitude da variação: resultado bruto da intermediação financeira: 66.989.000 → 71.756.000 (Δ 4.767.000); IR/CS: -438.000 → -2.783.000 (Δ -2.345.000); outras despesas e receitas operacionais: -44.446.000 → -44.774.000 (Δ -328.000).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "ITUB4_N5": {
+   "id": "ITUB4_N5",
+   "ticker": "ITUB4",
+   "categoria": "N5",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "3.5351E+7",
+      "dataset": "3.5351E+7"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 35.351.000 mil (R$ 35,35 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                35.351.000  (anterior: 37.144.000)"
+  },
+  "ITUB4_E1": {
+   "id": "ITUB4_E1",
+   "ticker": "ITUB4",
+   "categoria": "E1",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "7.1756E+7",
+      "dataset": "7.1756E+7"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.03/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado bruto da intermediação financeira do 1S26: R$ 71.756.000 mil (R$ 71,76 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Resultado Bruto Intermediação Financeira                     71.756.000  (anterior: 66.989.000)"
+  },
+  "ITUB4_E2": {
+   "id": "ITUB4_E2",
+   "ticker": "ITUB4",
+   "categoria": "E2",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "2.03.01",
+      "ds": "Depósitos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1.134485E+9",
+      "dataset": "1.134485E+9"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "2.03.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Depósitos em 30/06/2026: R$ 1.134.485.000 mil (R$ 1,13 trilhões).",
+   "justificativa_disponibilidade": "[BPP] Depósitos                                                 1.134.485.000  (anterior: 1.114.482.000)"
+  },
+  "ITUB4_E3": {
+   "id": "ITUB4_E3",
+   "ticker": "ITUB4",
+   "categoria": "E3",
+   "estrutura": "banco",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.02",
+      "ds": "Despesas da Intermediação Financeira",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1.27362E+8",
+      "dataset": "-1.27362E+8"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.02/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Despesas de intermediação financeira do 1S26: R$ -127.362.000 mil (-R$ 127,36 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Despesas da Intermediação Financeira                       -127.362.000  (anterior: -133.262.000)"
+  },
+  "LAVV3_N1": {
+   "id": "LAVV3_N1",
+   "ticker": "LAVV3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "868335",
+      "dataset": "868335"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 868.335 mil (R$ 868,34 milhões).",
+   "justificativa_disponibilidade": "[DRE] Receita de Venda de Bens e/ou Serviços                          868.335  (anterior: 816.524)"
+  },
+  "LAVV3_N2": {
+   "id": "LAVV3_N2",
+   "ticker": "LAVV3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "184619",
+      "dataset": "184619"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 184.619 mil (R$ 184,62 milhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                           184.619  (anterior: 224.898)"
+  },
+  "LAVV3_N3": {
+   "id": "LAVV3_N3",
+   "ticker": "LAVV3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "184619",
+      "dataset": "184619"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "224898",
+      "dataset": "224898"
+     }
+    ],
+    "n3": {
+     "r1": "184619.0000000000",
+     "r0": "224898.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 184.619 mil; 1S25: R$ 224.898 mil; redução, variação de -17,91%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                           184.619  (anterior: 224.898)"
+  },
+  "LAVV3_N4": {
+   "id": "LAVV3_N4",
+   "ticker": "LAVV3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "193952",
+      "dataset": "193952"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "228759",
+      "dataset": "228759"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3044",
+      "dataset": "3044"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "18469",
+      "dataset": "18469"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "196996",
+      "dataset": "196996"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "247228",
+      "dataset": "247228"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-12377",
+      "dataset": "-12377"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-2.233E+4",
+      "dataset": "-2.233E+4"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "184619",
+      "dataset": "184619"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "224898",
+      "dataset": "224898"
+     }
+    ],
+    "n4": {
+     "variacao": "-40279",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "-34807"
+      ],
+      [
+       "resultado financeiro",
+       "-15425"
+      ],
+      [
+       "IR/CS",
+       "9953"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 224.898 → 184.619 (Δ -40.279), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 228.759 → 193.952 (Δ -34.807); resultado financeiro: 18.469 → 3.044 (Δ -15.425); IR/CS: -22.330 → -12.377 (Δ 9.953).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "LAVV3_N5": {
+   "id": "LAVV3_N5",
+   "ticker": "LAVV3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "192713",
+      "dataset": "192713"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 192.713 mil (R$ 192,71 milhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                   192.713  (anterior: 189.277)"
+  },
+  "LAVV3_E1": {
+   "id": "LAVV3_E1",
+   "ticker": "LAVV3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "184619",
+      "dataset": "184619"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "868335",
+      "dataset": "868335"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 21,26% = 184.619 / 868.335 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (2/2): receita: [DRE] Receita de Venda de Bens e/ou Serviços                          868.335  (anterior: 816.524); resultado consolidado: [DRE] Lucro/Prejuízo Consolidado do Período                           184.619  (anterior: 224.898)."
+  },
+  "LAVV3_E2": {
+   "id": "LAVV3_E2",
+   "ticker": "LAVV3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "valor exigido aparece no contexto em outra linha: [\"1.01.01/ÚLTIMO em 'Saldo Final de Caixa e Equivalentes                         '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "192713",
+      "dataset": "192713"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "188503",
+      "dataset": "188503"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1283027",
+      "dataset": "1283027"
+     }
+    ],
+    "e2": {
+     "caixa": "192713.0000000000",
+     "divida": "1471530.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 192.713 mil; empréstimos e financiamentos R$ 1.471.530 mil (circulante 188.503 + não circulante 1.283.027); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (1/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                   192.713  (anterior: 189.277); empréstimos circulante: ausente; empréstimos não circulante: ausente. O BP Passivo, que traz os empréstimos, não está entre as tabelas recuperadas."
+  },
+  "LAVV3_E3": {
+   "id": "LAVV3_E3",
+   "ticker": "LAVV3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3044",
+      "dataset": "3044"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "18469",
+      "dataset": "18469"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ 3.044 mil; 1S25 R$ 18.469 mil.",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                              3.044  (anterior: 18.469)"
+  },
+  "POMO4_N1": {
+   "id": "POMO4_N1",
+   "ticker": "POMO4",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "4028514",
+      "dataset": "4028514"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 4.028.514 mil (R$ 4,03 bilhões).",
+   "justificativa_disponibilidade": "A DRE não está no contexto; nenhuma outra tabela recuperada traz a linha de topo."
+  },
+  "POMO4_N2": {
+   "id": "POMO4_N2",
+   "ticker": "POMO4",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [
+    "presente pela regra 2 (DFC 'resultado do período')"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "535824",
+      "dataset": "535824"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO"
+     ],
+     "via_dfc": true,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 535.824 mil (R$ 535,82 milhões).",
+   "justificativa_disponibilidade": "[DFC] Resultado do período                                            535.824  (anterior: 564.162) (DFC: resultado do período igual ao consolidado da DRE — regra 2 da Seção 9)"
+  },
+  "POMO4_N3": {
+   "id": "POMO4_N3",
+   "ticker": "POMO4",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "presente pela regra 2 (DFC 'resultado do período')"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "535824",
+      "dataset": "535824"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "564162",
+      "dataset": "564162"
+     }
+    ],
+    "n3": {
+     "r1": "535824.0000000000",
+     "r0": "564162.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "via_dfc": true,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "1S26: R$ 535.824 mil; 1S25: R$ 564.162 mil; redução, variação de -5,02%.",
+   "justificativa_disponibilidade": "[DFC] Resultado do período                                            535.824  (anterior: 564.162) (DFC: resultado do período igual ao consolidado da DRE — regra 2 da Seção 9)"
+  },
+  "POMO4_N4": {
+   "id": "POMO4_N4",
+   "ticker": "POMO4",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "557555",
+      "dataset": "557555"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "5.8301E+5",
+      "dataset": "5.8301E+5"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "98715",
+      "dataset": "98715"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "1.5202E+5",
+      "dataset": "1.5202E+5"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6.5627E+5",
+      "dataset": "6.5627E+5"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "7.3503E+5",
+      "dataset": "7.3503E+5"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-120446",
+      "dataset": "-120446"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-170868",
+      "dataset": "-170868"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "535824",
+      "dataset": "535824"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "564162",
+      "dataset": "564162"
+     }
+    ],
+    "n4": {
+     "variacao": "-28338",
+     "componentes": [
+      [
+       "resultado financeiro",
+       "-53305"
+      ],
+      [
+       "IR/CS",
+       "50422"
+      ],
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "-25455"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": false,
+     "justificativa": "DRE fora do contexto; 2 nó(s) da cadeia em outra tabela: ir: [DFC] Imposto de renda e contribuição social corrente e diferido         120.446  (anterior: 170.868) (sinal_invertido); resultado: [DFC] R"
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 564.162 → 535.824 (Δ -28.338), em R$ mil. Componentes por magnitude da variação: resultado financeiro: 152.020 → 98.715 (Δ -53.305); IR/CS: -170.868 → -120.446 (Δ 50.422); resultado antes do resultado financeiro e dos tributos: 583.010 → 557.555 (Δ -25.455).",
+   "justificativa_disponibilidade": "DRE fora do contexto; 2 nó(s) da cadeia em outra tabela: ir: [DFC] Imposto de renda e contribuição social corrente e diferido         120.446  (anterior: 170.868) (sinal_invertido); resultado: [DFC] Resultado do período                                            535.824  (anterior: 564.162) (mesmo_sinal)"
+  },
+  "POMO4_N5": {
+   "id": "POMO4_N5",
+   "ticker": "POMO4",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1.58732E+6",
+      "dataset": "1.58732E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 1.587.320 mil (R$ 1,59 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                 1.587.320  (anterior: 2.221.811)"
+  },
+  "POMO4_E1": {
+   "id": "POMO4_E1",
+   "ticker": "POMO4",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "parcial sem nenhum insumo exato no contexto (verificar regra de disponibilidade)",
+    "valor exigido aparece no contexto em outra linha: [\"3.11/ÚLTIMO em 'Resultado do período                                        '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "535824",
+      "dataset": "535824"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "4028514",
+      "dataset": "4028514"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 13,30% = 535.824 / 4.028.514 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (1/2): receita: ausente; resultado consolidado: [DFC] Resultado do período                                            535.824  (anterior: 564.162)."
+  },
+  "POMO4_E2": {
+   "id": "POMO4_E2",
+   "ticker": "POMO4",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1.58732E+6",
+      "dataset": "1.58732E+6"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1089436",
+      "dataset": "1089436"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2310995",
+      "dataset": "2310995"
+     }
+    ],
+    "e2": {
+     "caixa": "1587320.0000000000",
+     "divida": "3400431.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO",
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 1.587.320 mil; empréstimos e financiamentos R$ 3.400.431 mil (circulante 1.089.436 + não circulante 2.310.995); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (3/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                 1.587.320  (anterior: 2.221.811); empréstimos circulante: [BPP] Empréstimos e Financiamentos                                  1.089.436  (anterior: 1.193.030); empréstimos não circulante: [BPP] Empréstimos e Financiamentos                                  2.310.995  (anterior: 2.499.504)"
+  },
+  "POMO4_E3": {
+   "id": "POMO4_E3",
+   "ticker": "POMO4",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "98715",
+      "dataset": "98715"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "1.5202E+5",
+      "dataset": "1.5202E+5"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ 98.715 mil; 1S25 R$ 152.020 mil.",
+   "justificativa_disponibilidade": "Nenhuma linha de resultado financeiro no contexto."
+  },
+  "ITSA4_N1": {
+   "id": "ITSA4_N1",
+   "ticker": "ITSA4",
+   "categoria": "N1",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "4.25E+6",
+      "dataset": "4.25E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 4.250.000 mil (R$ 4,25 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receita de Venda de Bens e/ou Serviços                        4.250.000  (anterior: 4.024.000)"
+  },
+  "ITSA4_N2": {
+   "id": "ITSA4_N2",
+   "ticker": "ITSA4",
+   "categoria": "N2",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "9.726E+6",
+      "dataset": "9.726E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 9.726.000 mil (R$ 9,73 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                         9.726.000  (anterior: 8.048.000)"
+  },
+  "ITSA4_N3": {
+   "id": "ITSA4_N3",
+   "ticker": "ITSA4",
+   "categoria": "N3",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "9.726E+6",
+      "dataset": "9.726E+6"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "8.048E+6",
+      "dataset": "8.048E+6"
+     }
+    ],
+    "n3": {
+     "r1": "9726000.0000000000",
+     "r0": "8048000.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "aumento"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 9.726.000 mil; 1S25: R$ 8.048.000 mil; aumento, variação de 20,85%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                         9.726.000  (anterior: 8.048.000)"
+  },
+  "ITSA4_N4": {
+   "id": "ITSA4_N4",
+   "ticker": "ITSA4",
+   "categoria": "N4",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "9.832E+6",
+      "dataset": "9.832E+6"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "8.794E+6",
+      "dataset": "8.794E+6"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.93E+5",
+      "dataset": "1.93E+5"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-8.44E+5",
+      "dataset": "-8.44E+5"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.0025E+7",
+      "dataset": "1.0025E+7"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "7.95E+6",
+      "dataset": "7.95E+6"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-2.99E+5",
+      "dataset": "-2.99E+5"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "9.8E+4",
+      "dataset": "9.8E+4"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "9.726E+6",
+      "dataset": "9.726E+6"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "8.048E+6",
+      "dataset": "8.048E+6"
+     }
+    ],
+    "n4": {
+     "variacao": "1678000",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "1038000"
+      ],
+      [
+       "resultado financeiro",
+       "1037000"
+      ],
+      [
+       "IR/CS",
+       "-397000"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 8.048.000 → 9.726.000 (Δ 1.678.000), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 8.794.000 → 9.832.000 (Δ 1.038.000); resultado financeiro: -844.000 → 193.000 (Δ 1.037.000); IR/CS: 98.000 → -299.000 (Δ -397.000).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "ITSA4_N5": {
+   "id": "ITSA4_N5",
+   "ticker": "ITSA4",
+   "categoria": "N5",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "4.709E+6",
+      "dataset": "4.709E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 4.709.000 mil (R$ 4,71 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                 4.709.000  (anterior: 4.039.000)"
+  },
+  "ITSA4_E1": {
+   "id": "ITSA4_E1",
+   "ticker": "ITSA4",
+   "categoria": "E1",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.04.06",
+      "ds": "Resultado de Equivalência Patrimonial",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "9.354E+6",
+      "dataset": "9.354E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.04.06/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado de equivalência patrimonial do 1S26: R$ 9.354.000 mil (R$ 9,35 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Resultado de Equivalência Patrimonial                         9.354.000  (anterior: 8.598.000)"
+  },
+  "ITSA4_E2": {
+   "id": "ITSA4_E2",
+   "ticker": "ITSA4",
+   "categoria": "E2",
+   "estrutura": "holding",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "valor exigido aparece no contexto em outra linha: [\"1.01.01/ÚLTIMO em 'Saldo Final de Caixa e Equivalentes                         '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "4.709E+6",
+      "dataset": "4.709E+6"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1.202E+6",
+      "dataset": "1.202E+6"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "9.416E+6",
+      "dataset": "9.416E+6"
+     }
+    ],
+    "e2": {
+     "caixa": "4709000.0000000000",
+     "divida": "10618000.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 4.709.000 mil; empréstimos e financiamentos R$ 10.618.000 mil (circulante 1.202.000 + não circulante 9.416.000); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (1/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                 4.709.000  (anterior: 4.039.000); empréstimos circulante: ausente; empréstimos não circulante: ausente. O BP Passivo, que traz os empréstimos, não está entre as tabelas recuperadas."
+  },
+  "ITSA4_E3": {
+   "id": "ITSA4_E3",
+   "ticker": "ITSA4",
+   "categoria": "E3",
+   "estrutura": "holding",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.93E+5",
+      "dataset": "1.93E+5"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-8.44E+5",
+      "dataset": "-8.44E+5"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ 193.000 mil; 1S25 R$ -844.000 mil.",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                            193.000  (anterior: -844.000)"
+  },
+  "IRBR3_N1": {
+   "id": "IRBR3_N1",
+   "ticker": "IRBR3",
+   "categoria": "N1",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receitas das Atividades Seguradoras/Resseguradoras",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "1.92014E+6",
+      "dataset": "1.92014E+6"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receitas das Atividades Seguradoras/Resseguradoras consolidada do 1S26: R$ 1.920.140 mil (R$ 1,92 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receitas das Atividades Seguradoras/Resseguradoras            1.920.140  (anterior: 2.670.200)"
+  },
+  "IRBR3_N2": {
+   "id": "IRBR3_N2",
+   "ticker": "IRBR3",
+   "categoria": "N2",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.13",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "90305",
+      "dataset": "90305"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.13/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 90.305 mil (R$ 90,31 milhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                            90.305  (anterior: 240.662)"
+  },
+  "IRBR3_N3": {
+   "id": "IRBR3_N3",
+   "ticker": "IRBR3",
+   "categoria": "N3",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.13",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "90305",
+      "dataset": "90305"
+     },
+     {
+      "conta": "3.13",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "240662",
+      "dataset": "240662"
+     }
+    ],
+    "n3": {
+     "r1": "90305.0000000000",
+     "r0": "240662.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [
+      "3.13/ÚLTIMO",
+      "3.13/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 90.305 mil; 1S25: R$ 240.662 mil; redução, variação de -62,48%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                            90.305  (anterior: 240.662)"
+  },
+  "IRBR3_N4": {
+   "id": "IRBR3_N4",
+   "ticker": "IRBR3",
+   "categoria": "N4",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-41006",
+      "dataset": "-41006"
+     },
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "431005",
+      "dataset": "431005"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Despesas Administrativas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-19702",
+      "dataset": "-19702"
+     },
+     {
+      "conta": "3.04",
+      "ds": "Despesas Administrativas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-13789",
+      "dataset": "-13789"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Outras Receitas e Despesas Operacionais",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "40082",
+      "dataset": "40082"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Outras Receitas e Despesas Operacionais",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "38",
+      "dataset": "38"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado de Equivalência Patrimonial",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado de Equivalência Patrimonial",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-20626",
+      "dataset": "-20626"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "417254",
+      "dataset": "417254"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "117761",
+      "dataset": "117761"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-40329",
+      "dataset": "-40329"
+     },
+     {
+      "conta": "3.09",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "97135",
+      "dataset": "97135"
+     },
+     {
+      "conta": "3.09",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "376925",
+      "dataset": "376925"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-6.83E+3",
+      "dataset": "-6.83E+3"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-136263",
+      "dataset": "-136263"
+     },
+     {
+      "conta": "3.12",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.12",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.13",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "90305",
+      "dataset": "90305"
+     },
+     {
+      "conta": "3.13",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "240662",
+      "dataset": "240662"
+     }
+    ],
+    "n4": {
+     "variacao": "-150357",
+     "componentes": [
+      [
+       "resultado bruto das operações de resseguro",
+       "-472011"
+      ],
+      [
+       "resultado financeiro",
+       "158090"
+      ],
+      [
+       "IR/CS",
+       "129433"
+      ],
+      [
+       "despesas administrativas e outras",
+       "34131"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 240.662 → 90.305 (Δ -150.357), em R$ mil. Componentes por magnitude da variação: resultado bruto das operações de resseguro: 431.005 → -41.006 (Δ -472.011); resultado financeiro: -40.329 → 117.761 (Δ 158.090); IR/CS: -136.263 → -6.830 (Δ 129.433); despesas administrativas e outras: -13.751 → 20.380 (Δ 34.131).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "IRBR3_N5": {
+   "id": "IRBR3_N5",
+   "ticker": "IRBR3",
+   "categoria": "N5",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "54039",
+      "dataset": "54039"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 54.039 mil (R$ 54,04 milhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                    54.039  (anterior: 11.232)"
+  },
+  "IRBR3_E1": {
+   "id": "IRBR3_E1",
+   "ticker": "IRBR3",
+   "categoria": "E1",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.03",
+      "ds": "Resultado Bruto",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-41006",
+      "dataset": "-41006"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.03/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado bruto (receitas menos despesas da atividade de resseguro) do 1S26: R$ -41.006 mil (-R$ 41,01 milhões).",
+   "justificativa_disponibilidade": "[DRE] Resultado Bruto                                                 -41.006  (anterior: 431.005)"
+  },
+  "IRBR3_E2": {
+   "id": "IRBR3_E2",
+   "ticker": "IRBR3",
+   "categoria": "E2",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.08",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "117761",
+      "dataset": "117761"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.08/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro do 1S26: R$ 117.761 mil (R$ 117,76 milhões).",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                            117.761  (anterior: -40.329)"
+  },
+  "IRBR3_E3": {
+   "id": "IRBR3_E3",
+   "ticker": "IRBR3",
+   "categoria": "E3",
+   "estrutura": "resseguradora",
+   "disponibilidade": "presente",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.02",
+      "ds": "Aplicações Financeiras",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "4414934",
+      "dataset": "4414934"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.02/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Aplicações Financeiras (1.01.02, ativo circulante) em 30/06/2026: R$ 4.414.934 mil (R$ 4,41 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Aplicações Financeiras                                        4.414.934  (anterior: 5.102.746)"
+  },
+  "CEAB3_N1": {
+   "id": "CEAB3_N1",
+   "ticker": "CEAB3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3701913",
+      "dataset": "3701913"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 3.701.913 mil (R$ 3,70 bilhões).",
+   "justificativa_disponibilidade": "[DRE] Receita de Venda de Bens e/ou Serviços                        3.701.913  (anterior: 3.670.545)"
+  },
+  "CEAB3_N2": {
+   "id": "CEAB3_N2",
+   "ticker": "CEAB3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "179594",
+      "dataset": "179594"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Lucro consolidado do 1S26: R$ 179.594 mil (R$ 179,59 milhões).",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                           179.594  (anterior: 204.384)"
+  },
+  "CEAB3_N3": {
+   "id": "CEAB3_N3",
+   "ticker": "CEAB3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "179594",
+      "dataset": "179594"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "204384",
+      "dataset": "204384"
+     }
+    ],
+    "n3": {
+     "r1": "179594.0000000000",
+     "r0": "204384.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "redução"
+    },
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "1S26: R$ 179.594 mil; 1S25: R$ 204.384 mil; redução, variação de -12,13%.",
+   "justificativa_disponibilidade": "[DRE] Lucro/Prejuízo Consolidado do Período                           179.594  (anterior: 204.384)"
+  },
+  "CEAB3_N4": {
+   "id": "CEAB3_N4",
+   "ticker": "CEAB3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "372911",
+      "dataset": "372911"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "453017",
+      "dataset": "453017"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-132964",
+      "dataset": "-132964"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-164219",
+      "dataset": "-164219"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "239947",
+      "dataset": "239947"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "288798",
+      "dataset": "288798"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-60353",
+      "dataset": "-60353"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-84414",
+      "dataset": "-84414"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "179594",
+      "dataset": "179594"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "204384",
+      "dataset": "204384"
+     }
+    ],
+    "n4": {
+     "variacao": "-24790",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "-80106"
+      ],
+      [
+       "resultado financeiro",
+       "31255"
+      ],
+      [
+       "IR/CS",
+       "24061"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": true,
+     "justificativa": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: 204.384 → 179.594 (Δ -24.790), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 453.017 → 372.911 (Δ -80.106); resultado financeiro: -164.219 → -132.964 (Δ 31.255); IR/CS: -84.414 → -60.353 (Δ 24.061).",
+   "justificativa_disponibilidade": "A DRE consolidada está no contexto (regra 5 da Seção 9)."
+  },
+  "CEAB3_N5": {
+   "id": "CEAB3_N5",
+   "ticker": "CEAB3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "5.4069E+5",
+      "dataset": "5.4069E+5"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 540.690 mil (R$ 540,69 milhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                   540.690  (anterior: 774.521)"
+  },
+  "CEAB3_E1": {
+   "id": "CEAB3_E1",
+   "ticker": "CEAB3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "179594",
+      "dataset": "179594"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "3701913",
+      "dataset": "3701913"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: 4,85% = 179.594 / 3.701.913 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (2/2): receita: [DRE] Receita de Venda de Bens e/ou Serviços                        3.701.913  (anterior: 3.670.545); resultado consolidado: [DRE] Lucro/Prejuízo Consolidado do Período                           179.594  (anterior: 204.384)."
+  },
+  "CEAB3_E2": {
+   "id": "CEAB3_E2",
+   "ticker": "CEAB3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [
+    "valor exigido aparece no contexto em outra linha: [\"1.01.01/ÚLTIMO em 'Saldo Final de Caixa e Equivalentes                         '\"]"
+   ],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "5.4069E+5",
+      "dataset": "5.4069E+5"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "140855",
+      "dataset": "140855"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "808528",
+      "dataset": "808528"
+     }
+    ],
+    "e2": {
+     "caixa": "540690.0000000000",
+     "divida": "949383.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 540.690 mil; empréstimos e financiamentos R$ 949.383 mil (circulante 140.855 + não circulante 808.528); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (1/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                   540.690  (anterior: 774.521); empréstimos circulante: ausente; empréstimos não circulante: ausente. O BP Passivo, que traz os empréstimos, não está entre as tabelas recuperadas."
+  },
+  "CEAB3_E3": {
+   "id": "CEAB3_E3",
+   "ticker": "CEAB3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-132964",
+      "dataset": "-132964"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-164219",
+      "dataset": "-164219"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": true
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ -132.964 mil; 1S25 R$ -164.219 mil.",
+   "justificativa_disponibilidade": "[DRE] Resultado Financeiro                                           -132.964  (anterior: -164.219)"
+  },
+  "AURE3_N1": {
+   "id": "AURE3_N1",
+   "ticker": "AURE3",
+   "categoria": "N1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6130034",
+      "dataset": "6130034"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Receita de Venda de Bens e/ou Serviços consolidada do 1S26: R$ 6.130.034 mil (R$ 6,13 bilhões).",
+   "justificativa_disponibilidade": "A DRE não está no contexto; nenhuma outra tabela recuperada traz a linha de topo."
+  },
+  "AURE3_N2": {
+   "id": "AURE3_N2",
+   "ticker": "AURE3",
+   "categoria": "N2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-980667",
+      "dataset": "-980667"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Prejuízo consolidado do 1S26: R$ -980.667 mil (-R$ 980,67 milhões).",
+   "justificativa_disponibilidade": "[DFC] Lucro (prejuízo) antes do imposto de renda e da contribuição social      -1.032.287  (anterior: -375.121) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "AURE3_N3": {
+   "id": "AURE3_N3",
+   "ticker": "AURE3",
+   "categoria": "N3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "parcial",
+   "atencao_humana": true,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-980667",
+      "dataset": "-980667"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-508856",
+      "dataset": "-508856"
+     }
+    ],
+    "n3": {
+     "r1": "-980667.0000000000",
+     "r0": "-508856.0000000000",
+     "regra": "aplicável: mesmo sinal nos dois períodos e anterior diferente de zero",
+     "direcao": "prejuízo maior"
+    },
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.11/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "1S26: R$ -980.667 mil; 1S25: R$ -508.856 mil; prejuízo maior, variação de 92,72%.",
+   "justificativa_disponibilidade": "[DFC] Lucro (prejuízo) antes do imposto de renda e da contribuição social      -1.032.287  (anterior: -375.121) (só o resultado antes dos tributos (conceito vizinho); o resultado consolidado não está no contexto)"
+  },
+  "AURE3_N4": {
+   "id": "AURE3_N4",
+   "ticker": "AURE3",
+   "categoria": "N4",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "2.8969E+5",
+      "dataset": "2.8969E+5"
+     },
+     {
+      "conta": "3.05",
+      "ds": "Resultado Antes do Resultado Financeiro e dos Tributos",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "1001483",
+      "dataset": "1001483"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1321977",
+      "dataset": "-1321977"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-1376604",
+      "dataset": "-1376604"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1032287",
+      "dataset": "-1032287"
+     },
+     {
+      "conta": "3.07",
+      "ds": "Resultado Antes dos Tributos sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-375121",
+      "dataset": "-375121"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "5.162E+4",
+      "dataset": "5.162E+4"
+     },
+     {
+      "conta": "3.08",
+      "ds": "Imposto de Renda e Contribuição Social sobre o Lucro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-133735",
+      "dataset": "-133735"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.10",
+      "ds": "Resultado Líquido de Operações Descontinuadas",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "0",
+      "dataset": "0"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-980667",
+      "dataset": "-980667"
+     },
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-508856",
+      "dataset": "-508856"
+     }
+    ],
+    "n4": {
+     "variacao": "-471811",
+     "componentes": [
+      [
+       "resultado antes do resultado financeiro e dos tributos",
+       "-711793"
+      ],
+      [
+       "IR/CS",
+       "185355"
+      ],
+      [
+       "resultado financeiro",
+       "54627"
+      ]
+     ]
+    },
+    "disp": {
+     "dre_no_contexto": false,
+     "justificativa": "DRE fora do contexto; 1 nó(s) da cadeia em outra tabela: lair: [DFC] Lucro (prejuízo) antes do imposto de renda e da contribuição social      -1.032.287  (anterior: -375.121) (mesmo_sinal)"
+    }
+   },
+   "gabarito": "Variação do resultado consolidado: -508.856 → -980.667 (Δ -471.811), em R$ mil. Componentes por magnitude da variação: resultado antes do resultado financeiro e dos tributos: 1.001.483 → 289.690 (Δ -711.793); IR/CS: -133.735 → 51.620 (Δ 185.355); resultado financeiro: -1.376.604 → -1.321.977 (Δ 54.627).",
+   "justificativa_disponibilidade": "DRE fora do contexto; 1 nó(s) da cadeia em outra tabela: lair: [DFC] Lucro (prejuízo) antes do imposto de renda e da contribuição social      -1.032.287  (anterior: -375.121) (mesmo_sinal)"
+  },
+  "AURE3_N5": {
+   "id": "AURE3_N5",
+   "ticker": "AURE3",
+   "categoria": "N5",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2949774",
+      "dataset": "2949774"
+     }
+    ],
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Caixa e equivalentes de caixa em 30/06/2026: R$ 2.949.774 mil (R$ 2,95 bilhões).",
+   "justificativa_disponibilidade": "[BPA] Caixa e Equivalentes de Caixa                                 2.949.774  (anterior: 3.826.127)"
+  },
+  "AURE3_E1": {
+   "id": "AURE3_E1",
+   "ticker": "AURE3",
+   "categoria": "E1",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.11",
+      "ds": "Lucro/Prejuízo Consolidado do Período",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-980667",
+      "dataset": "-980667"
+     },
+     {
+      "conta": "3.01",
+      "ds": "Receita de Venda de Bens e/ou Serviços",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "6130034",
+      "dataset": "6130034"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.11/ÚLTIMO",
+      "3.01/ÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Margem líquida do 1S26: -16,00% = -980.667 / 6.130.034 (R$ mil).",
+   "justificativa_disponibilidade": "Insumos no contexto (0/2): receita: ausente; resultado consolidado: ausente."
+  },
+  "AURE3_E2": {
+   "id": "AURE3_E2",
+   "ticker": "AURE3",
+   "categoria": "E2",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "presente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "1.01.01",
+      "ds": "Caixa e Equivalentes de Caixa",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2949774",
+      "dataset": "2949774"
+     },
+     {
+      "conta": "2.01.04",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "1936154",
+      "dataset": "1936154"
+     },
+     {
+      "conta": "2.02.01",
+      "ds": "Empréstimos e Financiamentos",
+      "ordem": "ÚLTIMO",
+      "periodo": "..2026-06-30",
+      "oficial": "2.171807E+7",
+      "dataset": "2.171807E+7"
+     }
+    ],
+    "e2": {
+     "caixa": "2949774.0000000000",
+     "divida": "23654224.0000000000",
+     "conclusao": "mais empréstimos e financiamentos"
+    },
+    "disp": {
+     "achados": [
+      "1.01.01/ÚLTIMO",
+      "2.01.04/ÚLTIMO",
+      "2.02.01/ÚLTIMO"
+     ],
+     "faltam": [],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Em 30/06/2026: caixa e equivalentes R$ 2.949.774 mil; empréstimos e financiamentos R$ 23.654.224 mil (circulante 1.936.154 + não circulante 21.718.070); mais empréstimos e financiamentos.",
+   "justificativa_disponibilidade": "Insumos no contexto (3/3): caixa: [BPA] Caixa e Equivalentes de Caixa                                 2.949.774  (anterior: 3.826.127); empréstimos circulante: [BPP] Empréstimos e Financiamentos                                  1.936.154  (anterior: 1.949.605); empréstimos não circulante: [BPP] Empréstimos e Financiamentos                                 21.718.070  (anterior: 22.735.718)"
+  },
+  "AURE3_E3": {
+   "id": "AURE3_E3",
+   "ticker": "AURE3",
+   "categoria": "E3",
+   "estrutura": "nao_financeira",
+   "disponibilidade": "ausente",
+   "atencao_humana": false,
+   "problemas": [],
+   "avisos": [],
+   "evidencia": {
+    "fontes": [
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "ÚLTIMO",
+      "periodo": "2026-01-01..2026-06-30",
+      "oficial": "-1321977",
+      "dataset": "-1321977"
+     },
+     {
+      "conta": "3.06",
+      "ds": "Resultado Financeiro",
+      "ordem": "PENÚLTIMO",
+      "periodo": "2025-01-01..2025-06-30",
+      "oficial": "-1376604",
+      "dataset": "-1376604"
+     }
+    ],
+    "disp": {
+     "achados": [],
+     "faltam": [
+      "3.06/ÚLTIMO",
+      "3.06/PENÚLTIMO"
+     ],
+     "via_dfc": false,
+     "tem_dre": false
+    }
+   },
+   "gabarito": "Resultado financeiro: 1S26 R$ -1.321.977 mil; 1S25 R$ -1.376.604 mil.",
+   "justificativa_disponibilidade": "Nenhuma linha de resultado financeiro no contexto."
+  }
+ }
+}

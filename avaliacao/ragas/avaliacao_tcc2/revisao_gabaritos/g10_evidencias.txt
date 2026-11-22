@@ -1,0 +1,349 @@
+============================== WEGE3_E3 nao_financeira v 1 presente | estimada presente
+P: Qual foi o resultado financeiro consolidado da WEG no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ 65.819 mil; 1S25 R$ 47.595 mil.
+JD: [DRE] Resultado Financeiro                                             65.819  (anterior: 47.595)
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 65819000 ['3.06'] None sinal True + monetario alt: []
+  VE resultado_financeiro_1s25 47595000 ['3.06'] None sinal True + monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26        3805395 | 1S25        3965329
+   DRE    3.06             Resultado Financeiro                                                   1S26          65819 | 1S25          47595
+   DRE    3.06.01          Receitas Financeiras                                                   1S26        1041799 | 1S25        1053266
+   DRE    3.06.02          Despesas Financeiras                                                   1S26        -975980 | 1S25       -1005671
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26        3871214 | 1S25        4012924
+   DFC_MI 6.01.01.10       Juros Provisionados de Empréstimos e Financiamentos                    1S26         143243 | 1S25          69283
+   DFC_MI 6.01.01.12       Rendimento s/ Aplicações Financeiras                                   1S26         -68753 | 1S25         -38640
+   DFC_MI 6.01.01.15       Provisão/Liquidação Instrumentos Financeiros Derivativos               1S26         -54518 | 1S25         219609
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26       -2366204 | 1S25       -3315490
+   DFC_MI 6.01.02.10       Juros pagos sobre empréstimos e financiamentos                         1S26         -96291 | 1S25         -63482
+-- contexto congelado:
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                        5.477.045  (anterior: 4.255.539)
+       Aplicações Financeiras                                        1.050.886  (anterior: 983.367)
+       Instrumentos Financeiros Derivativos                             17.424  (anterior: 25.146)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado          11.821  (anterior: 14.263)
+       Instrumentos Financeiros Derivativos                                336  (anterior: 0)
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro antes dos Impostos                                      3.871.214  (anterior: 4.012.924)
+       Juros Provisionados de Empréstimos e Financiamentos             143.243  (anterior: 69.283)
+       Rendimento s/ Aplicações Financeiras                            -68.753  (anterior: -38.640)
+       Provisão/Liquidação Instrumentos Financeiros Derivativos         -54.518  (anterior: 219.609)
+       Juros pagos sobre empréstimos e financiamentos                  -96.291  (anterior: -63.482)
+       Aplicações financeiras mantidas até o vencimento                 -1.929  (anterior: 0)
+       Resgate de aplicações financeiras                                 4.447  (anterior: 4.715)
+       Caixa Líquido Atividades de Financiamento                       627.839  (anterior: -2.735.574)
+       Captação de Empréstimos e Financiamentos Obtidos              2.521.389  (anterior: 1.272.568)
+       Pagamento de Empréstimos e Financiamentos                    -1.893.429  (anterior: -2.205.766)
+       Pagamento de Dividendos/Juros s/ Capital Próprio                 -3.713  (anterior: -1.806.637)
+       Variação Cambial s/ Caixa e Equivalentes                       -208.495  (anterior: -273.719)
+   [tabela] [TABELA | Demonstração de Resultado (Consolidado)]
+       Resultado Antes do Resultado Financeiro e dos Tributos        3.805.395  (anterior: 3.965.329)
+       Resultado Financeiro                                             65.819  (anterior: 47.595)
+       Receitas Financeiras                                          1.041.799  (anterior: 1.053.266)
+       Despesas Financeiras                                           -975.980  (anterior: -1.005.671)
+       Resultado Antes dos Tributos sobre o Lucro                    3.871.214  (anterior: 4.012.924)
+============================== ZAMP3_E3 nao_financeira v 1 presente | estimada presente
+P: Qual foi o resultado financeiro consolidado da Zamp no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ -169.280 mil; 1S25 R$ -144.604 mil.
+JD: [DRE] Resultado Financeiro                                           -169.280  (anterior: -144.604)
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 -169280000 ['3.06'] None sinal True - monetario alt: []
+  VE resultado_financeiro_1s25 -144604000 ['3.06'] None sinal True - monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26          26758 | 1S25          22533
+   DRE    3.06             Resultado Financeiro                                                   1S26        -169280 | 1S25        -144604
+   DRE    3.06.01          Receitas Financeiras                                                   1S26          40322 | 1S25          33214
+   DRE    3.06.02          Despesas Financeiras                                                   1S26        -209602 | 1S25        -177818
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26        -142522 | 1S25        -122071
+   DFC_MI 6.01.01.04       Juros, encargos, variação cambial, variação monetária e AVP sobre pass 1S26         162230 | 1S25         103419
+   DFC_MI 6.01.01.09       PDD e baixa de ativos não financeiros                                  1S26           9152 | 1S25           2444
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26        -553470 | 1S25        -440481
+   DFC_MI 6.01.02.07       Salários e encargos sociais                                            1S26         -34976 | 1S25          -4358
+   DFC_MI 6.01.02.12       Instrumentos financeiros derivativos                                   1S26              0 | 1S25              0
+   DFC_MI 6.01.02.14       Pagamentos de juros sobre empréstimos e financiamentos                 1S26         -82888 | 1S25         -76896
+   DFC_MI 6.01.02.17       Pagamentos de juros sobre passivos de arrendamentos                    1S26         -13541 | 1S25         -14464
+-- contexto congelado:
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                          232.894  (anterior: 369.668)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado         232.894  (anterior: 369.668)
+       Instrumentos financeiros derivativos                             11.730  (anterior: 6.760)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado               0  (anterior: 480)
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Prejuízo antes do imposto de renda e contribuição social        -142.522  (anterior: -122.071)
+       Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos         162.230  (anterior: 103.419)
+       PDD e baixa de ativos não financeiros                             9.152  (anterior: 2.444)
+       Salários e encargos sociais                                     -34.976  (anterior: -4.358)
+       Pagamentos de juros sobre empréstimos e financiamentos          -82.888  (anterior: -76.896)
+       Pagamentos de juros sobre passivos de arrendamentos             -13.541  (anterior: -14.464)
+       Caixa Líquido Atividades de Financiamento                       143.953  (anterior: -305.791)
+       Captação de empréstimos e financiamentos                        500.000  (anterior: 0)
+       Pagamentos de empréstimos e financiamentos (principal)         -222.218  (anterior: -182.718)
+   [tabela] [TABELA | Demonstração de Resultado (Consolidado)]
+       Resultado Antes do Resultado Financeiro e dos Tributos           26.758  (anterior: 22.533)
+       Resultado Financeiro                                           -169.280  (anterior: -144.604)
+       Receitas Financeiras                                             40.322  (anterior: 33.214)
+       Despesas Financeiras                                           -209.602  (anterior: -177.818)
+       Resultado Antes dos Tributos sobre o Lucro                     -142.522  (anterior: -122.071)
+============================== LWSA3_E3 nao_financeira v 1 ausente | estimada ausente
+P: Qual foi o resultado financeiro consolidado da Locaweb no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ 6.396 mil; 1S25 R$ -16.390 mil.
+JD: Nenhuma linha de resultado financeiro no contexto.
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 6396000 ['3.06'] None sinal True + monetario alt: []
+  VE resultado_financeiro_1s25 -16390000 ['3.06'] None sinal True - monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26          90032 | 1S25          67192
+   DRE    3.06             Resultado Financeiro                                                   1S26           6396 | 1S25         -16390
+   DRE    3.06.01          Receitas Financeiras                                                   1S26          21201 | 1S25          31345
+   DRE    3.06.02          Despesas Financeiras                                                   1S26         -14805 | 1S25         -47735
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26          96428 | 1S25          50802
+   DFC_MI 6.01.01.04       Juros, derivativos e variação cambiais e monetárias                    1S26           1952 | 1S25           1200
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26          10980 | 1S25           2364
+   DFC_MI 6.01.02.07       Pessoal, encargos e benefícios sociais                                 1S26          -5528 | 1S25           9022
+   DFC_MI 6.01.02.11       Juros pagos                                                            1S26              0 | 1S25              0
+-- contexto congelado:
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro (prejuízo) antes do imposto de renda e contribuição social          96.428  (anterior: 50.802)
+       Juros, derivativos e variação cambiais e monetárias               1.952  (anterior: 1.200)
+       Pessoal, encargos e benefícios sociais                           -5.528  (anterior: 9.022)
+       Ativos financeiros                                                 -249  (anterior: -1.255)
+       Caixa Líquido Atividades de Financiamento                      -161.682  (anterior: -36.830)
+       Empréstimos e financiamentos pagos                                    0  (anterior: -2)
+       Dividendos e juros sobre capital próprio pagos                 -139.999  (anterior: 0)
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                           90.069  (anterior: 92.731)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado          90.069  (anterior: 92.731)
+       Instrumentos Financeiros Derivativos                                  0  (anterior: 61)
+       Ativos Financeiros                                               13.316  (anterior: 13.501)
+   [tabela] [TABELA | Balanço Patrimonial — Passivo (Consolidado)]
+       Empréstimos e Financiamentos                                     19.361  (anterior: 18.769)
+       Financiamento por Arrendamento                                   19.361  (anterior: 18.769)
+       Pessoal, encargos e benefícios sociais                          109.692  (anterior: 115.154)
+       Instrumentos financeiros derivativos                              3.222  (anterior: 0)
+       Empréstimos e Financiamentos                                     52.554  (anterior: 56.704)
+       Financiamento por Arrendamento                                   52.554  (anterior: 56.704)
+============================== LAVV3_E3 nao_financeira v 1 presente | estimada presente
+P: Qual foi o resultado financeiro consolidado da Lavvi no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ 3.044 mil; 1S25 R$ 18.469 mil.
+JD: [DRE] Resultado Financeiro                                              3.044  (anterior: 18.469)
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 3044000 ['3.06'] None sinal True + monetario alt: []
+  VE resultado_financeiro_1s25 18469000 ['3.06'] None sinal True + monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26         193952 | 1S25         228759
+   DRE    3.06             Resultado Financeiro                                                   1S26           3044 | 1S25          18469
+   DRE    3.06.01          Receitas Financeiras                                                   1S26          69098 | 1S25          58355
+   DRE    3.06.02          Despesas Financeiras                                                   1S26         -66054 | 1S25         -39886
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26         196996 | 1S25         247228
+   DFC_MI 6.01.01.04       Juros e variações monetárias sobre empréstimos e CRI                   1S26          77887 | 1S25          25475
+   DFC_MI 6.01.01.06       Juros incorridos sobre arrendamento                                    1S26              0 | 1S25              0
+   DFC_MI 6.01.01.15       Rendimentos de titulos e valores mobiliarios                           1S26         -62830 | 1S25         -48780
+   DFC_MI 6.01.01.16       Juros ativos sobre empréstimos e mútuos                                1S26          -2645 | 1S25              0
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26        -211487 | 1S25        -231738
+   DFC_MI 6.01.02.08       Salários, encargos sociais                                             1S26           1727 | 1S25          -1572
+   DFC_MI 6.01.03.02       Juros pagos                                                            1S26         -70200 | 1S25         -32468
+-- contexto congelado:
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro (prejuízo) antes do imposto de renda e contribuição social         196.996  (anterior: 247.228)
+       Juros e variações monetárias sobre empréstimos e CRI             77.887  (anterior: 25.475)
+       Rendimentos de titulos e valores mobiliarios                    -62.830  (anterior: -48.780)
+       Juros ativos sobre empréstimos e mútuos                          -2.645  (anterior: 0)
+       Salários, encargos sociais                                        1.727  (anterior: -1.572)
+       Juros pagos                                                     -70.200  (anterior: -32.468)
+       Aplicações financeiras                                           39.542  (anterior: 66.272)
+       Caixa Líquido Atividades de Financiamento                       101.569  (anterior: 56.107)
+       Empréstimos e financiamentos e CRI - Ingressos                  337.810  (anterior: 319.729)
+       Empréstimos e financiamentos e CRI - Amortização               -184.568  (anterior: -137.494)
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                          744.680  (anterior: 721.673)
+       Aplicações Financeiras Avaliadas ao Custo Amortizado            744.680  (anterior: 721.673)
+       Aplicações Financeiras Avaliadas ao Custo Amortizado              6.766  (anterior: 6.485)
+   [tabela] [TABELA | Demonstração de Resultado (Consolidado)]
+       Resultado Antes do Resultado Financeiro e dos Tributos          193.952  (anterior: 228.759)
+       Resultado Financeiro                                              3.044  (anterior: 18.469)
+       Receitas Financeiras                                             69.098  (anterior: 58.355)
+       Despesas Financeiras                                            -66.054  (anterior: -39.886)
+       Resultado Antes dos Tributos sobre o Lucro                      196.996  (anterior: 247.228)
+============================== POMO4_E3 nao_financeira v 1 ausente | estimada ausente
+P: Qual foi o resultado financeiro consolidado da Marcopolo no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ 98.715 mil; 1S25 R$ 152.020 mil.
+JD: Nenhuma linha de resultado financeiro no contexto.
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 98715000 ['3.06'] None sinal True + monetario alt: []
+  VE resultado_financeiro_1s25 152020000 ['3.06'] None sinal True + monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26         557555 | 1S25         583010
+   DRE    3.06             Resultado Financeiro                                                   1S26          98715 | 1S25         152020
+   DRE    3.06.01          Receitas Financeiras                                                   1S26         409208 | 1S25         507762
+   DRE    3.06.02          Despesas Financeiras                                                   1S26        -310493 | 1S25        -355742
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26         656270 | 1S25         735030
+   DFC_MI 6.01.01.07       Juros e variações apropriados                                          1S26         -11539 | 1S25        -113165
+   DFC_MI 6.01.01.09       Variação em ativos mensurados ao valor justo                           1S26           -974 | 1S25           3883
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26        -791141 | 1S25        -518073
+-- contexto congelado:
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                            1.127  (anterior: 145)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado           1.127  (anterior: 145)
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Juros e variações apropriados                                   -11.539  (anterior: -113.165)
+       Caixa Líquido Atividades de Financiamento                      -405.961  (anterior: -182.880)
+       Pagamento de empréstimos - juros                                -95.387  (anterior: -86.062)
+       Pagamento dos juros sobre capital próprio e dividendos         -105.518  (anterior: -354.793)
+       Variação Cambial s/ Caixa e Equivalentes                        -10.633  (anterior: -25.988)
+   [tabela] [TABELA | Balanço Patrimonial — Passivo (Consolidado)]
+       Empréstimos e Financiamentos                                  1.089.436  (anterior: 1.193.030)
+       Empréstimos e Financiamentos                                  1.089.436  (anterior: 1.193.030)
+       Instrumentos financeiros derivativos                              3.935  (anterior: 10.664)
+       Empréstimos e Financiamentos                                  2.310.995  (anterior: 2.499.504)
+       Empréstimos e Financiamentos                                  2.310.995  (anterior: 2.499.504)
+============================== CEAB3_E3 nao_financeira v 1 presente | estimada presente
+P: Qual foi o resultado financeiro consolidado da C&A no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ -132.964 mil; 1S25 R$ -164.219 mil.
+JD: [DRE] Resultado Financeiro                                           -132.964  (anterior: -164.219)
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 -132964000 ['3.06'] None sinal True - monetario alt: []
+  VE resultado_financeiro_1s25 -164219000 ['3.06'] None sinal True - monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26         372911 | 1S25         453017
+   DRE    3.06             Resultado Financeiro                                                   1S26        -132964 | 1S25        -164219
+   DRE    3.06.01          Receitas Financeiras                                                   1S26         105906 | 1S25         132529
+   DRE    3.06.01.01       Receitas Financeiras                                                   1S26         100598 | 1S25         133905
+   DRE    3.06.01.02       Variação Cambial                                                       1S26           5308 | 1S25          -1376
+   DRE    3.06.02          Despesas Financeiras                                                   1S26        -238870 | 1S25        -296748
+   DRE    3.06.02.01       Despesas Financeiras                                                   1S26        -238870 | 1S25        -296748
+   DRE    3.06.02.03       Resultado com derivativos                                              1S26              0 | 1S25              0
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26         239947 | 1S25         288798
+   DFC_MI 6.01.01.04       Juros, variações monetárias e cambiais                                 1S26         147917 | 1S25         222874
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26        -381868 | 1S25        -708314
+-- contexto congelado:
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                          241.286  (anterior: 268.854)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado         241.286  (anterior: 268.854)
+       Instrumentos Financeiros Derivativos                                950  (anterior: 2.552)
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro (Prejuízo) antes dos impostos sobre a venda               239.947  (anterior: 288.798)
+       Juros, variações monetárias e cambiais                          147.917  (anterior: 222.874)
+       Caixa Líquido Atividades de Financiamento                      -435.240  (anterior: -620.841)
+       Pagamento de juros sobre empréstimos                            -68.348  (anterior: -89.248)
+       Pagamento do principal e juros de arrendamentos                -282.787  (anterior: -266.905)
+   [tabela] [TABELA | Demonstração de Resultado (Consolidado)]
+       Resultado Antes do Resultado Financeiro e dos Tributos          372.911  (anterior: 453.017)
+       Resultado Financeiro                                           -132.964  (anterior: -164.219)
+       Receitas Financeiras                                            105.906  (anterior: 132.529)
+       Receitas Financeiras                                            100.598  (anterior: 133.905)
+       Variação Cambial                                                  5.308  (anterior: -1.376)
+       Despesas Financeiras                                           -238.870  (anterior: -296.748)
+       Despesas Financeiras                                           -238.870  (anterior: -296.748)
+       Resultado Antes dos Tributos sobre o Lucro                      239.947  (anterior: 288.798)
+============================== AURE3_E3 nao_financeira v 1 ausente | estimada ausente
+P: Qual foi o resultado financeiro consolidado da Auren Energia no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ -1.321.977 mil; 1S25 R$ -1.376.604 mil.
+JD: Nenhuma linha de resultado financeiro no contexto.
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 -1321977000 ['3.06'] None sinal True - monetario alt: []
+  VE resultado_financeiro_1s25 -1376604000 ['3.06'] None sinal True - monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26         289690 | 1S25        1001483
+   DRE    3.06             Resultado Financeiro                                                   1S26       -1321977 | 1S25       -1376604
+   DRE    3.06.01          Receitas Financeiras                                                   1S26         563672 | 1S25         511490
+   DRE    3.06.02          Despesas Financeiras                                                   1S26       -1885649 | 1S25       -1888094
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26       -1032287 | 1S25        -375121
+   DFC_MI 6.01.01.05       Instrumentos financeiros derivativos                                   1S26         108403 | 1S25         -29599
+   DFC_MI 6.01.01.06       Rendimento sobre fundo de reserva                                      1S26         -77120 | 1S25         -57621
+   DFC_MI 6.01.01.08       Juros e variações monetárias                                           1S26        1519355 | 1S25        1531816
+   DFC_MI 6.01.01.11       Hedge financeiro sobre importação                                      1S26              0 | 1S25              0
+   DFC_MI 6.01.01.17       Valor justo dos empréstimos, financiamentos e debêntures               1S26        -130289 | 1S25          37721
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26         -47930 | 1S25          36267
+   DFC_MI 6.01.02.08       Instrumentos financeiros derivativos                                   1S26          13408 | 1S25         228274
+   DFC_MI 6.01.02.11       Encargos setoriais                                                     1S26          -4130 | 1S25           5662
+   DFC_MI 6.01.03.01       Juros pagos sobre empréstimos, financiamentos e debêntures             1S26       -1051571 | 1S25       -1161462
+   DFC_MI 6.01.03.03       Pagamento de juros sobre passivo de arrendamento                       1S26          -5213 | 1S25          -5299
+   DFC_MI 6.01.03.04       Juros pagos sobre instrumentos derivativos                             1S26        -107242 | 1S25         -92984
+-- contexto congelado:
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro (prejuízo) antes do imposto de renda e da contribuição social      -1.032.287  (anterior: -375.121)
+       Instrumentos financeiros derivativos                            108.403  (anterior: -29.599)
+       Rendimento sobre fundo de reserva                               -77.120  (anterior: -57.621)
+       Juros e variações monetárias                                  1.519.355  (anterior: 1.531.816)
+       Valor justo dos empréstimos, financiamentos e debêntures        -130.289  (anterior: 37.721)
+       Instrumentos financeiros derivativos                             13.408  (anterior: 228.274)
+       Encargos setoriais                                               -4.130  (anterior: 5.662)
+       Juros pagos sobre empréstimos, financiamentos e debêntures      -1.051.571  (anterior: -1.161.462)
+       Pagamento de juros sobre passivo de arrendamento                 -5.213  (anterior: -5.299)
+       Juros pagos sobre instrumentos derivativos                     -107.242  (anterior: -92.984)
+       Resgate de aplicações financeiras                              -127.662  (anterior: -23.125)
+       Recebimento de dividendos e juros sobre capital próprio         216.499  (anterior: 46.288)
+       Caixa Líquido Atividades de Financiamento                    -1.472.263  (anterior: -3.011.435)
+       Liquidação de empréstimos, financiamentos e debêntures       -1.377.223  (anterior: -4.790.176)
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                          689.034  (anterior: 556.295)
+       Instrumentos financeiros derivativos                              5.216  (anterior: 139)
+       Instrumentos financeiros derivativos                            161.157  (anterior: 179.035)
+   [tabela] [TABELA | Balanço Patrimonial — Passivo (Consolidado)]
+       Empréstimos e Financiamentos                                  1.936.154  (anterior: 1.949.605)
+       Empréstimos e Financiamentos                                  1.922.546  (anterior: 1.938.340)
+       Financiamento por Arrendamento                                   13.608  (anterior: 11.265)
+       Instrumentos financeiros derivativos                            159.478  (anterior: 190.187)
+       Encargos setoriais                                               50.284  (anterior: 54.414)
+       Empréstimos e Financiamentos                                 21.718.070  (anterior: 22.735.718)
+       Empréstimos e Financiamentos                                 21.568.987  (anterior: 22.582.913)
+       Financiamento por Arrendamento                                  149.083  (anterior: 152.805)
+       Instrumentos financeiros derivativos                                  0  (anterior: 3.675)
+============================== ITSA4_E3 holding v 2 presente | estimada presente
+P: Qual foi o resultado financeiro consolidado da Itaúsa no primeiro semestre de 2026 e como ele se compara ao do primeiro semestre de 2025? Informe o valor de cada período.
+G: Resultado financeiro: 1S26 R$ 193.000 mil; 1S25 R$ -844.000 mil.
+JD: [DRE] Resultado Financeiro                                            193.000  (anterior: -844.000)
+DIV: False None
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S26 (01/01/2026 a 30/06/2026) ÚLTIMO
+FG: itr_cia_aberta_DRE_con_2026.csv 3.06 Resultado Financeiro 1S25 (01/01/2025 a 30/06/2025) PENÚLTIMO
+  VE resultado_financeiro_1s26 193000000 ['3.06'] None sinal True + monetario alt: []
+  VE resultado_financeiro_1s25 -844000000 ['3.06'] None sinal True - monetario alt: []
+-- oficial DRE 3.06*, 3.05, 3.07 e DFC com financ/juros (acumulado):
+   DRE    3.05             Resultado Antes do Resultado Financeiro e dos Tributos                 1S26        9832000 | 1S25        8794000
+   DRE    3.06             Resultado Financeiro                                                   1S26         193000 | 1S25        -844000
+   DRE    3.06.01          Receitas Financeiras                                                   1S26        1581000 | 1S25         500000
+   DRE    3.06.02          Despesas Financeiras                                                   1S26       -1388000 | 1S25       -1344000
+   DRE    3.07             Resultado Antes dos Tributos sobre o Lucro                             1S26       10025000 | 1S25        7950000
+   DFC_MI 6.01.01.03       Variação do valor justo dos Títulos e valores mobiliários              1S26          10000 | 1S25          10000
+   DFC_MI 6.01.01.05       Juros e variações cambiais e monetárias (líquidas)                     1S26         817000 | 1S25         833000
+   DFC_MI 6.01.01.07       Variação do valor justo dos Ativos biológicos                          1S26         -78000 | 1S25        -116000
+   DFC_MI 6.01.02          Variações nos Ativos e Passivos                                        1S26        -800000 | 1S25        -294000
+   DFC_MI 6.01.03.02       Juros pagos sobre Empréstimos, financiamentos e Debêntures             1S26        -486000 | 1S25        -387000
+-- contexto congelado:
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+       Lucro antes do imposto de renda e da contribuição social      10.025.000  (anterior: 7.950.000)
+       Juros e variações cambiais e monetárias (líquidas)              817.000  (anterior: 833.000)
+       Juros pagos sobre Empréstimos, financiamentos e Debêntures        -486.000  (anterior: -387.000)
+       Juros sobre o capital próprio e Dividendos recebidos          1.798.000  (anterior: 7.954.000)
+       (Aplicação) Resgastes de aplicações financeiras                  53.000  (anterior: -77.000)
+       Caixa Líquido Atividades de Financiamento                    -1.022.000  (anterior: -7.070.000)
+       Juros sobre o capital próprio e Dividendos pagos               -704.000  (anterior: -7.524.000)
+       Ingresso de Empréstimos, Financiamentos e Debêntures            293.000  (anterior: 498.000)
+       Amortização de Empréstimos, Financiamentos e Debêntures        -615.000  (anterior: -400.000)
+       Variação Cambial s/ Caixa e Equivalentes                         13.000  (anterior: -11.000)
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)]
+       Aplicações Financeiras                                        1.823.000  (anterior: 1.880.000)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado       1.823.000  (anterior: 1.880.000)
+       Ativos Financeiros Mensurados ao Valor Justo por meio do Resultado         318.000  (anterior: 351.000)
+       Dividendos e Juros sobre o Capital Próprio                    2.500.000  (anterior: 1.475.000)
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado         186.000  (anterior: 173.000)
+   [tabela] [TABELA | Demonstração de Resultado (Consolidado)]
+       Resultado Antes do Resultado Financeiro e dos Tributos        9.832.000  (anterior: 8.794.000)
+       Resultado Financeiro                                            193.000  (anterior: -844.000)
+       Receitas Financeiras                                          1.581.000  (anterior: 500.000)
+       Despesas Financeiras                                         -1.388.000  (anterior: -1.344.000)
+       Resultado Antes dos Tributos sobre o Lucro                   10.025.000  (anterior: 7.950.000)

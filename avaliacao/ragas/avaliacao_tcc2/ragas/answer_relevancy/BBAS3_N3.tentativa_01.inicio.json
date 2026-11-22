@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "BBAS3_N3",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:27:26+00:00",
+  "sha256_resposta": "0bb745dc9306dbeda2dd76eabf7a0e80e0a1b5b53006b1c778e1ca0ef5ab0679",
+  "sha256_registro": "ee5e71a4030cf2f6f73c57a38c361c37ad283209f8befef8dd36115b1ebd8f66"
+}

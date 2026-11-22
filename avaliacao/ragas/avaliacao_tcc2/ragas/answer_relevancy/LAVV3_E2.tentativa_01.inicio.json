@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "LAVV3_E2",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:37:53+00:00",
+  "sha256_resposta": "386da40604af5d7a6245e6a9d48c8427a219b1238dd2936527c93be6b957c3ec",
+  "sha256_registro": "1f0816200b5af7c91b15fadbb274303f93d1bfcbb33e2d0a6904a252ff02205a"
+}

@@ -1,0 +1,13 @@
+# Fixtures de teste e artefatos congelados da validação manual são guardados
+# byte a byte, sem conversão de fim de linha: os testes comparam o conteúdo
+# exato (tests/fixtures/contextos) e os .sha256 da validação conferem os
+# documentos como foram gravados (CRLF, no Windows). Sem isto, um checkout
+# com core.autocrlf=false ou fora do Windows alterava esses arquivos.
+tests/fixtures/**             -text
+avaliacao/validacao_manual/** -text
+# Artefatos do experimento RAGAS do TCC 2 (dataset, protocolo, rubrica,
+# gabaritos e scripts): os SHA-256 registrados valem para os bytes exatos.
+avaliacao/ragas/**           -text
+# Evidência da demonstração web de 11/11/2026: o MANIFESTO registra os SHA-256
+# dos arquivos como foram gravados (CRLF, no Windows).
+avaliacao/demonstracao_web_2026-11-11/** -text

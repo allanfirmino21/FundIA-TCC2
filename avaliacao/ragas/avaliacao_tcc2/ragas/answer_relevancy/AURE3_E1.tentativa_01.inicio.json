@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "AURE3_E1",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:46:48+00:00",
+  "sha256_resposta": "8a7d9e4d52dbff5e882f5b2096821a581cc1a54bc38c3bc4ebcbec189badf882",
+  "sha256_registro": "402542b71e81a7c1564f6793d8ca82de63f1a43a4ed6274082468c04796627cd"
+}

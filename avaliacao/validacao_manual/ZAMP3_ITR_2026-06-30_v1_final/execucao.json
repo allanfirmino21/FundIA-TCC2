@@ -1,0 +1,133 @@
+{
+  "chamada": "analisar(\"ZAMP3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-26T21:41:54.770291+00:00",
+  "fim_utc": "2026-09-26T21:43:09.431025+00:00",
+  "segundos_import": 38.1,
+  "segundos_analisar": 36.4,
+  "ticker": "ZAMP3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\ZAMP3_ITR_2026-06-30.txt",
+  "fonte_sha256": "044d8ad11f532cc3f65127a798d06bd689aad50f20da38a0b42e80d0f3bcf983",
+  "fonte_copia": "avaliacao\\validacao_manual\\ZAMP3_ITR_2026-06-30_v1_final\\ZAMP3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 24317",
+    "VERSAO: 1"
+  ],
+  "git_commit": "e4d96e1b1a12dd025b44c5c3f3f783bc366b2cf5",
+  "git_commit_antes_da_execucao": "e4d96e1b1a12dd025b44c5c3f3f783bc366b2cf5",
+  "working_tree_antes_da_execucao": "?? avaliacao/validacao_manual/BBAS3_ITR_2026-06-30_v1_final/\n?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_final/\n",
+  "git_status_depois": "?? avaliacao/validacao_manual/BBAS3_ITR_2026-06-30_v1_final/\n?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_final/\n?? avaliacao/validacao_manual/ZAMP3_ITR_2026-06-30_v1_final/\n",
+  "ctx_num_chars": 8541,
+  "ctx_nar_chars": 195,
+  "ctx_num_trechos": [
+    "Balanço Patrimonial — Ativo (Consolidado)",
+    "Demonstração de Fluxo de Caixa (Consolidado)",
+    "Demonstração de Resultado (Consolidado)"
+  ],
+  "ctx_num_secoes": [
+    "Balanço Patrimonial — Ativo (Consolidado)",
+    "Demonstração de Fluxo de Caixa (Consolidado)",
+    "Demonstração de Resultado (Consolidado)"
+  ],
+  "ctx_nar_secoes": [
+    "Cabeçalho"
+  ],
+  "ctx_nar_tem_tabela": false,
+  "ctx_nar": "=== CONTEXTO NARRATIVO ===\n----------------------------------------\n[Trecho 1]\n[SEÇÃO: Cabeçalho]\nDOCUMENTO: ITR — 2026-06-30\nEMPRESA CVM: 24317\nVERSAO: 1\n----------------------------------------",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-26T21:42:32.844802+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-26T21:42:32.896248+00:00",
+      "etapa": "1/8",
+      "msg": "OK: ZAMP SA (24317)"
+    },
+    {
+      "t": "2026-09-26T21:42:32.896248+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-26T21:42:32.933255+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-08-07)"
+    },
+    {
+      "t": "2026-09-26T21:42:32.933255+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-26T21:42:32.951550+00:00",
+      "etapa": "3/8",
+      "msg": "OK: Cache local reutilizado (35 KB)"
+    },
+    {
+      "t": "2026-09-26T21:42:32.951550+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-26T21:42:32.952551+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (34,906 caracteres)"
+    },
+    {
+      "t": "2026-09-26T21:42:32.952551+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-26T21:42:43.269945+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-26T21:42:43.269945+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-26T21:42:52.953987+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (8,541 chars numericos, 195 narrativos)"
+    },
+    {
+      "t": "2026-09-26T21:42:52.953987+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-26T21:42:52.959165+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-26T21:43:09.188607+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-26T21:43:09.233604+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 47/47 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-26T21:43:09.233604+00:00",
+      "etapa": "OK",
+      "msg": "Analise de ZAMP3 concluida."
+    }
+  ]
+}

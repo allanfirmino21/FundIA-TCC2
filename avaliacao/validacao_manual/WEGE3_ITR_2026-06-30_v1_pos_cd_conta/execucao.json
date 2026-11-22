@@ -1,0 +1,119 @@
+{
+  "chamada": "analisar(\"WEGE3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-24T01:49:14.523322+00:00",
+  "fim_utc": "2026-09-24T01:51:51.656111+00:00",
+  "segundos_import": 100.0,
+  "segundos_analisar": 56.8,
+  "ticker": "WEGE3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\WEGE3_ITR_2026-06-30.txt",
+  "fonte_sha256": "500d0c0d51df24cf9d0a166c24f3eea033b74a6eb63285cc4349036857bb8ba6",
+  "fonte_copia": "avaliacao\\validacao_manual\\WEGE3_ITR_2026-06-30_v1_pos_cd_conta\\WEGE3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 5410",
+    "VERSAO: 1"
+  ],
+  "git_commit": "657a225b4f2ac10603a7275a9b6218f22a619230",
+  "git_status": " M NOTAS_DESENVOLVIMENTO.md\n M modulos/chunking.py\n M modulos/cvm.py\n M modulos/metricas.py\n M modulos/orquestrador.py\n M tests/test_periodo_versao.py\n?? avaliacao/validacao_manual/RELATORIO_validacao_manual.md\n?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_pos_cd_conta/\n?? tests/fixtures/\n?? tests/test_cd_conta.py\n",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-24T01:50:54.560909+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-24T01:50:54.562154+00:00",
+      "etapa": "1/8",
+      "msg": "OK: WEG S.A. (5410)"
+    },
+    {
+      "t": "2026-09-24T01:50:54.562154+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-24T01:50:54.644849+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-07-22)"
+    },
+    {
+      "t": "2026-09-24T01:50:54.644849+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-24T01:50:54.647030+00:00",
+      "etapa": "3/8",
+      "msg": "Cache WEGE3_ITR_2026-06-30.txt nao corresponde a CVM 5410 / ITR 2026-06-30 versao 1 — descartando e baixando novamente."
+    },
+    {
+      "t": "2026-09-24T01:50:58.573918+00:00",
+      "etapa": "3/8",
+      "msg": "OK: WEGE3_ITR_2026-06-30.txt baixado (36 KB)"
+    },
+    {
+      "t": "2026-09-24T01:50:58.573918+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-24T01:50:58.598761+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (36,378 caracteres)"
+    },
+    {
+      "t": "2026-09-24T01:50:58.598761+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-24T01:51:11.704954+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-24T01:51:11.705953+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-24T01:51:20.673862+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (10,620 chars numericos, 2,059 narrativos)"
+    },
+    {
+      "t": "2026-09-24T01:51:20.673862+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-24T01:51:20.676870+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-24T01:51:51.390512+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-24T01:51:51.399684+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 32/32 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-24T01:51:51.399684+00:00",
+      "etapa": "OK",
+      "msg": "Analise de WEGE3 concluida."
+    }
+  ]
+}

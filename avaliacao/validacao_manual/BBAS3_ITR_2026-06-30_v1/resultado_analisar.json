@@ -1,0 +1,355 @@
+{
+  "ticker": "BBAS3",
+  "tipo_documento": "ITR",
+  "etapas": {
+    "validacao": "ok",
+    "busca_cvm": "ok",
+    "download": "ok",
+    "extracao": {
+      "status": "ok",
+      "secoes": 6
+    },
+    "indexacao": {
+      "status": "ok",
+      "chunks": 6
+    },
+    "recuperacao": "ok",
+    "geracao": "ok",
+    "auditoria": "ok"
+  },
+  "analise": {
+    "dados_extraidos": {
+      "periodo_referencia": "2026-06-30",
+      "periodos": {
+        "periodo_atual": "1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026",
+        "comparacao_resultado": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "comparacao_balanco": "31/12/2025 (fechamento do exercício anterior)",
+        "nota": "No ITR, receita e lucro são acumulados desde o início do ano e comparam com o mesmo período acumulado do ano anterior; caixa, dívidas e demais contas do balanço são posições na data de referência e comparam com o fechamento do exercício anterior (31/12)."
+      },
+      "base_dados": "Consolidado",
+      "escala_original": "R$ milhares (mil reais)",
+      "metodo_calculo": "deterministico_python",
+      "receita_principal": {
+        "descricao": "Receitas de Intermediação Financeira",
+        "valor_atual": "R$ 160,75 bilhões",
+        "valor_anterior": "R$ 149,25 bilhões",
+        "variacao_pct": "+7,7%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+      },
+      "lucro_liquido": {
+        "valor_atual": "R$ 6,36 bilhões",
+        "valor_anterior": "R$ 7,76 bilhões",
+        "variacao_pct": "-18,0%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "interpretacao_variacao": "o lucro caiu 18,0%",
+        "margem_liquida_pct": "3,96%",
+        "contexto_por_100_reais": "a cada R$ 100 de receita, sobraram R$ 3,96 de lucro"
+      },
+      "ebitda": {
+        "valor_atual": "nao_aplicavel",
+        "margem_pct": "nao_aplicavel",
+        "nota": "EBITDA não é um indicador usado para instituições financeiras: o resultado de um banco vem da intermediação financeira (juros e captação), não de uma operação industrial ou comercial."
+      },
+      "endividamento": {
+        "criterio": "Instituição financeira: dívida líquida e liquidez total não são indicadores usados para bancos — captar recursos (depósitos, mercado aberto) é parte da operação bancária. Indicadores de referência: depósitos de clientes e captação no mercado aberto.",
+        "divida_bruta": "nao_aplicavel",
+        "divida_liquida": "nao_aplicavel",
+        "caixa_e_equivalentes": "R$ 65,02 bilhões",
+        "caixa_anterior": "R$ 59,64 bilhões",
+        "variacao_caixa_pct": "+9,0%",
+        "depositos": "R$ 954,02 bilhões",
+        "depositos_anterior": "R$ 897,94 bilhões",
+        "variacao_depositos_pct": "+6,2%",
+        "captacao_mercado_aberto": "nao_disponivel",
+        "comparacao": "31/12/2025 (fechamento do exercício anterior)",
+        "nota": "Dívida líquida não se aplica a bancos. A análise de solidez de um banco usa outros indicadores (ex.: índice de Basileia, inadimplência), que não constam nos dados estruturados da CVM."
+      },
+      "outros_destaques": [
+        "Depósitos de clientes: R$ 954,02 bilhões (variação +6,2%)",
+        "Patrimônio Líquido: R$ 190,77 bilhões (variação -1,4%)",
+        "Ativo Total: R$ 2,59 trilhões (variação +5,4%)",
+        "Lucro atribuído a sócios da controladora: R$ 4,79 bilhões"
+      ],
+      "dados_ausentes": [],
+      "advertencias": []
+    },
+    "secoes": {
+      "RESUMO": "O Banco do Brasil S.A. apresentou um desempenho misto no 1º semestre (6 meses acumulados) de 2026. Embora a empresa tenha aumentado suas receitas de intermediação financeira em 7,7%, o lucro líquido caiu 18,0%, atingindo R$ 6,36 bilhões. A saúde do caixa melhorou, com mais dinheiro disponível e um aumento nos depósitos de clientes. A queda do lucro, apesar do crescimento da receita, é o ponto que mais merece atenção.",
+      "O QUE A EMPRESA FATURA": "O Banco do Brasil S.A. gera suas receitas principalmente através da intermediação financeira, que é a sua atividade central como banco. Isso inclui juros de empréstimos, rendimentos de investimentos e tarifas de serviços. Nesse período, a empresa faturou R$ 160,75 bilhões em receitas de intermediação financeira. Esse valor representa um crescimento de 7,7% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior).",
+      "LUCRO": "A empresa registrou um lucro líquido de R$ 6,36 bilhões neste período. No entanto, esse resultado representa uma queda de 18,0% em relação ao 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o lucro foi de R$ 7,76 bilhões. Isso significa que, a cada R$ 100 que a empresa faturou, sobraram R$ 3,96 de lucro. Apesar do aumento nas receitas, o lucro diminuiu, indicando que os custos ou despesas podem ter crescido em proporção maior ou que outros fatores impactaram a rentabilidade.",
+      "SAUDE DO CAIXA E DIVIDAS": "Para um banco, a dívida líquida não é um indicador utilizado, pois captar recursos (como depósitos de clientes e dinheiro no mercado aberto) faz parte do seu modelo de negócio, e não é um sinal de endividamento no sentido tradicional.\n\nO dinheiro disponível da empresa, que inclui o caixa e equivalentes (aplicações financeiras de curto prazo), aumentou 9,0%, passando de R$ 59,64 bilhões no fechamento do exercício anterior (31/12/2025) para R$ 65,02 bilhões neste período.\n\nOs depósitos de clientes, que são uma das principais fontes de recursos para o banco, cresceram 6,2%, alcançando R$ 954,02 bilhões em comparação com o fechamento do exercício anterior (31/12/2025). Esse aumento nos depósitos é um sinal positivo, pois indica que o banco está conseguindo atrair e reter mais recursos de seus clientes para financiar suas operações e empréstimos.",
+      "O QUE FOI POSITIVO": "- As receitas de intermediação financeira cresceram 7,7%, atingindo R$ 160,75 bilhões.\n- O dinheiro disponível (caixa e equivalentes) aumentou 9,0%, chegando a R$ 65,02 bilhões.\n- Os depósitos de clientes cresceram 6,2%, alcançando R$ 954,02 bilhões.\n- O Ativo Total (o total de bens e direitos da empresa) cresceu 5,4%, para R$ 2,59 trilhões.",
+      "O QUE MERECE ATENCAO": "- O lucro líquido caiu 18,0%, para R$ 6,36 bilhões, apesar do aumento nas receitas.\n- O Patrimônio Líquido (o capital próprio da empresa, ou seja, o valor que pertence aos acionistas) teve uma leve queda de 1,4%, para R$ 190,77 bilhões.\n- O Caixa Líquido das Atividades Operacionais (o dinheiro gerado pelas operações principais do banco) diminuiu significativamente, de R$ 72,35 bilhões no período anterior para R$ 34,04 bilhões.\n- A variação líquida em recursos de emissões de títulos e valores mobiliários foi negativa em R$ 32,85 bilhões, indicando uma redução na captação por essa via, em contraste com o período anterior que teve uma variação positiva de R$ 31,26 bilhões.",
+      "LIMITACOES DESTA ANALISE": "Não foi possível identificar os dados de captação no mercado aberto, o que poderia oferecer uma visão mais completa sobre as fontes de recursos do banco. Além disso, a análise de solidez de um banco usa outros indicadores específicos, como o índice de Basileia e a inadimplência, que não constam nos dados estruturados da CVM disponíveis.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo."
+    },
+    "narrativa_completa": "### RESUMO\nO Banco do Brasil S.A. apresentou um desempenho misto no 1º semestre (6 meses acumulados) de 2026. Embora a empresa tenha aumentado suas receitas de intermediação financeira em 7,7%, o lucro líquido caiu 18,0%, atingindo R$ 6,36 bilhões. A saúde do caixa melhorou, com mais dinheiro disponível e um aumento nos depósitos de clientes. A queda do lucro, apesar do crescimento da receita, é o ponto que mais merece atenção.\n\n### O QUE A EMPRESA FATURA\nO Banco do Brasil S.A. gera suas receitas principalmente através da intermediação financeira, que é a sua atividade central como banco. Isso inclui juros de empréstimos, rendimentos de investimentos e tarifas de serviços. Nesse período, a empresa faturou R$ 160,75 bilhões em receitas de intermediação financeira. Esse valor representa um crescimento de 7,7% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior).\n\n### LUCRO\nA empresa registrou um lucro líquido de R$ 6,36 bilhões neste período. No entanto, esse resultado representa uma queda de 18,0% em relação ao 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o lucro foi de R$ 7,76 bilhões. Isso significa que, a cada R$ 100 que a empresa faturou, sobraram R$ 3,96 de lucro. Apesar do aumento nas receitas, o lucro diminuiu, indicando que os custos ou despesas podem ter crescido em proporção maior ou que outros fatores impactaram a rentabilidade.\n\n### SAÚDE DO CAIXA E DÍVIDAS\nPara um banco, a dívida líquida não é um indicador utilizado, pois captar recursos (como depósitos de clientes e dinheiro no mercado aberto) faz parte do seu modelo de negócio, e não é um sinal de endividamento no sentido tradicional.\n\nO dinheiro disponível da empresa, que inclui o caixa e equivalentes (aplicações financeiras de curto prazo), aumentou 9,0%, passando de R$ 59,64 bilhões no fechamento do exercício anterior (31/12/2025) para R$ 65,02 bilhões neste período.\n\nOs depósitos de clientes, que são uma das principais fontes de recursos para o banco, cresceram 6,2%, alcançando R$ 954,02 bilhões em comparação com o fechamento do exercício anterior (31/12/2025). Esse aumento nos depósitos é um sinal positivo, pois indica que o banco está conseguindo atrair e reter mais recursos de seus clientes para financiar suas operações e empréstimos.\n\n### O QUE FOI POSITIVO\n- As receitas de intermediação financeira cresceram 7,7%, atingindo R$ 160,75 bilhões.\n- O dinheiro disponível (caixa e equivalentes) aumentou 9,0%, chegando a R$ 65,02 bilhões.\n- Os depósitos de clientes cresceram 6,2%, alcançando R$ 954,02 bilhões.\n- O Ativo Total (o total de bens e direitos da empresa) cresceu 5,4%, para R$ 2,59 trilhões.\n\n### O QUE MERECE ATENÇÃO\n- O lucro líquido caiu 18,0%, para R$ 6,36 bilhões, apesar do aumento nas receitas.\n- O Patrimônio Líquido (o capital próprio da empresa, ou seja, o valor que pertence aos acionistas) teve uma leve queda de 1,4%, para R$ 190,77 bilhões.\n- O Caixa Líquido das Atividades Operacionais (o dinheiro gerado pelas operações principais do banco) diminuiu significativamente, de R$ 72,35 bilhões no período anterior para R$ 34,04 bilhões.\n- A variação líquida em recursos de emissões de títulos e valores mobiliários foi negativa em R$ 32,85 bilhões, indicando uma redução na captação por essa via, em contraste com o período anterior que teve uma variação positiva de R$ 31,26 bilhões.\n\n### LIMITAÇÕES DESTA ANÁLISE\nNão foi possível identificar os dados de captação no mercado aberto, o que poderia oferecer uma visão mais completa sobre as fontes de recursos do banco. Além disso, a análise de solidez de um banco usa outros indicadores específicos, como o índice de Basileia e a inadimplência, que não constam nos dados estruturados da CVM disponíveis.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo.",
+    "periodo": "2026-06-30",
+    "auditoria": {
+      "verificacoes": [
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "R$ 160,75 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 160,75 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 7,76 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 7,76 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_anterior"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 100",
+          "tipo": "reais",
+          "veredito": "IGNORADO",
+          "fato_mais_proximo": null,
+          "origem_fato": "recurso didático (não conta na taxa)"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,96",
+          "tipo": "reais",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,96",
+          "origem_fato": "métrica calculada: lucro_liquido.contexto_por_100_reais"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 59,64 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 59,64 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_anterior"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 65,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 65,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 954,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 954,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.depositos"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "9,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,0%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "6,2%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "6,2%",
+          "origem_fato": "métrica calculada: endividamento.variacao_depositos_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 160,75 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 160,75 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 65,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 65,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 954,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 954,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.depositos"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 2,59 trilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 2,59 trilhões",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "9,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,0%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "6,2%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "6,2%",
+          "origem_fato": "métrica calculada: endividamento.variacao_depositos_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "5,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "5,4%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 190,77 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 190,77 bilhões",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 72,35 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 72,35 bilhões",
+          "origem_fato": "documento CVM: \"Caixa Líquido das Atividades Operacionais\" (anterior) = 72.354.447 (R$ mil)"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 34,04 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 34,04 bilhões",
+          "origem_fato": "documento CVM: \"Caixa Líquido das Atividades Operacionais\" = 34.039.212 (R$ mil)"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 32,85 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 32,85 bilhões",
+          "origem_fato": "documento CVM: \"Variação líquida em recursos de emissões de títulos e valores mobiliários\" = -32.849.754 (R$ mil)"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 31,26 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 31,26 bilhões",
+          "origem_fato": "documento CVM: \"Variação líquida em recursos de emissões de títulos e valores mobiliários\" (anterior) = 31.257.972 (R$ mil)"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "1,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-1,4%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        }
+      ],
+      "resumo": {
+        "total_numeros": 30,
+        "conferem": 30,
+        "divergentes": 0,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 100.0,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso."
+      }
+    }
+  },
+  "erro": null,
+  "nome_empresa": "Banco do Brasil S.A.",
+  "documento": {
+    "periodo": "2026-06-30",
+    "versao": 1,
+    "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=160511"
+  }
+}

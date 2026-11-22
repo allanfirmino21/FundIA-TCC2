@@ -1,0 +1,53 @@
+=== CONTEXTO NARRATIVO ===
+----------------------------------------
+[Trecho 1]
+[SEÇÃO: Cabeçalho]
+DOCUMENTO: ITR — 2026-06-30
+EMPRESA CVM: 24317
+VERSAO: 1
+----------------------------------------
+[Trecho 2]
+[TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+Caixa Líquido Atividades Operacionais                          -130.470  (anterior: -66.968)
+Caixa Gerado nas Operações                                      423.000  (anterior: 373.513)
+Prejuízo antes do imposto de renda e contribuição social        -142.522  (anterior: -122.071)
+Depreciação e amortização do imobilizado e intangível           160.925  (anterior: 177.223)
+Provisões de bônus                                               46.214  (anterior: 31.952)
+Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos         162.230  (anterior: 103.419)
+Provisão para demandas judiciais                                 70.407  (anterior: 79.465)
+Resultado na baixa de ativo imobilizado e intangível              4.984  (anterior: 668)
+Custo com plano de ações                                         10.658  (anterior: 0)
+PDD e baixa de ativos não financeiros                             9.152  (anterior: 2.444)
+Provisão para perda de estoque                                     -579  (anterior: 2.254)
+Amortização de arrendamentos                                    101.531  (anterior: 98.159)
+Variações nos Ativos e Passivos                                -553.470  (anterior: -440.481)
+Contas a receber de clientes, líquidos                          -26.780  (anterior: -24.618)
+Estoques                                                        -76.026  (anterior: -31.964)
+Tributos a recuperar                                            -92.249  (anterior: -109.795)
+Fornecedores e aluguéis a pagar                                 -70.215  (anterior: -80.965)
+Salários e encargos sociais                                     -34.976  (anterior: -4.358)
+Obrigações corporativas                                          -2.597  (anterior: 5.738)
+Obrigações tributárias                                           -8.108  (anterior: -5.946)
+Imposto de renda e contribuição social pagos                     -8.599  (anterior: -1.085)
+Resultado diferido, líquido                                     -10.407  (anterior: 1.471)
+Demais contas a pagar                                            -2.836  (anterior: -7.064)
+Pagamentos de juros sobre empréstimos e financiamentos          -82.888  (anterior: -76.896)
+Demandas judiciais                                              -83.816  (anterior: -61.949)
+Demais contas a receber e pagamentos antecipados                -35.953  (anterior: -25.864)
+Pagamentos de juros sobre passivos de arrendamentos             -13.541  (anterior: -14.464)
+Fornecedores conveniados                                         -4.479  (anterior: -2.722)
+Caixa Líquido Atividades de Investimento                        -86.088  (anterior: 401.573)
+Contraprestação remanescente paga referente a aquisição de investimento no período anterior               0  (anterior: -27.445)
+Aquisição de ativo imobilizado                                 -227.668  (anterior: -112.279)
+Aquisição de ativo intangível                                   -14.309  (anterior: -3.497)
+(Aplicações) Resgates em títulos e valores mobiliários          155.889  (anterior: 544.794)
+Caixa Líquido Atividades de Financiamento                       143.953  (anterior: -305.791)
+Captação de empréstimos e financiamentos                        500.000  (anterior: 0)
+Pagamentos de empréstimos e financiamentos (principal)         -222.218  (anterior: -182.718)
+Custos sobre Captação de empréstimos                             -5.534  (anterior: 0)
+Pagamentos de passivos de arrendamentos                        -128.093  (anterior: -123.073)
+Aquisição de ações em tesouraria                                   -202  (anterior: 0)
+Aumento (Redução) de Caixa e Equivalentes                       -72.605  (anterior: 28.814)
+Saldo Inicial de Caixa e Equivalentes                           208.256  (anterior: 48.259)
+Saldo Final de Caixa e Equivalentes                             135.651  (anterior: 77.073)
+----------------------------------------

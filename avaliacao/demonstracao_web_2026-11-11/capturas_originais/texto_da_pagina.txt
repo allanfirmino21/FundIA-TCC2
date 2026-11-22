@@ -1,0 +1,76 @@
+WEG S.A.
+Ticker WEGE3
+Período 2026-09-30
+Relatório ITR
+Base Consolidado
+Receita de Venda de Bens e/ou Serviços
+R$ 30,47 bilhões
+-0,3%
+anterior: R$ 30,56 bilhões
+
+Tudo o que a empresa recebeu com suas vendas no período, antes de descontar qualquer custo.
+
+Lucro Líquido
+R$ 4,99 bilhões
+-1,7%
+anterior: R$ 5,07 bilhões
+
+O que sobrou no bolso da empresa depois de pagar todos os custos, despesas e impostos.
+
+Dívida Líquida
+-R$ 2,59 bilhões
+caixa líquido
+
+Dívidas menos o dinheiro disponível. Aqui é negativa: a empresa poderia quitar tudo o que deve e ainda sobraria esse valor.
+
+EBITDA (aproximado)
+R$ 6,66 bilhões
+-0,7%
+anterior: R$ 6,71 bilhões
+
+Quanto a operação do negócio gera de resultado, antes de juros, impostos e do desgaste de máquinas e equipamentos (depreciação).
+
+Resumo Executivo
+
+A WEG S.A. (WEGE3) apresentou um lucro líquido de R$ 4,99 bilhões nos 9 meses acumulados (janeiro a setembro) de 2026, encerrado em 30/09/2026, o que representa uma queda de 1,7% em comparação com o mesmo período do ano anterior. Essa redução foi principalmente influenciada pela diminuição do Resultado Antes do Resultado Financeiro e dos Tributos, que reduziu o resultado em R$ 114,25 milhões, apesar das contribuições positivas do Resultado Financeiro e do Imposto de Renda e Contribuição Social sobre o Lucro. Um ponto que merece atenção é a leve queda de 0,3% na receita principal da empresa.
+
+O Que a Empresa Fatura
+
+A WEG S.A. gera sua receita principal através da Venda de Bens e/ou Serviços. Essa é a principal fonte de dinheiro que entra na empresa por suas atividades centrais. Neste período de 9 meses acumulados (janeiro a setembro) de 2026, a empresa faturou R$ 30,47 bilhões com a Receita de Venda de Bens e/ou Serviços. Em comparação com os 9 meses acumulados (janeiro a setembro) de 2025 (mesmo período do ano anterior), a receita diminuiu 0,3%.
+
+Lucro do Período
+
+A WEG S.A. registrou um lucro líquido de R$ 4,99 bilhões nos 9 meses acumulados (janeiro a setembro) de 2026. Em comparação com os 9 meses acumulados (janeiro a setembro) de 2025 (mesmo período do ano anterior), o lucro caiu 1,7%. Isso significa que, a cada R$ 100 de receita, sobraram R$ 16,37 de lucro.
+
+A variação do lucro líquido, que representou uma queda de R$ 85,68 milhões, pode ser explicada da seguinte forma:
+
+* O Resultado Antes do Resultado Financeiro e dos Tributos (que representa o resultado das operações principais da empresa antes de considerar as receitas e despesas financeiras e os impostos) reduziu o resultado em R$ 114,25 milhões. Dentro desse resultado, o Resultado Bruto reduziu o subtotal em R$ 261,26 milhões, enquanto as Despesas/Receitas Operacionais aumentaram o subtotal em R$ 147,01 milhões.
+
+* Em seguida, o Resultado Financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos) aumentou o resultado em R$ 6,31 milhões.
+
+* Considerando esses fatores, o Resultado Antes dos Tributos sobre o Lucro ficou em R$ 5,98 bilhões, uma diminuição de R$ 107,95 milhões em relação ao período anterior.
+
+* Por fim, o Imposto de Renda e Contribuição Social sobre o Lucro aumentou o resultado em R$ 22,27 milhões.
+
+Caixa e Dívidas
+
+A WEG S.A. encerrou o período com R$ 6,34 bilhões em liquidez total (dinheiro disponível em caixa e aplicações financeiras de curto prazo). Sua dívida bruta (empréstimos e financiamentos) foi de R$ 3,75 bilhões, o que representa uma queda de 18,2% em comparação com 31/12/2025 (fechamento do exercício anterior).
+
+A empresa possui uma dívida líquida negativa de -R$ 2,59 bilhões. Isso significa que a WEG S.A. tem mais dinheiro em caixa e aplicações financeiras do que dívidas, indicando uma posição financeira robusta. Além dos empréstimos, a empresa tem compromissos de aluguéis contratados (passivos de arrendamento) no valor de R$ 792,09 milhões. Incluindo esses compromissos, a dívida total bruta da empresa seria de R$ 4,55 bilhões.
+
+O Que Foi Positivo
+O Patrimônio Líquido (que é o valor que pertence aos acionistas após descontar todas as dívidas da empresa) da empresa cresceu 15,2%, atingindo R$ 21,37 bilhões.
+O Ativo Total (que representa todos os bens e direitos da empresa) da empresa aumentou 7,0%, chegando a R$ 45,64 bilhões.
+A dívida bruta da empresa caiu 18,2%, passando de R$ 4,59 bilhões para R$ 3,75 bilhões em comparação com 31/12/2025.
+A empresa mantém uma dívida líquida negativa de -R$ 2,59 bilhões, indicando que possui mais caixa e aplicações do que dívidas.
+As Despesas/Receitas Operacionais ficaram menos negativas (em valor absoluto, 3,5% menor), contribuindo positivamente para o resultado operacional.
+O Que Merece Atenção
+O lucro líquido da empresa caiu 1,7% no período, totalizando R$ 4,99 bilhões.
+A receita principal de Venda de Bens e/ou Serviços diminuiu 0,3%, ficando em R$ 30,47 bilhões.
+O Custo dos Bens e/ou Serviços Vendidos ficou mais negativo (em valor absoluto, 0,9% maior), impactando o resultado bruto.
+O Resultado Bruto diminuiu 2,6%, atingindo R$ 9,94 bilhões.
+As Receitas Financeiras diminuíram 31,0%, passando de R$ 1,97 bilhões para R$ 1,36 bilhões.
+Limitações desta Análise
+Auditoria de fidelidade numérica
+39/42 números conferem · 92.9%
+Baixar análise completa (.pdf)

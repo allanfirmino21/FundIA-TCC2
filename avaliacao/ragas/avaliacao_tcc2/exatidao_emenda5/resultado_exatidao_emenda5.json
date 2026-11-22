@@ -1,0 +1,2679 @@
+{
+  "esquema": 1,
+  "etapa": "exatidao_emenda5",
+  "regra_sinal": "emenda5",
+  "emenda": "PROTOCOLO_RAGAS_TCC2.md, Emenda 5",
+  "nota": "Resultado adicional, reportado ao lado do original congelado. Correção do instrumento de verificação concebida depois da observação dos resultados; não representa melhoria do sistema FundIA (as 96 respostas são as mesmas).",
+  "gerado_em": "2026-10-09T03:29:23+00:00",
+  "proveniencia": {
+    "commit": "f90e3bd820c8be200aaa46b21e84e6284e2468c2",
+    "commit_coleta": "10eee310a6dfd0bc545f6d2a62bd82705b6624e5",
+    "sha256_executor": "6e2a40bd1723b0c4c8da35595cb35573b009a0c8a6309af8fbb4f73f307b1a65",
+    "sha256_protocolo_emendado": "c37f686cb153328d7849d5d43335cfa3d036927c478856b2c8eb861110fb00ec",
+    "sha256_dataset": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e",
+    "sha256_configuracao_historica_coleta": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+    "sha256_SHA256_COLETA": "b8c016cea3a8903678bc7817f4c5b553c80bb98b6a7a5787d05ea4ce4eca45f2",
+    "sha256_exatidao_py": "a08d1f952160457d2f37faf67c267ea6a953e8638cf66a9314203188724565c1",
+    "sha256_comportamento_py": "d2a3e7e79d2275b9de3dff0b64b0bc3b0455c3fa9090766e068c290117febad2",
+    "python": "3.12.6",
+    "sha256_gerador": "f928b1dca9ddb40ace4bd00bca5e0b510ffb94d4fa306059bd3615039c5ee55b"
+  },
+  "resultado_original": {
+    "caminho": "avaliacao/ragas/avaliacao_tcc2/exatidao/resultado_exatidao.json",
+    "sha256": "3c3e28c080a9884f53f1197bd0c4106fd414105b2aa4de3ff2928f401a05a6db",
+    "sha256_registro": "8582e2e0352f93323629e7a28554ffa981577e7974e66fa6130ccf99a309c8f9",
+    "sha256_exatidao_py": "2b4b11706841701ed6ffd551a4789431fa9102c65cf1302104cfa600ce432ff0",
+    "commit_resultado": "d49835d",
+    "commit_instrumento": "a3f424f"
+  },
+  "sha256_decisoes_sinal": null,
+  "n_casos": 96,
+  "resumo": {
+    "original": {
+      "classes": {
+        "CORRETO": 31,
+        "PARCIALMENTE_CORRETO": 5,
+        "INCORRETO": 7,
+        "NAO_APLICAVEL": 53
+      },
+      "aplicaveis": 43,
+      "correto_sobre_aplicaveis": "31/43",
+      "por_disponibilidade": {
+        "presente": {
+          "CORRETO": 31,
+          "PARCIALMENTE_CORRETO": 2,
+          "INCORRETO": 6,
+          "NAO_APLICAVEL": 30
+        },
+        "parcial": {
+          "CORRETO": 0,
+          "PARCIALMENTE_CORRETO": 3,
+          "INCORRETO": 1,
+          "NAO_APLICAVEL": 11
+        },
+        "ausente": {
+          "CORRETO": 0,
+          "PARCIALMENTE_CORRETO": 0,
+          "INCORRETO": 0,
+          "NAO_APLICAVEL": 12
+        }
+      }
+    },
+    "emenda5": {
+      "classes": {
+        "CORRETO": 37,
+        "PARCIALMENTE_CORRETO": 5,
+        "INCORRETO": 1,
+        "NAO_APLICAVEL": 53
+      },
+      "aplicaveis": 43,
+      "correto_sobre_aplicaveis": "37/43",
+      "por_disponibilidade": {
+        "presente": {
+          "CORRETO": 37,
+          "PARCIALMENTE_CORRETO": 2,
+          "INCORRETO": 0,
+          "NAO_APLICAVEL": 30
+        },
+        "parcial": {
+          "CORRETO": 0,
+          "PARCIALMENTE_CORRETO": 3,
+          "INCORRETO": 1,
+          "NAO_APLICAVEL": 11
+        },
+        "ausente": {
+          "CORRETO": 0,
+          "PARCIALMENTE_CORRETO": 0,
+          "INCORRETO": 0,
+          "NAO_APLICAVEL": 12
+        }
+      }
+    },
+    "mudancas_de_classe": [
+      {
+        "case_id": "BBAS3_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      },
+      {
+        "case_id": "ITUB4_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      },
+      {
+        "case_id": "LAVV3_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      },
+      {
+        "case_id": "ITSA4_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      },
+      {
+        "case_id": "IRBR3_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      },
+      {
+        "case_id": "CEAB3_N2",
+        "de": "INCORRETO",
+        "para": "CORRETO",
+        "disponibilidade": "presente"
+      }
+    ],
+    "sinais_alterados": [
+      {
+        "case_id": "BBAS3_N2",
+        "categoria": "N2",
+        "numero": "6.362.961",
+        "posicao": 109,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "BBAS3_N4",
+        "categoria": "N4",
+        "numero": "7.760.116",
+        "posicao": 111,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "ITUB4_N2",
+        "categoria": "N2",
+        "numero": "24.199.000",
+        "posicao": 401,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "LAVV3_N2",
+        "categoria": "N2",
+        "numero": "184.619",
+        "posicao": 98,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "ITSA4_N2",
+        "categoria": "N2",
+        "numero": "9.726.000",
+        "posicao": 151,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "IRBR3_N2",
+        "categoria": "N2",
+        "numero": "90.305",
+        "posicao": 440,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      },
+      {
+        "case_id": "CEAB3_N2",
+        "categoria": "N2",
+        "numero": "179.594",
+        "posicao": 216,
+        "sinal_original": "-",
+        "sinal_emenda5": "+"
+      }
+    ]
+  },
+  "resultados": [
+    {
+      "case_id": "WEGE3_N1",
+      "ticker": "WEGE3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e096ee5d85f56b68d4832d98db9674585e8b342bf81123f2e0da1cd1e526ecf7",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_N2",
+      "ticker": "WEGE3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "7aede8068bb6aee0ed2188faa533c7d67a9445a0b2218802d5d46136751ddf00",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_N3",
+      "ticker": "WEGE3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "dce82de4801e9be6cba511127a42ea73ae3e91114d991d80f4b23142a3dbdfc0",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_N4",
+      "ticker": "WEGE3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4b831023f386155f3bf533a6b8651f15211b916407119e5341cc49a0afabef72",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_N5",
+      "ticker": "WEGE3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "37f8c96e8a7d10658e02f94ee7c162da1eff994d25063c2abcea51eee760d5d4",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_E1",
+      "ticker": "WEGE3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "cfce99ee3944d42b9fc8f182eeeb3193800e4a155ffeb83766564dc8d7d461dc",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_E2",
+      "ticker": "WEGE3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "d15e8a3279256c95415117252deafcd4255b17a98f08368ab31f22307ff08217",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "PARCIALMENTE_CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "7.750.256"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "PARCIALMENTE_CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [
+        "emprestimos_total_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "WEGE3_E3",
+      "ticker": "WEGE3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "aa200d1a47dee8eb07d755a27a489f2fe57597b73877d68a39e16023ab386bf6",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "65.819",
+        "47.595",
+        "65.819",
+        "47.595"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": true,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "65.819",
+        "47.595"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_N1",
+      "ticker": "BBAS3",
+      "categoria": "N1",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2a3935a46b9d7638c2966f0b7c49b597e23847027c4c51cbe2156c3d95223b56",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "160.747.114"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "topo_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_N2",
+      "ticker": "BBAS3",
+      "categoria": "N2",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "1c13ad6e59aa84cc25fabf4d4e5d9db25366ab06f481aeae9f88d755266464d7",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "6.362.961",
+          "posicao": 109,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "6.362.961"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_N3",
+      "ticker": "BBAS3",
+      "categoria": "N3",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0bb745dc9306dbeda2dd76eabf7a0e80e0a1b5b53006b1c778e1ca0ef5ab0679",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_N4",
+      "ticker": "BBAS3",
+      "categoria": "N4",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9bca906ea69afbec96a0ca019373f309517ecee0a0c8c79e71150b3d9f0d4775",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [
+        {
+          "numero": "7.760.116",
+          "posicao": 111,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "7.760.116"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "7.760.116"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_N5",
+      "ticker": "BBAS3",
+      "categoria": "N5",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "db9a77d5b4748c24b767cfbf7420988bfbd9a7c551bacab61d480744c080b01c",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "65.017.849",
+        "59.635.525"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "59.635.525"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_E1",
+      "ticker": "BBAS3",
+      "categoria": "E1",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ff0cdb02e1188094fe60c124fbfa4d6f67894a8d75aea51dc2575f623e0a8ef1",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "49.463.309"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_bruto_intermediacao_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_E2",
+      "ticker": "BBAS3",
+      "categoria": "E2",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8356cbeb06f3c44248651a0a0b006b00699dff11f0c88f2a25bc7cf9548bda75",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "954.018.837",
+        "897.937.449"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "depositos_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "897.937.449"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "BBAS3_E3",
+      "ticker": "BBAS3",
+      "categoria": "E3",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "f80ac27baba510d5681e0adb53087d9fe2fa36563843c435d5a486ede276f810",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "111.283.805",
+        "101.288.276"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "despesas_intermediacao_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "101.288.276"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_N1",
+      "ticker": "ZAMP3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "28294db9a901b0e2610deefacdd04194c38fb43433f2026bde8fce0301869d6d",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_N2",
+      "ticker": "ZAMP3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "f40557691677ac61938fa39c9e9bde8793d0feb463b94d0bda7bf989e19da99c",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "154.679"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_N3",
+      "ticker": "ZAMP3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "733b0d59e7ed764c4191c974b3d405dde477e4a3611a5eede8795213a59083d0",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "PARCIALMENTE_CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "154.679"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "PARCIALMENTE_CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_N4",
+      "ticker": "ZAMP3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "a17680b50b194baebff9d98607171fcf5820bda9690e7920ed572dd1a06dcdfb",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_N5",
+      "ticker": "ZAMP3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2c5176094319d20729c63f5ce8853a07b0791d858d2f868bef2178afb6117133",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "135.651",
+        "208.256"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "208.256"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_E1",
+      "ticker": "ZAMP3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5588df6f539673c5c4ccc9e9f68b85bf9f45debffbb0539e53a0120598193c62",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_E2",
+      "ticker": "ZAMP3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "ba937b5abf6c49817f29e80fd4d010995289a403adeb2406176d8115d479122c",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ZAMP3_E3",
+      "ticker": "ZAMP3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "67f5fa65fbdd1d69702fa9a6c5bd0529d9d462c954a6f7071d9da9eb2c466c1e",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "169.280",
+        "144.604"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_N1",
+      "ticker": "LWSA3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "fe034ead3667718bbdafb9db0ba0add9d29404c8c3ee851c8d84e2dd35e2aa43",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_N2",
+      "ticker": "LWSA3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "5f88af0c864bd03750f78a5df576b0818a4b969270433ebd4f3d676484471851",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_N3",
+      "ticker": "LWSA3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "fecf10e781e7c90290ed0a51280abbf022d77a1e1a94dfb98b308536adcca1b6",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_N4",
+      "ticker": "LWSA3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "3e63ba3792a1129b5ed882565952a60931971e0373ce0df4ec89c1fc9fdd91db",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_N5",
+      "ticker": "LWSA3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2f57feed7994442e8838bacc825ee300238ab0beeb931d4e48daef47d7a116a0",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "314.495",
+        "371.931"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "371.931"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_E1",
+      "ticker": "LWSA3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "d288a2f372ad968da94a09409c32dd2ab1bac9c4729e597973d772ee23d1f3f1",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_E2",
+      "ticker": "LWSA3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "1fe71050d488a5bbe88de51fb5b48e46f6bc8610418f7a0dd87b6684bd1647eb",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "314.495",
+        "71.915",
+        "19.361",
+        "52.554"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "19.361",
+        "52.554"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LWSA3_E3",
+      "ticker": "LWSA3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "82696015a42fe4227eb2ef2cb99d4ad035b4f8281b07dc2bb80ab0107b0b43a6",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_N1",
+      "ticker": "VALE3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "cede522f634eae84b7e33578df23cdbd348ff606e6b20537057b1e6b8679e270",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_N2",
+      "ticker": "VALE3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "929505a3458d24a6e34710aeebb0dfd552fb58dcc739f1f41ef3bb8c4577d680",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_N3",
+      "ticker": "VALE3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "8bd497805b5513067e0d6e3efa734446e2713ee0d82108cb482178204a83c47a",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_N4",
+      "ticker": "VALE3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e9d2789275b61d0c8008883915cd87a746fda3a904c420772525ea3737673f38",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_N5",
+      "ticker": "VALE3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4e8821298aef1aa63a63885ed818ccaeeb30efc68050f24fa9632b15c41e7677",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_E1",
+      "ticker": "VALE3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "b6f4cc50bba78e845d726245c8c4e35479d6bb4a4aff5b308518a131b801c250",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_E2",
+      "ticker": "VALE3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2f2b7360ffaf95df70bec3e9e247885e8541bbc69e444eac51dc51f854fd12ae",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "28.871.000",
+        "98.034.000",
+        "6.534.000",
+        "91.500.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "6.534.000",
+        "91.500.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "VALE3_E3",
+      "ticker": "VALE3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "3f3a5ef2e1db2079c360072b34921d40191ebec0d46f6b000046d5d4c5314134",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "2.237.000",
+        "2.186.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "INCORRETO",
+      "motivo": "",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "valores_nao_conciliados": [
+        "2.237.000",
+        "2.186.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_N1",
+      "ticker": "ITUB4",
+      "categoria": "N1",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "be8fea1d1f3f893f7818ea82ed0e306f3e3c4296306cc625b08b98e04c86f00d",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "199.118.000",
+        "200.251.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "topo_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "200.251.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_N2",
+      "ticker": "ITUB4",
+      "categoria": "N2",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4a634390939f80448fc5e484d4bcf97e32e1898f05f7ec928fe3a62bab893892",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "24.199.000",
+          "posicao": 401,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "24.199.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_N3",
+      "ticker": "ITUB4",
+      "categoria": "N3",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e27c5a680c72b2b1ac749f34eacdaf955728db2591cda5c6fef91ef5bf2d5ef7",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "PARCIALMENTE_CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "24.199.000",
+        "22.105.000",
+        "24.199"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "PARCIALMENTE_CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26",
+        "resultado_1s25"
+      ],
+      "nao_encontrados": [
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [
+        "24.199"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_N4",
+      "ticker": "ITUB4",
+      "categoria": "N4",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "656bedd6df1fbb76df7c406085f749f79e4bcf78864717fb8f430470d166870f",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_N5",
+      "ticker": "ITUB4",
+      "categoria": "N5",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0681acda087cec214600803b341a1b8407cce57ebe1beb22c0675a4f14993054",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "35.351.000",
+        "37.144.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "37.144.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_E1",
+      "ticker": "ITUB4",
+      "categoria": "E1",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4d1af2b44b1534e0f727a2ea75575ffcfbd48b8d2a840920e02a309759c5f249",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "71.756.000",
+        "66.989.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_bruto_intermediacao_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "66.989.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_E2",
+      "ticker": "ITUB4",
+      "categoria": "E2",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "17981bc2e9e63c1add5fd21384719a0074b19d0fd030e7a3a599fef8bc3e5d02",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "depositos_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITUB4_E3",
+      "ticker": "ITUB4",
+      "categoria": "E3",
+      "estrutura": "banco",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ec81956d80628a7e75eefe62079600dd7298a262e4f1a2afea4a750baba12723",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "despesas_intermediacao_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_N1",
+      "ticker": "LAVV3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "bc14515e7b993c4389eafa9dea0e18ad961e63af3ec620425cc302fd49a5fa07",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "868.335",
+        "816.524"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "topo_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "816.524"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_N2",
+      "ticker": "LAVV3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "7e24b74cf9c9638a2b72d9bfc23ebfe060e219cd5f081d33dbb1a0ad786b080f",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "184.619",
+          "posicao": 98,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "184.619"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_N3",
+      "ticker": "LAVV3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9ca48f5d8f3f26379a38b507d4142db44586a27223729ef24d01ac5c6883a1c9",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "184.619",
+        "224.898",
+        "184.619",
+        "224.898",
+        "40.279",
+        "40.279",
+        "224.898",
+        "17,91%"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "184.619",
+        "224.898",
+        "40.279",
+        "40.279",
+        "224.898"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_N4",
+      "ticker": "LAVV3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e6efb0b0e485a5dbb88fc0f7a41bc79f9762508a2656008e0d3401c814fd41fd",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_N5",
+      "ticker": "LAVV3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "78b42c312df109dba7c4988c9c35c3600ff80ddf6c08d61bdf5d22f502fa0a00",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_E1",
+      "ticker": "LAVV3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5e7f4bbb602b7f51a4a2cbe4a9f7265d35b9763aaf72ad787302c9890451a6e5",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_E2",
+      "ticker": "LAVV3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "386da40604af5d7a6245e6a9d48c8427a219b1238dd2936527c93be6b957c3ec",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "LAVV3_E3",
+      "ticker": "LAVV3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8ef4ba6ac447e4ba5ba6f22ca370497e45b4697835e1147d276bf62e41a1de96",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "3.044",
+        "18.469"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_N1",
+      "ticker": "POMO4",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "c1abd70c326097084d19d4e09c832fa3c4017b313a9e7f4fcc607d72c09385b9",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_N2",
+      "ticker": "POMO4",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "dfba85f3e4547a582ce9ab7c8a9f860b53961531457157cd815df0d58546fcd4",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_N3",
+      "ticker": "POMO4",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0a5479ac6b4c80599b69621b07fa10f6fce19e2b5ae0f78d92065a93ddc15709",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_N4",
+      "ticker": "POMO4",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e5dba51beb37fcfffe63e2228f31d4ffaf34b62e69ee0d19178159bdf68f6b0c",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_N5",
+      "ticker": "POMO4",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "614283678c8d4b26bf4d2663be85a01517b22f595095c8148d82c0827b5a6044",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_E1",
+      "ticker": "POMO4",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "41b4dee935908e0d4bd3006c0c3a5447ac4faf80b2e9da8797ac0d5be9e5b8b6",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_E2",
+      "ticker": "POMO4",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ca61506b927fae99973e0f473cedf9ee1f0c15cbb9a9f615cd4c5e36fd707135",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "1.587.320",
+        "3.400.431",
+        "1.089.436",
+        "2.310.995"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "1.089.436",
+        "2.310.995"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "POMO4_E3",
+      "ticker": "POMO4",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "d73db771916e445e20fedfabc616318594ee61526e2de56d4b04f0d2d2e81f7a",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_N1",
+      "ticker": "ITSA4",
+      "categoria": "N1",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "24007206827dae1fe1a86eaa24aca7666b57b0a50739548f7394ea3e547e9313",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_N2",
+      "ticker": "ITSA4",
+      "categoria": "N2",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "bf16524ba8220d212e1cf03ca398cd6259e3b82af6f3aab0f3905accf54a7a85",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "9.726.000",
+          "posicao": 151,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "9.726.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_N3",
+      "ticker": "ITSA4",
+      "categoria": "N3",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ba62ea3429461db200f84204531a6952601c742cd9bbfcb716bb94d3edeeead9",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "9.726.000",
+        "8.048.000",
+        "20,85%"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_N4",
+      "ticker": "ITSA4",
+      "categoria": "N4",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8298420b29dbd478ae2bef902594e1893dd027d608aeb7d5c77d5564feb74c22",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "1.678.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "1.678.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_N5",
+      "ticker": "ITSA4",
+      "categoria": "N5",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "356463c6933fdf3f7e8a88a23cbc4a5e25d9cb7fc1569823cb6807f15db2b3aa",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "4.709.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_E1",
+      "ticker": "ITSA4",
+      "categoria": "E1",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e68d29b31de806acc5f4bef4acb51d94939fd7faaa6f86477904e37ffb420bad",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "9.354.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "equivalencia_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_E2",
+      "ticker": "ITSA4",
+      "categoria": "E2",
+      "estrutura": "holding",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e777413246d3205eb993c4e970198afe83ea2fb724a1fa01cae98aa59216f010",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "PARCIALMENTE_CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "4.709.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "PARCIALMENTE_CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [
+        "emprestimos_total_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "ITSA4_E3",
+      "ticker": "ITSA4",
+      "categoria": "E3",
+      "estrutura": "holding",
+      "disponibilidade": "presente",
+      "sha256_resposta": "76d44a18d0ebf179c3c1bd0021a5222170a0dcffaabf76b4c1ff21e6ce3506e7",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "193.000",
+        "844.000",
+        "193.000",
+        "844.000"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": true,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "193.000",
+        "844.000"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_N1",
+      "ticker": "IRBR3",
+      "categoria": "N1",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "b8210957289a88af1ed5bb03d81fda2a110cc22445de28a833195aa05019addb",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "1.920.140"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "topo_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_N2",
+      "ticker": "IRBR3",
+      "categoria": "N2",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "743f9be82c23e050f47b620f9530da68b28431c6da7fe310680779d1e5bc6156",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "90.305",
+          "posicao": 440,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "90.305"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_N3",
+      "ticker": "IRBR3",
+      "categoria": "N3",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9664f88ad352a82b212ee6dcf547cbab14be6015d52eb3c7051867112a8c4a86",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "90.305",
+        "240.662",
+        "150.357",
+        "62,48%"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "150.357"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_N4",
+      "ticker": "IRBR3",
+      "categoria": "N4",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8bdba547ccce06590f3989b2b5d8649e205cd28dae50b737ba61b88e87614937",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_N5",
+      "ticker": "IRBR3",
+      "categoria": "N5",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "22c2f6e69856c973d20565e06598a350ad64a22b78c81734cdceadf2711e94a6",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "54.039"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_E1",
+      "ticker": "IRBR3",
+      "categoria": "E1",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "486d1f7a2c94562ab1459885b8a0e1c3a46f05c9fbc9b4baffbccd59217275c8",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_bruto_resseguro_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_E2",
+      "ticker": "IRBR3",
+      "categoria": "E2",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "730568d51d40e50888e9aa3e4ebc1b99fc9269fe8a1a9b60d0c06fef32c62a28",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "117.761"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_financeiro_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "IRBR3_E3",
+      "ticker": "IRBR3",
+      "categoria": "E3",
+      "estrutura": "resseguradora",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8f13db7a1f8d1e42ac5983777daf29a3959662d65b0696b3ce1c198560370f5c",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "aplicacoes_financeiras_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_N1",
+      "ticker": "CEAB3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "901d23558e4c7a3b277c92faa5f87220ef844a7e6548b90aff8dc09612de94f9",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_N2",
+      "ticker": "CEAB3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "d7c67b538c693faf942cd0373c01bbb85f38c4888d53334eb68e494c62e87bd4",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "INCORRETO",
+      "sinais_alterados": [
+        {
+          "numero": "179.594",
+          "posicao": 216,
+          "sinal_original": "-",
+          "sinal_emenda5": "+"
+        }
+      ],
+      "numeros_lidos": [
+        "179.594"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_N3",
+      "ticker": "CEAB3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e3ca3c8ca09401a3cbdca76df0c5aa4e15987e51faf13c4a100a77c204bceb20",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "179.594",
+        "204.384",
+        "24.790",
+        "12,13%"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "24.790"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_N4",
+      "ticker": "CEAB3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "6cbbd9361f95f4f556f1bafbbe20eb9afd42df4877312fb4e95b4fc8e2198850",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "204.384"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": true,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "204.384"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_N5",
+      "ticker": "CEAB3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e064602069d74ba87ee7c81cd6d0f00b2c2e0279e1ae818d42ed9cccefd120f0",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "caixa_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_E1",
+      "ticker": "CEAB3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "a8bc456ff89ea878f3de9af49dba0f5cf82c40e3d14f5b71c9cd5104c9c30d44",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "179.594",
+        "3.701.913",
+        "179.594",
+        "3.701.913",
+        "0,048513",
+        "4,85%"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "179.594",
+        "3.701.913",
+        "179.594",
+        "3.701.913",
+        "0,048513"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_E2",
+      "ticker": "CEAB3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "0e2d4448e6b604a43511ab82084c0c14b538b07071c5204882b938bc841f02f0",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "PARCIALMENTE_CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "540.690"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "PARCIALMENTE_CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [
+        "emprestimos_total_30jun26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "CEAB3_E3",
+      "ticker": "CEAB3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "fb18cfaf324a1be5f33b7aa9fbb815819234df8cce3bea85ba5fa7832a601d7d",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_N1",
+      "ticker": "AURE3",
+      "categoria": "N1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "ca58bba77153cb3fc904aaab8a069298c8c78adf31f66ce81d34e18852214e0b",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "topo_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_N2",
+      "ticker": "AURE3",
+      "categoria": "N2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "2bce3d96055229440f7351db842e34c63d1fd2c1faedd7249022c2b84912509a",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_N3",
+      "ticker": "AURE3",
+      "categoria": "N3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "2a94b6699de540a7aafb41b05f2426cc011d4f11c496d0fa510da705fd2a6fbd",
+      "truncada_na_geracao": false,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_1s26",
+        "resultado_1s25",
+        "variacao_percentual"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_N4",
+      "ticker": "AURE3",
+      "categoria": "N4",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "5a901cffde3d692d90ad90312af720afecca698bb891500899e33aeb45696547",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "categoria sem valores exigidos (N4)",
+      "encontrados": [],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_N5",
+      "ticker": "AURE3",
+      "categoria": "N5",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e7ee54a46efcc353e0d38bcd4a277930f4e3eda61dc8a0389ffa445a64e1fb9f",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "2.949.774"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_E1",
+      "ticker": "AURE3",
+      "categoria": "E1",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "8a7d9e4d52dbff5e882f5b2096821a581cc1a54bc38c3bc4ebcbec189badf882",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "margem_liquida_1s26"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_E2",
+      "ticker": "AURE3",
+      "categoria": "E2",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5d3d347307976581f1998ddb26eca04404e239b27551ca0f3633fcbe73c3b5c2",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "CORRETO",
+      "sinais_alterados": [],
+      "numeros_lidos": [
+        "2.949.774",
+        "23.654.224",
+        "1.936.154",
+        "21.718.070"
+      ],
+      "escala_implicita": true,
+      "sinal_revisao_manual": false,
+      "classe": "CORRETO",
+      "motivo": "",
+      "encontrados": [
+        "caixa_30jun26",
+        "emprestimos_total_30jun26"
+      ],
+      "nao_encontrados": [],
+      "valores_nao_conciliados": [
+        "1.936.154",
+        "21.718.070"
+      ],
+      "pendencias_sinal": []
+    },
+    {
+      "case_id": "AURE3_E3",
+      "ticker": "AURE3",
+      "categoria": "E3",
+      "estrutura": "nao_financeira",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "c9932887dd93c8bf3f1fbf2997a7f7e4440995a083a12b375f504e52f6f26a18",
+      "truncada_na_geracao": true,
+      "decisoes_manuais_sinal": {},
+      "classe_original": "NAO_APLICAVEL",
+      "sinais_alterados": [],
+      "numeros_lidos": [],
+      "escala_implicita": false,
+      "sinal_revisao_manual": false,
+      "classe": "NAO_APLICAVEL",
+      "motivo": "resposta sem número monetário ou percentual",
+      "encontrados": [],
+      "nao_encontrados": [
+        "resultado_financeiro_1s26",
+        "resultado_financeiro_1s25"
+      ],
+      "valores_nao_conciliados": [],
+      "pendencias_sinal": []
+    }
+  ],
+  "sha256_registro": "e36c79ba9ca884095093262631bce6884d376a162db88824d4f12fa8c1f6af0a"
+}

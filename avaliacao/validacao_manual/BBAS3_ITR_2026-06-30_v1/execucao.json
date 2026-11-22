@@ -1,0 +1,114 @@
+{
+  "chamada": "analisar(\"BBAS3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-23T00:23:38.510012+00:00",
+  "fim_utc": "2026-09-23T00:25:00.711209+00:00",
+  "segundos_import": 35.6,
+  "segundos_analisar": 46.4,
+  "ticker": "BBAS3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\BBAS3_ITR_2026-06-30.txt",
+  "fonte_sha256": "5a38dc6e4e0ab4ad45d52dd48e4443f8a80b587c7508d5fa5abb92eb0976d63b",
+  "fonte_copia": "avaliacao\\validacao_manual\\BBAS3_ITR_2026-06-30_v1\\BBAS3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 1023",
+    "VERSAO: 1"
+  ],
+  "git_commit": "183e69f824ae17f982375891e6edd814a061bc65",
+  "git_status": "?? avaliacao/validacao_manual/\n",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-23T00:24:14.094631+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-23T00:24:14.094631+00:00",
+      "etapa": "1/8",
+      "msg": "OK: Banco do Brasil S.A. (1023)"
+    },
+    {
+      "t": "2026-09-23T00:24:14.094631+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-23T00:24:14.134858+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-08-12)"
+    },
+    {
+      "t": "2026-09-23T00:24:14.135859+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-23T00:24:17.511625+00:00",
+      "etapa": "3/8",
+      "msg": "OK: BBAS3_ITR_2026-06-30.txt baixado (23 KB)"
+    },
+    {
+      "t": "2026-09-23T00:24:17.511625+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-23T00:24:17.542594+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (22,638 caracteres)"
+    },
+    {
+      "t": "2026-09-23T00:24:17.542594+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-23T00:24:30.379468+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-23T00:24:30.379468+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-23T00:24:40.488212+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (8,807 chars numericos, 4,177 narrativos)"
+    },
+    {
+      "t": "2026-09-23T00:24:40.488212+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-23T00:24:40.490476+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-23T00:25:00.463686+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-23T00:25:00.478063+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 30/30 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-23T00:25:00.478063+00:00",
+      "etapa": "OK",
+      "msg": "Analise de BBAS3 concluida."
+    }
+  ]
+}

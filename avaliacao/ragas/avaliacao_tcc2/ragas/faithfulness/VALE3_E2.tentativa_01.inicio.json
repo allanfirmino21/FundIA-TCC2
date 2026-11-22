@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "VALE3_E2",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:22:45+00:00",
+  "sha256_resposta": "2f2b7360ffaf95df70bec3e9e247885e8541bbc69e444eac51dc51f854fd12ae",
+  "sha256_registro": "42880a1f5ba3dbfa0146cb0906d0a0e11c65ae8cbddcf9509ca25d6648c678ce"
+}

@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "LAVV3_N1",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:26:33+00:00",
+  "sha256_resposta": "bc14515e7b993c4389eafa9dea0e18ad961e63af3ec620425cc302fd49a5fa07",
+  "sha256_registro": "5513756664b571699511d7c9041ddca5b44ebd057c18d9c9cc12d11e51d79f4a"
+}

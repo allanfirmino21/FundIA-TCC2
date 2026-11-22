@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "ZAMP3_N1",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:13:38+00:00",
+  "sha256_resposta": "28294db9a901b0e2610deefacdd04194c38fb43433f2026bde8fce0301869d6d",
+  "sha256_registro": "10914f0c38c57678ce7e424dfcbae003c18aec701223b11adc7c07d0b1d582bd"
+}

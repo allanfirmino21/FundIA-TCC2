@@ -1,0 +1,743 @@
+{
+  "ticker": "BBAS3",
+  "tipo_documento": "ITR",
+  "etapas": {
+    "validacao": "ok",
+    "busca_cvm": "ok",
+    "download": "ok",
+    "extracao": {
+      "status": "ok",
+      "secoes": 6
+    },
+    "indexacao": {
+      "status": "ok",
+      "chunks": 6
+    },
+    "recuperacao": "ok",
+    "geracao": "ok",
+    "auditoria": "ok"
+  },
+  "analise": {
+    "dados_extraidos": {
+      "periodo_referencia": "2026-06-30",
+      "periodos": {
+        "periodo_atual": "1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026",
+        "comparacao_resultado": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "comparacao_balanco": "31/12/2025 (fechamento do exercício anterior)",
+        "nota": "No ITR, receita e lucro são acumulados desde o início do ano e comparam com o mesmo período acumulado do ano anterior; caixa, dívidas e demais contas do balanço são posições na data de referência e comparam com o fechamento do exercício anterior (31/12)."
+      },
+      "base_dados": "Consolidado",
+      "escala_original": "R$ milhares (mil reais)",
+      "metodo_calculo": "deterministico_python",
+      "receita_principal": {
+        "descricao": "Receitas de Intermediação Financeira",
+        "valor_atual": "R$ 160,75 bilhões",
+        "valor_anterior": "R$ 149,25 bilhões",
+        "variacao_pct": "+7,7%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+      },
+      "lucro_liquido": {
+        "valor_atual": "R$ 6,36 bilhões",
+        "valor_anterior": "R$ 7,76 bilhões",
+        "variacao_pct": "-18,0%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "interpretacao_variacao": "o lucro caiu 18,0%",
+        "margem_liquida_pct": "3,96%",
+        "contexto_por_100_reais": "a cada R$ 100 de receita, sobraram R$ 3,96 de lucro"
+      },
+      "ebitda": {
+        "valor_atual": "nao_aplicavel",
+        "margem_pct": "nao_aplicavel",
+        "nota": "EBITDA não é um indicador usado para instituições financeiras: o resultado de um banco vem da intermediação financeira (juros e captação), não de uma operação industrial ou comercial."
+      },
+      "endividamento": {
+        "criterio": "Instituição financeira: dívida líquida e liquidez total não são indicadores usados para bancos — captar recursos (depósitos, mercado aberto) é parte da operação bancária. Indicadores de referência: depósitos de clientes e captação no mercado aberto.",
+        "divida_bruta": "nao_aplicavel",
+        "divida_liquida": "nao_aplicavel",
+        "caixa_e_equivalentes": "R$ 65,02 bilhões",
+        "caixa_anterior": "R$ 59,64 bilhões",
+        "variacao_caixa_pct": "+9,0%",
+        "depositos": "R$ 954,02 bilhões",
+        "depositos_anterior": "R$ 897,94 bilhões",
+        "variacao_depositos_pct": "+6,2%",
+        "captacao_mercado_aberto": "R$ 845,41 bilhões",
+        "comparacao": "31/12/2025 (fechamento do exercício anterior)",
+        "nota": "Dívida líquida não se aplica a bancos. A análise de solidez de um banco usa outros indicadores (ex.: índice de Basileia, inadimplência), que não constam nos dados estruturados da CVM."
+      },
+      "outros_destaques": [
+        "Depósitos de clientes: R$ 954,02 bilhões (variação +6,2%)",
+        "Captação no mercado aberto: R$ 845,41 bilhões (variação +16,3%)",
+        "Patrimônio Líquido: R$ 190,77 bilhões (variação -1,4%)",
+        "Ativo Total: R$ 2,59 trilhões (variação +5,4%)",
+        "Lucro atribuído a sócios da controladora: R$ 4,79 bilhões"
+      ],
+      "dados_ausentes": [],
+      "advertencias": [],
+      "demonstracoes_resumidas": {
+        "base": "Consolidado",
+        "resultado": [
+          {
+            "conta": "Receitas de Intermediação Financeira",
+            "valor_atual": "R$ 160,75 bilhões",
+            "valor_anterior": "R$ 149,25 bilhões",
+            "variacao_pct": "+7,7%",
+            "interpretacao_variacao": "aumentou 7,7%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Despesas de Intermediação Financeira",
+            "valor_atual": "-R$ 111,28 bilhões",
+            "valor_anterior": "-R$ 101,29 bilhões",
+            "variacao_pct": "-9,9%",
+            "interpretacao_variacao": "ficou mais negativo (em valor absoluto, 9,9% maior)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Bruto de Intermediação Financeira",
+            "valor_atual": "R$ 49,46 bilhões",
+            "valor_anterior": "R$ 47,96 bilhões",
+            "variacao_pct": "+3,1%",
+            "interpretacao_variacao": "aumentou 3,1%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Outras Despesas e Receitas Operacionais",
+            "valor_atual": "-R$ 46,74 bilhões",
+            "valor_anterior": "-R$ 46,32 bilhões",
+            "variacao_pct": "-0,9%",
+            "interpretacao_variacao": "ficou mais negativo (em valor absoluto, 0,9% maior)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado antes dos Tributos sobre o Lucro",
+            "valor_atual": "R$ 2,73 bilhões",
+            "valor_anterior": "R$ 1,64 bilhões",
+            "variacao_pct": "+65,8%",
+            "interpretacao_variacao": "aumentou 65,8%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Imposto de Renda e Contribuição Social sobre o Lucro",
+            "valor_atual": "R$ 3,64 bilhões",
+            "valor_anterior": "R$ 6,12 bilhões",
+            "variacao_pct": "-40,5%",
+            "interpretacao_variacao": "diminuiu 40,5%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Lucro ou Prejuízo das Operações Continuadas",
+            "valor_atual": "R$ 6,36 bilhões",
+            "valor_anterior": "R$ 7,76 bilhões",
+            "variacao_pct": "-18,0%",
+            "interpretacao_variacao": "diminuiu 18,0%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Lucro ou Prejuízo antes das Participações e Contribuições Estatutárias",
+            "valor_atual": "R$ 6,36 bilhões",
+            "valor_anterior": "R$ 7,76 bilhões",
+            "variacao_pct": "-18,0%",
+            "interpretacao_variacao": "diminuiu 18,0%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Lucro ou Prejuízo Líquido Consolidado do Período",
+            "valor_atual": "R$ 6,36 bilhões",
+            "valor_anterior": "R$ 7,76 bilhões",
+            "variacao_pct": "-18,0%",
+            "interpretacao_variacao": "diminuiu 18,0%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          }
+        ],
+        "fluxo_de_caixa": [
+          {
+            "conta": "Caixa Líquido das Atividades Operacionais",
+            "valor_atual": "R$ 34,04 bilhões",
+            "valor_anterior": "R$ 72,35 bilhões",
+            "variacao_pct": "-53,0%",
+            "interpretacao_variacao": "diminuiu 53,0%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Caixa Líquido Atividades de Investimento",
+            "valor_atual": "-R$ 18,70 bilhões",
+            "valor_anterior": "-R$ 81,64 bilhões",
+            "variacao_pct": "+77,1%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 77,1% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Caixa Líquido Atividades de Financiamento",
+            "valor_atual": "-R$ 6,98 bilhões",
+            "valor_anterior": "-R$ 1,29 bilhões",
+            "variacao_pct": "-441,1%",
+            "interpretacao_variacao": "ficou mais negativo (em valor absoluto, 441,1% maior)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Variação Cambial s/ Caixa e Equivalentes",
+            "valor_atual": "-R$ 2,98 bilhões",
+            "valor_anterior": "-R$ 7,66 bilhões",
+            "variacao_pct": "+61,1%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 61,1% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Aumento (Redução) de Caixa e Equivalentes",
+            "valor_atual": "R$ 5,38 bilhões",
+            "valor_anterior": "-R$ 18,23 bilhões",
+            "variacao_pct": "+129,5%",
+            "interpretacao_variacao": "passou de negativo para positivo (inversão de sinal: a variação percentual não é comparável)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          }
+        ]
+      },
+      "decomposicao_resultado": {
+        "base": "Consolidado",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "fecha": true,
+        "criterio": "contribuição = valor atual − valor anterior de cada parcela; a soma das contribuições da ponte é igual à variação do resultado",
+        "resultado": {
+          "conta": "Lucro ou Prejuízo Líquido Consolidado do Período",
+          "valor_anterior": "R$ 7,76 bilhões",
+          "valor_atual": "R$ 6,36 bilhões",
+          "variacao_absoluta": "-R$ 1,40 bilhões"
+        },
+        "ponte": [
+          {
+            "conta": "Resultado antes dos Tributos sobre o Lucro",
+            "valor_anterior": "R$ 1,64 bilhões",
+            "valor_atual": "R$ 2,73 bilhões",
+            "contribuicao": "+R$ 1,08 bilhões",
+            "efeito": "aumentou o resultado"
+          },
+          {
+            "conta": "Imposto de Renda e Contribuição Social sobre o Lucro",
+            "valor_anterior": "R$ 6,12 bilhões",
+            "valor_atual": "R$ 3,64 bilhões",
+            "contribuicao": "-R$ 2,48 bilhões",
+            "efeito": "reduziu o resultado"
+          }
+        ],
+        "abertura_da_ancora": {
+          "conta": "Resultado antes dos Tributos sobre o Lucro",
+          "itens": [
+            {
+              "conta": "Resultado Bruto de Intermediação Financeira",
+              "valor_anterior": "R$ 47,96 bilhões",
+              "valor_atual": "R$ 49,46 bilhões",
+              "contribuicao": "+R$ 1,50 bilhões",
+              "efeito": "aumentou o subtotal"
+            },
+            {
+              "conta": "Outras Despesas e Receitas Operacionais",
+              "valor_anterior": "-R$ 46,32 bilhões",
+              "valor_atual": "-R$ 46,74 bilhões",
+              "contribuicao": "-R$ 417,26 milhões",
+              "efeito": "reduziu o subtotal"
+            }
+          ]
+        }
+      }
+    },
+    "secoes": {
+      "RESUMO": "O Banco do Brasil S.A. apresentou um resultado misto no 1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026. Embora as Receitas de Intermediação Financeira tenham crescido 7,7%, o lucro líquido caiu 18,0%, totalizando R$ 6,36 bilhões. Essa queda no lucro foi influenciada principalmente por um menor impacto positivo do resultado antes dos tributos e por uma redução do resultado devido ao Imposto de Renda e Contribuição Social sobre o Lucro. A saúde do caixa da empresa, por outro lado, mostrou melhora, com o dinheiro disponível aumentando 9,0%.",
+      "O QUE A EMPRESA FATURA": "O Banco do Brasil S.A. é uma instituição financeira, e sua principal fonte de faturamento são as Receitas de Intermediação Financeira. Isso significa que a empresa gera dinheiro por meio de operações como empréstimos, financiamentos, investimentos e outras atividades bancárias.\nNeste período, o banco faturou R$ 160,75 bilhões em Receitas de Intermediação Financeira. Esse valor representa um aumento de 7,7% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o faturamento foi de R$ 149,25 bilhões.",
+      "LUCRO": "O lucro líquido do Banco do Brasil S.A. no 1º semestre (6 meses acumulados) de 2026 foi de R$ 6,36 bilhões. Esse resultado representa uma queda de 18,0% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o lucro foi de R$ 7,76 bilhões. Isso significa que, a cada R$ 100 de receita, sobraram R$ 3,96 de lucro.\n\nPara entender como o lucro mudou, podemos observar a seguinte composição:\nO lucro líquido do período anterior foi de R$ 7,76 bilhões e passou para R$ 6,36 bilhões, uma redução de R$ 1,40 bilhão.\nEssa variação foi resultado de dois fatores principais:\n*   O Resultado antes dos Tributos sobre o Lucro aumentou o resultado em R$ 1,08 bilhão.\n*   O Imposto de Renda e Contribuição Social sobre o Lucro reduziu o resultado em R$ 2,48 bilhões.\n\nAinda sobre o Resultado antes dos Tributos sobre o Lucro, que contribuiu positivamente, ele foi formado por:\n*   O Resultado Bruto de Intermediação Financeira, que aumentou o subtotal em R$ 1,50 bilhão.\n*   As Outras Despesas e Receitas Operacionais, que reduziram o subtotal em R$ 417,26 milhões.",
+      "SAUDE DO CAIXA E DIVIDAS": "Para bancos, a dívida líquida não é um indicador usado, pois captar dinheiro (como depósitos de clientes e recursos no mercado aberto) faz parte do negócio bancário e não é um sinal de endividamento no sentido tradicional.\nO dinheiro disponível do Banco do Brasil S.A. (caixa e equivalentes de caixa) aumentou para R$ 65,02 bilhões em 30/06/2026, um crescimento de 9,0% em relação a 31/12/2025 (fechamento do exercício anterior).\nOs Depósitos de clientes, que são uma forma de captação de recursos para o banco, atingiram R$ 954,02 bilhões, um aumento de 6,2% em comparação com 31/12/2025.\nA Captação no mercado aberto, outra forma de o banco obter recursos, foi de R$ 845,41 bilhões, mostrando um crescimento de 16,3% em relação a 31/12/2025.\nEsses números mostram que o banco conseguiu aumentar suas fontes de recursos e seu caixa, o que é importante para suas operações.",
+      "O QUE FOI POSITIVO": "- As Receitas de Intermediação Financeira aumentaram 7,7%, atingindo R$ 160,75 bilhões.\n- O Resultado Bruto de Intermediação Financeira aumentou 3,1%, chegando a R$ 49,46 bilhões.\n- O dinheiro disponível (caixa e equivalentes de caixa) cresceu 9,0%, totalizando R$ 65,02 bilhões.\n- Os Depósitos de clientes aumentaram 6,2%, alcançando R$ 954,02 bilhões.\n- O Ativo Total (total de bens e direitos da empresa) cresceu 5,4%, chegando a R$ 2,59 trilhões.\n- O Aumento (Redução) de Caixa e Equivalentes passou de negativo para positivo, indicando uma melhora na posição de caixa.",
+      "O QUE MERECE ATENCAO": "- O lucro líquido caiu 18,0%, totalizando R$ 6,36 bilhões.\n- As Despesas de Intermediação Financeira ficaram mais negativas (aumentaram em valor absoluto) em 9,9%, chegando a -R$ 111,28 bilhões.\n- As Outras Despesas e Receitas Operacionais ficaram mais negativas (aumentaram em valor absoluto) em 0,9%, totalizando -R$ 46,74 bilhões.\n- O Patrimônio Líquido (o valor que os sócios têm na empresa, após descontar as dívidas) diminuiu 1,4%, para R$ 190,77 bilhões.\n- O Caixa Líquido das Atividades Operacionais diminuiu 53,0%, para R$ 34,04 bilhões.\n- O Caixa Líquido Atividades de Financiamento ficou mais negativo (aumentou em valor absoluto) em 441,1%, para -R$ 6,98 bilhões.",
+      "LIMITACOES DESTA ANALISE": "Não foi possível calcular indicadores como EBITDA (lucro antes de descontar juros, impostos e depreciação), DRE (Demonstração de Resultado do Exercício), BPA (Lucro Básico por Ação), BPP (Lucro Diluído por Ação), DFC (Demonstração de Fluxo de Caixa), EBIT (Lucro antes de Juros e Impostos), LAJIDA (Lucro antes de Juros, Impostos, Depreciação e Amortização), alavancagem, provisão, amortização, depreciação, ativo, passivo, patrimônio líquido (PL), exercício social e resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos) a partir dos dados estruturados disponíveis.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo."
+    },
+    "narrativa_completa": "Aqui está a análise financeira do Banco do Brasil S.A. para o investidor iniciante:\n\n### RESUMO\nO Banco do Brasil S.A. apresentou um resultado misto no 1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026. Embora as Receitas de Intermediação Financeira tenham crescido 7,7%, o lucro líquido caiu 18,0%, totalizando R$ 6,36 bilhões. Essa queda no lucro foi influenciada principalmente por um menor impacto positivo do resultado antes dos tributos e por uma redução do resultado devido ao Imposto de Renda e Contribuição Social sobre o Lucro. A saúde do caixa da empresa, por outro lado, mostrou melhora, com o dinheiro disponível aumentando 9,0%.\n\n### O QUE A EMPRESA FATURA\nO Banco do Brasil S.A. é uma instituição financeira, e sua principal fonte de faturamento são as Receitas de Intermediação Financeira. Isso significa que a empresa gera dinheiro por meio de operações como empréstimos, financiamentos, investimentos e outras atividades bancárias.\nNeste período, o banco faturou R$ 160,75 bilhões em Receitas de Intermediação Financeira. Esse valor representa um aumento de 7,7% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o faturamento foi de R$ 149,25 bilhões.\n\n### LUCRO\nO lucro líquido do Banco do Brasil S.A. no 1º semestre (6 meses acumulados) de 2026 foi de R$ 6,36 bilhões. Esse resultado representa uma queda de 18,0% em comparação com o 1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior), quando o lucro foi de R$ 7,76 bilhões. Isso significa que, a cada R$ 100 de receita, sobraram R$ 3,96 de lucro.\n\nPara entender como o lucro mudou, podemos observar a seguinte composição:\nO lucro líquido do período anterior foi de R$ 7,76 bilhões e passou para R$ 6,36 bilhões, uma redução de R$ 1,40 bilhão.\nEssa variação foi resultado de dois fatores principais:\n*   O Resultado antes dos Tributos sobre o Lucro aumentou o resultado em R$ 1,08 bilhão.\n*   O Imposto de Renda e Contribuição Social sobre o Lucro reduziu o resultado em R$ 2,48 bilhões.\n\nAinda sobre o Resultado antes dos Tributos sobre o Lucro, que contribuiu positivamente, ele foi formado por:\n*   O Resultado Bruto de Intermediação Financeira, que aumentou o subtotal em R$ 1,50 bilhão.\n*   As Outras Despesas e Receitas Operacionais, que reduziram o subtotal em R$ 417,26 milhões.\n\n### SAÚDE DO CAIXA E DÍVIDAS\nPara bancos, a dívida líquida não é um indicador usado, pois captar dinheiro (como depósitos de clientes e recursos no mercado aberto) faz parte do negócio bancário e não é um sinal de endividamento no sentido tradicional.\nO dinheiro disponível do Banco do Brasil S.A. (caixa e equivalentes de caixa) aumentou para R$ 65,02 bilhões em 30/06/2026, um crescimento de 9,0% em relação a 31/12/2025 (fechamento do exercício anterior).\nOs Depósitos de clientes, que são uma forma de captação de recursos para o banco, atingiram R$ 954,02 bilhões, um aumento de 6,2% em comparação com 31/12/2025.\nA Captação no mercado aberto, outra forma de o banco obter recursos, foi de R$ 845,41 bilhões, mostrando um crescimento de 16,3% em relação a 31/12/2025.\nEsses números mostram que o banco conseguiu aumentar suas fontes de recursos e seu caixa, o que é importante para suas operações.\n\n### O QUE FOI POSITIVO\n- As Receitas de Intermediação Financeira aumentaram 7,7%, atingindo R$ 160,75 bilhões.\n- O Resultado Bruto de Intermediação Financeira aumentou 3,1%, chegando a R$ 49,46 bilhões.\n- O dinheiro disponível (caixa e equivalentes de caixa) cresceu 9,0%, totalizando R$ 65,02 bilhões.\n- Os Depósitos de clientes aumentaram 6,2%, alcançando R$ 954,02 bilhões.\n- O Ativo Total (total de bens e direitos da empresa) cresceu 5,4%, chegando a R$ 2,59 trilhões.\n- O Aumento (Redução) de Caixa e Equivalentes passou de negativo para positivo, indicando uma melhora na posição de caixa.\n\n### O QUE MERECE ATENÇÃO\n- O lucro líquido caiu 18,0%, totalizando R$ 6,36 bilhões.\n- As Despesas de Intermediação Financeira ficaram mais negativas (aumentaram em valor absoluto) em 9,9%, chegando a -R$ 111,28 bilhões.\n- As Outras Despesas e Receitas Operacionais ficaram mais negativas (aumentaram em valor absoluto) em 0,9%, totalizando -R$ 46,74 bilhões.\n- O Patrimônio Líquido (o valor que os sócios têm na empresa, após descontar as dívidas) diminuiu 1,4%, para R$ 190,77 bilhões.\n- O Caixa Líquido das Atividades Operacionais diminuiu 53,0%, para R$ 34,04 bilhões.\n- O Caixa Líquido Atividades de Financiamento ficou mais negativo (aumentou em valor absoluto) em 441,1%, para -R$ 6,98 bilhões.\n\n### LIMITAÇÕES DESTA ANÁLISE\nNão foi possível calcular indicadores como EBITDA (lucro antes de descontar juros, impostos e depreciação), DRE (Demonstração de Resultado do Exercício), BPA (Lucro Básico por Ação), BPP (Lucro Diluído por Ação), DFC (Demonstração de Fluxo de Caixa), EBIT (Lucro antes de Juros e Impostos), LAJIDA (Lucro antes de Juros, Impostos, Depreciação e Amortização), alavancagem, provisão, amortização, depreciação, ativo, passivo, patrimônio líquido (PL), exercício social e resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos) a partir dos dados estruturados disponíveis.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo.",
+    "periodo": "2026-06-30",
+    "auditoria": {
+      "verificacoes": [
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "9,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,0%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "R$ 160,75 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 160,75 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "R$ 149,25 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 149,25 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_anterior",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 7,76 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 7,76 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 7,76 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 7,76 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 1,40 bilhão",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 1,40 bilhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.resultado.variacao_absoluta",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 1,08 bilhão",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 1,08 bilhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "conceito_reivindicado": "resultado_antes_tributos",
+          "conceito_do_fato": "resultado_antes_tributos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 2,48 bilhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "-R$ 2,48 bilhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "motivo": "sinal incompatível com o fato",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "tributos_sobre_lucro",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 1,50 bilhão",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 1,50 bilhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+          "conceito_reivindicado": "resultado_bruto",
+          "conceito_do_fato": "resultado_bruto",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 417,26 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 417,26 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+          "conceito_reivindicado": "despesas_receitas_operacionais",
+          "conceito_do_fato": "despesas_receitas_operacionais",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 100",
+          "tipo": "reais",
+          "veredito": "IGNORADO",
+          "fato_mais_proximo": null,
+          "origem_fato": "recurso didático (não conta na taxa)"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,96",
+          "tipo": "reais",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,96",
+          "origem_fato": "métrica calculada: lucro_liquido.contexto_por_100_reais"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 65,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 65,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "caixa",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 954,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 954,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.depositos",
+          "conceito_reivindicado": "depositos",
+          "conceito_do_fato": "depositos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 845,41 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 845,41 bilhões",
+          "origem_fato": "métrica calculada: endividamento.captacao_mercado_aberto",
+          "conceito_reivindicado": "captacao_mercado_aberto",
+          "conceito_do_fato": "captacao_mercado_aberto",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "9,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,0%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "6,2%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "6,2%",
+          "origem_fato": "métrica calculada: endividamento.variacao_depositos_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "16,3%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "16,3%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 160,75 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 160,75 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 49,46 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 49,46 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+          "conceito_reivindicado": "resultado_bruto",
+          "conceito_do_fato": "resultado_bruto",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 65,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 65,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "caixa",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 954,02 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 954,02 bilhões",
+          "origem_fato": "métrica calculada: endividamento.depositos",
+          "conceito_reivindicado": "depositos",
+          "conceito_do_fato": "depositos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 2,59 trilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 2,59 trilhões",
+          "origem_fato": "métrica calculada: outros_destaques",
+          "conceito_reivindicado": "ativo_total",
+          "conceito_do_fato": "ativo_total",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "7,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "7,7%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "3,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "3,1%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "9,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,0%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "6,2%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "6,2%",
+          "origem_fato": "métrica calculada: endividamento.variacao_depositos_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "5,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "5,4%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 6,36 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,36 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "-R$ 111,28 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 111,28 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": null,
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "-R$ 46,74 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 46,74 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+          "conceito_reivindicado": "despesas_receitas_operacionais",
+          "conceito_do_fato": "despesas_receitas_operacionais",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 190,77 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 190,77 bilhões",
+          "origem_fato": "métrica calculada: outros_destaques",
+          "conceito_reivindicado": "patrimonio_liquido",
+          "conceito_do_fato": "patrimonio_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 34,04 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 34,04 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+          "conceito_reivindicado": "fluxo_operacional",
+          "conceito_do_fato": "fluxo_operacional",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "-R$ 6,98 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 6,98 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+          "conceito_reivindicado": "fluxo_financiamento",
+          "conceito_do_fato": "fluxo_financiamento",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "18,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-18,0%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "9,9%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-9,9%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "0,9%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-0,9%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "1,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-1,4%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "53,0%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-53,0%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "441,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "441,1%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.interpretacao_variacao"
+        }
+      ],
+      "resumo": {
+        "total_numeros": 46,
+        "conferem": 45,
+        "divergentes": 1,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 97.8,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+        "auditor": {
+          "versao": "2.0",
+          "verificar_conceito": true,
+          "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+        },
+        "verificacao_conceitual": {
+          "moedas": 26,
+          "verificadas": 22,
+          "conceito_nao_identificado": 4,
+          "conceito_sem_fato_na_fonte": 0,
+          "divergencias_de_conceito": 0,
+          "cobertura_pct": 84.6,
+          "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+        }
+      }
+    }
+  },
+  "erro": null,
+  "nome_empresa": "Banco do Brasil S.A.",
+  "documento": {
+    "periodo": "2026-06-30",
+    "versao": 1,
+    "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=160511"
+  }
+}

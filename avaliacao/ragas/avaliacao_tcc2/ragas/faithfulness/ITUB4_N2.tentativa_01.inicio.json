@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "ITUB4_N2",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:23:56+00:00",
+  "sha256_resposta": "4a634390939f80448fc5e484d4bcf97e32e1898f05f7ec928fe3a62bab893892",
+  "sha256_registro": "08c06fa0aae757a2ac363b5a86ecb9d6ff642c2873f2afd4e7415273efb72843"
+}

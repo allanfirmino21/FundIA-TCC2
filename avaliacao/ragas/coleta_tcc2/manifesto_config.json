@@ -1,0 +1,285 @@
+{
+  "manifesto": "configuração congelada da coleta (não é alterado depois de criado)",
+  "commit_inicio": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+  "commit_congelamento_dataset": "a3f424f8bcc25446fc8221dbd1a30bb370b68af8",
+  "criado_em_utc": "2026-09-28T00:14:05+00:00",
+  "sha256_configuracao": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+  "fonte_cvm_inicio": {
+    "origem": "arquivo local",
+    "arquivo": "itr_2026.zip",
+    "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+    "lido_em_utc": "2026-09-28T00:10:59+00:00"
+  },
+  "chave_api": "lida em tempo de execução de api_key.txt; nunca registrada",
+  "configuracao": {
+    "experimento": "RAGAS TCC 2 — coleta das respostas diretas (96 casos)",
+    "esquema": 1,
+    "dataset": {
+      "arquivo": "avaliacao/ragas/dataset_tcc2.json",
+      "sha256": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e"
+    },
+    "sha256_protocolo_no_dataset": "e0b374608a1e4f5b4cae530931e4626f6f67c145d215212ea7ecd55b08da2490",
+    "n_casos": 96,
+    "empresas": [
+      "AURE3",
+      "BBAS3",
+      "CEAB3",
+      "IRBR3",
+      "ITSA4",
+      "ITUB4",
+      "LAVV3",
+      "LWSA3",
+      "POMO4",
+      "VALE3",
+      "WEGE3",
+      "ZAMP3"
+    ],
+    "categorias": [
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "distribuicao_disponibilidade": {
+      "ausente": 12,
+      "parcial": 15,
+      "presente": 69
+    },
+    "ordem_casos": [
+      "WEGE3_N1",
+      "WEGE3_N2",
+      "WEGE3_N3",
+      "WEGE3_N4",
+      "WEGE3_N5",
+      "WEGE3_E1",
+      "WEGE3_E2",
+      "WEGE3_E3",
+      "BBAS3_N1",
+      "BBAS3_N2",
+      "BBAS3_N3",
+      "BBAS3_N4",
+      "BBAS3_N5",
+      "BBAS3_E1",
+      "BBAS3_E2",
+      "BBAS3_E3",
+      "ZAMP3_N1",
+      "ZAMP3_N2",
+      "ZAMP3_N3",
+      "ZAMP3_N4",
+      "ZAMP3_N5",
+      "ZAMP3_E1",
+      "ZAMP3_E2",
+      "ZAMP3_E3",
+      "LWSA3_N1",
+      "LWSA3_N2",
+      "LWSA3_N3",
+      "LWSA3_N4",
+      "LWSA3_N5",
+      "LWSA3_E1",
+      "LWSA3_E2",
+      "LWSA3_E3",
+      "VALE3_N1",
+      "VALE3_N2",
+      "VALE3_N3",
+      "VALE3_N4",
+      "VALE3_N5",
+      "VALE3_E1",
+      "VALE3_E2",
+      "VALE3_E3",
+      "ITUB4_N1",
+      "ITUB4_N2",
+      "ITUB4_N3",
+      "ITUB4_N4",
+      "ITUB4_N5",
+      "ITUB4_E1",
+      "ITUB4_E2",
+      "ITUB4_E3",
+      "LAVV3_N1",
+      "LAVV3_N2",
+      "LAVV3_N3",
+      "LAVV3_N4",
+      "LAVV3_N5",
+      "LAVV3_E1",
+      "LAVV3_E2",
+      "LAVV3_E3",
+      "POMO4_N1",
+      "POMO4_N2",
+      "POMO4_N3",
+      "POMO4_N4",
+      "POMO4_N5",
+      "POMO4_E1",
+      "POMO4_E2",
+      "POMO4_E3",
+      "ITSA4_N1",
+      "ITSA4_N2",
+      "ITSA4_N3",
+      "ITSA4_N4",
+      "ITSA4_N5",
+      "ITSA4_E1",
+      "ITSA4_E2",
+      "ITSA4_E3",
+      "IRBR3_N1",
+      "IRBR3_N2",
+      "IRBR3_N3",
+      "IRBR3_N4",
+      "IRBR3_N5",
+      "IRBR3_E1",
+      "IRBR3_E2",
+      "IRBR3_E3",
+      "CEAB3_N1",
+      "CEAB3_N2",
+      "CEAB3_N3",
+      "CEAB3_N4",
+      "CEAB3_N5",
+      "CEAB3_E1",
+      "CEAB3_E2",
+      "CEAB3_E3",
+      "AURE3_N1",
+      "AURE3_N2",
+      "AURE3_N3",
+      "AURE3_N4",
+      "AURE3_N5",
+      "AURE3_E1",
+      "AURE3_E2",
+      "AURE3_E3"
+    ],
+    "ordem_criterio": "ordem congelada dos casos no dataset (sem randomização)",
+    "documentos": {
+      "AURE3": {
+        "codigo_cvm": "26620",
+        "versao": 1,
+        "sha256_documento": "9a3f3625a0e1e2603d67fddbed4436c8d46774ff647a717d4973847de678bd8b",
+        "sha256_ctx_num": "65175eccd1b63d6f63a03ef4585cd841fc6c0dd623a1bf6581892903c3e54ab6"
+      },
+      "BBAS3": {
+        "codigo_cvm": "1023",
+        "versao": 1,
+        "sha256_documento": "96c321232278beb5eb5a4eff167b5cedf76611b55e47f8ccb62c6c051c96bde8",
+        "sha256_ctx_num": "666dea60db7dc35f9eb99870038d360a71f4beb523a8167c27024d324dd13893"
+      },
+      "CEAB3": {
+        "codigo_cvm": "24848",
+        "versao": 1,
+        "sha256_documento": "1dece32b1e39f0a1474f5cc95543d762eac066d691859792fbbb3214dba72511",
+        "sha256_ctx_num": "82517fbdad42e2542a69db903b65bc67c1d4a3f00ca9ad788ade1d77c549643d"
+      },
+      "IRBR3": {
+        "codigo_cvm": "24180",
+        "versao": 2,
+        "sha256_documento": "e528959c4a2cf094c27a669988b54b6add6e733cdb6755961bb6287493cfd5ea",
+        "sha256_ctx_num": "444b3d536da5dcc66846e2bb49351f401fbc3582dec7bea6d0cbe4fc209bdfa2"
+      },
+      "ITSA4": {
+        "codigo_cvm": "7617",
+        "versao": 2,
+        "sha256_documento": "f252b1eb14ee6e5c1ff7ee142e0d39be6e397cd822a920397c544303857464c6",
+        "sha256_ctx_num": "b4cd4f4c907fbf564019e902620cea7a69d3ac8c0eabe2da9e452986298078b6"
+      },
+      "ITUB4": {
+        "codigo_cvm": "19348",
+        "versao": 1,
+        "sha256_documento": "409ed7c7a7a4cc56caf4ac54c5bf0914955e48668b0ad9c10c892c67374811a0",
+        "sha256_ctx_num": "9f34e3f53bb7eb9be2a74be49dfda9d655267841598f45055ba40861eacb471a"
+      },
+      "LAVV3": {
+        "codigo_cvm": "25062",
+        "versao": 1,
+        "sha256_documento": "7d18d8725fd03ffc05c327335ce50ec1c8629fb680a2b76129fe7cebbf8dddf2",
+        "sha256_ctx_num": "c0718250913fec5a8a23622154a57d0f279c36d11d03307d310b124aa947efed"
+      },
+      "LWSA3": {
+        "codigo_cvm": "24910",
+        "versao": 1,
+        "sha256_documento": "e088ffd53f2899ddef5f70e3e30a8b57a33b087767c040f93171a7dc7458eb26",
+        "sha256_ctx_num": "38df2447f93d462418c26e3e8ca466fc002849feff2b5d92888806fc5b17cf97"
+      },
+      "POMO4": {
+        "codigo_cvm": "8451",
+        "versao": 1,
+        "sha256_documento": "79bba9fbcdeed51b959826ca83d1ad7e2d2e5dda21d352754df598f40da9d43b",
+        "sha256_ctx_num": "7d66585f5aa1a585deb8a5161ede7bb4f39d781306a00c1c15c5aa369ee3c372"
+      },
+      "VALE3": {
+        "codigo_cvm": "4170",
+        "versao": 3,
+        "sha256_documento": "32b625e17d4b90aac9575bac7995e0b5c0b07a64edb466da3d5f2ac6c306c470",
+        "sha256_ctx_num": "984ed325078f8930dace7f0f19b01a81a72a55a13255547c6327fa7962653160"
+      },
+      "WEGE3": {
+        "codigo_cvm": "5410",
+        "versao": 1,
+        "sha256_documento": "500d0c0d51df24cf9d0a166c24f3eea033b74a6eb63285cc4349036857bb8ba6",
+        "sha256_ctx_num": "a4cfe672d13e6c8258ba6709ddbb6ab395e999f3d1a6db3a40db7dc33c9982b9"
+      },
+      "ZAMP3": {
+        "codigo_cvm": "24317",
+        "versao": 1,
+        "sha256_documento": "044d8ad11f532cc3f65127a798d06bd689aad50f20da38a0b42e80d0f3bcf983",
+        "sha256_ctx_num": "97e46bc582cc2e667c8fcd72ad3ef675f8d8b58908ad49fcdf12d41824e2812f"
+      }
+    },
+    "geracao": {
+      "provedor": "Google Gemini API (google-genai)",
+      "modelo": "gemini-2.5-flash",
+      "temperatura": 0.1,
+      "max_output_tokens": 1024,
+      "prompt_modelo": "Você é um analista financeiro. Com base EXCLUSIVAMENTE nos trechos abaixo, responda à pergunta de forma objetiva e em português.\n\nNota: \"Receita de Venda de Bens e/ou Serviços\" equivale à \"Receita Líquida\" para fins de análise.\n\n## TRECHOS DO DOCUMENTO\n{contexto}\n\n## PERGUNTA\n{pergunta}",
+      "sha256_prompt_modelo": "cf2a6577aed75d58fdd077711c801a1fdba32a385197f741a629494b175d3da1",
+      "retentativas_automaticas": 0,
+      "politica_erro": "falha grava ERRO e interrompe a execução; nova tentativa só com --retentar-erros"
+    },
+    "recuperacao": {
+      "funcao": "modulos.recuperacao.recuperar_contexto",
+      "tipo_doc": "ITR",
+      "periodo": "2026-06-30",
+      "query_numerico": "receita líquida lucro bruto EBITDA margem operacional lucro líquido endividamento dívida caixa resultado financeiro variação percentual",
+      "top_k": 3,
+      "embeddings": "paraphrase-multilingual-mpnet-base-v2",
+      "embeddings_revisao_local": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+      "chunking": {
+        "funcao": "modulos.chunking.criar_chunks",
+        "tabela": "uma tabela inteira por chunk",
+        "max_palavras_narrativo": 800,
+        "overlap": 100
+      },
+      "indice": "ChromaDB próprio (avaliacao/ragas/runtime/indices), coleção recriada do zero a cada execução",
+      "separacao_trechos": "avaliacao/coletar_respostas.extrair_chunks (TCC 1)"
+    },
+    "codigo": {
+      "config.py": "1b38f6e16c6e7ff1df14fbbe79e52a26958cb32675e840643937f6aa16da238d",
+      "modulos/cvm.py": "924c33a1845a25d1de736eda224acd968cd19a568957ee83ea1ac076cf880f6c",
+      "modulos/extracao.py": "29b0ca4bab74d37d06c81ede58c35fc0c97ec0657045db70a97a6a4be4bed1e7",
+      "modulos/chunking.py": "cb72dea36ca0adad6d854a292feae7d70088a6094918c96898e9a65b4bc9a1e7",
+      "modulos/recuperacao.py": "89ef62db85f442862956a0e37a3f4d612d2c62a1197eaf95f6d96dfac4acf88d",
+      "avaliacao/coletar_respostas.py": "e70980368a31b8bcdc12260d7bf6aec5f908d87053e4bf824c02a643f1d67e95",
+      "avaliacao/ragas/coletar_respostas_tcc2.py": "2ba5a565cbc3c8723be7954c5a27de3cbf48ab3864e405e0925be0f18ad97ccc"
+    },
+    "instrumentos_congelados": {
+      "avaliacao/ragas/PROTOCOLO_RAGAS_TCC2.md": "e0b374608a1e4f5b4cae530931e4626f6f67c145d215212ea7ecd55b08da2490",
+      "avaliacao/ragas/RUBRICA_COMPORTAMENTO_TCC2.md": "c1b401ad11bb6a828c85ed1aa92515a71feaa04222089766a8411d2950ee69dc",
+      "avaliacao/ragas/exatidao.py": "2b4b11706841701ed6ffd551a4789431fa9102c65cf1302104cfa600ce432ff0",
+      "avaliacao/ragas/comportamento.py": "d2a3e7e79d2275b9de3dff0b64b0bc3b0455c3fa9090766e068c290117febad2",
+      "avaliacao/ragas/revisao_tecnica_tcc2.json": "ea2408151cf38f1ba38c30893a9a3c5c169848c6732fd6791df3345770d5d244"
+    },
+    "ambiente": {
+      "python": "3.12.6",
+      "dependencias": {
+        "google-genai": "2.2.0",
+        "chromadb": "1.5.9",
+        "sentence-transformers": "5.5.0",
+        "transformers": "5.3.0",
+        "torch": "2.11.0",
+        "huggingface-hub": "1.8.0",
+        "tokenizers": "0.22.2",
+        "pandas": "2.2.3",
+        "numpy": "2.2.4",
+        "requests": "2.32.3",
+        "pdfplumber": "0.11.9"
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+# ============================================================
+# Credenciais: nunca versionar
+# ============================================================
+api_key.txt
+*api_key*.txt
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service_account*.json
+secrets/
+
+# Configuração local de ferramentas e editores
+# (.claude/ guarda permissões locais e pode conter comandos com credenciais)
+.claude/
+.codex/
+.vscode/
+.idea/
+
+# ============================================================
+# Dados e índices gerados automaticamente
+# ============================================================
+# Banco vetorial, gerado na indexação
+chroma_db/
+
+# Cache de documentos da CVM, baixado pelo pipeline
+dados/cache/
+
+# Índices e cadastro da CVM, baixados automaticamente (ver README, "Dados").
+# dados/ticker_map.csv é versionado: mapa ticker -> código CVM curado à mão.
+dados/fca_*.csv
+dados/meta_*.csv
+
+# Coleta do RAGAS do TCC 2: documentos e índices ChromaDB recriados a cada
+# execução (a saída versionável fica em avaliacao/ragas/coleta_tcc2/)
+avaliacao/ragas/runtime/
+
+# ============================================================
+# Python, Node e ambientes
+# ============================================================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+node_modules/
+frontend/dist/
+
+# ============================================================
+# Temporários, compilações e arquivos do sistema
+# ============================================================
+_*.txt
+*.tmp
+*.bak
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Compilação LaTeX
+*.aux
+*.toc
+*.lof
+*.lot
+*.loq
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Pacotes compactados
+*.zip
+
+# ============================================================
+# Material interno não destinado ao repositório público
+# ============================================================
+# Redação do TCC 2: rascunhos, versões, relatórios internos, fontes LaTeX e PDF.
+# Os arquivos de redação versionados em commits anteriores continuam no histórico.
+redacao_tcc2/
+
+# Auditorias internas de 18/10/2026. As cópias necessárias para a evidência
+# citada no TCC estão em avaliacao/execucao_exploratoria_2026-10-18/.
+/auditoria_execucao_*/
+/Auditoria_FundIA_*.pdf
+/CONCLUSOES_CONSOLIDADAS_AUDITORIAS_FUNDIA.md

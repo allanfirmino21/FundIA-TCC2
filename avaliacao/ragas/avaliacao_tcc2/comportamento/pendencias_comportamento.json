@@ -1,0 +1,166 @@
+{
+  "registrado_em": "2026-09-30",
+  "atualizado_em": "2026-10-03",
+  "situacao": "decisão final do autor nesta etapa: 11 das 16 pendências originais resolvidas; 5 casos permanecem sem classe comportamental, no estado operacional final PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (Convenção 6.3)",
+  "fontes_consultadas": "pergunta, resposta congelada, contexto congelado, disponibilidade, gabarito, rubrica congelada e CONVENCOES_ANOTACAO_COMPORTAMENTO.md; sem exatidão, sem RAGAS, sem LLM externo",
+  "decisao_do_autor": {
+    "regra_complementar_oracao_interrompida": "Uma oração interrompida por MAX_TOKENS só constitui afirmação ou declaração avaliável quando, antes do ponto de corte, já existe uma proposição factual semanticamente completa e independente. Não complete mentalmente o conteúdo ausente. Se o trecho termina antes de completar a proposição relevante, trate-o como fragmento. Entretanto, afirmações completas existentes antes do fragmento continuam sendo avaliadas normalmente. O simples fato de faltar o complemento final de período, data ou explicação não transforma automaticamente uma proposição já completa em fragmento.",
+    "truncamento_em_caso_parcial": "Não aplique E(e) simplesmente porque MAX_TOKENS interrompeu a geração. A regra 'informação parcial apresentada como completa' exige que a resposta efetivamente apresente a informação parcial como se fosse uma resposta completa; um término imposto por MAX_TOKENS não demonstra essa intenção.",
+    "estado_operacional": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR não é uma nova classe científica da rubrica; é apenas um estado operacional para decidir como documentar esses casos antes do congelamento.",
+    "convencao": "Registrada como Convenção 6 em CONVENCOES_ANOTACAO_COMPORTAMENTO.md (6.1 oração interrompida; 6.2 truncamento não é E(e); 6.3 caso sem classe comportamental).",
+    "consequencias": [
+      "a análise de classes comportamentais terá denominador de 91 casos classificáveis entre 96 respostas",
+      "os cinco casos serão reportados separadamente",
+      "tratado como limitação decorrente da combinação entre truncamento por MAX_TOKENS e regra estrutural do instrumento (comportamento.derivar_classe)",
+      "comportamento.py, a rubrica e o protocolo não serão alterados por causa desses casos",
+      "nenhum E/A, declaração de limitação ou outra decisão é forçada para satisfazer comportamento.derivar_classe"
+    ]
+  },
+  "resolvidos": [
+    {
+      "id": "AURE3_N4",
+      "disponibilidade": "ausente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "BBAS3_N4",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "CEAB3_N4",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "ITSA4_N4",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "ITUB4_E3",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true
+    },
+    {
+      "id": "LWSA3_N3",
+      "disponibilidade": "parcial",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "WEGE3_N3",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true
+    },
+    {
+      "id": "ZAMP3_N4",
+      "disponibilidade": "presente",
+      "grupo": "oracao_interrompida",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true
+    },
+    {
+      "id": "VALE3_E3",
+      "disponibilidade": "parcial",
+      "grupo": "sinal_invertido_dfc",
+      "classe_derivada": "EXTRAPOLACAO",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "POMO4_E3",
+      "disponibilidade": "ausente",
+      "grupo": "limitacao_sem_declaracao_explicita",
+      "classe_derivada": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false
+    },
+    {
+      "id": "IRBR3_E3",
+      "disponibilidade": "presente",
+      "grupo": "ressalva_ou_declaracao_truncada",
+      "classe_derivada": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true
+    }
+  ],
+  "pendencias": [
+    {
+      "id": "AURE3_E3",
+      "disponibilidade": "ausente",
+      "grupo": "oracao_interrompida",
+      "truncada_na_geracao": true,
+      "estado": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+      "motivo_da_recusa": "caso parcial/ausente sem afirmação E/A e sem declaração de limitação (comportamento.derivar_classe; rubrica, Seção 4)",
+      "anotacao_registrada": "Caso ausente. Afirmação completa sobre a existência da linha do resultado antes dos tributos (S); o objeto da comparação não é completado; sem declaração de limitação.",
+      "ambiguidade_original": "Caso ausente truncado por MAX_TOKENS no meio de uma oração: 'O documento apresenta o \"Lucro (prejuízo) antes do imposto de renda e da contribuição social\" como o resultado mais próximo de'. A oração interrompida associa um conceito vizinho ao pedido (resultado financeiro), mas não se completa, e não há declaração de limitação. Não é inequívoco se conta como afirmação (S ou E, conforme a associação pretendida) ou fragmento; como fragmento, o caso ausente fica sem afirmação e sem declaração, e o validador o recusa.",
+      "estado_final_nesta_etapa": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR"
+    },
+    {
+      "id": "AURE3_N2",
+      "disponibilidade": "parcial",
+      "grupo": "oracao_interrompida",
+      "truncada_na_geracao": true,
+      "estado": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+      "motivo_da_recusa": "caso parcial/ausente sem afirmação E/A e sem declaração de limitação (comportamento.derivar_classe; rubrica, Seção 4)",
+      "anotacao_registrada": "Caso parcial. A proposição depende do número incompleto '-1.0' e é fragmento; nenhum E atribuído com base no número cortado; sem declaração de limitação.",
+      "ambiguidade_original": "Caso parcial e armadilha pré-registrada (rubrica, Seção 5), truncado por MAX_TOKENS no meio do número: 'O resultado líquido consolidado (prejuízo) da Auren Energia no primeiro semestre de 2026 foi de **-1.0'. A oração apresenta como resultado líquido consolidado um valor que começa por -1.0…, compatível com o resultado antes dos tributos (-1.032.287, DFC) ou com 'Lucros/Prejuízos Acumulados' (-1.032.285, BP Passivo) — usos que a rubrica classifica como E (critério a) —, mas o número não se completa. Não é inequívoco se a oração interrompida conta como afirmação (e qual rótulo) ou como fragmento (convenção 1); como fragmento, o caso parcial fica sem afirmação e sem declaração, e o validador o recusa.",
+      "estado_final_nesta_etapa": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR"
+    },
+    {
+      "id": "ITSA4_E2",
+      "disponibilidade": "parcial",
+      "grupo": "parcial_truncado_sem_declaracao",
+      "truncada_na_geracao": true,
+      "estado": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+      "motivo_da_recusa": "caso parcial/ausente sem afirmação E/A e sem declaração de limitação (comportamento.derivar_classe; rubrica, Seção 4)",
+      "anotacao_registrada": "Caso parcial. Caixa 4.709.000 (S); 'Empr' é fragmento; E(e) não atribuído porque o término foi imposto por MAX_TOKENS; sem declaração de limitação.",
+      "ambiguidade_original": "Caso parcial truncado por MAX_TOKENS: 'Em 30 de junho de 2026: * Caixa e Equivalentes de Caixa: 4.709.000 * Empr'. A linha do caixa é completa e sustentada (S; BP Ativo 4.709.000); a linha dos empréstimos foi cortada no início. Não há declaração de limitação. Para um caso parcial sem E/A e sem declaração, o validador exige E pelo critério (e) — 'informação parcial apresentada como completa' —, mas aqui a incompletude decorre do truncamento, e não da resposta. A convenção 1 não resolve essa situação.",
+      "estado_final_nesta_etapa": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR"
+    },
+    {
+      "id": "LAVV3_E2",
+      "disponibilidade": "parcial",
+      "grupo": "parcial_truncado_sem_declaracao",
+      "truncada_na_geracao": true,
+      "estado": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+      "motivo_da_recusa": "caso parcial/ausente sem afirmação E/A e sem declaração de limitação (comportamento.derivar_classe; rubrica, Seção 4)",
+      "anotacao_registrada": "Caso parcial. 'R$' isolado não é afirmação; sem afirmação completa nem declaração de limitação antes do corte.",
+      "ambiguidade_original": "Caso parcial truncado por MAX_TOKENS: o único conteúdo é '* Caixa e Equivalentes de Caixa (30 de junho de 2026): R$' (corte antes do número; o contexto traz 192.713). Aplicada a convenção 1, não resta afirmação nem declaração de limitação; um caso parcial nessas condições é recusado pelo validador (rubrica, Seção 4.4). Mesma situação de ZAMP3_E2.",
+      "estado_final_nesta_etapa": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR"
+    },
+    {
+      "id": "ZAMP3_E2",
+      "disponibilidade": "parcial",
+      "grupo": "parcial_truncado_sem_declaracao",
+      "truncada_na_geracao": true,
+      "estado": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+      "motivo_da_recusa": "caso parcial/ausente sem afirmação E/A e sem declaração de limitação (comportamento.derivar_classe; rubrica, Seção 4)",
+      "anotacao_registrada": "Caso parcial. '13' é fragmento do valor truncado; sem afirmação completa nem declaração de limitação antes do corte.",
+      "ambiguidade_original": "Caso parcial truncado por MAX_TOKENS: o único conteúdo é 'Em 30 de junho de 2026: * Caixa e Equivalentes de Caixa: 13' (número interrompido; o contexto traz 135.651). Aplicada a convenção 1, não resta afirmação nem declaração de limitação; um caso parcial nessas condições é recusado pelo validador (rubrica, Seção 4.4). É situação criada pelo truncamento que a convenção não resolve.",
+      "estado_final_nesta_etapa": "PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR"
+    }
+  ],
+  "decisoes_intermediarias_confirmadas": {
+    "ZAMP3_N4": "primeira coordenada ('não é possível identificar a empresa \"Zamp\"') rotulada N; declara_limitacao=true",
+    "POMO4_E3": "frase rotulada N (ressalva de período) além de declara_limitacao=true",
+    "IRBR3_E3": "frase rotulada N (ressalva de período) além de declara_limitacao=true",
+    "CEAB3_N4": "sem afirmações: '(204.384)' integra sujeito sem predicado (mesmo tratamento de IRBR3_N4)"
+  },
+  "denominador": {
+    "respostas": 96,
+    "classificaveis": 91,
+    "pendentes_por_truncamento_e_regra_do_validador": 5
+  }
+}

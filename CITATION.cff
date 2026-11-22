@@ -1,0 +1,26 @@
+# Metadados de citação do FundIA (TCC 2). Formato Citation File Format 1.2.0.
+# Campos a completar antes da publicação: repository-code (endereço do
+# repositório FundIA-TCC2, ainda não criado), version e date-released
+# (definidos com a tag de entrega).
+cff-version: 1.2.0
+message: "Se usar este software, cite-o com os metadados abaixo."
+type: software
+title: "FundIA: análise de demonstrações financeiras da CVM com cálculo determinístico, redação por modelo de linguagem e auditoria numérica"
+abstract: >-
+  Sistema que processa as demonstrações financeiras estruturadas entregues à
+  Comissão de Valores Mobiliários (CVM), calcula os indicadores em código,
+  usa um modelo de linguagem apenas para redigir a narrativa e verifica os
+  números identificados na narrativa com um auditor baseado em regras.
+  Desenvolvido no Trabalho de Conclusão de Curso do Bacharelado em Ciência de
+  Dados para Negócios da Universidade Federal da Paraíba (TCC 2, 2026).
+authors:
+  - family-names: "Firmino"
+    given-names: "Allan Vitor Sousa"
+    affiliation: "Universidade Federal da Paraíba"
+license: MIT
+keywords:
+  - auditoria numérica
+  - demonstrações financeiras
+  - CVM
+  - modelos de linguagem
+  - fidelidade numérica

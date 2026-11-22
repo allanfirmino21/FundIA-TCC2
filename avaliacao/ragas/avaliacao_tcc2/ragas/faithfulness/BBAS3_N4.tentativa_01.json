@@ -1,0 +1,97 @@
+{
+  "esquema": 1,
+  "etapa": "ragas",
+  "case_id": "BBAS3_N4",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "passada": "avaliacao",
+  "score": 0.5,
+  "valido": true,
+  "nan": false,
+  "erros": [],
+  "modelos_retornados": [
+    "gemini-2.5-flash"
+  ],
+  "uso_tokens": {
+    "input_tokens": 4476,
+    "output_tokens": 2273,
+    "total_tokens": 6749
+  },
+  "sha256_resposta": "9bca906ea69afbec96a0ca019373f309517ecee0a0c8c79e71150b3d9f0d4775",
+  "entrada": {
+    "sha256_pergunta": "51a0195d570658dd1d0cdfa5702ea19f125b4790deeaad9d3964cba8b2713524",
+    "sha256_resposta": "9bca906ea69afbec96a0ca019373f309517ecee0a0c8c79e71150b3d9f0d4775",
+    "sha256_ctx_num": "666dea60db7dc35f9eb99870038d360a71f4beb523a8167c27024d324dd13893",
+    "sha256_trechos": [
+      "d91c866b3d59f0367f5a3ccae581630678b2423f239e9bb50e71921d07137a6b",
+      "69ad985288b532c0931dd92d0a03794d1b48ecfaa16653825c0971ef894ee284",
+      "0138039dfd826af2460de211265666f2d461decd409777047408df62fb4bae28"
+    ],
+    "sha256_reference": "6dcf01b02a78653e752e4841a9270e3c98a72d15e892e8a144ff962a15ad9d1f",
+    "truncada_na_geracao": true,
+    "disponibilidade": "presente",
+    "categoria": "N4",
+    "estrutura": "banco",
+    "ticker": "BBAS3"
+  },
+  "avaliador": {
+    "modelo": "gemini-2.5-flash",
+    "temperatura_cliente": 0.0,
+    "temperaturas_efetivas_ragas": {
+      "faithfulness": 0.01,
+      "answer_relevancy": 0.3
+    },
+    "strictness": 3,
+    "run_config": {
+      "timeout": 120,
+      "max_retries": 3,
+      "max_workers": 1
+    },
+    "embeddings": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "revisao_embeddings": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+    "wrapper": "ragas.llms.LangchainLLMWrapper (sem bypass)",
+    "execucao": "ragas.evaluate, 1 métrica, 1 amostra",
+    "dependencias": {
+      "ragas": "0.4.3",
+      "langchain-community": "0.4.2",
+      "langchain-google-genai": "4.4.0",
+      "langchain-core": "1.6.6",
+      "langchain": "1.4.3",
+      "langchain-openai": "1.1.9",
+      "google-genai": "2.25.0",
+      "openai": "1.109.1",
+      "instructor": "1.3.2",
+      "datasets": "5.0.1",
+      "sentence-transformers": "5.5.0",
+      "transformers": "5.3.0",
+      "torch": "2.11.0",
+      "huggingface-hub": "1.8.0",
+      "numpy": "2.2.4"
+    },
+    "temperatura_efetiva": 0.01
+  },
+  "etapas_anteriores_congeladas": {
+    "sha256_resultado_exatidao": "3c3e28c080a9884f53f1197bd0c4106fd414105b2aa4de3ff2928f401a05a6db",
+    "sha256_anotacoes_comportamento": "c83cf6cef724f88ab35ac439978d13f0ad812c0ce25859ab7155eef97627b18f",
+    "sha256_decisoes_sinal": null,
+    "sha256_pendencias_comportamento": "d20f736187f69cd441a53795b4425ff212d54d7ee9274d79c894e02825976b71",
+    "sha256_convencoes_comportamento": "e45f82c4dd46a27a475085ee0e06d4ffc7f1de94b7c15d38e30adfe90a379169",
+    "sha256_ratificacao_comportamento": "eee5e92412a941e1bc090e0338120660f7200c793e1636f72af337454c258c36"
+  },
+  "proveniencia": {
+    "commit": "69b2b4963cf774b8ef188afe96c6416750aa7118",
+    "commit_coleta": "10eee310a6dfd0bc545f6d2a62bd82705b6624e5",
+    "sha256_executor": "6e2a40bd1723b0c4c8da35595cb35573b009a0c8a6309af8fbb4f73f307b1a65",
+    "sha256_protocolo_emendado": "3f6f8e030bf4f44d2882b65005431b8b7ff95df54bb479fa8e53e5a9b2c3925b",
+    "sha256_dataset": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e",
+    "sha256_configuracao_historica_coleta": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+    "sha256_SHA256_COLETA": "b8c016cea3a8903678bc7817f4c5b553c80bb98b6a7a5787d05ea4ce4eca45f2",
+    "sha256_exatidao_py": "2b4b11706841701ed6ffd551a4789431fa9102c65cf1302104cfa600ce432ff0",
+    "sha256_comportamento_py": "d2a3e7e79d2275b9de3dff0b64b0bc3b0455c3fa9090766e068c290117febad2",
+    "python": "3.12.6"
+  },
+  "inicio_utc": "2026-10-04T00:11:47+00:00",
+  "fim_utc": "2026-10-04T00:11:59+00:00",
+  "duracao_s": 11.704,
+  "sha256_registro": "597b03976408d4c1d8c8669be1e0944553aa035e401ec54de7602f81916a9873"
+}

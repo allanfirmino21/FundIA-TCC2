@@ -1,0 +1,260 @@
+[
+ [
+  "R$ 4,99 bilhões",
+  "Resumo",
+  "métrica calculada: lucro_liquido.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "R$ 114,25 milhões",
+  "Resumo",
+  "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+  "✔ confere"
+ ],
+ [
+  "1,7%",
+  "Resumo",
+  "métrica calculada: lucro_liquido.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "0,3%",
+  "Resumo",
+  "métrica calculada: receita_principal.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "R$ 30,47 bilhões",
+  "Faturamento",
+  "métrica calculada: receita_principal.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "0,3%",
+  "Faturamento",
+  "métrica calculada: receita_principal.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "R$ 4,99 bilhões",
+  "Lucro",
+  "métrica calculada: lucro_liquido.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "R$ 85,68 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.resultado.variacao_absoluta · sinal incompatível com o fato",
+  "△ divergente"
+ ],
+ [
+  "R$ 114,25 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+  "✔ confere"
+ ],
+ [
+  "R$ 261,26 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+  "✔ confere"
+ ],
+ [
+  "R$ 147,01 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+  "✔ confere"
+ ],
+ [
+  "R$ 6,31 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+  "✔ confere"
+ ],
+ [
+  "R$ 5,98 bilhões",
+  "Lucro",
+  "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "R$ 107,95 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.subtotais_intermediarios.variacao_absoluta",
+  "✔ confere"
+ ],
+ [
+  "R$ 22,27 milhões",
+  "Lucro",
+  "métrica calculada: decomposicao_resultado.ponte.contribuicao · o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"tributos_sobre_lucro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 85,68 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+  "△ divergente"
+ ],
+ [
+  "R$ 100",
+  "Lucro",
+  "recurso didático (não conta na taxa)",
+  "· ignorado"
+ ],
+ [
+  "R$ 16,37",
+  "Lucro",
+  "métrica calculada: lucro_liquido.contexto_por_100_reais",
+  "✔ confere"
+ ],
+ [
+  "1,7%",
+  "Lucro",
+  "métrica calculada: lucro_liquido.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "R$ 6,34 bilhões",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.liquidez_total",
+  "✔ confere"
+ ],
+ [
+  "R$ 3,75 bilhões",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.divida_bruta",
+  "✔ confere"
+ ],
+ [
+  "-R$ 2,59 bilhões",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.divida_liquida",
+  "✔ confere"
+ ],
+ [
+  "R$ 792,09 milhões",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.passivos_arrendamento · o texto atribui o valor a \"divida_bruta\", mas ele corresponde a \"arrendamentos\" (métrica calculada: endividamento.passivos_arrendamento); o fato mais próximo de \"divida_bruta\" é R$ 1,04 bilhões (documento CVM: \"[2.02.01] Empréstimos e Financiamentos\" (anterior) = 1.041.508 (R$ mil))",
+  "△ divergente"
+ ],
+ [
+  "R$ 4,55 bilhões",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.divida_bruta_com_arrendamentos",
+  "✔ confere"
+ ],
+ [
+  "18,2%",
+  "Caixa e Dívidas",
+  "métrica calculada: endividamento.variacao_divida_pct",
+  "✔ confere"
+ ],
+ [
+  "R$ 21,37 bilhões",
+  "Positivo",
+  "métrica calculada: outros_destaques",
+  "✔ confere"
+ ],
+ [
+  "R$ 45,64 bilhões",
+  "Positivo",
+  "métrica calculada: outros_destaques",
+  "✔ confere"
+ ],
+ [
+  "R$ 4,59 bilhões",
+  "Positivo",
+  "métrica calculada: endividamento.divida_bruta_anterior",
+  "✔ confere"
+ ],
+ [
+  "R$ 3,75 bilhões",
+  "Positivo",
+  "métrica calculada: endividamento.divida_bruta",
+  "✔ confere"
+ ],
+ [
+  "-R$ 2,59 bilhões",
+  "Positivo",
+  "métrica calculada: endividamento.divida_liquida",
+  "✔ confere"
+ ],
+ [
+  "15,2%",
+  "Positivo",
+  "métrica calculada: outros_destaques",
+  "✔ confere"
+ ],
+ [
+  "7,0%",
+  "Positivo",
+  "métrica calculada: outros_destaques",
+  "✔ confere"
+ ],
+ [
+  "18,2%",
+  "Positivo",
+  "métrica calculada: endividamento.variacao_divida_pct",
+  "✔ confere"
+ ],
+ [
+  "3,5%",
+  "Positivo",
+  "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "R$ 4,99 bilhões",
+  "Atenção",
+  "métrica calculada: lucro_liquido.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "R$ 30,47 bilhões",
+  "Atenção",
+  "métrica calculada: receita_principal.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "R$ 9,94 bilhões",
+  "Atenção",
+  "métrica calculada: outros_destaques",
+  "✔ confere"
+ ],
+ [
+  "R$ 1,97 bilhões",
+  "Atenção",
+  "métrica calculada: demonstracoes_resumidas.resultado.valor_anterior",
+  "✔ confere"
+ ],
+ [
+  "R$ 1,36 bilhões",
+  "Atenção",
+  "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+  "✔ confere"
+ ],
+ [
+  "1,7%",
+  "Atenção",
+  "métrica calculada: lucro_liquido.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "0,3%",
+  "Atenção",
+  "métrica calculada: receita_principal.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "0,9%",
+  "Atenção",
+  "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "2,6%",
+  "Atenção",
+  "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct",
+  "✔ confere"
+ ],
+ [
+  "31,0%",
+  "Atenção",
+  "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct",
+  "✔ confere"
+ ]
+]

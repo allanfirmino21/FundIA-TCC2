@@ -1,0 +1,666 @@
+{
+  "experimento": "RAGAS TCC 2 — coleta das respostas diretas (96 casos)",
+  "sha256_configuracao": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+  "execucoes": [
+    {
+      "n": 1,
+      "inicio_utc": "2026-09-28T00:14:05+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-28T00:10:59+00:00"
+      },
+      "argumentos": {
+        "case_ids": null,
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "WEGE3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "WEGE3_E3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "BBAS3_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "bloqueio",
+      "fim_utc": "2026-09-28T00:17:17+00:00"
+    },
+    {
+      "n": 2,
+      "inicio_utc": "2026-09-28T01:37:34+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-28T01:35:07+00:00"
+      },
+      "argumentos": {
+        "case_ids": null,
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "ZAMP3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ZAMP3_E3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LWSA3_E3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "VALE3_E3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITUB4_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "bloqueio",
+      "fim_utc": "2026-09-28T01:42:31+00:00"
+    },
+    {
+      "n": 3,
+      "inicio_utc": "2026-09-28T23:51:58+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-28T23:50:51+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "LAVV3_N1",
+          "LAVV3_N2",
+          "LAVV3_N3",
+          "LAVV3_N4",
+          "LAVV3_N5",
+          "LAVV3_E1",
+          "LAVV3_E2",
+          "LAVV3_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "LAVV3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "LAVV3_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-28T23:53:36+00:00"
+    },
+    {
+      "n": 4,
+      "inicio_utc": "2026-09-29T00:00:20+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-28T23:58:25+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "POMO4_N1",
+          "POMO4_N2",
+          "POMO4_N3",
+          "POMO4_N4",
+          "POMO4_N5",
+          "POMO4_E1",
+          "POMO4_E2",
+          "POMO4_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "POMO4_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "POMO4_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-29T00:02:05+00:00"
+    },
+    {
+      "n": 5,
+      "inicio_utc": "2026-09-29T00:09:49+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-29T00:08:53+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "ITSA4_N1",
+          "ITSA4_N2",
+          "ITSA4_N3",
+          "ITSA4_N4",
+          "ITSA4_N5",
+          "ITSA4_E1",
+          "ITSA4_E2",
+          "ITSA4_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "ITSA4_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "ITSA4_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-29T00:11:10+00:00"
+    },
+    {
+      "n": 6,
+      "inicio_utc": "2026-09-29T03:31:27+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-29T03:30:38+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "IRBR3_N1",
+          "IRBR3_N2",
+          "IRBR3_N3",
+          "IRBR3_N4",
+          "IRBR3_N5",
+          "IRBR3_E1",
+          "IRBR3_E2",
+          "IRBR3_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "IRBR3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "IRBR3_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-29T03:32:34+00:00"
+    },
+    {
+      "n": 7,
+      "inicio_utc": "2026-09-29T03:36:00+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-29T03:35:18+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "CEAB3_N1",
+          "CEAB3_N2",
+          "CEAB3_N3",
+          "CEAB3_N4",
+          "CEAB3_N5",
+          "CEAB3_E1",
+          "CEAB3_E2",
+          "CEAB3_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "CEAB3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "CEAB3_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-29T03:36:59+00:00"
+    },
+    {
+      "n": 8,
+      "inicio_utc": "2026-09-29T03:41:18+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-29T03:40:38+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "AURE3_N1",
+          "AURE3_N2",
+          "AURE3_N3",
+          "AURE3_N4",
+          "AURE3_N5",
+          "AURE3_E1",
+          "AURE3_E2",
+          "AURE3_E3"
+        ],
+        "limit": null,
+        "retentar_erros": false,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "AURE3_N1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_N2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_N3",
+          "status": "ERRO",
+          "tipo": "ServerError"
+        }
+      ],
+      "encerramento": "erro",
+      "fim_utc": "2026-09-29T03:41:38+00:00"
+    },
+    {
+      "n": 9,
+      "inicio_utc": "2026-09-29T03:47:24+00:00",
+      "commit": "fb13ba8eac90afd8e67c7eb4c064fd2b3442b354",
+      "fonte_cvm": {
+        "origem": "arquivo local",
+        "arquivo": "itr_2026.zip",
+        "sha256": "4f89a9987303984a78ebae31b09ca2be8f7ba2445078120cb9a8d6f84934b253",
+        "lido_em_utc": "2026-09-29T03:46:40+00:00"
+      },
+      "argumentos": {
+        "case_ids": [
+          "AURE3_N3",
+          "AURE3_N4",
+          "AURE3_N5",
+          "AURE3_E1",
+          "AURE3_E2",
+          "AURE3_E3"
+        ],
+        "limit": null,
+        "retentar_erros": true,
+        "reexecutar_concluido": false,
+        "motivo": null,
+        "pausa_s": 0.0
+      },
+      "casos": [
+        {
+          "case_id": "AURE3_N3",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_N4",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_N5",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_E1",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_E2",
+          "status": "CONCLUIDO"
+        },
+        {
+          "case_id": "AURE3_E3",
+          "status": "CONCLUIDO"
+        }
+      ],
+      "encerramento": "completa",
+      "fim_utc": "2026-09-29T03:48:16+00:00"
+    }
+  ],
+  "resumo": {
+    "CONCLUIDO": 96
+  }
+}

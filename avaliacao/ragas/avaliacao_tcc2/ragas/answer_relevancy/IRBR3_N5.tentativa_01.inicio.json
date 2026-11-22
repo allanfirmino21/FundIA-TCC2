@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "IRBR3_N5",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:42:58+00:00",
+  "sha256_resposta": "22c2f6e69856c973d20565e06598a350ad64a22b78c81734cdceadf2711e94a6",
+  "sha256_registro": "83e510df10ef55fb29b22d2718b170b889bd568229e0ebe25b35344db5b3c237"
+}

@@ -1,0 +1,29 @@
+{
+ "ticker": "WEGE3",
+ "url": "http://localhost:5173",
+ "inicio_utc": "2026-11-11T12:59:01Z",
+ "viewport": [
+  1280,
+  900
+ ],
+ "escala": 2,
+ "campo_ticker": "WEGE3",
+ "duracao_s": 82.5,
+ "estado_final": "resultado",
+ "selo": "39/42 números conferem · 92.9%",
+ "linhas_trilha": 43,
+ "altura_painel_css": 2309.53125,
+ "arquivos": [
+  "01_tela_inicial.png",
+  "02_progresso.png",
+  "03_analise_topo.png",
+  "04_analise_pagina_inteira.png",
+  "05_auditoria_painel_completo.png",
+  "06_auditoria_recorte.png",
+  "07_pagina_inteira_com_auditoria.png",
+  "auditoria_WEGE3_2026-09-30.csv",
+  "texto_da_pagina.txt",
+  "trilha_na_tela.json"
+ ],
+ "fim_utc": "2026-11-11T13:00:37Z"
+}

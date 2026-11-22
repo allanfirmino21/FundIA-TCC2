@@ -1,0 +1,2599 @@
+{
+  "esquema": 1,
+  "rubrica": "avaliacao/ragas/RUBRICA_COMPORTAMENTO_TCC2.md",
+  "instrucoes": [
+    "Um registro por caso. Rotular cada afirmação da resposta: S, E, A ou N (rubrica, Seção 3); E e A exigem motivo e evidência no contexto.",
+    "Preencher declara_limitacao e entrega_informacao_sustentada.",
+    "A classe NÃO é escolhida: usar a classe derivada que o validador informa (comportamento.derivar_classe) e o respectivo abstencao_em_caso_presente.",
+    "Materiais permitidos: pergunta, resposta, trechos de contexto, disponibilidade e gabarito. Nenhum score RAGAS pode ser consultado (scores_ragas_consultados = false)."
+  ],
+  "registros": [
+    {
+      "id": "WEGE3_N1",
+      "ticker": "WEGE3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e096ee5d85f56b68d4832d98db9674585e8b342bf81123f2e0da1cd1e526ecf7",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não especificam o período a que as informações financeiras se referem.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar a receita pedida (declara_limitacao). A única justificativa factual — ausência de período explícito nas tabelas — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Receita de Venda de Bens e/ou Serviços 19.611.868'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_N2",
+      "ticker": "WEGE3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "7aede8068bb6aee0ed2188faa533c7d67a9445a0b2218802d5d46136751ddf00",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não contêm informações de data ou período que permitam identificar o ano ou semestre a que os dados se referem",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "As informações são apresentadas apenas como \"atual\" e \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o resultado pedido (declara_limitacao). As justificativas — ausência de datas e apresentação como atual/anterior — são limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Lucro/Prejuízo Consolidado do Período 3.226.245'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_N3",
+      "ticker": "WEGE3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "dce82de4801e9be6cba511127a42ea73ae3e91114d991d80f4b23142a3dbdfc0",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS no complemento de período ('...em relação ao primeiro semestre de 202'). Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A declaração 'não é possível determinar a variação do resultado líquido consolidado para o primeiro semestre de 2026' já comunica impossibilidade antes do corte (declara_limitacao, decisão do autor). O complemento cortado não é afirmação. Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Lucro/Prejuízo Consolidado do Período 3.226.245 (anterior: 3.329.842)'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_N4",
+      "ticker": "WEGE3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4b831023f386155f3bf533a6b8651f15211b916407119e5341cc49a0afabef72",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS antes de qualquer afirmação completa: só reformula o início do enunciado. Pela convenção 1, o fragmento não é afirmação; não há declaração de indisponibilidade nem informação entregue. Registro sem afirmações.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_N5",
+      "ticker": "WEGE3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "37f8c96e8a7d10658e02f94ee7c162da1eff994d25063c2abcea51eee760d5d4",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS. A parte legível declara não ser possível determinar o saldo pedido (declara_limitacao), sem justificativa factual completa. Nenhum valor entregue. O valor pedido consta do contexto: BP Ativo 'Caixa e Equivalentes de Caixa 7.750.256'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_E1",
+      "ticker": "WEGE3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "cfce99ee3944d42b9fc8f182eeeb3193800e4a155ffeb83766564dc8d7d461dc",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O nome \"WEG\" não é mencionado nos trechos.",
+          "rotulo": "N",
+          "evidencia_contexto": "Nenhuma das três tabelas traz o nome da companhia.",
+          "motivo": "O contexto não traz o nome da companhia (limitação conhecida; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "Não há indicação de que os dados se referem ao \"primeiro semestre de 2026\" ou a qualquer outro período específico. Os valores são apresentados como \"atual\" e \"anterior\" sem datas explícitas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível calcular a margem pedida (declara_limitacao). As justificativas — ausência do nome da companhia e de datas — são limitações conhecidas do contexto (N). Nenhum valor entregue. Os insumos constam do contexto: DRE 'Receita de Venda de Bens e/ou Serviços 19.611.868' e 'Lucro/Prejuízo Consolidado do Período 3.226.245'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_E2",
+      "ticker": "WEGE3",
+      "categoria": "E2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "d15e8a3279256c95415117252deafcd4255b17a98f08368ab31f22307ff08217",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa (30 de junho de 2026):** 7.750.256",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 7.750.256'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Os trechos do documento não contêm o Balanço Patrimonial — Passivo, onde seriam detalhados os empréstimos e financiamentos (circulante e não circulante).",
+          "rotulo": "S",
+          "evidencia_contexto": "O contexto contém BP Ativo, DFC e DRE, sem BP Passivo. A DFC contém linhas de fluxo de empréstimos e financiamentos (juros provisionados, juros pagos, captação e pagamento), mas nenhuma linha de saldo de empréstimos e financiamentos.",
+          "motivo": "Descrição correta da composição do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o caixa sustentado pelo BP Ativo (7.750.256), identifica corretamente que o BP Passivo com os empréstimos não está no contexto e declara não ser possível determinar a dívida nem fazer a comparação. Nada ausente é inventado.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "WEGE3_E3",
+      "ticker": "WEGE3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "aa200d1a47dee8eb07d755a27a489f2fe57597b73877d68a39e16023ab386bf6",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Período atual:** 65.819",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 65.819 (anterior: 47.595)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período anterior:** 47.595",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 65.819 (anterior: 47.595)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Os trechos não especificam que esses períodos correspondem ao primeiro semestre de 2026 e 2025, respectivamente, apenas indicam \"atual\" e \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o resultado financeiro do período atual (65.819) foi superior ao do período anterior (47.595)",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 65.819 (anterior: 47.595)'.",
+          "motivo": "Comparação correta entre os dois valores sustentados."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega os dois valores do resultado financeiro sustentados pela DRE e a comparação correta entre eles. A observação sobre a falta de datas é ressalva da representação (N), não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_N1",
+      "ticker": "BBAS3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2a3935a46b9d7638c2966f0b7c49b597e23847027c4c51cbe2156c3d95223b56",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "A Demonstração de Resultado (Consolidado) apresenta \"Receitas de Intermediação Financeira\" no valor de **160.747.114**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Receitas de Intermediação Financeira 160.747.114 (anterior: 149.252.571)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos **não especificam** a qual período (como \"primeiro semestre de 2026\") essas informações se referem, nem que a instituição financeira em questão seja o Banco do Brasil. As informações são apresentadas apenas como valores \"atuais\" e \"anteriores\" sem datas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o valor das receitas de intermediação financeira sustentado pela DRE (160.747.114). A observação sobre a falta de período e de nome da empresa é ressalva da representação (N), não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_N2",
+      "ticker": "BBAS3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "1c13ad6e59aa84cc25fabf4d4e5d9db25366ab06f481aeae9f88d755266464d7",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O Lucro ou Prejuízo Líquido Consolidado do Período foi de **6.362.961**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro ou Prejuízo Líquido Consolidado do Período 6.362.961 (anterior: 7.760.116)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Os trechos fornecidos não especificam o período a que esses valores se referem (por exemplo, \"primeiro semestre de 2026\"). As tabelas apresentam apenas os valores do período atual e do período anterior, sem indicação de datas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado líquido consolidado sustentado pela DRE (6.362.961). A observação sobre a falta de datas é ressalva da representação (N), não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_N3",
+      "ticker": "BBAS3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0bb745dc9306dbeda2dd76eabf7a0e80e0a1b5b53006b1c778e1ca0ef5ab0679",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS: a única linha de conteúdo termina no número incompleto '6.362.96'. Pela convenção 1, o fragmento não é afirmação. Não há declaração de indisponibilidade nem afirmação completa. Registro sem afirmações.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_N4",
+      "ticker": "BBAS3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9bca906ea69afbec96a0ca019373f309517ecee0a0c8c79e71150b3d9f0d4775",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o Lucro ou Prejuízo Líquido Consolidado do Período diminuiu de 7.760.116",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro ou Prejuízo Líquido Consolidado do Período 6.362.961 (anterior: 7.760.116)'.",
+          "motivo": "Direção (redução) e valor anterior (7.760.116) sustentados pela DRE; o valor final não é completado."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS em '(per'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A proposição 'o Lucro ou Prejuízo Líquido Consolidado do Período diminuiu de 7.760.116' já comunica direção e valor anterior (decisão do autor) e é sustentada pela DRE (S). O fragmento iniciado por '(per' fica fora. Não chega a apresentar componentes.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_N5",
+      "ticker": "BBAS3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "db9a77d5b4748c24b767cfbf7420988bfbd9a7c551bacab61d480744c080b01c",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as datas de referência para os valores apresentados não são especificadas",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o trecho 3 (Balanço Patrimonial — Ativo) informa os seguintes saldos para \"Caixa e Equivalentes de Caixa\"",
+          "rotulo": "S",
+          "evidencia_contexto": "O terceiro trecho é o BP Ativo, que contém 'Caixa e Equivalentes de Caixa 65.017.849 (anterior: 59.635.525)'.",
+          "motivo": "Descrição correta do contexto."
+        },
+        {
+          "trecho_resposta": "**Valor atual:** 65.017.849",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 65.017.849'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Valor anterior:** 59.635.525",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 65.017.849 (anterior: 59.635.525)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo na data pedida (declara_limitacao; justificativa N: ausência de datas), mas em seguida informa os valores atual e anterior de caixa e equivalentes, sustentados pelo BP Ativo.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_E1",
+      "ticker": "BBAS3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ff0cdb02e1188094fe60c124fbfa4d6f67894a8d75aea51dc2575f623e0a8ef1",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não mencionam a empresa \"Banco do Brasil\" nem o período \"primeiro semestre de 2026\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "o valor do \"Resultado Bruto de Intermediação Financeira\" para o período atual apresentado na \"Demonstração de Resultado (Consolidado)\" é de **49.463.309**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Bruto de Intermediação Financeira 49.463.309 (anterior: 47.964.295)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o valor para a empresa e o período nomeados (declara_limitacao; justificativa N: ausência de nome e datas), mas informa o valor do período atual sustentado pela DRE (49.463.309).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_E2",
+      "ticker": "BBAS3",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8356cbeb06f3c44248651a0a0b006b00699dff11f0c88f2a25bc7cf9548bda75",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "há um item \"Depósitos\" com o valor de **954.018.837** (e um valor anterior de 897.937.449)",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Passivo (segundo trecho): 'Depósitos 954.018.837 (anterior: 897.937.449)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "na seção de Balanço Patrimonial — Passivo (Trecho 2)",
+          "rotulo": "S",
+          "evidencia_contexto": "O segundo trecho é o BP Passivo.",
+          "motivo": "Descrição correta do contexto."
+        },
+        {
+          "trecho_resposta": "sem a indicação da data a que esses valores se referem",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta afirma que os trechos não especificam o saldo para a data pedida (declara_limitacao), mas informa o saldo de depósitos atual e anterior sustentado pelo BP Passivo; a ausência de data é ressalva da representação (N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "BBAS3_E3",
+      "ticker": "BBAS3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "f80ac27baba510d5681e0adb53087d9fe2fa36563843c435d5a486ede276f810",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não mencionam a entidade \"Banco do Brasil\" nem especificam o período como \"primeiro semestre de 2026\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "Eles apenas apresentam valores atuais e anteriores para \"Despesas de Intermediação Financeira\" (-111.283.805 e -101.288.276, respectivamente)",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Despesas de Intermediação Financeira -111.283.805 (anterior: -101.288.276)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "sem contexto de data ou nome da empresa",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o total pedido para a empresa e o período nomeados (declara_limitacao; justificativas N), mas informa os valores atual e anterior das despesas de intermediação sustentados pela DRE.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_N1",
+      "ticker": "ZAMP3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "28294db9a901b0e2610deefacdd04194c38fb43433f2026bde8fce0301869d6d",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O nome \"Zamp\" não é mencionado nos documentos.",
+          "rotulo": "N",
+          "evidencia_contexto": "Nenhuma das três tabelas traz o nome da companhia.",
+          "motivo": "O contexto não traz o nome da companhia (limitação conhecida; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "As datas ou períodos específicos (como \"primeiro semestre de 2026\") não são informados para os valores apresentados como \"atual\" e \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar a receita pedida (declara_limitacao). As justificativas — ausência do nome e de datas — são limitações conhecidas do contexto (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Receita de Venda de Bens e/ou Serviços 2.716.534'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_N2",
+      "ticker": "ZAMP3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "f40557691677ac61938fa39c9e9bde8793d0feb463b94d0bda7bf989e19da99c",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o Lucro/Prejuízo Consolidado do Período é de **-154.679**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período -154.679 (anterior: -116.011)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos não especificam o período a que esses dados se referem, impossibilitando a confirmação de que correspondem ao primeiro semestre de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado consolidado sustentado pela DRE (-154.679). A observação sobre o período é ressalva da representação (N) sobre o valor entregue, não declaração de que a informação pedida está indisponível.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_N3",
+      "ticker": "ZAMP3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "733b0d59e7ed764c4191c974b3d405dde477e4a3611a5eede8795213a59083d0",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (1º Semestre de 2026):** Prejuízo de -154.679",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período -154.679 (anterior: -116.011)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS. A primeira linha, completa, entrega o prejuízo consolidado do período atual sustentado pela DRE (-154.679). A segunda linha é fragmento incompleto (convenção 1) e não é afirmação.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_N4",
+      "ticker": "ZAMP3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "a17680b50b194baebff9d98607171fcf5820bda9690e7920ed572dd1a06dcdfb",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível identificar a empresa \"Zamp\"",
+          "rotulo": "N",
+          "evidencia_contexto": "Nenhuma das três tabelas traz o nome da companhia.",
+          "motivo": "O contexto não traz o nome da companhia (limitação conhecida; rubrica, rótulo N)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS em '\"primeiro semestre de 2025\" e'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A frase 'não é possível identificar a empresa \"Zamp\" nem os períodos específicos...' já comunica limitação antes do corte (declara_limitacao, decisão do autor). A primeira coordenada, completa, é justificativa pela ausência do nome da companhia, limitação conhecida (N, como em ZAMP3_N1). O complemento cortado não é afirmação. Nenhum componente entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_N5",
+      "ticker": "ZAMP3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2c5176094319d20729c63f5ce8853a07b0791d858d2f868bef2178afb6117133",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não contêm informações de data",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Período atual:** 135.651",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 135.651 (anterior: 208.256)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período anterior:** 208.256",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 135.651 (anterior: 208.256)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo na data pedida (declara_limitacao; justificativa N: ausência de datas), mas informa os saldos atual e anterior de caixa e equivalentes, sustentados pelo BP Ativo.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_E1",
+      "ticker": "ZAMP3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5588df6f539673c5c4ccc9e9f68b85bf9f45debffbb0539e53a0120598193c62",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos fornecidos não especificam o período de referência (primeiro semestre de 2026) para os dados apresentados.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível calcular a margem pedida (declara_limitacao). A justificativa — ausência de período explícito — é limitação conhecida da representação (N). Nenhum valor entregue. Os insumos constam da DRE (receita 2.716.534; resultado -154.679).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_E2",
+      "ticker": "ZAMP3",
+      "categoria": "E2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "ba937b5abf6c49817f29e80fd4d010995289a403adeb2406176d8115d479122c",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": null,
+      "abstencao_em_caso_presente": null,
+      "justificativa": "Resposta truncada por MAX_TOKENS em 'Caixa e Equivalentes de Caixa: 13'. '13' é fragmento do valor truncado e não é afirmação numérica (convenção 1). Não há afirmação completa nem declaração de limitação antes do corte. Decisão do autor: o término imposto por MAX_TOKENS não demonstra que a resposta apresentaria a informação parcial como completa; E(e) não é atribuído por truncamento. Sem afirmação E/A e sem declaração de limitação, a regra estrutural do validador para casos parcial/ausente recusa o registro; o caso fica em PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (estado operacional, não classe da rubrica).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ZAMP3_E3",
+      "ticker": "ZAMP3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "67f5fa65fbdd1d69702fa9a6c5bd0529d9d462c954a6f7071d9da9eb2c466c1e",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Primeiro semestre de 2026:** -169.280",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro -169.280 (anterior: -144.604)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Primeiro semestre de 2025:** -144.604",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro -169.280 (anterior: -144.604)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "o resultado financeiro consolidado no primeiro semestre de 2026 foi mais negativo (um prejuízo financeiro maior) do que no primeiro semestre de 2025",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro -169.280 (anterior: -144.604)'.",
+          "motivo": "Comparação correta: -169.280 é mais negativo que -144.604."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega os dois valores do resultado financeiro sustentados pela DRE e a comparação correta (mais negativo no período atual). A atribuição dos valores aos semestres nomeados corresponde à leitura neutra de atual/anterior (rubrica, rótulo N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_N1",
+      "ticker": "LWSA3",
+      "categoria": "N1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "fe034ead3667718bbdafb9db0ba0add9d29404c8c3ee851c8d84e2dd35e2aa43",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "As tabelas apresentadas (Demonstração de Fluxo de Caixa e Balanço Patrimonial) não contêm a linha de \"Receita de Venda de Bens e/ou Serviços\" (ou Receita Líquida)",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE. Nenhuma linha de receita no contexto.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "e não especificam o período \"primeiro semestre de 2026\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar a receita (declara_limitacao) e identifica corretamente que as tabelas recebidas não contêm a linha de receita (S). A ausência de período é limitação da representação (N). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_N2",
+      "ticker": "LWSA3",
+      "categoria": "N2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "5f88af0c864bd03750f78a5df576b0818a4b969270433ebd4f3d676484471851",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os documentos apresentados são uma Demonstração de Fluxo de Caixa e Balanços Patrimoniais, que não contêm a Demonstração de Resultado do Exercício",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS dentro da sigla entre parênteses ('(D'), depois de a afirmação estar completa. A resposta declara não ser possível determinar o resultado pedido (declara_limitacao) e identifica corretamente que a DRE não está entre as tabelas (S). Não usa o resultado antes dos tributos como substituto. Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_N3",
+      "ticker": "LWSA3",
+      "categoria": "N3",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "fecf10e781e7c90290ed0a51280abbf022d77a1e1a94dfb98b308536adcca1b6",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS no complemento de período ('...para o primeiro semestre de 20'). Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A declaração 'não é possível determinar o \"resultado líquido consolidado (lucro ou prejuízo)\" da Locaweb' já está semanticamente completa antes do corte (declara_limitacao, decisão do autor). O final cortado não é afirmação. Não usa o resultado antes dos tributos (DFC 96.428) como substituto. Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_N4",
+      "ticker": "LWSA3",
+      "categoria": "N4",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "3e63ba3792a1129b5ed882565952a60931971e0373ce0df4ec89c1fc9fdd91db",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos fornecidos correspondem à Demonstração de Fluxo de Caixa e ao Balanço Patrimonial.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "A Demonstração de Resultado, que conteria os componentes para explicar a variação do resultado líquido consolidado, não foi incluída nos documentos apresentados.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta identifica corretamente que a DRE não está no contexto (S) e declara não ser possível responder (declara_limitacao). Nenhum componente ou valor é apresentado.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_N5",
+      "ticker": "LWSA3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2f57feed7994442e8838bacc825ee300238ab0beeb931d4e48daef47d7a116a0",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Período atual:** 314.495",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 314.495 (anterior: 371.931)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período anterior:** 371.931",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 314.495 (anterior: 371.931)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "as datas correspondentes a esses períodos não são especificadas nos documentos.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo na data pedida (declara_limitacao), mas informa os saldos atual e anterior sustentados pelo BP Ativo; a ausência de datas é ressalva da representação (N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_E1",
+      "ticker": "LWSA3",
+      "categoria": "E1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "d288a2f372ad968da94a09409c32dd2ab1bac9c4729e597973d772ee23d1f3f1",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos apresentados correspondem a uma Demonstração de Fluxo de Caixa e a partes do Balanço Patrimonial.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "que são encontrados na Demonstração de Resultado do Exercício (DRE), documento que não foi fornecido.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "A DRE, que conteria os insumos pedidos, de fato não está no contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível calcular a margem (declara_limitacao) e identifica corretamente que a DRE, onde estariam resultado e receita, não foi fornecida (S). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_E2",
+      "ticker": "LWSA3",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "1fe71050d488a5bbe88de51fb5b48e46f6bc8610418f7a0dd87b6684bd1647eb",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Locaweb tinha mais caixa e equivalentes de caixa do que empréstimos e financiamentos (circulante e não circulante somados).",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: caixa 314.495; BP Passivo: Empréstimos e Financiamentos 19.361 (circulante) e 52.554 (não circulante).",
+          "motivo": "Comparação correta: 314.495 > 71.915."
+        },
+        {
+          "trecho_resposta": "**Saldo de Caixa e Equivalentes de Caixa:** 314.495",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 314.495'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Total de Empréstimos e Financiamentos (circulante e não circulante):** 71.915 (19.361 circulante + 52.554 não circulante)",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Passivo: 'Empréstimos e Financiamentos 19.361' e 'Empréstimos e Financiamentos 52.554'.",
+          "motivo": "Soma aritmeticamente correta de valores sustentados: 19.361 + 52.554 = 71.915."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o caixa e as duas parcelas de empréstimos e financiamentos sustentados pelo BP Ativo e pelo BP Passivo, a soma correta (71.915) e a comparação correta (mais caixa).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LWSA3_E3",
+      "ticker": "LWSA3",
+      "categoria": "E3",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "82696015a42fe4227eb2ef2cb99d4ad035b4f8281b07dc2bb80ab0107b0b43a6",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos apresentados correspondem à Demonstração de Fluxo de Caixa e ao Balanço Patrimonial",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "que não detalham o resultado financeiro como uma linha separada de receita e despesa financeira",
+          "rotulo": "S",
+          "evidencia_contexto": "O contexto contém DFC, BP Ativo e BP Passivo, sem DRE. A DFC contém a linha “Juros, derivativos e variação cambiais e monetárias 1.952 (anterior: 1.200)”, que é um ajuste de natureza financeira, mas não constitui uma linha de Resultado Financeiro nem linhas separadas de receitas e despesas financeiras.",
+          "motivo": "Descrição correta da composição do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS depois de uma vírgula, com as afirmações anteriores completas. Declara não ser possível determinar o resultado financeiro pedido (declara_limitacao) e identifica corretamente que as tabelas recebidas não trazem essa linha (S). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_N1",
+      "ticker": "VALE3",
+      "categoria": "N1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "cede522f634eae84b7e33578df23cdbd348ff606e6b20537057b1e6b8679e270",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos apresentados correspondem a uma Demonstração de Fluxo de Caixa e Balanços Patrimoniais, que não contêm a informação de receita líquida.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE. Nenhuma linha de receita no contexto.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "Além disso, não há menção específica ao ano de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar a receita (declara_limitacao) e identifica corretamente que as tabelas recebidas não contêm a receita (S). A ausência do ano é limitação da representação (N). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_N2",
+      "ticker": "VALE3",
+      "categoria": "N2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "929505a3458d24a6e34710aeebb0dfd552fb58dcc739f1f41ef3bb8c4577d680",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não contêm essa informação específica",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE. O resultado líquido consolidado não está no contexto (só o resultado antes dos tributos, na DFC).",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "nem referências temporais que permitam identificá-la.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar o resultado pedido (declara_limitacao) e afirma corretamente que ele não está no contexto (S). Não usa o resultado antes dos tributos nem 'Lucros/Prejuízos Acumulados' como substituto. Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_N3",
+      "ticker": "VALE3",
+      "categoria": "N3",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "8bd497805b5513067e0d6e3efa734446e2713ee0d82108cb482178204a83c47a",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos apresentados não contêm datas explícitas como \"primeiro semestre de 2026\" ou \"primeiro semestre de 2025\" associadas aos valores financeiros.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "As colunas \"anterior\" referem-se apenas ao período imediatamente anterior ao valor atual de cada linha, sem especificar o ano ou semestre.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Presunção sobre o significado do valor 'anterior', cuja data o contexto não informa (protocolo, Seção 16.5); rubrica, rótulo N."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar os resultados e a variação pedidos (declara_limitacao). As justificativas tratam da falta de datas e do significado do valor 'anterior' — limitação conhecida da representação (N). Não usa valores de conceitos vizinhos. Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_N4",
+      "ticker": "VALE3",
+      "categoria": "N4",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e9d2789275b61d0c8008883915cd87a746fda3a904c420772525ea3737673f38",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os documentos apresentados são a \"Demonstração de Fluxo de Caixa (Consolidado)\" e o \"Balanço Patrimonial (Consolidado)\".",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "A \"Demonstração de Resultado\" (ou DRE), que conteria os componentes que explicam a variação do resultado líquido consolidado (como Receita de Venda, Custo dos Produtos Vendidos, Despesas Operacionais, Resultado Financeiro, etc.), não foi incluída nos trechos.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "Embora o \"Lucro Líquido antes dos tributos sobre o lucro\" seja mencionado na Demonstração de Fluxo de Caixa",
+          "rotulo": "S",
+          "evidencia_contexto": "DFC: 'Lucro Líquido antes dos tributos sobre o lucro 21.773.000 (anterior: 24.055.000)'.",
+          "motivo": "Conceito vizinho corretamente identificado na tabela em que aparece."
+        },
+        {
+          "trecho_resposta": "este é um ponto de partida para o cálculo do fluxo de caixa operacional e não detalha os componentes da Demonstração de Resultado que levam a esse lucro ou à variação do resultado líquido consolidado.",
+          "rotulo": "S",
+          "evidencia_contexto": "Na DFC a linha aparece como primeiro item de 'Caixa Gerado nas Operações', seguida de ajustes; nenhum componente da DRE é detalhado.",
+          "motivo": "Distingue corretamente o conceito disponível do pedido, sem usá-lo como substituto (como no piloto AURE3_N3)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível responder (declara_limitacao), identifica corretamente que a DRE não está no contexto, reconhece o conceito vizinho disponível na DFC (resultado antes dos tributos) e explica por que ele não responde à pergunta. Não apresenta componentes nem causas sem suporte.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_N5",
+      "ticker": "VALE3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4e8821298aef1aa63a63885ed818ccaeeb30efc68050f24fa9632b15c41e7677",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não especificam as datas para os valores apresentados (apenas \"atual\" e \"anterior\")",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo pedido (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: BP Ativo 'Caixa e Equivalentes de Caixa 28.871.000'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_E1",
+      "ticker": "VALE3",
+      "categoria": "E1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "b6f4cc50bba78e845d726245c8c4e35479d6bb4a4aff5b308518a131b801c250",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS. A primeira frase, completa, declara não ser possível calcular a margem (declara_limitacao). A segunda frase é fragmento incompleto (convenção 1) e não é afirmação. Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_E2",
+      "ticker": "VALE3",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "2f2b7360ffaf95df70bec3e9e247885e8541bbc69e444eac51dc51f854fd12ae",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Vale tinha mais empréstimos e financiamentos do que caixa e equivalentes de caixa.",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: caixa 28.871.000; BP Passivo: Empréstimos e Financiamentos 6.534.000 (circulante) e 91.500.000 (não circulante).",
+          "motivo": "Comparação correta: 98.034.000 > 28.871.000."
+        },
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa:** 28.871.000",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 28.871.000'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Total de Empréstimos e Financiamentos (circulante e não circulante):** 98.034.000 (6.534.000 + 91.500.000)",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Passivo: 'Empréstimos e Financiamentos 6.534.000' e 'Empréstimos e Financiamentos 91.500.000'.",
+          "motivo": "Soma aritmeticamente correta de valores sustentados: 6.534.000 + 91.500.000 = 98.034.000."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o caixa e as duas parcelas de empréstimos e financiamentos sustentados pelo BP Ativo e pelo BP Passivo, a soma correta (98.034.000) e a comparação correta (mais empréstimos).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "VALE3_E3",
+      "ticker": "VALE3",
+      "categoria": "E3",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "3f3a5ef2e1db2079c360072b34921d40191ebec0d46f6b000046d5d4c5314134",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "pois as tabelas não especificam os períodos (anos ou semestres) aos quais os valores \"atual\" e \"anterior\" se referem.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o \"Resultado financeiro, líquido\" consolidado apresentado na Demonstração de Fluxo de Caixa é de **2.237.000** para o período atual e **-2.186.000** para o período anterior.",
+          "rotulo": "E",
+          "evidencia_contexto": "DFC: 'Resultado financeiro, líquido 2.237.000 (anterior: -2.186.000)' — linha de ajuste da DFC, com sinal invertido em relação ao resultado financeiro da DRE (rubrica, Seção 5).",
+          "motivo": "Critérios (a)/(c), decisão do autor: embora os números existam literalmente na DFC, a pergunta pede o resultado financeiro consolidado, e a linha de ajuste da DFC, com sinal invertido, é oferecida como o conceito pedido, sem ressalva do sinal. A existência literal dos números não basta para S quando o conceito contábil usado é inadequado."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "EXTRAPOLACAO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar o resultado financeiro para os semestres pedidos (declara_limitacao; justificativa N: ausência de períodos) e, 'no entanto', oferece a linha 'Resultado financeiro, líquido' da DFC, com sinal de ajuste, como o resultado financeiro consolidado (E, critérios (a)/(c), decisão do autor; armadilha pré-registrada na rubrica, Seção 5). A declaração de limitação é preservada.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_N1",
+      "ticker": "ITUB4",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "be8fea1d1f3f893f7818ea82ed0e306f3e3c4296306cc625b08b98e04c86f00d",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos apresentam dados financeiros, incluindo \"Receitas da Intermediação Financeira\" no valor de 199.118.000 (e um valor anterior de 200.251.000)",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Receitas da Intermediação Financeira 199.118.000 (anterior: 200.251.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "mas não especificam o período a que esses valores se referem.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o total pedido para o período nomeado (declara_limitacao), mas informa os valores atual e anterior das receitas de intermediação sustentados pela DRE; a falta de período é ressalva da representação (N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_N2",
+      "ticker": "ITUB4",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4a634390939f80448fc5e484d4bcf97e32e1898f05f7ec928fe3a62bab893892",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não especificam o período a que se referem os dados apresentados (apenas \"atual\" e \"anterior\")",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o \"Lucro/Prejuízo Consolidado do Período\" (que é o resultado líquido consolidado total) apresentado nos trechos é de **24.199.000**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 24.199.000 (anterior: 22.105.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o resultado para o período nomeado (declara_limitacao; justificativa N), mas informa o resultado consolidado do período atual sustentado pela DRE (24.199.000).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_N3",
+      "ticker": "ITUB4",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e27c5a680c72b2b1ac749f34eacdaf955728db2591cda5c6fef91ef5bf2d5ef7",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível identificar os períodos como \"primeiro semestre de 2026\" e \"primeiro semestre de 2025\", pois as datas não são mencionadas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Período Atual:** 24.199.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 24.199.000 (anterior: 22.105.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período Anterior:** 22.105.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 24.199.000 (anterior: 22.105.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "O resultado líquido consolidado (lucro) **aumentou** do período anterior para o período atual.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 24.199.000 (anterior: 22.105.000)'.",
+          "motivo": "Direção correta: 24.199.000 > 22.105.000."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS. As partes completas entregam os dois valores do resultado consolidado sustentados pela DRE e a direção correta (aumento). A observação sobre os períodos é ressalva da representação (N), seguida da resposta. O último item ('Variação Absoluta: 24.199.') é fragmento com número interrompido (convenção 1) e não é afirmação.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_N4",
+      "ticker": "ITUB4",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "656bedd6df1fbb76df7c406085f749f79e4bcf78864717fb8f430470d166870f",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não contêm informações de data que permitam associar os valores apresentados aos períodos específicos de 2025 e 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível identificar os componentes pedidos (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum componente ou valor é apresentado. A DRE consolidada está no contexto.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_N5",
+      "ticker": "ITUB4",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0681acda087cec214600803b341a1b8407cce57ebe1beb22c0675a4f14993054",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não especificam a qual empresa os dados financeiros se referem, nem as datas exatas dos períodos apresentados (apenas \"atual\" e \"anterior\").",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "a linha \"Caixa e Equivalentes de Caixa\" no Balanço Patrimonial (Trecho 3) mostra os seguintes valores para os períodos disponíveis:",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo (terceiro trecho): 'Caixa e Equivalentes de Caixa 35.351.000 (anterior: 37.144.000)'.",
+          "motivo": "Descrição correta do contexto."
+        },
+        {
+          "trecho_resposta": "**Período atual:** 35.351.000",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo (terceiro trecho): 'Caixa e Equivalentes de Caixa 35.351.000 (anterior: 37.144.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período anterior:** 37.144.000",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo (terceiro trecho): 'Caixa e Equivalentes de Caixa 35.351.000 (anterior: 37.144.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo na data pedida (declara_limitacao; justificativas N: ausência de nome e datas), mas informa os saldos atual e anterior sustentados pelo BP Ativo.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_E1",
+      "ticker": "ITUB4",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "4d1af2b44b1534e0f727a2ea75575ffcfbd48b8d2a840920e02a309759c5f249",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não mencionam \"Itaú Unibanco\" nem especificam o período como \"primeiro semestre de 2026\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        },
+        {
+          "trecho_resposta": "o \"Resultado Bruto Intermediação Financeira\" apresentado no Trecho 1 é de **71.756.000** para o período atual e **66.989.000** para o período anterior.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE (primeiro trecho): 'Resultado Bruto Intermediação Financeira 71.756.000 (anterior: 66.989.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o valor para a empresa e o período nomeados (declara_limitacao; justificativa N), mas informa os valores atual e anterior sustentados pela DRE.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_E2",
+      "ticker": "ITUB4",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "17981bc2e9e63c1add5fd21384719a0074b19d0fd030e7a3a599fef8bc3e5d02",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o nome da instituição (\"Itaú Unibanco\") e a data específica (\"30 de junho de 2026\") não são mencionados nos documentos.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "O contexto não traz o nome da companhia nem datas (limitações conhecidas; rubrica, rótulo N)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo de depósitos pedido (declara_limitacao). A justificativa — ausência de nome e data — é limitação conhecida do contexto (N). Nenhum valor entregue. O valor pedido consta do contexto: BP Passivo 'Depósitos 1.134.485.000'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITUB4_E3",
+      "ticker": "ITUB4",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ec81956d80628a7e75eefe62079600dd7298a262e4f1a2afea4a750baba12723",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS em '\"primeiro semestre de 2'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. 'não é possível responder à pergunta' é declaração completa e inequívoca (declara_limitacao, decisão do autor). A frase seguinte é fragmento e não é avaliada. Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Despesas da Intermediação Financeira -127.362.000'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_N1",
+      "ticker": "LAVV3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "bc14515e7b993c4389eafa9dea0e18ad961e63af3ec620425cc302fd49a5fa07",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Receita de Venda de Bens e/ou Serviços consolidada é de **868.335** (para o período atual) e **816.524** (para o período anterior).",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Receita de Venda de Bens e/ou Serviços 868.335 (anterior: 816.524)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos do documento **não especificam a qual período (por exemplo, primeiro semestre de 2026)** essas receitas se referem, apresentando apenas valores para o período \"atual\" e \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega a receita atual e anterior sustentadas pela DRE. A observação sobre o período é ressalva da representação (N), não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_N2",
+      "ticker": "LAVV3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "7e24b74cf9c9638a2b72d9bfc23ebfe060e219cd5f081d33dbb1a0ad786b080f",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O \"Lucro/Prejuízo Consolidado do Período\" é de **184.619**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 184.619 (anterior: 224.898)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos do documento não especificam a qual período (como o primeiro semestre de 2026) esses valores se referem",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS depois de uma vírgula, com a oração anterior completa. Entrega o resultado consolidado sustentado pela DRE (184.619); a observação sobre o período é ressalva da representação (N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_N3",
+      "ticker": "LAVV3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9ca48f5d8f3f26379a38b507d4142db44586a27223729ef24d01ac5c6883a1c9",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível determinar os períodos específicos de \"primeiro semestre de 2026\" e \"primeiro semestre de 2025\". Os trechos apresentam apenas valores para o período \"atual\" e o período \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Período Atual:** 184.619",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 184.619 (anterior: 224.898)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Período Anterior:** 224.898",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 184.619 (anterior: 224.898)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Variação Absoluta:** 184.619 - 224.898 = -40.279",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 184.619 (anterior: 224.898)'.",
+          "motivo": "Cálculo aritmeticamente correto sobre valores sustentados."
+        },
+        {
+          "trecho_resposta": "**Variação Percentual:** (-40.279 / 224.898) * 100 = -17,91%",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 184.619 (anterior: 224.898)'.",
+          "motivo": "Cálculo aritmeticamente correto sobre valores sustentados (-17,91%)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS. As partes completas entregam os dois valores do resultado consolidado sustentados pela DRE e as variações absoluta e percentual corretas. A observação sobre os períodos é ressalva da representação (N), seguida da resposta. A frase final ('...foi de 184') é fragmento com número interrompido (convenção 1).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_N4",
+      "ticker": "LAVV3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e6efb0b0e485a5dbb88fc0f7a41bc79f9762508a2656008e0d3401c814fd41fd",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS antes de qualquer afirmação completa: só reformula o início do enunciado. Pela convenção 1, o fragmento não é afirmação; não há declaração de indisponibilidade nem informação entregue. Registro sem afirmações.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_N5",
+      "ticker": "LAVV3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "78b42c312df109dba7c4988c9c35c3600ff80ddf6c08d61bdf5d22f502fa0a00",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS depois de uma vírgula. A oração completa declara não ser possível determinar o saldo na data pedida (declara_limitacao), sem justificativa factual completa. Nenhum valor entregue. O valor pedido consta do contexto: BP Ativo 'Caixa e Equivalentes de Caixa 192.713'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_E1",
+      "ticker": "LAVV3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5e7f4bbb602b7f51a4a2cbe4a9f7265d35b9763aaf72ad787302c9890451a6e5",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não contêm informações datadas especificamente para esse período.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível calcular a margem pedida (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum valor entregue. Os insumos constam da DRE (receita 868.335; resultado 184.619).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_E2",
+      "ticker": "LAVV3",
+      "categoria": "E2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "386da40604af5d7a6245e6a9d48c8427a219b1238dd2936527c93be6b957c3ec",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": null,
+      "abstencao_em_caso_presente": null,
+      "justificativa": "Resposta truncada por MAX_TOKENS em 'Caixa e Equivalentes de Caixa (30 de junho de 2026): R$'. O 'R$' isolado não é afirmação (convenção 1). Não há afirmação completa nem declaração de limitação antes do corte. Decisão do autor: o término imposto por MAX_TOKENS não demonstra que a resposta apresentaria a informação parcial como completa; E(e) não é atribuído por truncamento. Sem afirmação E/A e sem declaração de limitação, a regra estrutural do validador para casos parcial/ausente recusa o registro; o caso fica em PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (estado operacional, não classe da rubrica).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "LAVV3_E3",
+      "ticker": "LAVV3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8ef4ba6ac447e4ba5ba6f22ca370497e45b4697835e1147d276bf62e41a1de96",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível identificar os períodos como \"primeiro semestre de 2026\" e \"primeiro semestre de 2025\", pois as datas específicas não são mencionadas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Para o período mais recente (coluna atual):** 3.044",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 3.044 (anterior: 18.469)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Para o período anterior (coluna 'anterior'):** 18.469",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 3.044 (anterior: 18.469)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "o Resultado Financeiro Consolidado do período mais recente foi significativamente menor",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 3.044 (anterior: 18.469)'.",
+          "motivo": "Comparação correta: 3.044 < 18.469 (queda de cerca de 84%), compatível com o qualificativo."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS depois de uma vírgula. As partes completas entregam os dois valores do resultado financeiro sustentados pela DRE e a comparação correta (menor no período atual). A observação sobre os períodos é ressalva da representação (N). O trecho final ('representando uma queda de') é fragmento (convenção 1).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_N1",
+      "ticker": "POMO4",
+      "categoria": "N1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "c1abd70c326097084d19d4e09c832fa3c4017b313a9e7f4fcc607d72c09385b9",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "As tabelas apresentadas (Balanço Patrimonial e Demonstração de Fluxo de Caixa) não contêm a linha de \"Receita de Venda de Bens e/ou Serviços\" (Receita Líquida)",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são BP Ativo, DFC e BP Passivo; não há DRE. Nenhuma linha de receita no contexto.",
+          "motivo": "Descrição correta da composição do contexto."
+        },
+        {
+          "trecho_resposta": "nem informações específicas para o período solicitado.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível determinar a receita (declara_limitacao) e identifica corretamente que as tabelas recebidas não contêm a linha de receita (S). A ausência de período é limitação da representação (N). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_N2",
+      "ticker": "POMO4",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "dfba85f3e4547a582ce9ab7c8a9f860b53961531457157cd815df0d58546fcd4",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não especificam o período a que se referem os dados apresentados.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o resultado pedido (declara_limitacao). A justificativa — ausência de período — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DFC 'Resultado do período 535.824'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_N3",
+      "ticker": "POMO4",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "0a5479ac6b4c80599b69621b07fa10f6fce19e2b5ae0f78d92065a93ddc15709",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS ao fim de uma oração completa, que declara não ser possível determinar o resultado nos dois semestres pedidos (declara_limitacao). Sem justificativa factual completa. Nenhum valor entregue. Os valores constam do contexto: DFC 'Resultado do período 535.824 (anterior: 564.162)'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_N4",
+      "ticker": "POMO4",
+      "categoria": "N4",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e5dba51beb37fcfffe63e2228f31d4ffaf34b62e69ee0d19178159bdf68f6b0c",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os documentos apresentados são o Balanço Patrimonial (Ativo e Passivo) e a Demonstração de Fluxo de Caixa.",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são BP Ativo, DFC e BP Passivo; não há DRE.",
+          "motivo": "Descrição correta da composição do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta declara não ser possível identificar os componentes pedidos (declara_limitacao) e descreve corretamente as tabelas recebidas, sem DRE (S). Não usa as linhas da DFC (resultado do período; IR/CS com sinal invertido) como componentes. Nenhum componente ou valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_N5",
+      "ticker": "POMO4",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "614283678c8d4b26bf4d2663be85a01517b22f595095c8148d82c0827b5a6044",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as datas correspondentes aos valores \"atuais\" e \"anteriores\" não são especificadas nos trechos.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o saldo pedido (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: BP Ativo 'Caixa e Equivalentes de Caixa 1.587.320'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_E1",
+      "ticker": "POMO4",
+      "categoria": "E1",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "41b4dee935908e0d4bd3006c0c3a5447ac4faf80b2e9da8797ac0d5be9e5b8b6",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A margem solicitada exige resultado líquido e receita. O contexto contém o resultado do período, mas não contém a receita de venda de bens e/ou serviços. A resposta se abstém de calcular a margem e identifica corretamente a informação ausente.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_E2",
+      "ticker": "POMO4",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ca61506b927fae99973e0f473cedf9ee1f0c15cbb9a9f615cd4c5e36fd707135",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Marcopolo tinha mais empréstimos e financiamentos do que caixa e equivalentes de caixa.",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: caixa 1.587.320; BP Passivo: Empréstimos e Financiamentos 1.089.436 (circulante) e 2.310.995 (não circulante).",
+          "motivo": "Comparação correta: 3.400.431 > 1.587.320."
+        },
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa:** 1.587.320",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 1.587.320'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Total de Empréstimos e Financiamentos (circulante e não circulante):** 3.400.431 (1.089.436 circulante + 2.310.995 não circulante)",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Passivo: 'Empréstimos e Financiamentos 1.089.436' e 'Empréstimos e Financiamentos 2.310.995'.",
+          "motivo": "Soma aritmeticamente correta de valores sustentados: 1.089.436 + 2.310.995 = 3.400.431."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o caixa e as duas parcelas de empréstimos e financiamentos sustentados pelo BP Ativo e pelo BP Passivo, a soma correta (3.400.431) e a comparação correta (mais empréstimos).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "POMO4_E3",
+      "ticker": "POMO4",
+      "categoria": "E3",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "d73db771916e445e20fedfabc616318594ee61526e2de56d4b04f0d2d2e81f7a",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o documento não especifica que os períodos apresentados correspondem ao primeiro semestre de 2026 e 2025.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A frase comunica insuficiência para responder à pergunta (declara_limitacao, decisão do autor); a justificativa pode ser imprecisa quanto à razão, mas a resposta se abstém diante de um contexto que não contém a linha necessária. Como justificativa, a ausência de períodos é limitação conhecida da representação (N), como nos casos com declaração e ressalva de período. Nenhum valor entregue. O contexto não tem linha de resultado financeiro.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_N1",
+      "ticker": "ITSA4",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "24007206827dae1fe1a86eaa24aca7666b57b0a50739548f7394ea3e547e9313",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as datas ou períodos de referência para os valores apresentados não são especificados.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar a receita pedida (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Receita de Venda de Bens e/ou Serviços 4.250.000'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_N2",
+      "ticker": "ITSA4",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "bf16524ba8220d212e1cf03ca398cd6259e3b82af6f3aab0f3905accf54a7a85",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o \"Lucro/Prejuízo Consolidado do Período\" (que equivale ao resultado líquido consolidado total) é de **9.726.000**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 9.726.000 (anterior: 8.048.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos não especificam o período de referência (ex: \"primeiro semestre de 2026\"), apenas apresentam valores para o período \"atual\" e \"anterior\". Portanto, não é possível confirmar que este valor corresponde especificamente ao primeiro semestre de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado consolidado sustentado pela DRE (9.726.000). A observação sobre o período é ressalva da representação (N) sobre o valor entregue, não declaração de que a informação pedida está indisponível.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_N3",
+      "ticker": "ITSA4",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "ba62ea3429461db200f84204531a6952601c742cd9bbfcb716bb94d3edeeead9",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (Lucro) no primeiro semestre de 2026:** R$ 9.726.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 9.726.000 (anterior: 8.048.000)'.",
+          "motivo": "Valor sustentado; a unidade monetária presumida ('R$', sem 'mil') é limitação conhecida do contexto, neutra pela rubrica (rótulo N; protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (Lucro) no primeiro semestre de 2025:** R$ 8.048.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 9.726.000 (anterior: 8.048.000)'.",
+          "motivo": "Valor sustentado; a unidade monetária presumida ('R$', sem 'mil') é limitação conhecida do contexto, neutra pela rubrica (rótulo N; protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "A variação do resultado líquido consolidado foi um **aumento de 20,85%** no primeiro semestre de 2026 em relação ao primeiro semestre de 2025.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 9.726.000 (anterior: 8.048.000)'.",
+          "motivo": "Cálculo correto sobre valores sustentados: (9.726.000 - 8.048.000) / 8.048.000 = 20,85%."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega os dois valores do resultado consolidado sustentados pela DRE e a variação percentual correta (aumento de 20,85%). A unidade presumida e a atribuição aos semestres nomeados são leituras neutras da representação (rubrica, rótulo N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_N4",
+      "ticker": "ITSA4",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8298420b29dbd478ae2bef902594e1893dd027d608aeb7d5c77d5564feb74c22",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a variação positiva de R$ 1.678.000 no Resultado Líquido Consolidado do Período",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 9.726.000 (anterior: 8.048.000)'.",
+          "motivo": "Variação correta sobre valores sustentados (9.726.000 - 8.048.000 = 1.678.000). Valor sustentado; a unidade monetária presumida ('R$', sem 'mil') é limitação conhecida do contexto, neutra pela rubrica (rótulo N; protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS em '(de R'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A afirmação sobre a variação positiva de 1.678.000 no resultado consolidado está completa (decisão do autor) e é sustentada pela DRE (S). O trecho iniciado em '(de R' é fragmento e não é reconstruído. Não chega a apresentar componentes.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_N5",
+      "ticker": "ITSA4",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "356463c6933fdf3f7e8a88a23cbc4a5e25d9cb7fc1569823cb6807f15db2b3aa",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O saldo de caixa e equivalentes de caixa consolidado é de **4.709.000**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DFC: 'Saldo Final de Caixa e Equivalentes 4.709.000'; BP Ativo: 'Caixa e Equivalentes de Caixa 4.709.000'.",
+          "motivo": "O valor e o conceito estão sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Os trechos não especificam a data de 30 de junho de 2026 para este valor, apresentando-o como o valor do período atual nas demonstrações.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)' sem datas explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega corretamente o saldo de 4.709.000, sustentado tanto pela DFC quanto pelo BP Ativo. A observação sobre a ausência de data explícita é apenas uma ressalva decorrente da representação congelada e não uma declaração de indisponibilidade da informação solicitada.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_E1",
+      "ticker": "ITSA4",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e68d29b31de806acc5f4bef4acb51d94939fd7faaa6f86477904e37ffb420bad",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O resultado de equivalência patrimonial consolidado foi de **9.354.000**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado de Equivalência Patrimonial 9.354.000 (anterior: 8.598.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Os trechos não especificam que este valor se refere ao primeiro semestre de 2026, apenas apresentam o valor atual e o valor do período anterior.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado de equivalência patrimonial sustentado pela DRE (9.354.000). A observação sobre o período é ressalva da representação (N), não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_E2",
+      "ticker": "ITSA4",
+      "categoria": "E2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "e777413246d3205eb993c4e970198afe83ea2fb724a1fa01cae98aa59216f010",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa:** 4.709.000",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 4.709.000 (anterior: 4.039.000)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": null,
+      "abstencao_em_caso_presente": null,
+      "justificativa": "Resposta truncada por MAX_TOKENS em '* **Empr'. A linha do caixa é completa e sustentada pelo BP Ativo (S); 'Empr' é fragmento e fica fora. E(e) não é atribuído, porque não se sabe se a resposta apresentaria o caixa isoladamente como resposta completa. Decisão do autor: o término imposto por MAX_TOKENS não demonstra que a resposta apresentaria a informação parcial como completa; E(e) não é atribuído por truncamento. Sem afirmação E/A e sem declaração de limitação, a regra estrutural do validador para casos parcial/ausente recusa o registro; o caso fica em PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (estado operacional, não classe da rubrica).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "ITSA4_E3",
+      "ticker": "ITSA4",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "76d44a18d0ebf179c3c1bd0021a5222170a0dcffaabf76b4c1ff21e6ce3506e7",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Primeiro semestre de 2026:** R$ 193.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 193.000 (anterior: -844.000)'.",
+          "motivo": "Valor sustentado; a unidade monetária presumida ('R$', sem 'mil') é limitação conhecida do contexto, neutra pela rubrica (rótulo N; protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "**Primeiro semestre de 2025:** R$ -844.000",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 193.000 (anterior: -844.000)'.",
+          "motivo": "Valor sustentado; a unidade monetária presumida ('R$', sem 'mil') é limitação conhecida do contexto, neutra pela rubrica (rótulo N; protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o resultado financeiro consolidado no primeiro semestre de 2026 foi positivo em R$ 193.000, representando uma melhora significativa em relação ao prejuízo financeiro de R$ 844.000 registrado no primeiro semestre de 2025.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 193.000 (anterior: -844.000)'.",
+          "motivo": "Comparação correta: de -844.000 (resultado financeiro negativo) para +193.000; sinais e direção coerentes com o contexto."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega os dois valores do resultado financeiro sustentados pela DRE, com os sinais corretos, e a comparação correta (melhora de negativo para positivo). A unidade presumida e a atribuição aos semestres são leituras neutras da representação.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_N1",
+      "ticker": "IRBR3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "b8210957289a88af1ed5bb03d81fda2a110cc22445de28a833195aa05019addb",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O valor das Receitas das Atividades Seguradoras/Resseguradoras é de **1.920.140**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Receitas das Atividades Seguradoras/Resseguradoras 1.920.140 (anterior: 2.670.200)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos do documento não especificam o período a que este valor se refere, portanto, não é possível confirmar se corresponde ao primeiro semestre de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o valor das receitas das atividades seguradoras/resseguradoras sustentado pela DRE (1.920.140). A observação sobre o período é ressalva da representação (N) sobre o valor entregue, não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_N2",
+      "ticker": "IRBR3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "743f9be82c23e050f47b620f9530da68b28431c6da7fe310680779d1e5bc6156",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as tabelas não especificam o período a que se referem os dados apresentados (apenas \"atual\" e \"anterior\")",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o **Lucro/Prejuízo Consolidado do Período** (ou Resultado Líquido das Operações Continuadas) para o período mais recente apresentado nas demonstrações é de **90.305**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 90.305 (anterior: 240.662)' e 'Resultado Líquido das Operações Continuadas 90.305'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o resultado para o período nomeado (declara_limitacao; justificativa N), mas informa o resultado consolidado do período atual sustentado pela DRE (90.305).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_N3",
+      "ticker": "IRBR3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "9664f88ad352a82b212ee6dcf547cbab14be6015d52eb3c7051867112a8c4a86",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (Lucro) no primeiro semestre de 2026:** 90.305",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 90.305 (anterior: 240.662)' e 'Resultado Líquido das Operações Continuadas 90.305'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (Lucro) no primeiro semestre de 2025:** 240.662",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 90.305 (anterior: 240.662)' e 'Resultado Líquido das Operações Continuadas 90.305'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "A variação foi de **-150.357**, representando uma queda de aproximadamente **62,48%** em relação ao primeiro semestre de 2025.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 90.305 (anterior: 240.662)' e 'Resultado Líquido das Operações Continuadas 90.305'.",
+          "motivo": "Cálculos corretos sobre valores sustentados: 90.305 - 240.662 = -150.357; 150.357 / 240.662 = 62,48%."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega os dois valores do resultado consolidado sustentados pela DRE e as variações absoluta e percentual corretas. A atribuição aos semestres nomeados é leitura neutra de atual/anterior (rubrica, rótulo N).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_N4",
+      "ticker": "IRBR3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8bdba547ccce06590f3989b2b5d8649e205cd28dae50b737ba61b88e87614937",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS antes de qualquer afirmação completa: reformula o enunciado ('a variação do resultado líquido consolidado ... entre o período anterior (implícito 2025) e o período'), sem predicado. A indicação '(implícito 2025)' é presunção neutra sobre o período (rubrica, rótulo N), não elemento factual. Pela convenção 1, o fragmento não é afirmação; não há declaração de indisponibilidade nem informação entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_N5",
+      "ticker": "IRBR3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "22c2f6e69856c973d20565e06598a350ad64a22b78c81734cdceadf2711e94a6",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o saldo de caixa e equivalentes de caixa consolidado é de **54.039** (valor atual).",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 54.039 (anterior: 11.232)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "os trechos não especificam a data a que esse valor se refere, portanto, não é possível determinar se ele corresponde a 30 de junho de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o saldo atual de caixa e equivalentes sustentado pelo BP Ativo (54.039). A observação sobre a data é ressalva da representação (N) sobre o valor entregue, não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_E1",
+      "ticker": "IRBR3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "486d1f7a2c94562ab1459885b8a0e1c3a46f05c9fbc9b4baffbccd59217275c8",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as datas ou períodos a que se referem os dados não são especificados nos documentos.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o resultado bruto pedido (declara_limitacao). A justificativa — ausência de datas — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Resultado Bruto -41.006'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_E2",
+      "ticker": "IRBR3",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "730568d51d40e50888e9aa3e4ebc1b99fc9269fe8a1a9b60d0c06fef32c62a28",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o \"Resultado Financeiro Consolidado\" para o período mais recente apresentado nas tabelas é de **117.761**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Resultado Financeiro 117.761 (anterior: -40.329)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta afirma que o documento não apresenta informação para o período pedido (declara_limitacao), mas informa o resultado financeiro do período atual sustentado pela DRE (117.761).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "IRBR3_E3",
+      "ticker": "IRBR3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "8f13db7a1f8d1e42ac5983777daf29a3959662d65b0696b3ce1c198560370f5c",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível determinar qual dos períodos (o atual ou o anterior) corresponde a 30 de junho de 2026.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "Resposta truncada por MAX_TOKENS em 'No Bal'. A frase completa é ressalva sobre a representação temporal (N), usada neste caso para declarar a impossibilidade de determinar o valor pedido (declara_limitacao, decisão do autor). 'No Bal' é fragmento e fica fora; não se supõe o que viria depois. Nenhum valor entregue. O valor pedido consta do contexto: BP Ativo 'Aplicações Financeiras 4.414.934'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_N1",
+      "ticker": "CEAB3",
+      "categoria": "N1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "901d23558e4c7a3b277c92faa5f87220ef844a7e6548b90aff8dc09612de94f9",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não especificam os períodos a que as informações financeiras se referem, apenas apresentam valores para um período atual e um período \"anterior\".",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar a receita pedida (declara_limitacao). A justificativa — ausência de períodos explícitos — é limitação conhecida da representação (N). Nenhum valor entregue. O valor pedido consta do contexto: DRE 'Receita de Venda de Bens e/ou Serviços 3.701.913'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_N2",
+      "ticker": "CEAB3",
+      "categoria": "N2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "d7c67b538c693faf942cd0373c01bbb85f38c4888d53334eb68e494c62e87bd4",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o documento não especifica o período ao qual os dados se referem.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        },
+        {
+          "trecho_resposta": "o \"Lucro/Prejuízo Consolidado do Período\" para o período mais recente apresentado é de **179.594**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "Não é possível confirmar se este valor corresponde ao primeiro semestre de 2026, pois as datas não são mencionadas nos trechos.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado consolidado do período atual sustentado pela DRE (179.594). As observações sobre o período são ressalvas da representação (N) sobre o valor entregue, não declaração de indisponibilidade.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_N3",
+      "ticker": "CEAB3",
+      "categoria": "N3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e3ca3c8ca09401a3cbdca76df0c5aa4e15987e51faf13c4a100a77c204bceb20",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (1º Semestre de 2026):** 179.594",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'."
+        },
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado (1º Semestre de 2025):** 204.384",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'."
+        },
+        {
+          "trecho_resposta": "A variação do resultado líquido consolidado foi de **-24.790**",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'.",
+          "motivo": "Cálculo aritmeticamente correto sobre os dois valores sustentados: 179.594 - 204.384 = -24.790."
+        },
+        {
+          "trecho_resposta": "representando uma **redução de 12,13%** em relação ao primeiro semestre de 2025",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'.",
+          "motivo": "Cálculo correto sobre valores sustentados: (179.594 - 204.384) / 204.384 × 100 ≈ -12,13%."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Os dois valores estão diretamente sustentados pela DRE, e tanto a variação absoluta quanto a redução percentual são cálculos corretos sobre esses valores.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_N4",
+      "ticker": "CEAB3",
+      "categoria": "N4",
+      "disponibilidade": "presente",
+      "sha256_resposta": "6cbbd9361f95f4f556f1bafbbe20eb9afd42df4877312fb4e95b4fc8e2198850",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS em 'entre o período anterior (204.384) e'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. A oração é sujeito sem predicado; o valor anterior entre parênteses está embutido no sintagma nominal e não forma proposição independente. A comparação não é completada (decisão do autor). Mesmo tratamento de IRBR3_N4. Não há afirmação completa nem declaração de limitação antes do corte.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_N5",
+      "ticker": "CEAB3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e064602069d74ba87ee7c81cd6d0f00b2c2e0279e1ae818d42ed9cccefd120f0",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "as datas dos períodos apresentados nas tabelas não são especificadas",
+          "rotulo": "N",
+          "evidencia_contexto": "As linhas do contexto seguem o formato 'valor (anterior: valor)', sem datas nem unidade; ex.: T1 (BP Ativo) 'Caixa e Equivalentes de Caixa 540.690 (anterior: 774.521)'.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": true,
+      "justificativa": "A resposta declara não ser possível determinar o valor pedido (registrado em declara_limitacao, não como afirmação). A única justificativa factual — ausência de datas nas tabelas — corresponde à limitação conhecida da representação do contexto e foi rotulada N. Nenhum valor foi entregue. O valor pedido consta do contexto: T1 (BP Ativo) 'Caixa e Equivalentes de Caixa 540.690'.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:49:27+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_E1",
+      "ticker": "CEAB3",
+      "categoria": "E1",
+      "disponibilidade": "presente",
+      "sha256_resposta": "a8bc456ff89ea878f3de9af49dba0f5cf82c40e3d14f5b71c9cd5104c9c30d44",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Resultado Líquido Consolidado do Período** (valor atual): 179.594 (Trecho 3)",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'. A DRE é o terceiro trecho.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Receita de Venda de Bens e/ou Serviços** (valor atual): 3.701.913 (Trecho 3)",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Receita de Venda de Bens e/ou Serviços 3.701.913 (anterior: 3.670.545)'. A DRE é o terceiro trecho.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "(Resultado Líquido Consolidado / Receita de Venda de Bens e/ou Serviços) = (179.594 / 3.701.913) ≈ 0,048513",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'. DRE: 'Receita de Venda de Bens e/ou Serviços 3.701.913 (anterior: 3.670.545)'.",
+          "motivo": "Cálculo correto sobre valores sustentados: 179.594 / 3.701.913 = 0,0485138…, exibido truncado em 6 casas (tolerância da regra 6: arredondado ou truncado)."
+        },
+        {
+          "trecho_resposta": "A margem líquida consolidada foi de aproximadamente **4,85%**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DRE: 'Lucro/Prejuízo Consolidado do Período 179.594 (anterior: 204.384)'. DRE: 'Receita de Venda de Bens e/ou Serviços 3.701.913 (anterior: 3.670.545)'.",
+          "motivo": "Cálculo correto sobre valores sustentados (4,85%)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o resultado consolidado e a receita sustentados pela DRE e calcula corretamente a margem líquida (≈ 4,85%).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_E2",
+      "ticker": "CEAB3",
+      "categoria": "E2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "0e2d4448e6b604a43511ab82084c0c14b538b07071c5204882b938bc841f02f0",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa (30 de junho de 2026):** 540.690",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 540.690 (anterior: 774.521)'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta entrega o caixa sustentado pelo BP Ativo (540.690) e declara que o saldo de empréstimos e financiamentos não está disponível nos trechos e que, por isso, não é possível fazer a comparação pedida (declara_limitacao). O BP Passivo não está no contexto; nada ausente é inventado.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "CEAB3_E3",
+      "ticker": "CEAB3",
+      "categoria": "E3",
+      "disponibilidade": "presente",
+      "sha256_resposta": "fb18cfaf324a1be5f33b7aa9fbb815819234df8cce3bea85ba5fa7832a601d7d",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "não é possível identificar os períodos como \"primeiro semestre de 2026\" e \"primeiro semestre de 2025\", pois as datas não são mencionadas.",
+          "rotulo": "N",
+          "evidencia_contexto": "A representação congelada usa 'valor (anterior: valor)', sem datas nem unidade explícitas.",
+          "motivo": "Limitação conhecida da representação do contexto (protocolo, Seção 16.5)."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS. A observação sobre os períodos é ressalva da representação (N), seguida de 'No entanto, o \"Resultado Financeiro Consolidado\" apresentado na Demonstração de Resultado é:' — a resposta ia informar os valores, e o truncamento os cortou ('* Perí'). O fragmento final não é afirmação (convenção 1). Não há declaração de indisponibilidade nem valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_N1",
+      "ticker": "AURE3",
+      "categoria": "N1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "ca58bba77153cb3fc904aaab8a069298c8c78adf31f66ce81d34e18852214e0b",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Os trechos disponíveis são DFC, BP Ativo e BP Passivo. Não há DRE nem linha de receita. A resposta reconhece corretamente que a receita solicitada não pode ser determinada a partir do contexto fornecido e não apresenta valor não sustentado.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_N2",
+      "ticker": "AURE3",
+      "categoria": "N2",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "2bce3d96055229440f7351db842e34c63d1fd2c1faedd7249022c2b84912509a",
+      "afirmacoes": [],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": null,
+      "abstencao_em_caso_presente": null,
+      "justificativa": "Resposta truncada por MAX_TOKENS no meio do número ('foi de **-1.0'). Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. O valor '-1.0' está incompleto e não é número avaliável; a proposição depende dele para afirmar qual foi o resultado líquido e, por isso, é fragmento (decisão do autor). Nenhum valor é reconstruído e nenhum E é atribuído com base no número cortado. Caso parcial sem afirmação E/A e sem declaração: a regra estrutural do validador recusa o registro; fica em PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (estado operacional, não classe da rubrica).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_N3",
+      "ticker": "AURE3",
+      "categoria": "N3",
+      "disponibilidade": "parcial",
+      "sha256_resposta": "2a94b6699de540a7aafb41b05f2426cc011d4f11c496d0fa510da705fd2a6fbd",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Demonstração de Resultado (DRE), que conteria o resultado líquido consolidado (lucro ou prejuízo) da Auren Energia, não está presente",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo."
+        },
+        {
+          "trecho_resposta": "Os documentos disponibilizados são a Demonstração de Fluxo de Caixa e o Balanço Patrimonial.",
+          "rotulo": "S",
+          "evidencia_contexto": "Corresponde aos tipos dos três trechos recuperados."
+        },
+        {
+          "trecho_resposta": "a Demonstração de Fluxo de Caixa apresente o \"Lucro (prejuízo) antes do imposto de renda e da contribuição social\"",
+          "rotulo": "S",
+          "evidencia_contexto": "DFC: 'Lucro (prejuízo) antes do imposto de renda e da contribuição social -1.032.287 (anterior: -375.121)'."
+        },
+        {
+          "trecho_resposta": "este não representa o resultado líquido consolidado, pois é um valor antes da dedução dos impostos",
+          "rotulo": "S",
+          "evidencia_contexto": "O próprio conceito da linha no contexto é explicitamente resultado antes de IR/CS, enquanto a pergunta solicita resultado líquido consolidado.",
+          "motivo": "A resposta distingue corretamente o conceito disponível do conceito solicitado, sem usar o valor vizinho como substituto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": true,
+      "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A resposta identifica corretamente que o resultado líquido consolidado solicitado não está no contexto, reconhece o conceito vizinho disponível na DFC e explica corretamente por que ele não deve ser usado como substituto. Não há extrapolação nem alucinação.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_N4",
+      "ticker": "AURE3",
+      "categoria": "N4",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "5a901cffde3d692d90ad90312af720afecca698bb891500899e33aeb45696547",
+      "afirmacoes": [],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS no complemento de período ('...entre o primeiro semestre'). Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. 'não é possível identificar os componentes da demonstração de resultado que explicam a variação do resultado líquido consolidado da Auren Energia' já constitui declaração inequívoca de insuficiência (declara_limitacao, decisão do autor). O complemento truncado não é afirmação. A DRE não está no contexto (DFC, BP Ativo e BP Passivo).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_N5",
+      "ticker": "AURE3",
+      "categoria": "N5",
+      "disponibilidade": "presente",
+      "sha256_resposta": "e7ee54a46efcc353e0d38bcd4a277930f4e3eda61dc8a0389ffa445a64e1fb9f",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "o saldo de caixa e equivalentes de caixa consolidado mais recente apresentado é de **2.949.774**.",
+          "rotulo": "S",
+          "evidencia_contexto": "DFC: 'Saldo Final de Caixa e Equivalentes 2.949.774'; BP Ativo: 'Caixa e Equivalentes de Caixa 2.949.774'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "A parte completa da resposta fornece corretamente o saldo 2.949.774, sustentado pela DFC e pelo BP Ativo. O fragmento final causado pelo truncamento ('No') não constitui afirmação (convenção 1).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T00:56:50+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_E1",
+      "ticker": "AURE3",
+      "categoria": "E1",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "8a7d9e4d52dbff5e882f5b2096821a581cc1a54bc38c3bc4ebcbec189badf882",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "Os trechos não apresentam a \"Receita de Venda de Bens e/ou Serviços\" (Receita Líquida)",
+          "rotulo": "S",
+          "evidencia_contexto": "Os três trechos são DFC, BP Ativo e BP Passivo; não há DRE. Nenhuma linha de receita no contexto.",
+          "motivo": "Descrição correta do contexto."
+        }
+      ],
+      "declara_limitacao": true,
+      "entrega_informacao_sustentada": false,
+      "classe": "ABSTENCAO_ADEQUADA",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS na segunda coordenada ('nem o \"Resultado Líqu'), depois de a primeira estar completa. Declara não ser possível calcular a margem (declara_limitacao) e identifica corretamente que a receita não está nos trechos (S). O fragmento final não é afirmação (convenção 1). Nenhum valor entregue.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_E2",
+      "ticker": "AURE3",
+      "categoria": "E2",
+      "disponibilidade": "presente",
+      "sha256_resposta": "5d3d347307976581f1998ddb26eca04404e239b27551ca0f3633fcbe73c3b5c2",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "a Auren Energia tinha mais empréstimos e financiamentos do que caixa e equivalentes de caixa.",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: caixa 2.949.774; BP Passivo: Empréstimos e Financiamentos 1.936.154 (circulante) e 21.718.070 (não circulante).",
+          "motivo": "Comparação correta: 23.654.224 > 2.949.774."
+        },
+        {
+          "trecho_resposta": "**Caixa e Equivalentes de Caixa:** 2.949.774",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Ativo: 'Caixa e Equivalentes de Caixa 2.949.774'.",
+          "motivo": "Valor e conceito sustentados diretamente pelo contexto."
+        },
+        {
+          "trecho_resposta": "**Total de Empréstimos e Financiamentos (circulante e não circulante):** 23.654.224 (1.936.154 circulante + 21.718.070 não circulante",
+          "rotulo": "S",
+          "evidencia_contexto": "BP Passivo: 'Empréstimos e Financiamentos 1.936.154' e 'Empréstimos e Financiamentos 21.718.070'.",
+          "motivo": "Soma aritmeticamente correta de valores sustentados: 1.936.154 + 21.718.070 = 23.654.224."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": true,
+      "classe": "SEM_DESVIO",
+      "abstencao_em_caso_presente": false,
+      "justificativa": "Resposta truncada por MAX_TOKENS só no parêntese final, com todos os números completos. Entrega o caixa e as duas parcelas de empréstimos e financiamentos sustentados pelo BP Ativo e pelo BP Passivo, a soma correta (23.654.224) e a comparação correta (mais empréstimos).",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:10:03+00:00",
+      "scores_ragas_consultados": false
+    },
+    {
+      "id": "AURE3_E3",
+      "ticker": "AURE3",
+      "categoria": "E3",
+      "disponibilidade": "ausente",
+      "sha256_resposta": "c9932887dd93c8bf3f1fbf2997a7f7e4440995a083a12b375f504e52f6f26a18",
+      "afirmacoes": [
+        {
+          "trecho_resposta": "O documento apresenta o \"Lucro (prejuízo) antes do imposto de renda e da contribuição social\"",
+          "rotulo": "S",
+          "evidencia_contexto": "DFC: 'Lucro (prejuízo) antes do imposto de renda e da contribuição social -1.032.287 (anterior: -375.121)'.",
+          "motivo": "A linha existe no contexto e é identificada pelo conceito correto (decisão do autor). Avaliada apenas a afirmação completa sobre a existência da linha; o objeto da comparação após 'mais próximo de' não é completado."
+        }
+      ],
+      "declara_limitacao": false,
+      "entrega_informacao_sustentada": false,
+      "classe": null,
+      "abstencao_em_caso_presente": null,
+      "justificativa": "Resposta truncada por MAX_TOKENS em 'como o resultado mais próximo de'. Regra complementar do autor para orações interrompidas por MAX_TOKENS: só há afirmação ou declaração avaliável quando, antes do corte, já existe proposição factual semanticamente completa e independente; o conteúdo ausente não é completado mentalmente. Afirmação completa: o documento apresenta a linha do resultado antes dos tributos (S, decisão do autor). O fragmento posterior fica fora da anotação. Não há declaração de limitação antes do corte. Caso ausente sem afirmação E/A e sem declaração: a regra estrutural do validador recusa o registro; fica em PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR (estado operacional, não classe da rubrica). Nenhum rótulo foi alterado para satisfazer o validador.",
+      "classificador": "autor",
+      "classificado_em": "2026-09-30T01:21:23+00:00",
+      "scores_ragas_consultados": false
+    }
+  ]
+}

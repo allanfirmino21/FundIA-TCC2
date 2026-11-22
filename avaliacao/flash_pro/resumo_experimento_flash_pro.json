@@ -1,0 +1,392 @@
+{
+  "descricao": "Resumo reprodutível do experimento Flash × Pro (pré-registro 6a9fee9; coleta 75dbfc4). Agregação determinística dos artefatos congelados; nenhuma reauditoria nem chamada a LLM.",
+  "proveniencia": {
+    "fontes_sha256": {
+      "PRE_REGISTRO_flash_vs_pro.md": "eb1bab2a32ecf4f0e4e046167aec4f59ce5bb7de6313d4cb14003bfb45ced0c9",
+      "experimento_flash_pro.csv": "a618a73b8aba3765bd637fcbcf7939609e87fed881af44dec0e4df67eaaddfda",
+      "experimento_flash_pro_verificacoes.json": "694efac85f206ff6419b29d14a291cf004348dce375b7acf9b5b0ad47a007a56",
+      "experimento_flash_pro_manifesto.json": "053ae7de68d8630844941c4e43d4211aac093a98d74e957658ed7e62d8b782c6",
+      "experimento_flash_pro_bruto_28linhas.csv": "436315fe7ac7c687c6635c5f18e2b8554c100b3e509bd3b33e343ed5bf02be45",
+      "experimento_flash_pro_descartadas.csv": "fe73b1ad317dc6984202d41631b72e69fa9176b8ca4874c1764a28a88e677805"
+    }
+  },
+  "desenho": {
+    "empresas": [
+      "WEGE3",
+      "VALE3",
+      "ITSA4",
+      "BBAS3",
+      "ZAMP3"
+    ],
+    "bracos": {
+      "flash": "gemini-2.5-flash",
+      "pro": "gemini-2.5-pro"
+    },
+    "execucoes_por_celula": 2,
+    "documento": "ITR 2026-03-31",
+    "denominador": "resumo.total_numeros = verificações com veredito diferente de IGNORADO",
+    "auditor": "1.0 (modulos/auditoria.py no commit 75dbfc4: existência do valor, sinal e direção; sem verificação de conceito, introduzida em 27dfdd5)",
+    "estado_do_pipeline": "anterior às correções do TCC 2 (commits 183e69f a 777b256 em modulos/)"
+  },
+  "formulas": {
+    "fidelidade_braco": "100 × Σ conferem / Σ total_numeros nas 10 execuções do braço",
+    "fidelidade_empresa": "100 × Σ conferem / Σ total_numeros nas 2 execuções da empresa no braço",
+    "diferenca_fidelidade_pp": "|taxa_flash − taxa_pro|",
+    "diferenca_cobertura_base_adotada": "(mediana_maior − mediana_menor) / mediana_maior",
+    "diferenca_cobertura_base_alternativa": "(mediana_maior − mediana_menor) / mediana_menor",
+    "nota_base": "o pré-registro (Seção 5) não especifica a base da diferença relativa; o limite de 10% é ultrapassado nas duas interpretações"
+  },
+  "contagens_verificacoes": {
+    "flash": {
+      "entradas": 335,
+      "por_veredito": {
+        "CONFERE": 323,
+        "DIVERGENTE": 1,
+        "NAO_ENCONTRADO": 1,
+        "IGNORADO": 10
+      },
+      "denominador_total_numeros": 325
+    },
+    "pro": {
+      "entradas": 229,
+      "por_veredito": {
+        "CONFERE": 218,
+        "DIVERGENTE": 0,
+        "NAO_ENCONTRADO": 0,
+        "IGNORADO": 11
+      },
+      "denominador_total_numeros": 218
+    },
+    "total": {
+      "entradas": 564,
+      "por_veredito": {
+        "CONFERE": 541,
+        "DIVERGENTE": 1,
+        "NAO_ENCONTRADO": 1,
+        "IGNORADO": 21
+      },
+      "denominador_total_numeros": 543
+    }
+  },
+  "limites_pre_registrados": {
+    "fidelidade_agregada_pp": 2.0,
+    "fidelidade_por_empresa_pp": 5.0,
+    "cobertura_diferenca_relativa_mediana": 0.1
+  },
+  "integridade": {
+    "celulas": 20,
+    "celulas_unicas_iguais_ao_desenho": true,
+    "finish_reason": [
+      "STOP"
+    ],
+    "hash_documento_igual_manifesto": true,
+    "hash_contexto_unico_por_empresa": true,
+    "hash_contexto_igual_manifesto": true,
+    "hash_prompt_unico_por_empresa_entre_bracos": true,
+    "modelo_efetivo": [
+      "gemini-2.5-flash",
+      "gemini-2.5-pro"
+    ],
+    "intercalacao_flash1_pro1_flash2_pro2": true,
+    "inconsistencias_csv_json": [],
+    "ignorados_fora_do_denominador": 21
+  },
+  "ordem_por_empresa": {
+    "WEGE3": [
+      "flash-exec1",
+      "pro-exec1",
+      "flash-exec2",
+      "pro-exec2"
+    ],
+    "VALE3": [
+      "flash-exec1",
+      "pro-exec1",
+      "flash-exec2",
+      "pro-exec2"
+    ],
+    "ITSA4": [
+      "flash-exec1",
+      "pro-exec1",
+      "flash-exec2",
+      "pro-exec2"
+    ],
+    "BBAS3": [
+      "flash-exec1",
+      "pro-exec1",
+      "flash-exec2",
+      "pro-exec2"
+    ],
+    "ZAMP3": [
+      "flash-exec1",
+      "pro-exec1",
+      "flash-exec2",
+      "pro-exec2"
+    ]
+  },
+  "resultado": {
+    "fidelidade": {
+      "agregado": {
+        "flash": {
+          "conferem": 323,
+          "total_numeros": 325,
+          "taxa_pct": 99.3846
+        },
+        "pro": {
+          "conferem": 218,
+          "total_numeros": 218,
+          "taxa_pct": 100.0
+        }
+      },
+      "diferenca_agregada_pp": 0.6154,
+      "por_empresa": {
+        "WEGE3": {
+          "flash": {
+            "conferem": 58,
+            "total_numeros": 58,
+            "taxa_pct": 100.0
+          },
+          "pro": {
+            "conferem": 40,
+            "total_numeros": 40,
+            "taxa_pct": 100.0
+          },
+          "diferenca_pp": 0.0
+        },
+        "VALE3": {
+          "flash": {
+            "conferem": 78,
+            "total_numeros": 78,
+            "taxa_pct": 100.0
+          },
+          "pro": {
+            "conferem": 48,
+            "total_numeros": 48,
+            "taxa_pct": 100.0
+          },
+          "diferenca_pp": 0.0
+        },
+        "ITSA4": {
+          "flash": {
+            "conferem": 71,
+            "total_numeros": 72,
+            "taxa_pct": 98.6111
+          },
+          "pro": {
+            "conferem": 37,
+            "total_numeros": 37,
+            "taxa_pct": 100.0
+          },
+          "diferenca_pp": 1.3889
+        },
+        "BBAS3": {
+          "flash": {
+            "conferem": 53,
+            "total_numeros": 53,
+            "taxa_pct": 100.0
+          },
+          "pro": {
+            "conferem": 40,
+            "total_numeros": 40,
+            "taxa_pct": 100.0
+          },
+          "diferenca_pp": 0.0
+        },
+        "ZAMP3": {
+          "flash": {
+            "conferem": 63,
+            "total_numeros": 64,
+            "taxa_pct": 98.4375
+          },
+          "pro": {
+            "conferem": 53,
+            "total_numeros": 53,
+            "taxa_pct": 100.0
+          },
+          "diferenca_pp": 1.5625
+        }
+      },
+      "pior_empresa": "ZAMP3",
+      "pior_diferenca_pp": 1.5625,
+      "criterio_satisfeito": true
+    },
+    "cobertura": {
+      "mediana_total_numeros": {
+        "flash": 32.5,
+        "pro": 20.0
+      },
+      "diferenca_relativa_sobre_maior": 0.3846,
+      "diferenca_relativa_sobre_menor": 0.625,
+      "criterio_satisfeito_base_menor": false,
+      "criterio_satisfeito": false
+    },
+    "equivalentes": false
+  },
+  "veredito": "nao_equivalentes_pelo_criterio_pre_registrado",
+  "verificacoes_nao_confere": [
+    {
+      "celula": "ITSA4_flash_exec2",
+      "secao": "LUCRO",
+      "trecho": "R$ 220",
+      "veredito": "NAO_ENCONTRADO",
+      "motivo": null
+    },
+    {
+      "celula": "ZAMP3_flash_exec1",
+      "secao": "RESUMO",
+      "trecho": "150,2%",
+      "veredito": "DIVERGENTE",
+      "motivo": "direção do verbo incompatível com o sinal da variação"
+    }
+  ],
+  "variabilidade_total_numeros": {
+    "WEGE3": {
+      "flash": [
+        31,
+        27
+      ],
+      "pro": [
+        20,
+        20
+      ],
+      "amplitude_dentro_flash": 4,
+      "amplitude_dentro_pro": 0,
+      "diferenca_entre_medias": 9,
+      "entre_maior_que_dentro": true
+    },
+    "VALE3": {
+      "flash": [
+        37,
+        41
+      ],
+      "pro": [
+        25,
+        23
+      ],
+      "amplitude_dentro_flash": 4,
+      "amplitude_dentro_pro": 2,
+      "diferenca_entre_medias": 15,
+      "entre_maior_que_dentro": true
+    },
+    "ITSA4": {
+      "flash": [
+        35,
+        37
+      ],
+      "pro": [
+        18,
+        19
+      ],
+      "amplitude_dentro_flash": 2,
+      "amplitude_dentro_pro": 1,
+      "diferenca_entre_medias": 17.5,
+      "entre_maior_que_dentro": true
+    },
+    "BBAS3": {
+      "flash": [
+        30,
+        23
+      ],
+      "pro": [
+        20,
+        20
+      ],
+      "amplitude_dentro_flash": 7,
+      "amplitude_dentro_pro": 0,
+      "diferenca_entre_medias": 6.5,
+      "entre_maior_que_dentro": false
+    },
+    "ZAMP3": {
+      "flash": [
+        34,
+        30
+      ],
+      "pro": [
+        28,
+        25
+      ],
+      "amplitude_dentro_flash": 4,
+      "amplitude_dentro_pro": 3,
+      "diferenca_entre_medias": 5.5,
+      "entre_maior_que_dentro": true
+    }
+  },
+  "secundarias_descritivas": {
+    "flash": {
+      "latencia_s": {
+        "mediana": 25.9065,
+        "min": 15.279,
+        "max": 54.015
+      },
+      "tokens_saida": {
+        "mediana": 1093.5,
+        "min": 888.0,
+        "max": 1437.0
+      },
+      "tokens_raciocinio": {
+        "mediana": 4176.5,
+        "min": 2137.0,
+        "max": 6605.0
+      },
+      "tokens_total": {
+        "mediana": 9527.0,
+        "min": 7514.0,
+        "max": 12439.0
+      }
+    },
+    "pro": {
+      "latencia_s": {
+        "mediana": 31.9325,
+        "min": 30.201,
+        "max": 34.843
+      },
+      "tokens_saida": {
+        "mediana": 907.5,
+        "min": 834.0,
+        "max": 1027.0
+      },
+      "tokens_raciocinio": {
+        "mediana": 3521.0,
+        "min": 3155.0,
+        "max": 3796.0
+      },
+      "tokens_total": {
+        "mediana": 8792.5,
+        "min": 8384.0,
+        "max": 8947.0
+      }
+    }
+  },
+  "incidente_de_coleta": {
+    "linhas_brutas": 28,
+    "celulas_duplicadas": [
+      "BBAS3_flash_exec1",
+      "BBAS3_flash_exec2",
+      "BBAS3_pro_exec1",
+      "BBAS3_pro_exec2",
+      "ITSA4_flash_exec2",
+      "ITSA4_pro_exec2",
+      "ZAMP3_flash_exec1",
+      "ZAMP3_pro_exec1"
+    ],
+    "versionadas_mais_descartadas_igual_bruto": true,
+    "selecoes_possiveis": 256,
+    "selecoes_equivalentes": 0,
+    "selecoes_com_fidelidade_satisfeita": 256,
+    "selecoes_com_cobertura_satisfeita": 0,
+    "selecoes_com_cobertura_satisfeita_base_menor": 0,
+    "faixa_diferenca_agregada_pp": [
+      0.131,
+      0.9615
+    ],
+    "faixa_pior_empresa_pp": [
+      1.5625,
+      3.5088
+    ],
+    "faixa_diferenca_cobertura_sobre_maior": [
+      0.2623,
+      0.3846
+    ],
+    "secao_emendas_do_pre_registro_vazia": true,
+    "classificacao": "desvio de procedimento não emendado: gerações além das 20 previstas e seleção das linhas feita depois da coleta, registrados só na mensagem do commit 75dbfc4; o veredito não depende da seleção"
+  }
+}

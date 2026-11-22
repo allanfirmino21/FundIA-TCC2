@@ -1,0 +1,340 @@
+{
+  "verificacoes": [
+    {
+      "secao": "RESUMO",
+      "trecho": "-R$ 154,68 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 154,68 milhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+    },
+    {
+      "secao": "RESUMO",
+      "trecho": "33,3%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-33,3%",
+      "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+    },
+    {
+      "secao": "O QUE A EMPRESA FATURA",
+      "trecho": "R$ 2,72 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 2,72 bilhões",
+      "origem_fato": "métrica calculada: receita_principal.valor_atual"
+    },
+    {
+      "secao": "O QUE A EMPRESA FATURA",
+      "trecho": "11,2%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "11,2%",
+      "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "-R$ 154,68 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 154,68 milhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "-R$ 122,07 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 122,07 milhões",
+      "origem_fato": "documento CVM: \"Resultado Antes dos Tributos sobre o Lucro\" (anterior) = -122.071 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "-R$ 142,52 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 142,52 milhões",
+      "origem_fato": "documento CVM: \"Resultado Antes dos Tributos sobre o Lucro\" = -142.522 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 103,42 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 103,42 milhões",
+      "origem_fato": "documento CVM: \"Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos\" (anterior) = 103.419 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 162,23 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 162,23 milhões",
+      "origem_fato": "documento CVM: \"Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos\" = 162.230 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "-R$ 76,90 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 76,90 milhões",
+      "origem_fato": "documento CVM: \"Pagamentos de juros sobre empréstimos e financiamentos\" (anterior) = -76.896 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "-R$ 82,89 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 82,89 milhões",
+      "origem_fato": "documento CVM: \"Pagamentos de juros sobre empréstimos e financiamentos\" = -82.888 (R$ mil)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 100",
+      "tipo": "reais",
+      "veredito": "IGNORADO",
+      "fato_mais_proximo": null,
+      "origem_fato": "recurso didático (não conta na taxa)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 5,69",
+      "tipo": "reais",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 5,69",
+      "origem_fato": "métrica calculada: lucro_liquido.contexto_por_100_reais"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "33,3%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-33,3%",
+      "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "1,3 vezes",
+      "tipo": "razao",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "1,3 vezes",
+      "origem_fato": "métrica calculada: lucro_liquido.interpretacao_variacao"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 368,55 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 368,55 milhões",
+      "origem_fato": "métrica calculada: endividamento.liquidez_total"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 208,26 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 208,26 milhões",
+      "origem_fato": "métrica calculada: endividamento.caixa_anterior"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 135,65 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 135,65 milhões",
+      "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 1,55 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 1,55 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 1,18 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 1,18 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_liquida"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 679,53 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 679,53 milhões",
+      "origem_fato": "métrica calculada: endividamento.divida_liquida_anterior"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 884,29 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 884,29 milhões",
+      "origem_fato": "métrica calculada: endividamento.passivos_arrendamento"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 2,43 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 2,43 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta_com_arrendamentos"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 2,06 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 2,06 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_liquida_com_arrendamentos"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "34,9%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-34,9%",
+      "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "22,9%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "22,9%",
+      "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 2,72 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 2,72 bilhões",
+      "origem_fato": "métrica calculada: receita_principal.valor_atual"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 26,76 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 26,76 milhões",
+      "origem_fato": "métrica calculada: outros_destaques"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 373,51 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 373,51 milhões",
+      "origem_fato": "documento CVM: \"Caixa Gerado nas Operações\" (anterior) = 373.513 (R$ mil)"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 423,00 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 423,00 milhões",
+      "origem_fato": "documento CVM: \"Caixa Gerado nas Operações\" = 423.000 (R$ mil)"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "11,2%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "11,2%",
+      "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "18,8%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "18,8%",
+      "origem_fato": "métrica calculada: outros_destaques"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "-R$ 154,68 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 154,68 milhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 208,26 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 208,26 milhões",
+      "origem_fato": "métrica calculada: endividamento.caixa_anterior"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 135,65 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 135,65 milhões",
+      "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 1,55 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 1,55 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 103,42 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 103,42 milhões",
+      "origem_fato": "documento CVM: \"Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos\" (anterior) = 103.419 (R$ mil)"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 162,23 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 162,23 milhões",
+      "origem_fato": "documento CVM: \"Juros, encargos, variação cambial, variação monetária e AVP sobre passivos de arrendamentos\" = 162.230 (R$ mil)"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "33,3%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-33,3%",
+      "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "34,9%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-34,9%",
+      "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "22,9%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "22,9%",
+      "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+    }
+  ],
+  "resumo": {
+    "total_numeros": 40,
+    "conferem": 40,
+    "divergentes": 0,
+    "nao_encontrados": 0,
+    "taxa_conformidade": 100.0,
+    "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso."
+  }
+}

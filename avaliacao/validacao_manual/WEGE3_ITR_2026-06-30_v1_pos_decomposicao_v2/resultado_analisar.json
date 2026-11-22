@@ -1,0 +1,866 @@
+{
+  "ticker": "WEGE3",
+  "tipo_documento": "ITR",
+  "etapas": {
+    "validacao": "ok",
+    "busca_cvm": "ok",
+    "download": "ok",
+    "extracao": {
+      "status": "ok",
+      "secoes": 6
+    },
+    "indexacao": {
+      "status": "ok",
+      "chunks": 6
+    },
+    "recuperacao": "ok",
+    "geracao": "ok",
+    "auditoria": "ok"
+  },
+  "analise": {
+    "dados_extraidos": {
+      "periodo_referencia": "2026-06-30",
+      "periodos": {
+        "periodo_atual": "1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026",
+        "comparacao_resultado": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "comparacao_balanco": "31/12/2025 (fechamento do exercício anterior)",
+        "nota": "No ITR, receita e lucro são acumulados desde o início do ano e comparam com o mesmo período acumulado do ano anterior; caixa, dívidas e demais contas do balanço são posições na data de referência e comparam com o fechamento do exercício anterior (31/12)."
+      },
+      "base_dados": "Consolidado",
+      "escala_original": "R$ milhares (mil reais)",
+      "metodo_calculo": "deterministico_python",
+      "receita_principal": {
+        "descricao": "Receita de Venda de Bens e/ou Serviços",
+        "valor_atual": "R$ 19,61 bilhões",
+        "valor_anterior": "R$ 20,29 bilhões",
+        "variacao_pct": "-3,3%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+      },
+      "lucro_liquido": {
+        "valor_atual": "R$ 3,23 bilhões",
+        "valor_anterior": "R$ 3,33 bilhões",
+        "variacao_pct": "-3,1%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "interpretacao_variacao": "o lucro caiu 3,1%",
+        "margem_liquida_pct": "16,45%",
+        "contexto_por_100_reais": "a cada R$ 100 de receita, sobraram R$ 16,45 de lucro"
+      },
+      "ebitda": {
+        "valor_atual": "R$ 4,32 bilhões",
+        "valor_anterior": "R$ 4,43 bilhões",
+        "variacao_pct": "-2,6%",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "criterio": "EBITDA aproximado = resultado antes do resultado financeiro e dos tributos (DRE) + depreciação e amortização (DFC). A CVM não publica o EBITDA nos dados estruturados; esta aproximação pode diferir do valor divulgado pela empresa.",
+        "margem_pct": "22,00%"
+      },
+      "endividamento": {
+        "criterio": "Dívida bruta = empréstimos e financiamentos (circulante + não circulante). Liquidez total = caixa e equivalentes + aplicações financeiras de curto prazo. Dívida líquida = dívida bruta − liquidez total. Passivos de arrendamento (IFRS 16, aluguéis contratados) são informados separadamente na visão ampliada.",
+        "divida_bruta": "R$ 5,07 bilhões",
+        "divida_bruta_anterior": "R$ 4,59 bilhões",
+        "variacao_divida_pct": "+10,4%",
+        "caixa_e_equivalentes": "R$ 7,75 bilhões",
+        "caixa_anterior": "R$ 6,30 bilhões",
+        "variacao_caixa_pct": "+23,1%",
+        "aplicacoes_financeiras": "R$ 1,05 bilhões",
+        "liquidez_total": "R$ 8,80 bilhões",
+        "divida_liquida": "-R$ 3,73 bilhões",
+        "divida_liquida_anterior": "-R$ 2,69 bilhões",
+        "comparacao": "31/12/2025 (fechamento do exercício anterior)",
+        "passivos_arrendamento": "R$ 768,39 milhões",
+        "divida_bruta_com_arrendamentos": "R$ 5,83 bilhões",
+        "divida_liquida_com_arrendamentos": "-R$ 2,97 bilhões",
+        "nota": "A dívida líquida é negativa: a empresa tem mais caixa e aplicações do que dívida (posição de caixa líquido)."
+      },
+      "outros_destaques": [
+        "Além dos empréstimos (R$ 5,07 bilhões), a empresa tem R$ 768,39 milhões em passivos de arrendamento (aluguéis contratados, IFRS 16) — incluindo-os, a dívida total é R$ 5,83 bilhões.",
+        "Patrimônio Líquido: R$ 20,19 bilhões (variação +8,8%)",
+        "Ativo Total: R$ 46,67 bilhões (variação +9,4%)",
+        "Resultado Bruto: R$ 6,37 bilhões",
+        "Resultado operacional (antes de juros e impostos): R$ 3,81 bilhões (variação -4,0%)",
+        "Resultado de Equivalência Patrimonial: -R$ 2,38 milhões",
+        "Lucro atribuído a sócios da controladora: R$ 3,02 bilhões"
+      ],
+      "dados_ausentes": [],
+      "advertencias": [
+        "A receita principal caiu -3,3% no período."
+      ],
+      "demonstracoes_resumidas": {
+        "base": "Consolidado",
+        "resultado": [
+          {
+            "conta": "Receita de Venda de Bens e/ou Serviços",
+            "valor_atual": "R$ 19,61 bilhões",
+            "valor_anterior": "R$ 20,29 bilhões",
+            "variacao_pct": "-3,3%",
+            "interpretacao_variacao": "diminuiu 3,3%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Custo dos Bens e/ou Serviços Vendidos",
+            "valor_atual": "-R$ 13,24 bilhões",
+            "valor_anterior": "-R$ 13,53 bilhões",
+            "variacao_pct": "+2,1%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 2,1% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Bruto",
+            "valor_atual": "R$ 6,37 bilhões",
+            "valor_anterior": "R$ 6,75 bilhões",
+            "variacao_pct": "-5,7%",
+            "interpretacao_variacao": "diminuiu 5,7%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Despesas/Receitas Operacionais",
+            "valor_atual": "-R$ 2,56 bilhões",
+            "valor_anterior": "-R$ 2,79 bilhões",
+            "variacao_pct": "+8,0%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 8,0% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Antes do Resultado Financeiro e dos Tributos",
+            "valor_atual": "R$ 3,81 bilhões",
+            "valor_anterior": "R$ 3,97 bilhões",
+            "variacao_pct": "-4,0%",
+            "interpretacao_variacao": "diminuiu 4,0%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Financeiro",
+            "valor_atual": "R$ 65,82 milhões",
+            "valor_anterior": "R$ 47,59 milhões",
+            "variacao_pct": "+38,3%",
+            "interpretacao_variacao": "aumentou 38,3%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Receitas Financeiras",
+            "valor_atual": "R$ 1,04 bilhões",
+            "valor_anterior": "R$ 1,05 bilhões",
+            "variacao_pct": "-1,1%",
+            "interpretacao_variacao": "diminuiu 1,1%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Despesas Financeiras",
+            "valor_atual": "-R$ 975,98 milhões",
+            "valor_anterior": "-R$ 1,01 bilhões",
+            "variacao_pct": "+3,0%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 3,0% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Antes dos Tributos sobre o Lucro",
+            "valor_atual": "R$ 3,87 bilhões",
+            "valor_anterior": "R$ 4,01 bilhões",
+            "variacao_pct": "-3,5%",
+            "interpretacao_variacao": "diminuiu 3,5%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Imposto de Renda e Contribuição Social sobre o Lucro",
+            "valor_atual": "-R$ 644,97 milhões",
+            "valor_anterior": "-R$ 683,08 milhões",
+            "variacao_pct": "+5,6%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 5,6% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Resultado Líquido das Operações Continuadas",
+            "valor_atual": "R$ 3,23 bilhões",
+            "valor_anterior": "R$ 3,33 bilhões",
+            "variacao_pct": "-3,1%",
+            "interpretacao_variacao": "diminuiu 3,1%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Lucro/Prejuízo Consolidado do Período",
+            "valor_atual": "R$ 3,23 bilhões",
+            "valor_anterior": "R$ 3,33 bilhões",
+            "variacao_pct": "-3,1%",
+            "interpretacao_variacao": "diminuiu 3,1%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          }
+        ],
+        "fluxo_de_caixa": [
+          {
+            "conta": "Caixa Líquido Atividades Operacionais",
+            "valor_atual": "R$ 2,45 bilhões",
+            "valor_anterior": "R$ 1,97 bilhões",
+            "variacao_pct": "+24,6%",
+            "interpretacao_variacao": "aumentou 24,6%",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Caixa Líquido Atividades de Investimento",
+            "valor_atual": "-R$ 1,42 bilhões",
+            "valor_anterior": "-R$ 1,32 bilhões",
+            "variacao_pct": "-7,2%",
+            "interpretacao_variacao": "ficou mais negativo (em valor absoluto, 7,2% maior)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Caixa Líquido Atividades de Financiamento",
+            "valor_atual": "R$ 627,84 milhões",
+            "valor_anterior": "-R$ 2,74 bilhões",
+            "variacao_pct": "+123,0%",
+            "interpretacao_variacao": "passou de negativo para positivo (inversão de sinal: a variação percentual não é comparável)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Variação Cambial s/ Caixa e Equivalentes",
+            "valor_atual": "-R$ 208,50 milhões",
+            "valor_anterior": "-R$ 273,72 milhões",
+            "variacao_pct": "+23,8%",
+            "interpretacao_variacao": "ficou menos negativo (em valor absoluto, 23,8% menor)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          },
+          {
+            "conta": "Aumento (Redução) de Caixa e Equivalentes",
+            "valor_atual": "R$ 1,45 bilhões",
+            "valor_anterior": "-R$ 2,36 bilhões",
+            "variacao_pct": "+161,5%",
+            "interpretacao_variacao": "passou de negativo para positivo (inversão de sinal: a variação percentual não é comparável)",
+            "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)"
+          }
+        ]
+      },
+      "decomposicao_resultado": {
+        "base": "Consolidado",
+        "comparacao": "1º semestre (6 meses acumulados) de 2025 (mesmo período do ano anterior)",
+        "fecha": true,
+        "criterio": "contribuição = valor atual − valor anterior de cada parcela; a soma das contribuições da ponte é igual à variação do resultado. Subtotais intermediários são informativos: mostram o valor acumulado entre as parcelas 'apos' e 'antes' e não entram na soma",
+        "resultado": {
+          "conta": "Lucro/Prejuízo Consolidado do Período",
+          "valor_anterior": "R$ 3,33 bilhões",
+          "valor_atual": "R$ 3,23 bilhões",
+          "variacao_absoluta": "-R$ 103,60 milhões"
+        },
+        "ponte": [
+          {
+            "conta": "Resultado Antes do Resultado Financeiro e dos Tributos",
+            "valor_anterior": "R$ 3,97 bilhões",
+            "valor_atual": "R$ 3,81 bilhões",
+            "contribuicao": "-R$ 159,93 milhões",
+            "efeito": "reduziu o resultado"
+          },
+          {
+            "conta": "Resultado Financeiro",
+            "valor_anterior": "R$ 47,59 milhões",
+            "valor_atual": "R$ 65,82 milhões",
+            "contribuicao": "+R$ 18,22 milhões",
+            "efeito": "aumentou o resultado"
+          },
+          {
+            "conta": "Imposto de Renda e Contribuição Social sobre o Lucro",
+            "valor_anterior": "-R$ 683,08 milhões",
+            "valor_atual": "-R$ 644,97 milhões",
+            "contribuicao": "+R$ 38,11 milhões",
+            "efeito": "aumentou o resultado"
+          }
+        ],
+        "subtotais_intermediarios": [
+          {
+            "conta": "Resultado Antes dos Tributos sobre o Lucro",
+            "valor_anterior": "R$ 4,01 bilhões",
+            "valor_atual": "R$ 3,87 bilhões",
+            "variacao_absoluta": "-R$ 141,71 milhões",
+            "apos": "Resultado Financeiro",
+            "antes": "Imposto de Renda e Contribuição Social sobre o Lucro"
+          }
+        ],
+        "abertura_da_ancora": {
+          "conta": "Resultado Antes do Resultado Financeiro e dos Tributos",
+          "itens": [
+            {
+              "conta": "Resultado Bruto",
+              "valor_anterior": "R$ 6,75 bilhões",
+              "valor_atual": "R$ 6,37 bilhões",
+              "contribuicao": "-R$ 383,21 milhões",
+              "efeito": "reduziu o subtotal"
+            },
+            {
+              "conta": "Despesas/Receitas Operacionais",
+              "valor_anterior": "-R$ 2,79 bilhões",
+              "valor_atual": "-R$ 2,56 bilhões",
+              "contribuicao": "+R$ 223,28 milhões",
+              "efeito": "aumentou o subtotal"
+            }
+          ]
+        }
+      }
+    },
+    "secoes": {
+      "RESUMO": "A WEG S.A. (WEGE3) apresentou um lucro de R$ 3,23 bilhões no 1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026, o que representa uma queda de 3,1% em comparação com o 1º semestre (6 meses acumulados) de 2025. Essa redução no lucro foi principalmente influenciada pelo `Resultado Antes do Resultado Financeiro e dos Tributos`, que reduziu o resultado em R$ 159,93 milhões, apesar de ter sido parcialmente compensada pelo `resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos)` e pelo `Imposto de Renda e Contribuição Social sobre o Lucro`, que aumentaram o resultado em R$ 18,22 milhões e R$ 38,11 milhões, respectivamente. O principal ponto de atenção é a diminuição da `Receita de Venda de Bens e/ou Serviços` no período.",
+      "O QUE A EMPRESA FATURA": "A WEG S.A. gera sua receita principalmente pela `Receita de Venda de Bens e/ou Serviços`. No 1º semestre (6 meses acumulados) de 2026, a empresa faturou R$ 19,61 bilhões. Esse valor representa uma diminuição de 3,3% em comparação com o 1º semestre (6 meses acumulados) de 2025, quando a receita foi de R$ 20,29 bilhões. Para a WEG, essa receita é o dinheiro que entra na empresa pela venda de seus produtos e serviços, sendo o motor principal de suas operações.",
+      "LUCRO": "No 1º semestre (6 meses acumulados) de 2026, a WEG S.A. registrou um lucro de R$ 3,23 bilhões. Em comparação com o 1º semestre (6 meses acumulados) de 2025, quando o lucro foi de R$ 3,33 bilhões, o lucro caiu 3,1%. Isso significa que, a cada R$ 100 que a empresa faturou, sobraram R$ 16,45 de lucro.\n\nA variação do lucro em R$ 103,60 milhões (de R$ 3,33 bilhões para R$ 3,23 bilhões) pode ser explicada da seguinte forma:\n*   O `Resultado Antes do Resultado Financeiro e dos Tributos` reduziu o resultado em R$ 159,93 milhões. Essa parcela foi impactada pela diminuição do `Resultado Bruto` em R$ 383,21 milhões, que reduziu o subtotal, e pela redução das `Despesas/Receitas Operacionais` em R$ 223,28 milhões, que aumentou o subtotal.\n*   O `resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos)` aumentou o resultado em R$ 18,22 milhões.\n*   Após essas contas, o `Resultado Antes dos Tributos sobre o Lucro` foi de R$ 3,87 bilhões, uma diminuição de R$ 141,71 milhões em relação ao período anterior.\n*   Por fim, o `Imposto de Renda e Contribuição Social sobre o Lucro` aumentou o resultado em R$ 38,11 milhões.",
+      "SAUDE DO CAIXA E DIVIDAS": "A WEG S.A. possui uma posição financeira robusta. A empresa tinha R$ 8,80 bilhões em liquidez total (dinheiro disponível, que inclui caixa e equivalentes de R$ 7,75 bilhões, e aplicações financeiras de curto prazo de R$ 1,05 bilhões) em 30/06/2026. Esse valor de caixa e equivalentes aumentou 23,1% em relação a 31/12/2025.\n\nEm relação às dívidas, a `dívida bruta` da empresa era de R$ 5,07 bilhões em 30/06/2026, o que representa um aumento de 10,4% em comparação com os R$ 4,59 bilhões registrados em 31/12/2025. Além disso, a empresa tem R$ 768,39 milhões em `passivos de arrendamento` (compromissos de aluguéis contratados). Incluindo esses arrendamentos, a `dívida bruta com arrendamentos` totaliza R$ 5,83 bilhões.\n\nA `dívida líquida` da WEG S.A. é negativa em R$ 3,73 bilhões, o que significa que a empresa tem mais dinheiro em caixa e aplicações financeiras do que dívidas, indicando uma posição de caixa líquido.\n\nAnalisando os fluxos de dinheiro, o `Caixa Líquido Atividades Operacionais` foi de R$ 2,45 bilhões, um aumento de 24,6% em relação ao 1º semestre (6 meses acumulados) de 2025. O `Caixa Líquido Atividades de Investimento` ficou mais negativo, com -R$ 1,42 bilhões. Já o `Caixa Líquido Atividades de Financiamento` passou de negativo para positivo, atingindo R$ 627,84 milhões. No geral, o `Aumento (Redução) de Caixa e Equivalentes` passou de negativo para positivo, totalizando um aumento de R$ 1,45 bilhões no período.",
+      "O QUE FOI POSITIVO": "- A empresa mantém uma forte posição de caixa líquido, com a `dívida líquida` negativa em R$ 3,73 bilhões.\n- O `Patrimônio Líquido` cresceu 8,8%, atingindo R$ 20,19 bilhões.\n- O `Ativo Total` aumentou 9,4%, chegando a R$ 46,67 bilhões.\n- O `Imposto de Renda e Contribuição Social sobre o Lucro` ficou menos negativo, contribuindo para o resultado final.",
+      "O QUE MERECE ATENCAO": "- A `Receita de Venda de Bens e/ou Serviços` diminuiu 3,3%, totalizando R$ 19,61 bilhões.\n- O `Lucro/Prejuízo Consolidado do Período` caiu 3,1%, para R$ 3,23 bilhões.\n- O `Resultado Bruto` diminuiu 5,7%, atingindo R$ 6,37 bilhões.\n- A `dívida bruta` da empresa aumentou 10,4%, para R$ 5,07 bilhões.",
+      "LIMITACOES DESTA ANALISE": "Não foram identificados dados ausentes específicos nesta análise.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo."
+    },
+    "narrativa_completa": "### RESUMO\nA WEG S.A. (WEGE3) apresentou um lucro de R$ 3,23 bilhões no 1º semestre (6 meses acumulados) de 2026, encerrado em 30/06/2026, o que representa uma queda de 3,1% em comparação com o 1º semestre (6 meses acumulados) de 2025. Essa redução no lucro foi principalmente influenciada pelo `Resultado Antes do Resultado Financeiro e dos Tributos`, que reduziu o resultado em R$ 159,93 milhões, apesar de ter sido parcialmente compensada pelo `resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos)` e pelo `Imposto de Renda e Contribuição Social sobre o Lucro`, que aumentaram o resultado em R$ 18,22 milhões e R$ 38,11 milhões, respectivamente. O principal ponto de atenção é a diminuição da `Receita de Venda de Bens e/ou Serviços` no período.\n\n### O QUE A EMPRESA FATURA\nA WEG S.A. gera sua receita principalmente pela `Receita de Venda de Bens e/ou Serviços`. No 1º semestre (6 meses acumulados) de 2026, a empresa faturou R$ 19,61 bilhões. Esse valor representa uma diminuição de 3,3% em comparação com o 1º semestre (6 meses acumulados) de 2025, quando a receita foi de R$ 20,29 bilhões. Para a WEG, essa receita é o dinheiro que entra na empresa pela venda de seus produtos e serviços, sendo o motor principal de suas operações.\n\n### LUCRO\nNo 1º semestre (6 meses acumulados) de 2026, a WEG S.A. registrou um lucro de R$ 3,23 bilhões. Em comparação com o 1º semestre (6 meses acumulados) de 2025, quando o lucro foi de R$ 3,33 bilhões, o lucro caiu 3,1%. Isso significa que, a cada R$ 100 que a empresa faturou, sobraram R$ 16,45 de lucro.\n\nA variação do lucro em R$ 103,60 milhões (de R$ 3,33 bilhões para R$ 3,23 bilhões) pode ser explicada da seguinte forma:\n*   O `Resultado Antes do Resultado Financeiro e dos Tributos` reduziu o resultado em R$ 159,93 milhões. Essa parcela foi impactada pela diminuição do `Resultado Bruto` em R$ 383,21 milhões, que reduziu o subtotal, e pela redução das `Despesas/Receitas Operacionais` em R$ 223,28 milhões, que aumentou o subtotal.\n*   O `resultado financeiro (receitas financeiras, como rendimentos de aplicações, menos despesas financeiras, como juros, variação cambial e outros encargos)` aumentou o resultado em R$ 18,22 milhões.\n*   Após essas contas, o `Resultado Antes dos Tributos sobre o Lucro` foi de R$ 3,87 bilhões, uma diminuição de R$ 141,71 milhões em relação ao período anterior.\n*   Por fim, o `Imposto de Renda e Contribuição Social sobre o Lucro` aumentou o resultado em R$ 38,11 milhões.\n\n### SAÚDE DO CAIXA E DÍVIDAS\nA WEG S.A. possui uma posição financeira robusta. A empresa tinha R$ 8,80 bilhões em liquidez total (dinheiro disponível, que inclui caixa e equivalentes de R$ 7,75 bilhões, e aplicações financeiras de curto prazo de R$ 1,05 bilhões) em 30/06/2026. Esse valor de caixa e equivalentes aumentou 23,1% em relação a 31/12/2025.\n\nEm relação às dívidas, a `dívida bruta` da empresa era de R$ 5,07 bilhões em 30/06/2026, o que representa um aumento de 10,4% em comparação com os R$ 4,59 bilhões registrados em 31/12/2025. Além disso, a empresa tem R$ 768,39 milhões em `passivos de arrendamento` (compromissos de aluguéis contratados). Incluindo esses arrendamentos, a `dívida bruta com arrendamentos` totaliza R$ 5,83 bilhões.\n\nA `dívida líquida` da WEG S.A. é negativa em R$ 3,73 bilhões, o que significa que a empresa tem mais dinheiro em caixa e aplicações financeiras do que dívidas, indicando uma posição de caixa líquido.\n\nAnalisando os fluxos de dinheiro, o `Caixa Líquido Atividades Operacionais` foi de R$ 2,45 bilhões, um aumento de 24,6% em relação ao 1º semestre (6 meses acumulados) de 2025. O `Caixa Líquido Atividades de Investimento` ficou mais negativo, com -R$ 1,42 bilhões. Já o `Caixa Líquido Atividades de Financiamento` passou de negativo para positivo, atingindo R$ 627,84 milhões. No geral, o `Aumento (Redução) de Caixa e Equivalentes` passou de negativo para positivo, totalizando um aumento de R$ 1,45 bilhões no período.\n\n### O QUE FOI POSITIVO\n- A empresa mantém uma forte posição de caixa líquido, com a `dívida líquida` negativa em R$ 3,73 bilhões.\n- O `Patrimônio Líquido` cresceu 8,8%, atingindo R$ 20,19 bilhões.\n- O `Ativo Total` aumentou 9,4%, chegando a R$ 46,67 bilhões.\n- O `Imposto de Renda e Contribuição Social sobre o Lucro` ficou menos negativo, contribuindo para o resultado final.\n\n### O QUE MERECE ATENÇÃO\n- A `Receita de Venda de Bens e/ou Serviços` diminuiu 3,3%, totalizando R$ 19,61 bilhões.\n- O `Lucro/Prejuízo Consolidado do Período` caiu 3,1%, para R$ 3,23 bilhões.\n- O `Resultado Bruto` diminuiu 5,7%, atingindo R$ 6,37 bilhões.\n- A `dívida bruta` da empresa aumentou 10,4%, para R$ 5,07 bilhões.\n\n### LIMITAÇÕES DESTA ANÁLISE\nNão foram identificados dados ausentes específicos nesta análise.\nEsta análise é baseada nos dados estruturados do relatório da CVM e não substitui a leitura do documento completo.",
+    "periodo": "2026-06-30",
+    "auditoria": {
+      "verificacoes": [
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 3,23 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,23 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 159,93 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 159,93 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "conceito_reivindicado": "ebit",
+          "conceito_do_fato": "ebit",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 18,22 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "R$ 18,22 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"resultado_financeiro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "resultado_financeiro",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "R$ 38,11 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "R$ 38,11 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"tributos_sobre_lucro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "tributos_sobre_lucro",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "RESUMO",
+          "trecho": "3,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-3,1%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "R$ 19,61 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 19,61 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "R$ 20,29 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 20,29 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_anterior",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE A EMPRESA FATURA",
+          "trecho": "3,3%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-3,3%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,23 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,23 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,33 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,33 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 103,60 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "-R$ 103,60 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.resultado.variacao_absoluta",
+          "motivo": "sinal incompatível com o fato",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,33 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,33 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,23 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,23 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 159,93 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 159,93 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "conceito_reivindicado": "ebit",
+          "conceito_do_fato": "ebit",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 383,21 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 383,21 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+          "conceito_reivindicado": "resultado_bruto",
+          "conceito_do_fato": "resultado_bruto",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 223,28 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 223,28 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+          "conceito_reivindicado": "despesas_receitas_operacionais",
+          "conceito_do_fato": "despesas_receitas_operacionais",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 18,22 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 18,22 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "conceito_reivindicado": "resultado_financeiro",
+          "conceito_do_fato": "resultado_financeiro",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 3,87 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,87 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+          "conceito_reivindicado": "resultado_antes_tributos",
+          "conceito_do_fato": "resultado_antes_tributos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 141,71 milhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 141,71 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.subtotais_intermediarios.variacao_absoluta",
+          "conceito_reivindicado": "resultado_antes_tributos",
+          "conceito_do_fato": "resultado_antes_tributos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 38,11 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "R$ 38,11 milhões",
+          "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+          "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"tributos_sobre_lucro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "tributos_sobre_lucro",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 100",
+          "tipo": "reais",
+          "veredito": "IGNORADO",
+          "fato_mais_proximo": null,
+          "origem_fato": "recurso didático (não conta na taxa)"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "R$ 16,45",
+          "tipo": "reais",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 16,45",
+          "origem_fato": "métrica calculada: lucro_liquido.contexto_por_100_reais"
+        },
+        {
+          "secao": "LUCRO",
+          "trecho": "3,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-3,1%",
+          "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 8,80 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 8,80 bilhões",
+          "origem_fato": "métrica calculada: endividamento.liquidez_total",
+          "conceito_reivindicado": "liquidez_total",
+          "conceito_do_fato": "liquidez_total",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 7,75 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 7,75 bilhões",
+          "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes",
+          "conceito_reivindicado": "caixa",
+          "conceito_do_fato": "caixa",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 1,05 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 1,05 bilhões",
+          "origem_fato": "métrica calculada: endividamento.aplicacoes_financeiras",
+          "conceito_reivindicado": "aplicacoes_financeiras",
+          "conceito_do_fato": "aplicacoes_financeiras",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 5,07 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 5,07 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_bruta",
+          "conceito_reivindicado": "divida_bruta",
+          "conceito_do_fato": "divida_bruta",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 4,59 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 4,59 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_bruta_anterior",
+          "conceito_reivindicado": "divida_bruta",
+          "conceito_do_fato": "divida_bruta",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 768,39 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "R$ 768,39 milhões",
+          "origem_fato": "métrica calculada: endividamento.passivos_arrendamento",
+          "motivo": "o texto atribui o valor a \"divida_bruta\", mas ele corresponde a \"arrendamentos\" (métrica calculada: endividamento.passivos_arrendamento); o fato mais próximo de \"divida_bruta\" é R$ 1,04 bilhões (documento CVM: \"[2.02.01] Empréstimos e Financiamentos\" (anterior) = 1.041.508 (R$ mil))",
+          "conceito_reivindicado": "divida_bruta",
+          "conceito_do_fato": "arrendamentos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 5,83 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 5,83 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_bruta_com_arrendamentos",
+          "conceito_reivindicado": "divida_bruta_com_arrendamentos",
+          "conceito_do_fato": "divida_bruta_com_arrendamentos",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 3,73 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 3,73 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_liquida",
+          "conceito_reivindicado": null,
+          "conceito_do_fato": "divida_liquida",
+          "verificacao_conceitual": "conceito_nao_identificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 2,45 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 2,45 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+          "conceito_reivindicado": "fluxo_operacional",
+          "conceito_do_fato": "fluxo_operacional",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "-R$ 1,42 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 1,42 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+          "conceito_reivindicado": "fluxo_investimento",
+          "conceito_do_fato": "fluxo_investimento",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 627,84 milhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "-R$ 626,71 milhões",
+          "origem_fato": "documento CVM: \"[6.01.02.02] (Aumento)/redução nos estoques\" (anterior) = -626.706 (R$ mil)",
+          "motivo": "o texto atribui o valor a \"fluxo_financiamento\", mas ele corresponde a \"fato sem conceito identificado\" (documento CVM: \"[6.01.02.02] (Aumento)/redução nos estoques\" (anterior) = -626.706 (R$ mil)); o fato mais próximo de \"fluxo_financiamento\" é R$ 627,84 milhões (métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual)",
+          "conceito_reivindicado": "fluxo_financiamento",
+          "conceito_do_fato": null,
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "R$ 1,45 bilhões",
+          "tipo": "moeda",
+          "veredito": "DIVERGENTE",
+          "fato_mais_proximo": "R$ 1,45 bilhões",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+          "motivo": "o texto atribui o valor a \"caixa\", mas ele corresponde a \"variacao_caixa\" (métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual); o fato mais próximo de \"caixa\" é R$ 2,04 bilhões (documento CVM: \"[1.01.01.01] Caixa e Bancos\" (anterior) = 2.040.959 (R$ mil))",
+          "conceito_reivindicado": "caixa",
+          "conceito_do_fato": "variacao_caixa",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "23,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "23,1%",
+          "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "10,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "10,4%",
+          "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+        },
+        {
+          "secao": "SAUDE DO CAIXA E DIVIDAS",
+          "trecho": "24,6%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "24,6%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.variacao_pct"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 3,73 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-R$ 3,73 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_liquida",
+          "conceito_reivindicado": "divida_liquida",
+          "conceito_do_fato": "divida_liquida",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 20,19 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 20,19 bilhões",
+          "origem_fato": "métrica calculada: outros_destaques",
+          "conceito_reivindicado": "patrimonio_liquido",
+          "conceito_do_fato": "patrimonio_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "R$ 46,67 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 46,67 bilhões",
+          "origem_fato": "métrica calculada: outros_destaques",
+          "conceito_reivindicado": "ativo_total",
+          "conceito_do_fato": "ativo_total",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "8,8%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "8,8%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE FOI POSITIVO",
+          "trecho": "9,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "9,4%",
+          "origem_fato": "métrica calculada: outros_destaques"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 19,61 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 19,61 bilhões",
+          "origem_fato": "métrica calculada: receita_principal.valor_atual",
+          "conceito_reivindicado": "receita",
+          "conceito_do_fato": "receita",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 3,23 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 3,23 bilhões",
+          "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+          "conceito_reivindicado": "lucro_liquido",
+          "conceito_do_fato": "lucro_liquido",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 6,37 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 6,37 bilhões",
+          "origem_fato": "métrica calculada: outros_destaques",
+          "conceito_reivindicado": "resultado_bruto",
+          "conceito_do_fato": "resultado_bruto",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "R$ 5,07 bilhões",
+          "tipo": "moeda",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "R$ 5,07 bilhões",
+          "origem_fato": "métrica calculada: endividamento.divida_bruta",
+          "conceito_reivindicado": "divida_bruta",
+          "conceito_do_fato": "divida_bruta",
+          "verificacao_conceitual": "verificado"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "3,3%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-3,3%",
+          "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "3,1%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "3,1%",
+          "origem_fato": "métrica calculada: lucro_liquido.interpretacao_variacao"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "5,7%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "-5,7%",
+          "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct"
+        },
+        {
+          "secao": "O QUE MERECE ATENCAO",
+          "trecho": "10,4%",
+          "tipo": "percentual",
+          "veredito": "CONFERE",
+          "fato_mais_proximo": "10,4%",
+          "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+        }
+      ],
+      "resumo": {
+        "total_numeros": 50,
+        "conferem": 43,
+        "divergentes": 7,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 86.0,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+        "auditor": {
+          "versao": "2.0",
+          "verificar_conceito": true,
+          "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+        },
+        "verificacao_conceitual": {
+          "moedas": 37,
+          "verificadas": 34,
+          "conceito_nao_identificado": 3,
+          "conceito_sem_fato_na_fonte": 0,
+          "divergencias_de_conceito": 6,
+          "cobertura_pct": 91.9,
+          "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+        }
+      }
+    }
+  },
+  "erro": null,
+  "nome_empresa": "WEG S.A.",
+  "documento": {
+    "periodo": "2026-06-30",
+    "versao": 1,
+    "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=159608"
+  }
+}

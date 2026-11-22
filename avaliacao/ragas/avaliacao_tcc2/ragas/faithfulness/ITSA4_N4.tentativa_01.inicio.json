@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "ITSA4_N4",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:35:35+00:00",
+  "sha256_resposta": "8298420b29dbd478ae2bef902594e1893dd027d608aeb7d5c77d5564feb74c22",
+  "sha256_registro": "aee65b3b9743d76ff2f5924c183ec1c058a7167b232256c8512befc22e8d633a"
+}

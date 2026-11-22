@@ -1,0 +1,95 @@
+estrutura : nao_financeira
+versao : 1
+pergunta : Qual foi a margem líquida consolidada da Marcopolo no primeiro semestre de 2026, calculada como o resultado líquido consolidado dividido pela receita de venda de bens e/ou serviços?
+gabarito : Margem líquida do 1S26: 13,30% = 535.824 / 4.028.514 (R$ mil).
+disponibilidade : parcial
+disponibilidade_estimada_protocolo : parcial
+justificativa_disponibilidade : Insumos no contexto (1/2): receita: ausente; resultado consolidado: [DFC] Resultado do período                                            535.824  (anterior: 564.162).
+divergencia_da_estimativa : False
+justificativa_divergencia : None
+verificacao_deterministica_aplicavel : True
+fontes_gabarito: [
+ {
+  "demonstracao": "Demonstração de Resultado",
+  "arquivo_cvm": "itr_cia_aberta_DRE_con_2026.csv",
+  "base": "Consolidado",
+  "cd_conta": "3.11",
+  "ds_conta": "Lucro/Prejuízo Consolidado do Período",
+  "periodo": "1S26 (01/01/2026 a 30/06/2026)",
+  "ordem_exerc": "ÚLTIMO",
+  "dt_ini_exerc": "2026-01-01",
+  "dt_fim_exerc": "2026-06-30",
+  "vl_conta_cvm": "535824.0000000000",
+  "moeda": "REAL",
+  "escala_moeda": "MIL",
+  "unidade": "R$ mil"
+ },
+ {
+  "demonstracao": "Demonstração de Resultado",
+  "arquivo_cvm": "itr_cia_aberta_DRE_con_2026.csv",
+  "base": "Consolidado",
+  "cd_conta": "3.01",
+  "ds_conta": "Receita de Venda de Bens e/ou Serviços",
+  "periodo": "1S26 (01/01/2026 a 30/06/2026)",
+  "ordem_exerc": "ÚLTIMO",
+  "dt_ini_exerc": "2026-01-01",
+  "dt_fim_exerc": "2026-06-30",
+  "vl_conta_cvm": "4028514.0000000000",
+  "moeda": "REAL",
+  "escala_moeda": "MIL",
+  "unidade": "R$ mil"
+ }
+]
+valores_esperados: [
+ {
+  "id": "margem_liquida_1s26",
+  "conceito": "margem líquida consolidada",
+  "tipo": "percentual",
+  "periodo": "1S26 (01/01/2026 a 30/06/2026)",
+  "valor": "13.30078535162096991595412105",
+  "sinal_exigido": false,
+  "sinal_esperado": "+",
+  "fontes": [
+   "3.11",
+   "3.01"
+  ],
+  "formula": "resultado consolidado 1S26 / receita de venda de bens e/ou serviços 1S26 × 100",
+  "formas_alternativas": [],
+  "unidade_valor": "%",
+  "apresentacao_referencia": "13,30%"
+ }
+]
+revisao_tecnica: {"revisado": true, "revisor": "Claude Code - revisão técnica pré-coleta", "data": "2026-09-27", "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.", "revisao_final": {"revisado": true, "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)", "data": "2026-09-27", "resultado": "confirmado", "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."}}
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.01       Receita de Venda de Bens e/ou Serviços                       3982521
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.01       Receita de Venda de Bens e/ou Serviços                       4028514
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.02       Custo dos Bens e/ou Serviços Vendidos                        -3005060
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.02       Custo dos Bens e/ou Serviços Vendidos                        -3135368
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.03       Resultado Bruto                                              977461
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.03       Resultado Bruto                                              893146
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.09       Resultado Líquido das Operações Continuadas                  564162
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.09       Resultado Líquido das Operações Continuadas                  535824
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.10       Resultado Líquido de Operações Descontinuadas                0
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.10       Resultado Líquido de Operações Descontinuadas                0
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.11       Lucro/Prejuízo Consolidado do Período                        564162
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.11       Lucro/Prejuízo Consolidado do Período                        535824
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.11.01    Atribuído a Sócios da Empresa Controladora                   561153
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.11.01    Atribuído a Sócios da Empresa Controladora                   538490
+OF DRE    PENÚLTIMO 2025-01-01..2025-06-30 3.11.02    Atribuído a Sócios Não Controladores                         3009
+OF DRE    ÚLTIMO    2026-01-01..2026-06-30 3.11.02    Atribuído a Sócios Não Controladores                         -2666
+OF DFC_MI PENÚLTIMO 2025-01-01..2025-06-30 6.01       Caixa Líquido Atividades Operacionais                        211288
+OF DFC_MI ÚLTIMO    2026-01-01..2026-06-30 6.01       Caixa Líquido Atividades Operacionais                        -96466
+OF DFC_MI PENÚLTIMO 2025-01-01..2025-06-30 6.01.01    Caixa Gerado nas Operações                                   729361
+OF DFC_MI ÚLTIMO    2026-01-01..2026-06-30 6.01.01    Caixa Gerado nas Operações                                   694675
+OF DFC_MI PENÚLTIMO 2025-01-01..2025-06-30 6.01.01.01 Resultado do período                                         564162
+OF DFC_MI ÚLTIMO    2026-01-01..2026-06-30 6.01.01.01 Resultado do período                                         535824
+-- contexto POMO4_E1:
+   [tabela] [TABELA | Balanço Patrimonial — Ativo (Consolidado)] | linhas: 36
+       Aplicações Financeiras Avaliadas a Valor Justo através do Resultado           1.127  (anterior: 145)
+   [tabela] [TABELA | Demonstração de Fluxo de Caixa (Consolidado)] | linhas: 38
+       Resultado do período                                            535.824  (anterior: 564.162)
+       Resultado na venda de imobilizado e intangível                    1.875  (anterior: 3.158)
+       Impostos sobre o lucro pagos                                    -36.237  (anterior: -44.238)
+       Recebimento na venda de ativo imobilizado                           743  (anterior: 2.546)
+   [tabela] [TABELA | Balanço Patrimonial — Passivo (Consolidado)] | linhas: 53
+       Reservas de Lucros                                              950.822  (anterior: 513.502)
+       Outros Resultados Abrangentes                                  -242.013  (anterior: -242.298)

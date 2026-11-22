@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "POMO4_N1",
+  "metrica": "faithfulness",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T00:29:47+00:00",
+  "sha256_resposta": "c1abd70c326097084d19d4e09c832fa3c4017b313a9e7f4fcc607d72c09385b9",
+  "sha256_registro": "03b156ee0a473e4ac9df0ceb7fe524e858e33b65a323ef4bc7916423cd8204c6"
+}

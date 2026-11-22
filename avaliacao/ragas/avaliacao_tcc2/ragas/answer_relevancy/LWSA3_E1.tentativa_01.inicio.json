@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "LWSA3_E1",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:31:49+00:00",
+  "sha256_resposta": "d288a2f372ad968da94a09409c32dd2ab1bac9c4729e597973d772ee23d1f3f1",
+  "sha256_registro": "74be79ef646309bc2ff7a1ff6a6a5f62e93a64e993f3793b6606b70170f81fe2"
+}

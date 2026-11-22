@@ -1,0 +1,5405 @@
+{
+ "descricao": "Cruzamentos da síntese integrada do TCC 2. Dimensões mantidas separadas: disponibilidade (classificação prévia do dataset), comportamento (rubrica; SEM_DESVIO é registro dos casos presente, não classe), exatidão numérica (original e Emenda 5, lado a lado) e métricas RAGAS (Faithfulness e Answer Relevancy finais). Nenhuma medida é combinada em índice único. Estatísticas descritivas, sem teste inferencial; células com menos de 5 casos listam os casos.",
+ "convencoes": {
+  "estatistica": "média, mediana, desvio-padrão amostral (n-1), mínimo e máximo; valores arredondados a 6 casas",
+  "taxa_exatidao": "CORRETO / aplicáveis (CORRETO + PARCIALMENTE_CORRETO + INCORRETO); NAO_APLICAVEL à parte, separado em N4 e sem número",
+  "exatidao_emenda5": "resultado adicional, concebido depois da observação dos resultados; reportar sempre ao lado do original",
+  "ragas": "F e AR finais da base analítica congelada (tentativa final conforme a análise RAGAS); sem reinterpretação"
+ },
+ "proveniencia": {
+  "fontes_sha256": {
+   "avaliacao/ragas/dataset_tcc2.json": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e",
+   "avaliacao/ragas/avaliacao_tcc2/analise/base_analitica_ragas.csv": "8dd85190d7bae9283d26cecfc08136ee47a6b3efb334c256db57a0d284a2a1a4",
+   "avaliacao/ragas/avaliacao_tcc2/comportamento/anotacoes_comportamento.json": "c83cf6cef724f88ab35ac439978d13f0ad812c0ce25859ab7155eef97627b18f",
+   "avaliacao/ragas/avaliacao_tcc2/comportamento/pendencias_comportamento.json": "d20f736187f69cd441a53795b4425ff212d54d7ee9274d79c894e02825976b71",
+   "avaliacao/ragas/avaliacao_tcc2/exatidao/resultado_exatidao.json": "3c3e28c080a9884f53f1197bd0c4106fd414105b2aa4de3ff2928f401a05a6db",
+   "avaliacao/ragas/avaliacao_tcc2/exatidao_emenda5/resultado_exatidao_emenda5.json": "22af220e529edd04ba97f5a6fc4c841188edc02f9bdb6e46ad4daba7e1cef04f"
+  },
+  "sha256_SHA256_COLETA": "b8c016cea3a8903678bc7817f4c5b553c80bb98b6a7a5787d05ea4ce4eca45f2",
+  "sha256_registro_exatidao_original": "8582e2e0352f93323629e7a28554ffa981577e7974e66fa6130ccf99a309c8f9",
+  "sha256_registro_exatidao_emenda5": "e36c79ba9ca884095093262631bce6884d376a162db88824d4f12fa8c1f6af0a"
+ },
+ "equivalencia_pendentes_comportamento": {
+  "ids": [
+   "AURE3_E3",
+   "AURE3_N2",
+   "ITSA4_E2",
+   "LAVV3_E2",
+   "ZAMP3_E2"
+  ],
+  "rotulos_nas_fontes": {
+   "anotacoes_comportamento.json": "classe = null, abstencao_em_caso_presente = null",
+   "pendencias_comportamento.json": "estado = PENDENTE_POR_TRUNCAMENTO_E_REGRA_DO_VALIDADOR",
+   "base_analitica_ragas.csv": "classe_comportamento = SEM_CLASSE_PENDENTE_OPERACIONAL; status_comportamento = PENDENTE_OPERACIONAL",
+   "PROTOCOLO_RAGAS_TCC2.md, Emenda 4": "PENDENTE_OPERACIONAL"
+  },
+  "nesta_sintese": "situacao_comportamento = PENDENTE_OPERACIONAL e classe_comportamento = null; não é classe da rubrica",
+  "conferido": "os três conjuntos de ids são idênticos; as anotações não foram alteradas"
+ },
+ "denominadores": {
+  "casos": 96,
+  "ragas_validos": {
+   "faithfulness": 96,
+   "answer_relevancy": 96
+  },
+  "comportamento": {
+   "classificaveis": 91,
+   "pendentes_operacionais": 5
+  },
+  "exatidao": {
+   "original": {
+    "aplicaveis": 43,
+    "NAO_APLICAVEL": 53,
+    "nao_aplicavel_n4": 12,
+    "nao_aplicavel_sem_numero": 41
+   },
+   "emenda5": {
+    "aplicaveis": 43,
+    "NAO_APLICAVEL": 53,
+    "nao_aplicavel_n4": 12,
+    "nao_aplicavel_sem_numero": 41
+   }
+  },
+  "disponibilidade": {
+   "presente": 69,
+   "parcial": 15,
+   "ausente": 12
+  },
+  "truncadas_max_tokens": 36
+ },
+ "distribuicoes_globais": {
+  "disponibilidade": {
+   "presente": 69,
+   "parcial": 15,
+   "ausente": 12
+  },
+  "comportamento": {
+   "n": 96,
+   "classificaveis": 91,
+   "pendentes_operacionais": [
+    "ZAMP3_E2",
+    "LAVV3_E2",
+    "ITSA4_E2",
+    "AURE3_N2",
+    "AURE3_E3"
+   ],
+   "classes": {
+    "ABSTENCAO_ADEQUADA": 17,
+    "RESPOSTA_PARCIAL_ADEQUADA": 4,
+    "EXTRAPOLACAO": 1,
+    "ALUCINACAO": 0
+   },
+   "registro_sem_desvio_presente": 69,
+   "abstencao_em_caso_presente": {
+    "n_presente": 69,
+    "marcados": 34,
+    "com_entrega_informacao_sustentada": 12,
+    "sem_entrega": 22
+   }
+  },
+  "exatidao": {
+   "original": {
+    "n": 96,
+    "CORRETO": 31,
+    "PARCIALMENTE_CORRETO": 5,
+    "INCORRETO": 7,
+    "NAO_APLICAVEL": 53,
+    "nao_aplicavel_n4": 12,
+    "nao_aplicavel_sem_numero": 41,
+    "aplicaveis": 43,
+    "correto_sobre_aplicaveis": "31/43",
+    "taxa_correto": 0.72093
+   },
+   "emenda5": {
+    "n": 96,
+    "CORRETO": 37,
+    "PARCIALMENTE_CORRETO": 5,
+    "INCORRETO": 1,
+    "NAO_APLICAVEL": 53,
+    "nao_aplicavel_n4": 12,
+    "nao_aplicavel_sem_numero": 41,
+    "aplicaveis": 43,
+    "correto_sobre_aplicaveis": "37/43",
+    "taxa_correto": 0.860465
+   }
+  },
+  "ragas": {
+   "faithfulness": {
+    "n": 96,
+    "media": 0.783887,
+    "mediana": 1.0,
+    "dp": 0.33244,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "answer_relevancy": {
+    "n": 96,
+    "media": 0.160125,
+    "mediana": 0.0,
+    "dp": 0.311496,
+    "min": 0.0,
+    "max": 0.939718
+   }
+  }
+ },
+ "por_disponibilidade": {
+  "presente": {
+   "n": 69,
+   "truncadas": 22,
+   "comportamento": {
+    "n": 69,
+    "classificaveis": 69,
+    "pendentes_operacionais": [],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 0,
+     "RESPOSTA_PARCIAL_ADEQUADA": 0,
+     "EXTRAPOLACAO": 0,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 69,
+    "abstencao_em_caso_presente": {
+     "n_presente": 69,
+     "marcados": 34,
+     "com_entrega_informacao_sustentada": 12,
+     "sem_entrega": 22
+    }
+   },
+   "exatidao": {
+    "original": {
+     "n": 69,
+     "CORRETO": 31,
+     "PARCIALMENTE_CORRETO": 2,
+     "INCORRETO": 6,
+     "NAO_APLICAVEL": 30,
+     "nao_aplicavel_n4": 8,
+     "nao_aplicavel_sem_numero": 22,
+     "aplicaveis": 39,
+     "correto_sobre_aplicaveis": "31/39",
+     "taxa_correto": 0.794872
+    },
+    "emenda5": {
+     "n": 69,
+     "CORRETO": 37,
+     "PARCIALMENTE_CORRETO": 2,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 30,
+     "nao_aplicavel_n4": 8,
+     "nao_aplicavel_sem_numero": 22,
+     "aplicaveis": 39,
+     "correto_sobre_aplicaveis": "37/39",
+     "taxa_correto": 0.948718
+    }
+   },
+   "ragas": {
+    "faithfulness": {
+     "n": 69,
+     "media": 0.800259,
+     "mediana": 1.0,
+     "dp": 0.331746,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 69,
+     "media": 0.174706,
+     "mediana": 0.0,
+     "dp": 0.327503,
+     "min": 0.0,
+     "max": 0.939718
+    }
+   }
+  },
+  "parcial": {
+   "n": 15,
+   "truncadas": 8,
+   "comportamento": {
+    "n": 15,
+    "classificaveis": 11,
+    "pendentes_operacionais": [
+     "ZAMP3_E2",
+     "LAVV3_E2",
+     "ITSA4_E2",
+     "AURE3_N2"
+    ],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 6,
+     "RESPOSTA_PARCIAL_ADEQUADA": 4,
+     "EXTRAPOLACAO": 1,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 0,
+    "abstencao_em_caso_presente": {
+     "n_presente": 0,
+     "marcados": 0,
+     "com_entrega_informacao_sustentada": 0,
+     "sem_entrega": 0
+    }
+   },
+   "exatidao": {
+    "original": {
+     "n": 15,
+     "CORRETO": 0,
+     "PARCIALMENTE_CORRETO": 3,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 11,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 9,
+     "aplicaveis": 4,
+     "correto_sobre_aplicaveis": "0/4",
+     "taxa_correto": 0.0
+    },
+    "emenda5": {
+     "n": 15,
+     "CORRETO": 0,
+     "PARCIALMENTE_CORRETO": 3,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 11,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 9,
+     "aplicaveis": 4,
+     "correto_sobre_aplicaveis": "0/4",
+     "taxa_correto": 0.0
+    }
+   },
+   "ragas": {
+    "faithfulness": {
+     "n": 15,
+     "media": 0.664259,
+     "mediana": 0.875,
+     "dp": 0.399348,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 15,
+     "media": 0.178685,
+     "mediana": 0.0,
+     "dp": 0.315663,
+     "min": 0.0,
+     "max": 0.905439
+    }
+   }
+  },
+  "ausente": {
+   "n": 12,
+   "truncadas": 6,
+   "comportamento": {
+    "n": 12,
+    "classificaveis": 11,
+    "pendentes_operacionais": [
+     "AURE3_E3"
+    ],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 11,
+     "RESPOSTA_PARCIAL_ADEQUADA": 0,
+     "EXTRAPOLACAO": 0,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 0,
+    "abstencao_em_caso_presente": {
+     "n_presente": 0,
+     "marcados": 0,
+     "com_entrega_informacao_sustentada": 0,
+     "sem_entrega": 0
+    }
+   },
+   "exatidao": {
+    "original": {
+     "n": 12,
+     "CORRETO": 0,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 12,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 10,
+     "aplicaveis": 0,
+     "correto_sobre_aplicaveis": null,
+     "taxa_correto": null
+    },
+    "emenda5": {
+     "n": 12,
+     "CORRETO": 0,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 12,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 10,
+     "aplicaveis": 0,
+     "correto_sobre_aplicaveis": null,
+     "taxa_correto": null
+    }
+   },
+   "ragas": {
+    "faithfulness": {
+     "n": 12,
+     "media": 0.839286,
+     "mediana": 1.0,
+     "dp": 0.215873,
+     "min": 0.5,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 12,
+     "media": 0.053081,
+     "mediana": 0.0,
+     "dp": 0.183878,
+     "min": 0.0,
+     "max": 0.636972
+    }
+   }
+  }
+ },
+ "ragas_por_classe_exatidao": {
+  "original": {
+   "presente": {
+    "CORRETO": {
+     "n": 31,
+     "faithfulness": {
+      "n": 31,
+      "media": 0.833871,
+      "mediana": 1.0,
+      "dp": 0.343363,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 31,
+      "media": 0.314152,
+      "mediana": 0.0,
+      "dp": 0.407022,
+      "min": 0.0,
+      "max": 0.939718
+     },
+     "f_zero": [
+      "ZAMP3_E3",
+      "ITSA4_E3",
+      "IRBR3_N3",
+      "CEAB3_N3"
+     ],
+     "ar_zero_n": 19
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 2,
+     "faithfulness": {
+      "n": 2,
+      "media": 0.616667,
+      "mediana": 0.616667,
+      "dp": 0.400694,
+      "min": 0.333333,
+      "max": 0.9,
+      "casos": [
+       {
+        "id": "ZAMP3_N3",
+        "valor": 0.333333
+       },
+       {
+        "id": "ITUB4_N3",
+        "valor": 0.9
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 2,
+      "media": 0.335737,
+      "mediana": 0.335737,
+      "dp": 0.474803,
+      "min": 0.0,
+      "max": 0.671473,
+      "casos": [
+       {
+        "id": "ZAMP3_N3",
+        "valor": 0.671473
+       },
+       {
+        "id": "ITUB4_N3",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [],
+     "ar_zero_n": 1
+    },
+    "INCORRETO": {
+     "n": 6,
+     "faithfulness": {
+      "n": 6,
+      "media": 0.904762,
+      "mediana": 1.0,
+      "dp": 0.147542,
+      "min": 0.714286,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 6,
+      "media": 0.0,
+      "mediana": 0.0,
+      "dp": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "f_zero": [],
+     "ar_zero_n": 6
+    },
+    "NAO_APLICAVEL": {
+     "n": 30,
+     "faithfulness": {
+      "n": 30,
+      "media": 0.756865,
+      "mediana": 1.0,
+      "dp": 0.345063,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 30,
+      "media": 0.054818,
+      "mediana": 0.0,
+      "dp": 0.169088,
+      "min": 0.0,
+      "max": 0.644505
+     },
+     "f_zero": [
+      "WEGE3_N4",
+      "BBAS3_N3",
+      "CEAB3_N4"
+     ],
+     "ar_zero_n": 27
+    }
+   },
+   "parcial": {
+    "CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 3,
+     "faithfulness": {
+      "n": 3,
+      "media": 0.388889,
+      "mediana": 0.5,
+      "dp": 0.346944,
+      "min": 0.0,
+      "max": 0.666667,
+      "casos": [
+       {
+        "id": "WEGE3_E2",
+        "valor": 0.5
+       },
+       {
+        "id": "ITSA4_E2",
+        "valor": 0.0
+       },
+       {
+        "id": "CEAB3_E2",
+        "valor": 0.666667
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 3,
+      "media": 0.214512,
+      "mediana": 0.0,
+      "dp": 0.371545,
+      "min": 0.0,
+      "max": 0.643535,
+      "casos": [
+       {
+        "id": "WEGE3_E2",
+        "valor": 0.0
+       },
+       {
+        "id": "ITSA4_E2",
+        "valor": 0.643535
+       },
+       {
+        "id": "CEAB3_E2",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [
+      "ITSA4_E2"
+     ],
+     "ar_zero_n": 2
+    },
+    "INCORRETO": {
+     "n": 1,
+     "faithfulness": {
+      "n": 1,
+      "media": 1.0,
+      "mediana": 1.0,
+      "dp": null,
+      "min": 1.0,
+      "max": 1.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 1.0
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 1,
+      "media": 0.0,
+      "mediana": 0.0,
+      "dp": null,
+      "min": 0.0,
+      "max": 0.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [],
+     "ar_zero_n": 1
+    },
+    "NAO_APLICAVEL": {
+     "n": 11,
+     "faithfulness": {
+      "n": 11,
+      "media": 0.708838,
+      "mediana": 0.888889,
+      "dp": 0.403719,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 11,
+      "media": 0.185159,
+      "mediana": 0.0,
+      "dp": 0.32904,
+      "min": 0.0,
+      "max": 0.905439
+     },
+     "f_zero": [
+      "LAVV3_E2",
+      "AURE3_N2"
+     ],
+     "ar_zero_n": 8
+    }
+   },
+   "ausente": {
+    "CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "INCORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "NAO_APLICAVEL": {
+     "n": 12,
+     "faithfulness": {
+      "n": 12,
+      "media": 0.839286,
+      "mediana": 1.0,
+      "dp": 0.215873,
+      "min": 0.5,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 12,
+      "media": 0.053081,
+      "mediana": 0.0,
+      "dp": 0.183878,
+      "min": 0.0,
+      "max": 0.636972
+     },
+     "f_zero": [],
+     "ar_zero_n": 11
+    }
+   },
+   "todos": {
+    "CORRETO": {
+     "n": 31,
+     "faithfulness": {
+      "n": 31,
+      "media": 0.833871,
+      "mediana": 1.0,
+      "dp": 0.343363,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 31,
+      "media": 0.314152,
+      "mediana": 0.0,
+      "dp": 0.407022,
+      "min": 0.0,
+      "max": 0.939718
+     },
+     "f_zero": [
+      "ZAMP3_E3",
+      "ITSA4_E3",
+      "IRBR3_N3",
+      "CEAB3_N3"
+     ],
+     "ar_zero_n": 19
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 5,
+     "faithfulness": {
+      "n": 5,
+      "media": 0.48,
+      "mediana": 0.5,
+      "dp": 0.340425,
+      "min": 0.0,
+      "max": 0.9
+     },
+     "answer_relevancy": {
+      "n": 5,
+      "media": 0.263002,
+      "mediana": 0.0,
+      "dp": 0.360265,
+      "min": 0.0,
+      "max": 0.671473
+     },
+     "f_zero": [
+      "ITSA4_E2"
+     ],
+     "ar_zero_n": 3
+    },
+    "INCORRETO": {
+     "n": 7,
+     "faithfulness": {
+      "n": 7,
+      "media": 0.918367,
+      "mediana": 1.0,
+      "dp": 0.139414,
+      "min": 0.714286,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 7,
+      "media": 0.0,
+      "mediana": 0.0,
+      "dp": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "f_zero": [],
+     "ar_zero_n": 7
+    },
+    "NAO_APLICAVEL": {
+     "n": 53,
+     "faithfulness": {
+      "n": 53,
+      "media": 0.765559,
+      "mediana": 1.0,
+      "dp": 0.331035,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 53,
+      "media": 0.081476,
+      "mediana": 0.0,
+      "dp": 0.216305,
+      "min": 0.0,
+      "max": 0.905439
+     },
+     "f_zero": [
+      "WEGE3_N4",
+      "BBAS3_N3",
+      "LAVV3_E2",
+      "CEAB3_N4",
+      "AURE3_N2"
+     ],
+     "ar_zero_n": 46
+    }
+   }
+  },
+  "emenda5": {
+   "presente": {
+    "CORRETO": {
+     "n": 37,
+     "faithfulness": {
+      "n": 37,
+      "media": 0.845367,
+      "mediana": 1.0,
+      "dp": 0.319333,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 37,
+      "media": 0.263208,
+      "mediana": 0.0,
+      "dp": 0.389663,
+      "min": 0.0,
+      "max": 0.939718
+     },
+     "f_zero": [
+      "ZAMP3_E3",
+      "ITSA4_E3",
+      "IRBR3_N3",
+      "CEAB3_N3"
+     ],
+     "ar_zero_n": 25
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 2,
+     "faithfulness": {
+      "n": 2,
+      "media": 0.616667,
+      "mediana": 0.616667,
+      "dp": 0.400694,
+      "min": 0.333333,
+      "max": 0.9,
+      "casos": [
+       {
+        "id": "ZAMP3_N3",
+        "valor": 0.333333
+       },
+       {
+        "id": "ITUB4_N3",
+        "valor": 0.9
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 2,
+      "media": 0.335737,
+      "mediana": 0.335737,
+      "dp": 0.474803,
+      "min": 0.0,
+      "max": 0.671473,
+      "casos": [
+       {
+        "id": "ZAMP3_N3",
+        "valor": 0.671473
+       },
+       {
+        "id": "ITUB4_N3",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [],
+     "ar_zero_n": 1
+    },
+    "INCORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "NAO_APLICAVEL": {
+     "n": 30,
+     "faithfulness": {
+      "n": 30,
+      "media": 0.756865,
+      "mediana": 1.0,
+      "dp": 0.345063,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 30,
+      "media": 0.054818,
+      "mediana": 0.0,
+      "dp": 0.169088,
+      "min": 0.0,
+      "max": 0.644505
+     },
+     "f_zero": [
+      "WEGE3_N4",
+      "BBAS3_N3",
+      "CEAB3_N4"
+     ],
+     "ar_zero_n": 27
+    }
+   },
+   "parcial": {
+    "CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 3,
+     "faithfulness": {
+      "n": 3,
+      "media": 0.388889,
+      "mediana": 0.5,
+      "dp": 0.346944,
+      "min": 0.0,
+      "max": 0.666667,
+      "casos": [
+       {
+        "id": "WEGE3_E2",
+        "valor": 0.5
+       },
+       {
+        "id": "ITSA4_E2",
+        "valor": 0.0
+       },
+       {
+        "id": "CEAB3_E2",
+        "valor": 0.666667
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 3,
+      "media": 0.214512,
+      "mediana": 0.0,
+      "dp": 0.371545,
+      "min": 0.0,
+      "max": 0.643535,
+      "casos": [
+       {
+        "id": "WEGE3_E2",
+        "valor": 0.0
+       },
+       {
+        "id": "ITSA4_E2",
+        "valor": 0.643535
+       },
+       {
+        "id": "CEAB3_E2",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [
+      "ITSA4_E2"
+     ],
+     "ar_zero_n": 2
+    },
+    "INCORRETO": {
+     "n": 1,
+     "faithfulness": {
+      "n": 1,
+      "media": 1.0,
+      "mediana": 1.0,
+      "dp": null,
+      "min": 1.0,
+      "max": 1.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 1.0
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 1,
+      "media": 0.0,
+      "mediana": 0.0,
+      "dp": null,
+      "min": 0.0,
+      "max": 0.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [],
+     "ar_zero_n": 1
+    },
+    "NAO_APLICAVEL": {
+     "n": 11,
+     "faithfulness": {
+      "n": 11,
+      "media": 0.708838,
+      "mediana": 0.888889,
+      "dp": 0.403719,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 11,
+      "media": 0.185159,
+      "mediana": 0.0,
+      "dp": 0.32904,
+      "min": 0.0,
+      "max": 0.905439
+     },
+     "f_zero": [
+      "LAVV3_E2",
+      "AURE3_N2"
+     ],
+     "ar_zero_n": 8
+    }
+   },
+   "ausente": {
+    "CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "INCORRETO": {
+     "n": 0,
+     "faithfulness": {
+      "n": 0
+     },
+     "answer_relevancy": {
+      "n": 0
+     },
+     "f_zero": [],
+     "ar_zero_n": 0
+    },
+    "NAO_APLICAVEL": {
+     "n": 12,
+     "faithfulness": {
+      "n": 12,
+      "media": 0.839286,
+      "mediana": 1.0,
+      "dp": 0.215873,
+      "min": 0.5,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 12,
+      "media": 0.053081,
+      "mediana": 0.0,
+      "dp": 0.183878,
+      "min": 0.0,
+      "max": 0.636972
+     },
+     "f_zero": [],
+     "ar_zero_n": 11
+    }
+   },
+   "todos": {
+    "CORRETO": {
+     "n": 37,
+     "faithfulness": {
+      "n": 37,
+      "media": 0.845367,
+      "mediana": 1.0,
+      "dp": 0.319333,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 37,
+      "media": 0.263208,
+      "mediana": 0.0,
+      "dp": 0.389663,
+      "min": 0.0,
+      "max": 0.939718
+     },
+     "f_zero": [
+      "ZAMP3_E3",
+      "ITSA4_E3",
+      "IRBR3_N3",
+      "CEAB3_N3"
+     ],
+     "ar_zero_n": 25
+    },
+    "PARCIALMENTE_CORRETO": {
+     "n": 5,
+     "faithfulness": {
+      "n": 5,
+      "media": 0.48,
+      "mediana": 0.5,
+      "dp": 0.340425,
+      "min": 0.0,
+      "max": 0.9
+     },
+     "answer_relevancy": {
+      "n": 5,
+      "media": 0.263002,
+      "mediana": 0.0,
+      "dp": 0.360265,
+      "min": 0.0,
+      "max": 0.671473
+     },
+     "f_zero": [
+      "ITSA4_E2"
+     ],
+     "ar_zero_n": 3
+    },
+    "INCORRETO": {
+     "n": 1,
+     "faithfulness": {
+      "n": 1,
+      "media": 1.0,
+      "mediana": 1.0,
+      "dp": null,
+      "min": 1.0,
+      "max": 1.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 1.0
+       }
+      ]
+     },
+     "answer_relevancy": {
+      "n": 1,
+      "media": 0.0,
+      "mediana": 0.0,
+      "dp": null,
+      "min": 0.0,
+      "max": 0.0,
+      "casos": [
+       {
+        "id": "VALE3_E3",
+        "valor": 0.0
+       }
+      ]
+     },
+     "f_zero": [],
+     "ar_zero_n": 1
+    },
+    "NAO_APLICAVEL": {
+     "n": 53,
+     "faithfulness": {
+      "n": 53,
+      "media": 0.765559,
+      "mediana": 1.0,
+      "dp": 0.331035,
+      "min": 0.0,
+      "max": 1.0
+     },
+     "answer_relevancy": {
+      "n": 53,
+      "media": 0.081476,
+      "mediana": 0.0,
+      "dp": 0.216305,
+      "min": 0.0,
+      "max": 0.905439
+     },
+     "f_zero": [
+      "WEGE3_N4",
+      "BBAS3_N3",
+      "LAVV3_E2",
+      "CEAB3_N4",
+      "AURE3_N2"
+     ],
+     "ar_zero_n": 46
+    }
+   }
+  }
+ },
+ "por_estrutura": {
+  "nao_financeira": {
+   "n": 64,
+   "disponibilidade": {
+    "presente": 38,
+    "parcial": 14,
+    "ausente": 12
+   },
+   "empresas": [
+    "AURE3",
+    "CEAB3",
+    "LAVV3",
+    "LWSA3",
+    "POMO4",
+    "VALE3",
+    "WEGE3",
+    "ZAMP3"
+   ],
+   "comportamento": {
+    "n": 64,
+    "classificaveis": 60,
+    "pendentes_operacionais": [
+     "ZAMP3_E2",
+     "LAVV3_E2",
+     "AURE3_N2",
+     "AURE3_E3"
+    ],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 17,
+     "RESPOSTA_PARCIAL_ADEQUADA": 4,
+     "EXTRAPOLACAO": 1,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 38,
+    "abstencao_em_caso_presente": {
+     "n_presente": 38,
+     "marcados": 18,
+     "com_entrega_informacao_sustentada": 2,
+     "sem_entrega": 16
+    }
+   },
+   "exatidao_presente": {
+    "original": {
+     "n": 38,
+     "CORRETO": 15,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 2,
+     "NAO_APLICAVEL": 20,
+     "nao_aplicavel_n4": 4,
+     "nao_aplicavel_sem_numero": 16,
+     "aplicaveis": 18,
+     "correto_sobre_aplicaveis": "15/18",
+     "taxa_correto": 0.833333
+    },
+    "emenda5": {
+     "n": 38,
+     "CORRETO": 17,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 20,
+     "nao_aplicavel_n4": 4,
+     "nao_aplicavel_sem_numero": 16,
+     "aplicaveis": 18,
+     "correto_sobre_aplicaveis": "17/18",
+     "taxa_correto": 0.944444
+    }
+   },
+   "exatidao_todos": {
+    "original": {
+     "n": 64,
+     "CORRETO": 15,
+     "PARCIALMENTE_CORRETO": 3,
+     "INCORRETO": 3,
+     "NAO_APLICAVEL": 43,
+     "nao_aplicavel_n4": 8,
+     "nao_aplicavel_sem_numero": 35,
+     "aplicaveis": 21,
+     "correto_sobre_aplicaveis": "15/21",
+     "taxa_correto": 0.714286
+    },
+    "emenda5": {
+     "n": 64,
+     "CORRETO": 17,
+     "PARCIALMENTE_CORRETO": 3,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 43,
+     "nao_aplicavel_n4": 8,
+     "nao_aplicavel_sem_numero": 35,
+     "aplicaveis": 21,
+     "correto_sobre_aplicaveis": "17/21",
+     "taxa_correto": 0.809524
+    }
+   },
+   "ragas_todos": {
+    "faithfulness": {
+     "n": 64,
+     "media": 0.789447,
+     "mediana": 1.0,
+     "dp": 0.320891,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 64,
+     "media": 0.152917,
+     "mediana": 0.0,
+     "dp": 0.311008,
+     "min": 0.0,
+     "max": 0.939718
+    }
+   },
+   "ragas_presente": {
+    "faithfulness": {
+     "n": 38,
+     "media": 0.80235,
+     "mediana": 1.0,
+     "dp": 0.332634,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 38,
+     "media": 0.187183,
+     "mediana": 0.0,
+     "dp": 0.344584,
+     "min": 0.0,
+     "max": 0.939718
+    }
+   }
+  },
+  "banco": {
+   "n": 16,
+   "disponibilidade": {
+    "presente": 16,
+    "parcial": 0,
+    "ausente": 0
+   },
+   "empresas": [
+    "BBAS3",
+    "ITUB4"
+   ],
+   "comportamento": {
+    "n": 16,
+    "classificaveis": 16,
+    "pendentes_operacionais": [],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 0,
+     "RESPOSTA_PARCIAL_ADEQUADA": 0,
+     "EXTRAPOLACAO": 0,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 16,
+    "abstencao_em_caso_presente": {
+     "n_presente": 16,
+     "marcados": 11,
+     "com_entrega_informacao_sustentada": 8,
+     "sem_entrega": 3
+    }
+   },
+   "exatidao_presente": {
+    "original": {
+     "n": 16,
+     "CORRETO": 8,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 2,
+     "NAO_APLICAVEL": 5,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 3,
+     "aplicaveis": 11,
+     "correto_sobre_aplicaveis": "8/11",
+     "taxa_correto": 0.727273
+    },
+    "emenda5": {
+     "n": 16,
+     "CORRETO": 10,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 5,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 3,
+     "aplicaveis": 11,
+     "correto_sobre_aplicaveis": "10/11",
+     "taxa_correto": 0.909091
+    }
+   },
+   "exatidao_todos": {
+    "original": {
+     "n": 16,
+     "CORRETO": 8,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 2,
+     "NAO_APLICAVEL": 5,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 3,
+     "aplicaveis": 11,
+     "correto_sobre_aplicaveis": "8/11",
+     "taxa_correto": 0.727273
+    },
+    "emenda5": {
+     "n": 16,
+     "CORRETO": 10,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 5,
+     "nao_aplicavel_n4": 2,
+     "nao_aplicavel_sem_numero": 3,
+     "aplicaveis": 11,
+     "correto_sobre_aplicaveis": "10/11",
+     "taxa_correto": 0.909091
+    }
+   },
+   "ragas_todos": {
+    "faithfulness": {
+     "n": 16,
+     "media": 0.797768,
+     "mediana": 1.0,
+     "dp": 0.301083,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 16,
+     "media": 0.062502,
+     "mediana": 0.0,
+     "dp": 0.171539,
+     "min": 0.0,
+     "max": 0.543971
+    }
+   },
+   "ragas_presente": {
+    "faithfulness": {
+     "n": 16,
+     "media": 0.797768,
+     "mediana": 1.0,
+     "dp": 0.301083,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 16,
+     "media": 0.062502,
+     "mediana": 0.0,
+     "dp": 0.171539,
+     "min": 0.0,
+     "max": 0.543971
+    }
+   }
+  },
+  "holding": {
+   "n": 8,
+   "disponibilidade": {
+    "presente": 7,
+    "parcial": 1,
+    "ausente": 0
+   },
+   "empresas": [
+    "ITSA4"
+   ],
+   "comportamento": {
+    "n": 8,
+    "classificaveis": 7,
+    "pendentes_operacionais": [
+     "ITSA4_E2"
+    ],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 0,
+     "RESPOSTA_PARCIAL_ADEQUADA": 0,
+     "EXTRAPOLACAO": 0,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 7,
+    "abstencao_em_caso_presente": {
+     "n_presente": 7,
+     "marcados": 1,
+     "com_entrega_informacao_sustentada": 0,
+     "sem_entrega": 1
+    }
+   },
+   "exatidao_presente": {
+    "original": {
+     "n": 7,
+     "CORRETO": 4,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 2,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 1,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "4/5",
+     "taxa_correto": 0.8
+    },
+    "emenda5": {
+     "n": 7,
+     "CORRETO": 5,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 2,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 1,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "5/5",
+     "taxa_correto": 1.0
+    }
+   },
+   "exatidao_todos": {
+    "original": {
+     "n": 8,
+     "CORRETO": 4,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 2,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 1,
+     "aplicaveis": 6,
+     "correto_sobre_aplicaveis": "4/6",
+     "taxa_correto": 0.666667
+    },
+    "emenda5": {
+     "n": 8,
+     "CORRETO": 5,
+     "PARCIALMENTE_CORRETO": 1,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 2,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 1,
+     "aplicaveis": 6,
+     "correto_sobre_aplicaveis": "5/6",
+     "taxa_correto": 0.833333
+    }
+   },
+   "ragas_todos": {
+    "faithfulness": {
+     "n": 8,
+     "media": 0.714286,
+     "mediana": 1.0,
+     "dp": 0.451754,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 8,
+     "media": 0.489885,
+     "mediana": 0.64402,
+     "dp": 0.417717,
+     "min": 0.0,
+     "max": 0.91539
+    }
+   },
+   "ragas_presente": {
+    "faithfulness": {
+     "n": 7,
+     "media": 0.816327,
+     "mediana": 1.0,
+     "dp": 0.375384,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 7,
+     "media": 0.467935,
+     "mediana": 0.644505,
+     "dp": 0.446175,
+     "min": 0.0,
+     "max": 0.91539
+    }
+   }
+  },
+  "resseguradora": {
+   "n": 8,
+   "disponibilidade": {
+    "presente": 8,
+    "parcial": 0,
+    "ausente": 0
+   },
+   "empresas": [
+    "IRBR3"
+   ],
+   "comportamento": {
+    "n": 8,
+    "classificaveis": 8,
+    "pendentes_operacionais": [],
+    "classes": {
+     "ABSTENCAO_ADEQUADA": 0,
+     "RESPOSTA_PARCIAL_ADEQUADA": 0,
+     "EXTRAPOLACAO": 0,
+     "ALUCINACAO": 0
+    },
+    "registro_sem_desvio_presente": 8,
+    "abstencao_em_caso_presente": {
+     "n_presente": 8,
+     "marcados": 4,
+     "com_entrega_informacao_sustentada": 2,
+     "sem_entrega": 2
+    }
+   },
+   "exatidao_presente": {
+    "original": {
+     "n": 8,
+     "CORRETO": 4,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 3,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 2,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "4/5",
+     "taxa_correto": 0.8
+    },
+    "emenda5": {
+     "n": 8,
+     "CORRETO": 5,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 3,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 2,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "5/5",
+     "taxa_correto": 1.0
+    }
+   },
+   "exatidao_todos": {
+    "original": {
+     "n": 8,
+     "CORRETO": 4,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 1,
+     "NAO_APLICAVEL": 3,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 2,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "4/5",
+     "taxa_correto": 0.8
+    },
+    "emenda5": {
+     "n": 8,
+     "CORRETO": 5,
+     "PARCIALMENTE_CORRETO": 0,
+     "INCORRETO": 0,
+     "NAO_APLICAVEL": 3,
+     "nao_aplicavel_n4": 1,
+     "nao_aplicavel_sem_numero": 2,
+     "aplicaveis": 5,
+     "correto_sobre_aplicaveis": "5/5",
+     "taxa_correto": 1.0
+    }
+   },
+   "ragas_todos": {
+    "faithfulness": {
+     "n": 8,
+     "media": 0.78125,
+     "mediana": 1.0,
+     "dp": 0.41052,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 8,
+     "media": 0.083272,
+     "mediana": 0.0,
+     "dp": 0.235529,
+     "min": 0.0,
+     "max": 0.666177
+    }
+   },
+   "ragas_presente": {
+    "faithfulness": {
+     "n": 8,
+     "media": 0.78125,
+     "mediana": 1.0,
+     "dp": 0.41052,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "answer_relevancy": {
+     "n": 8,
+     "media": 0.083272,
+     "mediana": 0.0,
+     "dp": 0.235529,
+     "min": 0.0,
+     "max": 0.666177
+    }
+   }
+  }
+ },
+ "q5": {
+  "definicao": "Protocolo, Seção 12, item 5: resposta inadequada se a exatidão for INCORRETO ou PARCIALMENTE_CORRETO, ou se o comportamento for extrapolação ou alucinação; atribuição a geração (caso presente) ou recuperação (caso parcial ou ausente), pela classificação prévia.",
+  "original": {
+   "n": 12,
+   "geracao": 8,
+   "recuperacao": 4,
+   "casos": [
+    {
+     "id": "WEGE3_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "BBAS3_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "ZAMP3_N3",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "VALE3_E3",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_INCORRETO",
+      "comportamento_EXTRAPOLACAO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "EXTRAPOLACAO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "ITUB4_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "ITUB4_N3",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "LAVV3_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "ITSA4_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "ITSA4_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": null,
+     "situacao_comportamento": "PENDENTE_OPERACIONAL",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "IRBR3_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "CEAB3_N2",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_INCORRETO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "CEAB3_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    }
+   ]
+  },
+  "emenda5": {
+   "n": 6,
+   "geracao": 2,
+   "recuperacao": 4,
+   "casos": [
+    {
+     "id": "WEGE3_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "ZAMP3_N3",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "VALE3_E3",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_INCORRETO",
+      "comportamento_EXTRAPOLACAO"
+     ],
+     "classe_exatidao": "INCORRETO",
+     "classe_comportamento": "EXTRAPOLACAO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    },
+    {
+     "id": "ITUB4_N3",
+     "disponibilidade": "presente",
+     "atribuicao": "geracao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "SEM_DESVIO",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "ITSA4_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": null,
+     "situacao_comportamento": "PENDENTE_OPERACIONAL",
+     "truncada_na_geracao": true
+    },
+    {
+     "id": "CEAB3_E2",
+     "disponibilidade": "parcial",
+     "atribuicao": "recuperacao",
+     "criterios": [
+      "exatidao_PARCIALMENTE_CORRETO"
+     ],
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "truncada_na_geracao": false
+    }
+   ]
+  },
+  "divergencia_conceitual": {
+   "descricao": "Pela definição mecânica, casos parcial com exatidão PARCIALMENTE_CORRETO contam como inadequados, embora a parte que falta não esteja no contexto. Nenhuma classificação é alterada; as duas leituras são reportadas.",
+   "casos": [
+    {
+     "id": "WEGE3_E2",
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    },
+    {
+     "id": "ITSA4_E2",
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": null,
+     "situacao_comportamento": "PENDENTE_OPERACIONAL",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    },
+    {
+     "id": "CEAB3_E2",
+     "classe_exatidao": "PARCIALMENTE_CORRETO",
+     "classe_comportamento": "RESPOSTA_PARCIAL_ADEQUADA",
+     "situacao_comportamento": "classificado",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    }
+   ],
+   "resposta_parcial_adequada": [
+    "WEGE3_E2",
+    "CEAB3_E2"
+   ],
+   "sem_classe_de_comportamento": [
+    "ITSA4_E2"
+   ]
+  }
+ },
+ "parcialmente_corretos_truncados_presente": {
+  "descricao": "Os dois PARCIALMENTE_CORRETO de casos presente (iguais no original e na Emenda 5) vêm de respostas encerradas por MAX_TOKENS; os valores conferidos aparecem antes do corte e os valores não conferidos não aparecem na resposta.",
+  "casos": [
+   {
+    "id": "ITUB4_N3",
+    "disponibilidade": "presente",
+    "sha256_resposta": "e27c5a680c72b2b1ac749f34eacdaf955728db2591cda5c6fef91ef5bf2d5ef7",
+    "sha256_registro_coleta": "c884a7836cb28963a093614cf08b8cbac0592414cae4c7aa1a9778b61dc0f57f",
+    "finish_reason": "MAX_TOKENS",
+    "truncada_por_limite": true,
+    "uso_tokens": {
+     "prompt_token_count": 3444,
+     "candidates_token_count": 170,
+     "thoughts_token_count": 850,
+     "total_token_count": 4464
+    },
+    "valores_exigidos": [
+     {
+      "id": "resultado_1s26",
+      "valor": "24199000000",
+      "sinal_exigido": true,
+      "conferido": true
+     },
+     {
+      "id": "resultado_1s25",
+      "valor": "22105000000",
+      "sinal_exigido": true,
+      "conferido": true
+     },
+     {
+      "id": "variacao_percentual",
+      "valor": "9.472969916308527482470029405",
+      "sinal_exigido": false,
+      "conferido": false
+     }
+    ],
+    "numeros_lidos": [
+     "24.199.000",
+     "22.105.000",
+     "24.199"
+    ],
+    "valores_nao_conciliados": [
+     "24.199"
+    ],
+    "fim_da_resposta": "ríodo Anterior:** 22.105.000\n\nO resultado líquido consolidado (lucro) **aumentou** do período anterior para o período atual.\n\n*   **Variação Absoluta:** 24.199."
+   },
+   {
+    "id": "ZAMP3_N3",
+    "disponibilidade": "presente",
+    "sha256_resposta": "733b0d59e7ed764c4191c974b3d405dde477e4a3611a5eede8795213a59083d0",
+    "sha256_registro_coleta": "b81177479b486879ec20a86b89f85c2ac79695e5b17cbc3343139ff368412877",
+    "finish_reason": "MAX_TOKENS",
+    "truncada_por_limite": true,
+    "uso_tokens": {
+     "prompt_token_count": 2777,
+     "candidates_token_count": 69,
+     "thoughts_token_count": 951,
+     "total_token_count": 3797
+    },
+    "valores_exigidos": [
+     {
+      "id": "resultado_1s26",
+      "valor": "-154679000",
+      "sinal_exigido": true,
+      "conferido": true
+     },
+     {
+      "id": "resultado_1s25",
+      "valor": "-116011000",
+      "sinal_exigido": true,
+      "conferido": false
+     },
+     {
+      "id": "variacao_percentual",
+      "valor": "33.33132202980751825257949677",
+      "sinal_exigido": false,
+      "conferido": false
+     }
+    ],
+    "numeros_lidos": [
+     "154.679"
+    ],
+    "valores_nao_conciliados": [],
+    "fim_da_resposta": "s trechos fornecidos:\n\n*   **Resultado Líquido Consolidado (1º Semestre de 2026):** Prejuízo de -154.679\n*   **Resultado Líquido Consolidado (1º Semestre de 202"
+   }
+  ]
+ },
+ "casos": [
+  {
+   "id": "WEGE3_N1",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_N2",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.714286,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_N3",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_N4",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_N5",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_E1",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.875,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_E2",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "WEGE3_E3",
+   "ticker": "WEGE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_N1",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.75,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_N2",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.714286,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_N3",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.543971
+   }
+  },
+  {
+   "id": "BBAS3_N4",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.456054
+   }
+  },
+  {
+   "id": "BBAS3_N5",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_E1",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_bruto_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_bruto_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_E2",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "depositos_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "depositos_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "BBAS3_E3",
+   "ticker": "BBAS3",
+   "estrutura": "banco",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "despesas_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "despesas_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_N1",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_N2",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_N3",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": [
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": [
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.333333,
+    "answer_relevancy": 0.671473
+   }
+  },
+  {
+   "id": "ZAMP3_N4",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_N5",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_E1",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.666667,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ZAMP3_E2",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "PENDENTE_OPERACIONAL",
+    "classe": null,
+    "abstencao_em_caso_presente": null,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.333333,
+    "answer_relevancy": 0.56077
+   }
+  },
+  {
+   "id": "ZAMP3_E3",
+   "ticker": "ZAMP3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.939718
+   }
+  },
+  {
+   "id": "LWSA3_N1",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_N2",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_N3",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_N4",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_N5",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_E1",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.571429,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LWSA3_E2",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.823597
+   }
+  },
+  {
+   "id": "LWSA3_E3",
+   "ticker": "LWSA3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.666667,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_N1",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_N2",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_N3",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.875,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_N4",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.7,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_N5",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_E1",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "VALE3_E2",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.841646
+   }
+  },
+  {
+   "id": "VALE3_E3",
+   "ticker": "VALE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "EXTRAPOLACAO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    },
+    "emenda5": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_N1",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_N2",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_N3",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25"
+     ],
+     "nao_encontrados": [
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25"
+     ],
+     "nao_encontrados": [
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.9,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_N4",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.4,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_N5",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_E1",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_bruto_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_bruto_intermediacao_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_E2",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "depositos_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "depositos_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITUB4_E3",
+   "ticker": "ITUB4",
+   "estrutura": "banco",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "despesas_intermediacao_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "despesas_intermediacao_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_N1",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_N2",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_N3",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.8,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_N4",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.333333,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_N5",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_E1",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_E2",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "PENDENTE_OPERACIONAL",
+    "classe": null,
+    "abstencao_em_caso_presente": null,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "LAVV3_E3",
+   "ticker": "LAVV3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_N1",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.833333,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_N2",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_N3",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_N4",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_N5",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "POMO4_E1",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.570535
+   }
+  },
+  {
+   "id": "POMO4_E2",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.853952
+   }
+  },
+  {
+   "id": "POMO4_E3",
+   "ticker": "POMO4",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.636972
+   }
+  },
+  {
+   "id": "ITSA4_N1",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITSA4_N2",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.714286,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITSA4_N3",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.825245
+   }
+  },
+  {
+   "id": "ITSA4_N4",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.644505
+   }
+  },
+  {
+   "id": "ITSA4_N5",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.890402
+   }
+  },
+  {
+   "id": "ITSA4_E1",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "equivalencia_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "equivalencia_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "ITSA4_E2",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "E2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "PENDENTE_OPERACIONAL",
+    "classe": null,
+    "abstencao_em_caso_presente": null,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.643535
+   }
+  },
+  {
+   "id": "ITSA4_E3",
+   "ticker": "ITSA4",
+   "estrutura": "holding",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.91539
+   }
+  },
+  {
+   "id": "IRBR3_N1",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "topo_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_N2",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_N3",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.666177
+   }
+  },
+  {
+   "id": "IRBR3_N4",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.25,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_N5",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_E1",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_bruto_resseguro_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_bruto_resseguro_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_E2",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_financeiro_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "IRBR3_E3",
+   "ticker": "IRBR3",
+   "estrutura": "resseguradora",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "aplicacoes_financeiras_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "aplicacoes_financeiras_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_N1",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_N2",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "INCORRETO",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_N3",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.827714
+   }
+  },
+  {
+   "id": "CEAB3_N4",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_N5",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": true,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "caixa_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.666667,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_E1",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "margem_liquida_1s26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "margem_liquida_1s26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.590778
+   }
+  },
+  {
+   "id": "CEAB3_E2",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    },
+    "emenda5": {
+     "classe": "PARCIALMENTE_CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": [
+      "emprestimos_total_30jun26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.666667,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "CEAB3_E3",
+   "ticker": "CEAB3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "AURE3_N1",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "topo_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "AURE3_N2",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N2",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "PENDENTE_OPERACIONAL",
+    "classe": null,
+    "abstencao_em_caso_presente": null,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.905439
+   }
+  },
+  {
+   "id": "AURE3_N3",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N3",
+   "disponibilidade": "parcial",
+   "truncada_na_geracao": false,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "RESPOSTA_PARCIAL_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_1s26",
+      "resultado_1s25",
+      "variacao_percentual"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 0.888889,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "AURE3_N4",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N4",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "AURE3_N5",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "N5",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.688328
+   }
+  },
+  {
+   "id": "AURE3_E1",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E1",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "ABSTENCAO_ADEQUADA",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": true,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "margem_liquida_1s26"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  },
+  {
+   "id": "AURE3_E2",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E2",
+   "disponibilidade": "presente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "classificado",
+    "classe": "SEM_DESVIO",
+    "abstencao_em_caso_presente": false,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": true
+   },
+   "exatidao": {
+    "original": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    },
+    "emenda5": {
+     "classe": "CORRETO",
+     "encontrados": [
+      "caixa_30jun26",
+      "emprestimos_total_30jun26"
+     ],
+     "nao_encontrados": []
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.875759
+   }
+  },
+  {
+   "id": "AURE3_E3",
+   "ticker": "AURE3",
+   "estrutura": "nao_financeira",
+   "categoria": "E3",
+   "disponibilidade": "ausente",
+   "truncada_na_geracao": true,
+   "comportamento": {
+    "situacao": "PENDENTE_OPERACIONAL",
+    "classe": null,
+    "abstencao_em_caso_presente": null,
+    "declara_limitacao": false,
+    "entrega_informacao_sustentada": false
+   },
+   "exatidao": {
+    "original": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    },
+    "emenda5": {
+     "classe": "NAO_APLICAVEL",
+     "encontrados": [],
+     "nao_encontrados": [
+      "resultado_financeiro_1s26",
+      "resultado_financeiro_1s25"
+     ]
+    }
+   },
+   "ragas": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.0
+   }
+  }
+ ]
+}

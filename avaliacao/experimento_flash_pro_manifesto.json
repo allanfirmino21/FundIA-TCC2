@@ -1,0 +1,51 @@
+{
+  "criado_em": "2026-08-30T20:24:42.701799+00:00",
+  "dt_refer": "2026-03-31",
+  "categ_doc": "ITR",
+  "documentos": {
+    "WEGE3": {
+      "caminho": "dados\\cache\\WEGE3_ITR_2026-03-31.txt",
+      "hash_documento": "3be520b57bb051ae4a77337c2ecaade38fc7d005381412444feaa474a84bf19d",
+      "empresa": "WEG S.A.",
+      "registrado_em": "2026-08-30T20:24:42.701799+00:00"
+    },
+    "VALE3": {
+      "caminho": "dados\\cache\\VALE3_ITR_2026-03-31.txt",
+      "hash_documento": "a94aef0a987ed475000df7fe8649842618a29121d7d79bab782eb1221cdf12f5",
+      "empresa": "Vale S.A.",
+      "registrado_em": "2026-08-30T21:32:17.317013+00:00"
+    },
+    "ITSA4": {
+      "caminho": "dados\\cache\\ITSA4_ITR_2026-03-31.txt",
+      "hash_documento": "3f360cd98492b8c77dce3cbd3eb2f3aa3a4c2dc5e8894f223b11b45ac5cb3c9b",
+      "empresa": "Itaúsa S.A.",
+      "registrado_em": "2026-08-30T21:34:26.195280+00:00"
+    },
+    "BBAS3": {
+      "caminho": "dados\\cache\\BBAS3_ITR_2026-03-31.txt",
+      "hash_documento": "6119894cc0f09fc4a04cba0b76bd67a5bc743f61630b389065a4bfa490731668",
+      "empresa": "Banco do Brasil S.A.",
+      "registrado_em": "2026-08-30T23:53:00.578892+00:00"
+    },
+    "ZAMP3": {
+      "caminho": "dados\\cache\\ZAMP3_ITR_2026-03-31.txt",
+      "hash_documento": "1cbb777e6c393acf3e3236c5ae00810b3f9dd2ec6f39141829f6aa716cf47832",
+      "empresa": "ZAMP SA",
+      "registrado_em": "2026-08-30T23:55:05.072235+00:00"
+    }
+  },
+  "contextos": {
+    "WEGE3": "dac77fcd847e51fad23e687fe09a77f54b977c50a82d1d380047688dfcf801dd",
+    "VALE3": "ea9b4945ea034e838a853b58e1780c5c5368c056c1f5b4a7c02d42733eb261ce",
+    "ITSA4": "7afeaab5b772bc9a533d2429f8fdd02b34fa44fce68d037c9406dc54bc4ebafc",
+    "BBAS3": "7fbd0bd06e0a4337442ce5acebae81bfdf2429e6b982f033875fe8efe461ea70",
+    "ZAMP3": "9602763dca8a37f7650bf175d71844a2decd469abcb51f9e4ebb283c7f30beac"
+  },
+  "prompts": {
+    "WEGE3": "d560dbbbd99a12e1c4d52b2ae2d80bbb338bcfa490d126b070ddf547cc2fde3f",
+    "VALE3": "28aa3949e6f69972337d2bc6f7f3780f6abdf771e31da05c85bdca6eba1378a9",
+    "ITSA4": "a3b98f480c5348e9cc2c7c5625a36e07e4bf4b3d6da6d14487b571abd3749383",
+    "BBAS3": "821f72796c64d1d341922d5f5b0b6dd1e7bb90bf8187d48f0497767c5911c62a",
+    "ZAMP3": "a06bef5ce149f84b601556075f0b52be70e4c571d4542cefd6c9c80cac7bb695"
+  }
+}

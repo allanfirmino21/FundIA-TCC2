@@ -1,0 +1,8 @@
+# Avaliação RAGAS do TCC 2 — versões fixadas pela Emenda 3 do protocolo.
+# Instalar num venv isolado, que enxergue torch e sentence-transformers do ambiente da coleta:
+#   python -m venv --system-site-packages <pasta_do_venv>
+#   <pasta_do_venv>/Scripts/python -m pip install -r avaliacao/ragas/requirements_avaliacao.txt
+# Versões efetivamente resolvidas: requirements_avaliacao.lock
+ragas==0.4.3
+langchain-community==0.4.2
+langchain-google-genai==4.4.0

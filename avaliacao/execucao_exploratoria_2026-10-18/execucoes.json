@@ -1,0 +1,119 @@
+{
+  "commit": "8bf39943b8787e1d9e0b6fcfcc42bf5f932a48b0",
+  "inicio_utc": "2026-10-18T21:36:51.030936+00:00",
+  "modelo": "gemini-2.5-flash",
+  "periodo": "2026-06-30",
+  "versao": 1,
+  "execucoes": [
+    {
+      "ticker": "WEGE3",
+      "segundos": 82.8,
+      "erro": null,
+      "documento": {
+        "periodo": "2026-06-30",
+        "versao": 1,
+        "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=159608"
+      },
+      "auditoria": {
+        "total_numeros": 37,
+        "conferem": 33,
+        "divergentes": 4,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 89.2,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+        "auditor": {
+          "versao": "2.0",
+          "verificar_conceito": true,
+          "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+        },
+        "verificacao_conceitual": {
+          "moedas": 24,
+          "verificadas": 24,
+          "conceito_nao_identificado": 0,
+          "conceito_sem_fato_na_fonte": 0,
+          "divergencias_de_conceito": 2,
+          "cobertura_pct": 100.0,
+          "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+        }
+      }
+    },
+    {
+      "ticker": "BBAS3",
+      "segundos": 59.2,
+      "erro": null,
+      "documento": {
+        "periodo": "2026-06-30",
+        "versao": 1,
+        "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=160511"
+      },
+      "auditoria": {
+        "total_numeros": 32,
+        "conferem": 31,
+        "divergentes": 1,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 96.9,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+        "auditor": {
+          "versao": "2.0",
+          "verificar_conceito": true,
+          "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+        },
+        "verificacao_conceitual": {
+          "moedas": 18,
+          "verificadas": 16,
+          "conceito_nao_identificado": 2,
+          "conceito_sem_fato_na_fonte": 0,
+          "divergencias_de_conceito": 1,
+          "cobertura_pct": 88.9,
+          "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+        }
+      }
+    },
+    {
+      "ticker": "ZAMP3",
+      "segundos": 68.5,
+      "erro": null,
+      "documento": {
+        "periodo": "2026-06-30",
+        "versao": 1,
+        "link": "https://www.rad.cvm.gov.br/ENETCONSULTA/frmDownloadDocumento.aspx?CodigoInstituicao=1&NumeroSequencialDocumento=160323"
+      },
+      "auditoria": {
+        "total_numeros": 48,
+        "conferem": 45,
+        "divergentes": 3,
+        "nao_encontrados": 0,
+        "taxa_conformidade": 93.8,
+        "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+        "auditor": {
+          "versao": "2.0",
+          "verificar_conceito": true,
+          "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+        },
+        "verificacao_conceitual": {
+          "moedas": 32,
+          "verificadas": 32,
+          "conceito_nao_identificado": 0,
+          "conceito_sem_fato_na_fonte": 0,
+          "divergencias_de_conceito": 2,
+          "cobertura_pct": 100.0,
+          "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+        }
+      }
+    }
+  ],
+  "codigo_sha256": {
+    "modulos\\auditoria.py": "57efc2907010991c676261ca08aa22edee70eced45b5bd7aaf362c94fd3d4291",
+    "modulos\\chunking.py": "cb72dea36ca0adad6d854a292feae7d70088a6094918c96898e9a65b4bc9a1e7",
+    "modulos\\cvm.py": "924c33a1845a25d1de736eda224acd968cd19a568957ee83ea1ac076cf880f6c",
+    "modulos\\extracao.py": "29b0ca4bab74d37d06c81ede58c35fc0c97ec0657045db70a97a6a4be4bed1e7",
+    "modulos\\metricas.py": "1471209824345065e4bb77ae29c76686d46a0fc1f393309ce6173c6a909f1736",
+    "modulos\\orquestrador.py": "f12abb1ff12cfd51f1b6e99c82a284236e3147578891928ef64f50065cc3c8db",
+    "modulos\\prompt1.py": "21f109198bfd165e8b75da778a3e1a5efd94464945c67d0b8dff152615e4d226",
+    "modulos\\prompt2.py": "3c0c6a72ecde816cefa0aa0630f47f9551bdbd787f90cf29a113ebaacd5b98c9",
+    "modulos\\recuperacao.py": "89ef62db85f442862956a0e37a3f4d612d2c62a1197eaf95f6d96dfac4acf88d",
+    "modulos\\relatorio_pdf.py": "00cf995e682145f8323cfff82913f06692ce0ac903dfbee4831ac7145e87e154",
+    "modulos\\ticker.py": "b5a9543c2804d5ef0501a1a50f9176803e7b9a4041031653e5aba4a1664217c6",
+    "modulos\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

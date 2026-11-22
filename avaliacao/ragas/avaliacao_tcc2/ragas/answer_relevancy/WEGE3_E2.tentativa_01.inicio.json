@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "WEGE3_E2",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:26:21+00:00",
+  "sha256_resposta": "d15e8a3279256c95415117252deafcd4255b17a98f08368ab31f22307ff08217",
+  "sha256_registro": "09e2f9c5501988098d92201f2a0dff58b9abc79a19bbc1a7855cff6ac425be16"
+}

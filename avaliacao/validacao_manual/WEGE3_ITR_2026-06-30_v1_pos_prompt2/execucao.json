@@ -1,0 +1,114 @@
+{
+  "chamada": "analisar(\"WEGE3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-26T03:31:33.149917+00:00",
+  "fim_utc": "2026-09-26T03:33:05.954396+00:00",
+  "segundos_import": 46.2,
+  "segundos_analisar": 46.1,
+  "ticker": "WEGE3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\WEGE3_ITR_2026-06-30.txt",
+  "fonte_sha256": "500d0c0d51df24cf9d0a166c24f3eea033b74a6eb63285cc4349036857bb8ba6",
+  "fonte_copia": "avaliacao\\validacao_manual\\WEGE3_ITR_2026-06-30_v1_pos_prompt2\\WEGE3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 5410",
+    "VERSAO: 1"
+  ],
+  "git_commit": "870542e785d154c9d907e1a3dd699047ef58c5c0",
+  "git_status": " M modulos/metricas.py\n M modulos/prompt2.py\n M modulos/recuperacao.py\n M tests/test_cd_conta.py\n M tests/test_recuperacao.py\n M tests/test_recuperacao_regressao.py\n?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_pos_prompt2/\n?? tests/test_demonstracoes_resumidas.py\n",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-26T03:32:19.351491+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-26T03:32:19.351491+00:00",
+      "etapa": "1/8",
+      "msg": "OK: WEG S.A. (5410)"
+    },
+    {
+      "t": "2026-09-26T03:32:19.351491+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-26T03:32:21.168967+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-07-22)"
+    },
+    {
+      "t": "2026-09-26T03:32:21.168967+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-26T03:32:21.209354+00:00",
+      "etapa": "3/8",
+      "msg": "OK: Cache local reutilizado (36 KB)"
+    },
+    {
+      "t": "2026-09-26T03:32:21.209354+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-26T03:32:21.210821+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (36,378 caracteres)"
+    },
+    {
+      "t": "2026-09-26T03:32:21.210821+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-26T03:32:32.963139+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-26T03:32:32.964142+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-26T03:32:44.016070+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (10,620 chars numericos, 194 narrativos)"
+    },
+    {
+      "t": "2026-09-26T03:32:44.016837+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-26T03:32:44.021693+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-26T03:33:05.380396+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-26T03:33:05.418962+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 44/44 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-26T03:33:05.418962+00:00",
+      "etapa": "OK",
+      "msg": "Analise de WEGE3 concluida."
+    }
+  ]
+}

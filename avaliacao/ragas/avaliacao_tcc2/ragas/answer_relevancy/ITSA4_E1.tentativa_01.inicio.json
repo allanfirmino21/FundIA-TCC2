@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "ITSA4_E1",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:41:20+00:00",
+  "sha256_resposta": "e68d29b31de806acc5f4bef4acb51d94939fd7faaa6f86477904e37ffb420bad",
+  "sha256_registro": "23d0520458006ac2e7e46ff7455b4de5797c74c6dc5a8fae1461794a24990afb"
+}

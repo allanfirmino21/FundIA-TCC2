@@ -1,0 +1,50 @@
+=== CONTEXTO NARRATIVO ===
+----------------------------------------
+[Trecho 1]
+[SEÇÃO: Cabeçalho]
+DOCUMENTO: ITR — 2026-06-30
+EMPRESA CVM: 1023
+VERSAO: 1
+----------------------------------------
+[Trecho 2]
+[TABELA | Demonstração de Fluxo de Caixa (Consolidado)]
+Caixa Líquido das Atividades Operacionais                    34.039.212  (anterior: 72.354.447)
+Caixa Gerado pelas Operações                                 43.595.514  (anterior: 45.893.302)
+Lucro ou Prejuízo Líquido antes dos Tributos sobre o Lucro       6.362.961  (anterior: 7.760.116)
+Ajustes ao Lucro ou Prejuízo                                 37.232.553  (anterior: 38.133.186)
+Variações nos Ativos e Passivos                              -9.556.302  (anterior: 26.461.145)
+Variação líquida em depósitos no Banco Central do Brasil       2.048.719  (anterior: -4.397.657)
+Variação líquida em aplicações interfinanceiras de liquidez -66979488.0000000000  (anterior: 83168586.0000000000)
+Variação líquida em ativos financeiros ao VJR                -3.888.463  (anterior: 6.036.787)
+Variação líquida na carteira de crédito                     -46.726.536  (anterior: -150.960.994)
+Variação líquida de ativos não circulantes mantidos para venda        -180.304  (anterior: -159.874)
+Variação líquida em outros ativos                            -6.310.135  (anterior: -10.188.069)
+Variação líquida em recursos de clientes                     56.081.388  (anterior: 6.646.514)
+Variação líquida em passivos financeiros ao VJR               1.139.610  (anterior: -2.843.479)
+Variação líquida em recursos de instituições financeiras 118369517.0000000000  (anterior: 1446345.0000000000)
+Variação líquida em recursos de emissões de títulos e valores mobiliários -32849754.0000000000  (anterior: 31257972.0000000000)
+Variação líquida em outros passivos                         -26.895.483  (anterior: 71.902.385)
+Caixa pago em impostos sobre a renda                         -3.365.373  (anterior: -5.447.371)
+Caixa Líquido Atividades de Investimento                    -18.703.994  (anterior: -81.637.289)
+Compra de Ativos financeiros ao VJORA                       -85.862.348  (anterior: -237.994.162)
+Venda de Ativos Financeiros ao VJORA                         74.226.537  (anterior: 176.648.154)
+Compra de títulos e valores mobiliários ao custo amortizado -13165640.0000000000  (anterior: -23436350.0000000000)
+Resgate de títulos e valores mobiliários ao custo amortizado       6.579.762  (anterior: 1.835.164)
+Compra de ativo imobilizado                                  -2.003.559  (anterior: -1.586.896)
+Venda de ativo imobilizado                                        5.319  (anterior: 8.750)
+Aquisição de ativos intangíveis                              -1.722.822  (anterior: -1.878.510)
+Dividendos e juros sobre capital próprio recebidos            3.207.953  (anterior: 4.768.103)
+Aporte de capital social - Broto S.A.                            -9.000  (anterior: -5.000)
+Alienação de participações societárias                           39.804  (anterior: 3.458)
+Caixa Líquido Atividades de Financiamento                    -6.975.877  (anterior: -1.289.277)
+Liquidação de passivos de longo prazo                        -2.613.195  (anterior: -1.276.914)
+Juros de instrumento elegível a capital principal pagos         -36.273  (anterior: -220.229)
+Liquidação de arrendamentos                                    -696.813  (anterior: -643.337)
+Dividendos ou juros sobre o capital próprio pagos aos acionistas controladores      -1.975.861  (anterior: -6.008.672)
+Dividendos ou juros sobre o capital próprio pagos aos acionistas não controladores      -1.653.735  (anterior: -1.440.125)
+Captação de passivos de longo prazo                                   0  (anterior: 8.300.000)
+Variação Cambial s/ Caixa e Equivalentes                     -2.977.017  (anterior: -7.659.861)
+Aumento (Redução) de Caixa e Equivalentes                     5.382.324  (anterior: -18.231.980)
+Saldo Inicial de Caixa e Equivalentes                        59.635.525  (anterior: 83.167.243)
+Saldo Final de Caixa e Equivalentes                          65.017.849  (anterior: 64.935.263)
+----------------------------------------

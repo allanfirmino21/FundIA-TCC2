@@ -1,0 +1,552 @@
+{
+  "verificacoes": [
+    {
+      "secao": "RESUMO",
+      "trecho": "R$ 3,23 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,23 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "RESUMO",
+      "trecho": "R$ 159,93 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 159,93 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "conceito_reivindicado": "ebit",
+      "conceito_do_fato": "ebit",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "RESUMO",
+      "trecho": "R$ 18,22 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "R$ 18,22 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"resultado_financeiro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "resultado_financeiro",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "RESUMO",
+      "trecho": "R$ 38,11 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "R$ 38,11 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"tributos_sobre_lucro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "tributos_sobre_lucro",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "RESUMO",
+      "trecho": "3,1%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-3,1%",
+      "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+    },
+    {
+      "secao": "O QUE A EMPRESA FATURA",
+      "trecho": "R$ 19,61 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 19,61 bilhões",
+      "origem_fato": "métrica calculada: receita_principal.valor_atual",
+      "conceito_reivindicado": "receita",
+      "conceito_do_fato": "receita",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE A EMPRESA FATURA",
+      "trecho": "R$ 20,29 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 20,29 bilhões",
+      "origem_fato": "métrica calculada: receita_principal.valor_anterior",
+      "conceito_reivindicado": "receita",
+      "conceito_do_fato": "receita",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE A EMPRESA FATURA",
+      "trecho": "3,3%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-3,3%",
+      "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 3,23 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,23 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 3,33 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,33 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 103,60 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "-R$ 103,60 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.resultado.variacao_absoluta",
+      "motivo": "sinal incompatível com o fato",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 3,33 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,33 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_anterior",
+      "conceito_reivindicado": null,
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "conceito_nao_identificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 3,23 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,23 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+      "conceito_reivindicado": null,
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "conceito_nao_identificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 159,93 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 159,93 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "conceito_reivindicado": "ebit",
+      "conceito_do_fato": "ebit",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 383,21 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 383,21 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+      "conceito_reivindicado": "resultado_bruto",
+      "conceito_do_fato": "resultado_bruto",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 223,28 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 223,28 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.abertura_da_ancora.itens.contribuicao",
+      "conceito_reivindicado": "despesas_receitas_operacionais",
+      "conceito_do_fato": "despesas_receitas_operacionais",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 18,22 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 18,22 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "conceito_reivindicado": "resultado_financeiro",
+      "conceito_do_fato": "resultado_financeiro",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 3,87 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,87 bilhões",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.valor_atual",
+      "conceito_reivindicado": "resultado_antes_tributos",
+      "conceito_do_fato": "resultado_antes_tributos",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 141,71 milhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 141,71 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.subtotais_intermediarios.variacao_absoluta",
+      "conceito_reivindicado": "resultado_antes_tributos",
+      "conceito_do_fato": "resultado_antes_tributos",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 38,11 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "R$ 38,11 milhões",
+      "origem_fato": "métrica calculada: decomposicao_resultado.ponte.contribuicao",
+      "motivo": "o texto atribui o valor a \"lucro_liquido\", mas ele corresponde a \"tributos_sobre_lucro\" (métrica calculada: decomposicao_resultado.ponte.contribuicao); o fato mais próximo de \"lucro_liquido\" é -R$ 103,60 milhões (métrica calculada: decomposicao_resultado.resultado.variacao_absoluta)",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "tributos_sobre_lucro",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 100",
+      "tipo": "reais",
+      "veredito": "IGNORADO",
+      "fato_mais_proximo": null,
+      "origem_fato": "recurso didático (não conta na taxa)"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "R$ 16,45",
+      "tipo": "reais",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 16,45",
+      "origem_fato": "métrica calculada: lucro_liquido.contexto_por_100_reais"
+    },
+    {
+      "secao": "LUCRO",
+      "trecho": "3,1%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-3,1%",
+      "origem_fato": "métrica calculada: lucro_liquido.variacao_pct"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 8,80 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 8,80 bilhões",
+      "origem_fato": "métrica calculada: endividamento.liquidez_total",
+      "conceito_reivindicado": "liquidez_total",
+      "conceito_do_fato": "liquidez_total",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 7,75 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 7,75 bilhões",
+      "origem_fato": "métrica calculada: endividamento.caixa_e_equivalentes",
+      "conceito_reivindicado": "caixa",
+      "conceito_do_fato": "caixa",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 1,05 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 1,05 bilhões",
+      "origem_fato": "métrica calculada: endividamento.aplicacoes_financeiras",
+      "conceito_reivindicado": "aplicacoes_financeiras",
+      "conceito_do_fato": "aplicacoes_financeiras",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 5,07 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 5,07 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta",
+      "conceito_reivindicado": "divida_bruta",
+      "conceito_do_fato": "divida_bruta",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 4,59 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 4,59 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta_anterior",
+      "conceito_reivindicado": "divida_bruta",
+      "conceito_do_fato": "divida_bruta",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 768,39 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "R$ 768,39 milhões",
+      "origem_fato": "métrica calculada: endividamento.passivos_arrendamento",
+      "motivo": "o texto atribui o valor a \"divida_bruta\", mas ele corresponde a \"arrendamentos\" (métrica calculada: endividamento.passivos_arrendamento); o fato mais próximo de \"divida_bruta\" é R$ 1,04 bilhões (documento CVM: \"[2.02.01] Empréstimos e Financiamentos\" (anterior) = 1.041.508 (R$ mil))",
+      "conceito_reivindicado": "divida_bruta",
+      "conceito_do_fato": "arrendamentos",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 5,83 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 5,83 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta_com_arrendamentos",
+      "conceito_reivindicado": "divida_bruta_com_arrendamentos",
+      "conceito_do_fato": "divida_bruta_com_arrendamentos",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 3,73 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 3,73 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_liquida",
+      "conceito_reivindicado": null,
+      "conceito_do_fato": "divida_liquida",
+      "verificacao_conceitual": "conceito_nao_identificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 2,45 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 2,45 bilhões",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+      "conceito_reivindicado": "fluxo_operacional",
+      "conceito_do_fato": "fluxo_operacional",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "-R$ 1,42 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 1,42 bilhões",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+      "conceito_reivindicado": "fluxo_investimento",
+      "conceito_do_fato": "fluxo_investimento",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 627,84 milhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "-R$ 626,71 milhões",
+      "origem_fato": "documento CVM: \"[6.01.02.02] (Aumento)/redução nos estoques\" (anterior) = -626.706 (R$ mil)",
+      "motivo": "o texto atribui o valor a \"fluxo_financiamento\", mas ele corresponde a \"fato sem conceito identificado\" (documento CVM: \"[6.01.02.02] (Aumento)/redução nos estoques\" (anterior) = -626.706 (R$ mil)); o fato mais próximo de \"fluxo_financiamento\" é R$ 627,84 milhões (métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual)",
+      "conceito_reivindicado": "fluxo_financiamento",
+      "conceito_do_fato": null,
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "R$ 1,45 bilhões",
+      "tipo": "moeda",
+      "veredito": "DIVERGENTE",
+      "fato_mais_proximo": "R$ 1,45 bilhões",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual",
+      "motivo": "o texto atribui o valor a \"caixa\", mas ele corresponde a \"variacao_caixa\" (métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.valor_atual); o fato mais próximo de \"caixa\" é R$ 2,04 bilhões (documento CVM: \"[1.01.01.01] Caixa e Bancos\" (anterior) = 2.040.959 (R$ mil))",
+      "conceito_reivindicado": "caixa",
+      "conceito_do_fato": "variacao_caixa",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "23,1%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "23,1%",
+      "origem_fato": "métrica calculada: endividamento.variacao_caixa_pct"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "10,4%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "10,4%",
+      "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+    },
+    {
+      "secao": "SAUDE DO CAIXA E DIVIDAS",
+      "trecho": "24,6%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "24,6%",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.fluxo_de_caixa.variacao_pct"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 3,73 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-R$ 3,73 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_liquida",
+      "conceito_reivindicado": "divida_liquida",
+      "conceito_do_fato": "divida_liquida",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 20,19 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 20,19 bilhões",
+      "origem_fato": "métrica calculada: outros_destaques",
+      "conceito_reivindicado": "patrimonio_liquido",
+      "conceito_do_fato": "patrimonio_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "R$ 46,67 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 46,67 bilhões",
+      "origem_fato": "métrica calculada: outros_destaques",
+      "conceito_reivindicado": "ativo_total",
+      "conceito_do_fato": "ativo_total",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "8,8%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "8,8%",
+      "origem_fato": "métrica calculada: outros_destaques"
+    },
+    {
+      "secao": "O QUE FOI POSITIVO",
+      "trecho": "9,4%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "9,4%",
+      "origem_fato": "métrica calculada: outros_destaques"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 19,61 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 19,61 bilhões",
+      "origem_fato": "métrica calculada: receita_principal.valor_atual",
+      "conceito_reivindicado": "receita",
+      "conceito_do_fato": "receita",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 3,23 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 3,23 bilhões",
+      "origem_fato": "métrica calculada: lucro_liquido.valor_atual",
+      "conceito_reivindicado": "lucro_liquido",
+      "conceito_do_fato": "lucro_liquido",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 6,37 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 6,37 bilhões",
+      "origem_fato": "métrica calculada: outros_destaques",
+      "conceito_reivindicado": "resultado_bruto",
+      "conceito_do_fato": "resultado_bruto",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "R$ 5,07 bilhões",
+      "tipo": "moeda",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "R$ 5,07 bilhões",
+      "origem_fato": "métrica calculada: endividamento.divida_bruta",
+      "conceito_reivindicado": "divida_bruta",
+      "conceito_do_fato": "divida_bruta",
+      "verificacao_conceitual": "verificado"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "3,3%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-3,3%",
+      "origem_fato": "métrica calculada: receita_principal.variacao_pct"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "3,1%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "3,1%",
+      "origem_fato": "métrica calculada: lucro_liquido.interpretacao_variacao"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "5,7%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "-5,7%",
+      "origem_fato": "métrica calculada: demonstracoes_resumidas.resultado.variacao_pct"
+    },
+    {
+      "secao": "O QUE MERECE ATENCAO",
+      "trecho": "10,4%",
+      "tipo": "percentual",
+      "veredito": "CONFERE",
+      "fato_mais_proximo": "10,4%",
+      "origem_fato": "métrica calculada: endividamento.variacao_divida_pct"
+    }
+  ],
+  "resumo": {
+    "total_numeros": 50,
+    "conferem": 43,
+    "divergentes": 7,
+    "nao_encontrados": 0,
+    "taxa_conformidade": 86.0,
+    "escopo": "Verifica valores monetários, percentuais e razões citados no texto, com sinal e direção. Não verifica afirmações qualitativas nem números por extenso.",
+    "auditor": {
+      "versao": "2.0",
+      "verificar_conceito": true,
+      "metodologia": "existência do valor na fonte, com sinal e direção do verbo; em valores monetários, também o par conceito + valor: quando o texto atribui o valor a um conceito do léxico e a fonte tem fatos desse conceito, o valor precisa corresponder a um deles"
+    },
+    "verificacao_conceitual": {
+      "moedas": 37,
+      "verificadas": 34,
+      "conceito_nao_identificado": 3,
+      "conceito_sem_fato_na_fonte": 0,
+      "divergencias_de_conceito": 6,
+      "cobertura_pct": 91.9,
+      "nao_verifica": "período (valor anterior citado como atual) e base contábil (valor individual citado como consolidado); percentuais e razões seguem só a verificação de existência"
+    }
+  }
+}

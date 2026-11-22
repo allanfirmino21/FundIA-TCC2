@@ -1,0 +1,1268 @@
+{
+  "WEGE3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "WEGE3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Resultado consolidado (6,36 bi) difere do atribuído ao controlador (4,79 bi); ambos aparecem no contexto.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado no CSV: 3.11 = 6.362.961 (consolidado, gabarito) e 3.11.01 = 4.794.808 (controladores); as duas linhas estão no contexto recuperado."
+    }
+  },
+  "BBAS3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Maior componente é o IR/CS positivo (crédito) nos dois períodos, que cai 2,48 bi; a provisão para perda de crédito está em 'outras despesas e receitas operacionais'.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: IR/CS (3.06) positivo nos dois períodos, 6.116.746 → 3.637.834 (queda de 2.478.912 mil, maior componente); provisão para perda de crédito em 3.04.01 dentro de 3.04."
+    }
+  },
+  "BBAS3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "BBAS3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Despesas de intermediação sem sinal exigido; não comparável com ITUB4_E3 (Seção 8).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.02 = −111.283.805 (só despesa de juros, 3.02.01); sinal não exigido conforme §11.1."
+    }
+  },
+  "ZAMP3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Dois prejuízos: percentual sobre a magnitude (33,33%). Respostas com os dois valores numa mesma oração com 'prejuízo' exigirão decisão manual de sinal (regra 5).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.11 = −154.679 (1S26) e −116.011 (1S25); variação sobre a magnitude = 33,33%."
+    }
+  },
+  "ZAMP3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ZAMP3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LWSA3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Empréstimos e financiamentos da LWSA3 são integralmente 'Financiamento por Arrendamento' (19.361 + 52.554); gabarito segue as contas.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 2.01.04 = 19.361 e 2.02.01 = 52.554, ambos integralmente 'Financiamento por Arrendamento' (2.0x.0x.03); a pergunta pede circulante e não circulante somados, soma suportada."
+    }
+  },
+  "LWSA3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Caso parcial: 'Lucros/Prejuízos Acumulados' do contexto (16.800.000) é o resultado dos controladores, não o consolidado (17.240.000).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.11 = 17.240.000 (consolidado) e 3.11.01 = 16.800.000; o contexto traz 'Lucros/Prejuízos Acumulados 16.800.000' (BPP) e o resultado antes dos tributos da DFC (21.773.000), não o consolidado."
+    }
+  },
+  "VALE3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "VALE3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Dívida definida pelas contas 2.01.04 + 2.02.01 (inclui arrendamentos dentro de Empréstimos e Financiamentos; exclui debêntures participativas de 11,97 bi).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 2.01.04 = 6.534.000 + 2.02.01 = 91.500.000; debêntures participativas (2.02.04.02.12 = 11.973.000) fora da soma, pois não estão em Empréstimos e Financiamentos."
+    }
+  },
+  "VALE3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Caso parcial: a DFC traz o resultado financeiro com sinal invertido (+2.237.000) em relação à DRE (−2.237.000).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: DRE 3.06 = −2.237.000 (1S26) e +2.186.000 (1S25); a DFC do contexto traz +2.237.000 (anterior −2.186.000), sinal invertido."
+    }
+  },
+  "ITUB4_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITUB4_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Despesas de intermediação incluem a perda esperada de crédito; não comparável com BBAS3_E3 (Seção 8).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.02 = −127.362.000, incluindo 3.02.02 e 3.02.03 (perda esperada de crédito)."
+    }
+  },
+  "LAVV3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "LAVV3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Presente pela regra 2 da Seção 9: 'Resultado do período' da DFC igual ao consolidado da DRE (535.824).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: DFC do contexto 'Resultado do período' 535.824 = DRE 3.11 (535.824)."
+    }
+  },
+  "POMO4_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Parcial: DFC traz o resultado do período e o IR/CS com sinal invertido; o gabarito usa só a DRE.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: DRE fora do contexto; DFC traz o resultado (535.824) e o IR/CS com sinal invertido (120.446)."
+    }
+  },
+  "POMO4_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "POMO4_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Linha de topo da holding pelo plano de contas (receita de venda R$ 4,25 bi), embora o resultado seja dominado pela equivalência (R$ 9,35 bi, E1).",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.01 = 4.250.000; equivalência (3.04.06) = 9.354.000."
+    }
+  },
+  "ITSA4_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "ITSA4_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "IRBR3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "IRBR3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "IRBR3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "IRBR3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Cadeia do plano de seguros: 'despesas administrativas e outras' agrega 3.04 + 3.05 + 3.06; o sinal atípico das despesas financeiras afeta o componente financeiro.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: componente 'administrativas e outras' = 3.04 + 3.05 + 3.06 (cadeia do plano de seguros definida no protocolo); cadeia fecha a variação do resultado."
+    }
+  },
+  "IRBR3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "IRBR3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Linha 'Resultado Bruto' da DRE de resseguradora, negativa no 1S26 (−41,0 mi) e positiva no 1S25; sinal exigido.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.03 'Resultado Bruto' = −41.006 (1S26) e 431.005 (1S25)."
+    }
+  },
+  "IRBR3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "'Despesas Financeiras' positiva no 1S26 (+106,8 mi, como entregue à CVM) compõe o resultado financeiro de +117,8 mi.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.08.02 'Despesas Financeiras' = +106.826 no 1S26 (como entregue à CVM); 3.08 = 117.761."
+    }
+  },
+  "IRBR3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Decisão da Emenda 1: gabarito = conta 1.01.02 'Aplicações Financeiras' (ativo circulante), R$ 4.414.934 mil em 30/06/2026; pergunta passou a pedir o saldo registrado no ativo circulante. Antes: circulante + longo prazo = R$ 8.353.283 mil (1.01.02 + 1.02.01.01/.02/.03), agregação sem suporte no conceito pedido.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "corrigido",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Corrigido nesta revisão (Emenda 1): valor 8.353.283 → 4.414.934 mil (só 1.01.02 'Aplicações Financeiras'); pergunta passou a pedir o ativo circulante; tipo derivada → factual."
+    }
+  },
+  "CEAB3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "CEAB3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_N1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_N2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Caso parcial com armadilha: no contexto há o resultado antes dos tributos (−1.032.287, DFC) e 'Lucros/Prejuízos Acumulados' (−1.032.285, controladores); o consolidado é −980.667.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.11 = −980.667; no contexto só estão o resultado antes dos tributos da DFC (−1.032.287) e 'Lucros/Prejuízos Acumulados' (−1.032.285) do BPP."
+    }
+  },
+  "AURE3_N3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "atencao_humana": "Dois prejuízos: percentual sobre a magnitude (92,72%); caso parcial. Mesmo alerta de sinal de ZAMP3_N3.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência. Confirmado: 3.11 = −980.667 (1S26) e −508.856 (1S25); variação sobre a magnitude = 92,72%."
+    }
+  },
+  "AURE3_N4": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_N5": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_E1": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_E2": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  },
+  "AURE3_E3": {
+    "revisado": true,
+    "revisor": "Claude Code - revisão técnica pré-coleta",
+    "data": "2026-09-27",
+    "observacao": "Conferidos: pergunta; conta/fonte (CD_CONTA e DS_CONTA) nos CSVs da CVM; base consolidada; período (acumulado do ano na DRE, 30/06/2026 no balanço); valor contra o CSV; cálculo derivado recalculado; disponibilidade contra as linhas do contexto recuperado; coerência pergunta–gabarito.",
+    "revisao_final": {
+      "revisado": true,
+      "revisor": "Claude Code - revisão final pré-congelamento (não substitui a revisão humana do autor)",
+      "data": "2026-09-27",
+      "resultado": "confirmado",
+      "detalhe": "Segunda conferência independente (script próprio que relê os CSVs da CVM, sem usar construir_dataset nem calcular_metricas): fontes (CD_CONTA, DS_CONTA, VL_CONTA, escala MIL, moeda REAL, período), conceito por categoria, sinal exigido, fórmulas derivadas recalculadas, redação da pergunta e disponibilidade; sem divergência."
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "chamada": "analisar(\"BBAS3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-26T03:33:12.024865+00:00",
+  "fim_utc": "2026-09-26T03:34:48.778638+00:00",
+  "segundos_import": 47.2,
+  "segundos_analisar": 49.3,
+  "ticker": "BBAS3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\BBAS3_ITR_2026-06-30.txt",
+  "fonte_sha256": "96c321232278beb5eb5a4eff167b5cedf76611b55e47f8ccb62c6c051c96bde8",
+  "fonte_copia": "avaliacao\\validacao_manual\\BBAS3_ITR_2026-06-30_v1_pos_prompt2\\BBAS3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 1023",
+    "VERSAO: 1"
+  ],
+  "git_commit": "870542e785d154c9d907e1a3dd699047ef58c5c0",
+  "git_status": " M modulos/metricas.py\n M modulos/prompt2.py\n M modulos/recuperacao.py\n M tests/test_cd_conta.py\n M tests/test_recuperacao.py\n M tests/test_recuperacao_regressao.py\n?? avaliacao/validacao_manual/BBAS3_ITR_2026-06-30_v1_pos_prompt2/\n?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_pos_prompt2/\n?? tests/test_demonstracoes_resumidas.py\n",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-26T03:33:59.187473+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-26T03:33:59.188478+00:00",
+      "etapa": "1/8",
+      "msg": "OK: Banco do Brasil S.A. (1023)"
+    },
+    {
+      "t": "2026-09-26T03:33:59.188478+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-26T03:33:59.345837+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-08-12)"
+    },
+    {
+      "t": "2026-09-26T03:33:59.345837+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-26T03:33:59.378663+00:00",
+      "etapa": "3/8",
+      "msg": "Cache BBAS3_ITR_2026-06-30.txt nao corresponde a CVM 1023 / ITR 2026-06-30 versao 1 — descartando e baixando novamente."
+    },
+    {
+      "t": "2026-09-26T03:34:03.456050+00:00",
+      "etapa": "3/8",
+      "msg": "OK: BBAS3_ITR_2026-06-30.txt baixado (25 KB)"
+    },
+    {
+      "t": "2026-09-26T03:34:03.456050+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-26T03:34:03.469236+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (24,794 caracteres)"
+    },
+    {
+      "t": "2026-09-26T03:34:03.469236+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-26T03:34:14.803909+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-26T03:34:14.803909+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-26T03:34:24.503561+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (8,807 chars numericos, 194 narrativos)"
+    },
+    {
+      "t": "2026-09-26T03:34:24.503561+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-26T03:34:24.506560+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-26T03:34:48.483102+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-26T03:34:48.497135+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 43/43 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-26T03:34:48.497135+00:00",
+      "etapa": "OK",
+      "msg": "Analise de BBAS3 concluida."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "esquema": 1,
+  "etapa": "ragas",
+  "case_id": "AURE3_E1",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "passada": "avaliacao",
+  "score": 0.0,
+  "valido": true,
+  "nan": false,
+  "erros": [],
+  "modelos_retornados": [
+    "gemini-2.5-flash"
+  ],
+  "uso_tokens": {
+    "input_tokens": 1248,
+    "output_tokens": 4623,
+    "total_tokens": 5871
+  },
+  "sha256_resposta": "8a7d9e4d52dbff5e882f5b2096821a581cc1a54bc38c3bc4ebcbec189badf882",
+  "entrada": {
+    "sha256_pergunta": "af1f9dea98dffeaa9fe50c919ab1b4b07eae815571a2d83115de15a976de372d",
+    "sha256_resposta": "8a7d9e4d52dbff5e882f5b2096821a581cc1a54bc38c3bc4ebcbec189badf882",
+    "sha256_ctx_num": "65175eccd1b63d6f63a03ef4585cd841fc6c0dd623a1bf6581892903c3e54ab6",
+    "sha256_trechos": [
+      "ec2fa12e6cd3ba68d31d625b4530b24325e4bf471e89ca495c74e05d88bffd14",
+      "b465ed3709cb1c3a621ab310a80972ad3bfe104f3c2efc4f1468bc6a6e9942fa",
+      "ab537f64a01a95efc49286cf1d5d86ee3ad16150ddffe4627ce59ac1a96abe9b"
+    ],
+    "sha256_reference": "1cc0774b042747a48b67f0a10f603dd5be8e55093c199ffad4cd9c7660bab522",
+    "truncada_na_geracao": true,
+    "disponibilidade": "ausente",
+    "categoria": "E1",
+    "estrutura": "nao_financeira",
+    "ticker": "AURE3"
+  },
+  "avaliador": {
+    "modelo": "gemini-2.5-flash",
+    "temperatura_cliente": 0.0,
+    "temperaturas_efetivas_ragas": {
+      "faithfulness": 0.01,
+      "answer_relevancy": 0.3
+    },
+    "strictness": 3,
+    "run_config": {
+      "timeout": 120,
+      "max_retries": 3,
+      "max_workers": 1
+    },
+    "embeddings": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "revisao_embeddings": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+    "wrapper": "ragas.llms.LangchainLLMWrapper (sem bypass)",
+    "execucao": "ragas.evaluate, 1 métrica, 1 amostra",
+    "dependencias": {
+      "ragas": "0.4.3",
+      "langchain-community": "0.4.2",
+      "langchain-google-genai": "4.4.0",
+      "langchain-core": "1.6.6",
+      "langchain": "1.4.3",
+      "langchain-openai": "1.1.9",
+      "google-genai": "2.25.0",
+      "openai": "1.109.1",
+      "instructor": "1.3.2",
+      "datasets": "5.0.1",
+      "sentence-transformers": "5.5.0",
+      "transformers": "5.3.0",
+      "torch": "2.11.0",
+      "huggingface-hub": "1.8.0",
+      "numpy": "2.2.4"
+    },
+    "temperatura_efetiva": 0.3
+  },
+  "etapas_anteriores_congeladas": {
+    "sha256_resultado_exatidao": "3c3e28c080a9884f53f1197bd0c4106fd414105b2aa4de3ff2928f401a05a6db",
+    "sha256_anotacoes_comportamento": "c83cf6cef724f88ab35ac439978d13f0ad812c0ce25859ab7155eef97627b18f",
+    "sha256_decisoes_sinal": null,
+    "sha256_pendencias_comportamento": "d20f736187f69cd441a53795b4425ff212d54d7ee9274d79c894e02825976b71",
+    "sha256_convencoes_comportamento": "e45f82c4dd46a27a475085ee0e06d4ffc7f1de94b7c15d38e30adfe90a379169",
+    "sha256_ratificacao_comportamento": "eee5e92412a941e1bc090e0338120660f7200c793e1636f72af337454c258c36"
+  },
+  "proveniencia": {
+    "commit": "69b2b4963cf774b8ef188afe96c6416750aa7118",
+    "commit_coleta": "10eee310a6dfd0bc545f6d2a62bd82705b6624e5",
+    "sha256_executor": "6e2a40bd1723b0c4c8da35595cb35573b009a0c8a6309af8fbb4f73f307b1a65",
+    "sha256_protocolo_emendado": "3f6f8e030bf4f44d2882b65005431b8b7ff95df54bb479fa8e53e5a9b2c3925b",
+    "sha256_dataset": "313bdf359fdeabb063ceec3bcca12ebfe3b52caae346b3ff1d9f3dc23196bc5e",
+    "sha256_configuracao_historica_coleta": "b956544649f7d4f7a01435fb598c888c70d84cb3bbb5f9ddc9a7ebc6aec0793b",
+    "sha256_SHA256_COLETA": "b8c016cea3a8903678bc7817f4c5b553c80bb98b6a7a5787d05ea4ce4eca45f2",
+    "sha256_exatidao_py": "2b4b11706841701ed6ffd551a4789431fa9102c65cf1302104cfa600ce432ff0",
+    "sha256_comportamento_py": "d2a3e7e79d2275b9de3dff0b64b0bc3b0455c3fa9090766e068c290117febad2",
+    "python": "3.12.6"
+  },
+  "inicio_utc": "2026-10-04T01:46:48+00:00",
+  "fim_utc": "2026-10-04T01:46:51+00:00",
+  "duracao_s": 3.609,
+  "sha256_registro": "1b32f63d9e6c712d528519ec2c1af490a1893d37abbfd8c44c37e66cef9808d3"
+}

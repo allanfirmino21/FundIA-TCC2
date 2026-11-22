@@ -1,0 +1,9 @@
+{
+  "esquema": 1,
+  "case_id": "CEAB3_N2",
+  "metrica": "answer_relevancy",
+  "tentativa": 1,
+  "inicio_utc": "2026-10-04T01:44:07+00:00",
+  "sha256_resposta": "d7c67b538c693faf942cd0373c01bbb85f38c4888d53334eb68e494c62e87bd4",
+  "sha256_registro": "0ceeee4041f7482848374d7d290df578130cc1a4505b12b4f4c3cba716607fb1"
+}

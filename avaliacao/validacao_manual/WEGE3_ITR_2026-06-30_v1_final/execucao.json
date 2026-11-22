@@ -1,0 +1,133 @@
+{
+  "chamada": "analisar(\"WEGE3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-26T20:42:37.136499+00:00",
+  "fim_utc": "2026-09-26T20:44:02.260250+00:00",
+  "segundos_import": 44.8,
+  "segundos_analisar": 40.0,
+  "ticker": "WEGE3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\WEGE3_ITR_2026-06-30.txt",
+  "fonte_sha256": "500d0c0d51df24cf9d0a166c24f3eea033b74a6eb63285cc4349036857bb8ba6",
+  "fonte_copia": "avaliacao\\validacao_manual\\WEGE3_ITR_2026-06-30_v1_final\\WEGE3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 5410",
+    "VERSAO: 1"
+  ],
+  "git_commit": "e4d96e1b1a12dd025b44c5c3f3f783bc366b2cf5",
+  "git_commit_antes_da_execucao": "e4d96e1b1a12dd025b44c5c3f3f783bc366b2cf5",
+  "working_tree_antes_da_execucao": "limpa",
+  "git_status_depois": "?? avaliacao/validacao_manual/WEGE3_ITR_2026-06-30_v1_final/\n",
+  "ctx_num_chars": 10620,
+  "ctx_nar_chars": 194,
+  "ctx_num_trechos": [
+    "Balanço Patrimonial — Ativo (Consolidado)",
+    "Demonstração de Fluxo de Caixa (Consolidado)",
+    "Demonstração de Resultado (Consolidado)"
+  ],
+  "ctx_num_secoes": [
+    "Balanço Patrimonial — Ativo (Consolidado)",
+    "Demonstração de Fluxo de Caixa (Consolidado)",
+    "Demonstração de Resultado (Consolidado)"
+  ],
+  "ctx_nar_secoes": [
+    "Cabeçalho"
+  ],
+  "ctx_nar_tem_tabela": false,
+  "ctx_nar": "=== CONTEXTO NARRATIVO ===\n----------------------------------------\n[Trecho 1]\n[SEÇÃO: Cabeçalho]\nDOCUMENTO: ITR — 2026-06-30\nEMPRESA CVM: 5410\nVERSAO: 1\n----------------------------------------",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-26T20:43:21.927838+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-26T20:43:21.927838+00:00",
+      "etapa": "1/8",
+      "msg": "OK: WEG S.A. (5410)"
+    },
+    {
+      "t": "2026-09-26T20:43:21.927838+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-26T20:43:22.008943+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-07-22)"
+    },
+    {
+      "t": "2026-09-26T20:43:22.008943+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-26T20:43:22.026644+00:00",
+      "etapa": "3/8",
+      "msg": "OK: Cache local reutilizado (36 KB)"
+    },
+    {
+      "t": "2026-09-26T20:43:22.026644+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-26T20:43:22.028152+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (36,378 caracteres)"
+    },
+    {
+      "t": "2026-09-26T20:43:22.028152+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-26T20:43:33.219254+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-26T20:43:33.220264+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-26T20:43:43.521112+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (10,620 chars numericos, 194 narrativos)"
+    },
+    {
+      "t": "2026-09-26T20:43:43.521112+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-26T20:43:43.525122+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-26T20:44:01.826667+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-26T20:44:01.895268+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 49/50 numeros conferem com a fonte (conformidade 98.0%)"
+    },
+    {
+      "t": "2026-09-26T20:44:01.895268+00:00",
+      "etapa": "OK",
+      "msg": "Analise de WEGE3 concluida."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+=== CONTEXTO NARRATIVO ===
+----------------------------------------
+[Trecho 1]
+[SEÇÃO: Cabeçalho]
+DOCUMENTO: ITR — 2026-06-30
+EMPRESA CVM: 5410
+VERSAO: 1
+----------------------------------------
+[Trecho 2]
+[TABELA | Demonstração de Resultado (Individual)]
+Despesas/Receitas Operacionais                                3.010.484  (anterior: 3.138.868)
+Despesas Gerais e Administrativas                                -4.486  (anterior: -7.146)
+Honorários dos Administradores                                   -2.053  (anterior: -1.939)
+Outras Despesas Administrativas                                  -2.433  (anterior: -5.207)
+Outras Receitas Operacionais                                        583  (anterior: 781)
+Outras Despesas Operacionais                                     -6.457  (anterior: -2.788)
+Resultado de Equivalência Patrimonial                         3.020.844  (anterior: 3.148.021)
+Resultado Antes do Resultado Financeiro e dos Tributos        3.010.484  (anterior: 3.138.868)
+Resultado Financeiro                                             10.552  (anterior: 3.924)
+Receitas Financeiras                                             97.079  (anterior: 78.368)
+Despesas Financeiras                                            -86.527  (anterior: -74.444)
+Resultado Antes dos Tributos sobre o Lucro                    3.021.036  (anterior: 3.142.792)
+Imposto de Renda e Contribuição Social sobre o Lucro             -5.216  (anterior: -4.804)
+Corrente                                                         -4.433  (anterior: -2.912)
+Diferido                                                           -783  (anterior: -1.892)
+Resultado Líquido das Operações Continuadas                   3.015.820  (anterior: 3.137.988)
+Lucro/Prejuízo do Período                                     3.015.820  (anterior: 3.137.988)
+ON                                                               0,7188  (anterior: 0,7479)
+ON                                                               0,7186  (anterior: 0,7478)
+----------------------------------------

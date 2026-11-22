@@ -1,0 +1,114 @@
+{
+  "chamada": "analisar(\"ZAMP3\", \"ITR\", periodo=\"2026-06-30\", versao=\"1\")",
+  "inicio_utc": "2026-09-24T00:08:07.876626+00:00",
+  "fim_utc": "2026-09-24T00:09:51.235279+00:00",
+  "segundos_import": 51.9,
+  "segundos_analisar": 51.2,
+  "ticker": "ZAMP3",
+  "tipo": "ITR",
+  "periodo": "2026-06-30",
+  "versao": "1",
+  "periodo_retornado": "2026-06-30",
+  "versao_retornada": 1,
+  "erro": null,
+  "modelo_llm_narrativa": "gemini-2.5-flash",
+  "modelo_embeddings": "paraphrase-multilingual-mpnet-base-v2",
+  "fonte_cache": "dados/cache\\ZAMP3_ITR_2026-06-30.txt",
+  "fonte_sha256": "666c2d05e720058af6bb7593948ed865830940962f29caeef95278ae64828fb8",
+  "fonte_copia": "avaliacao\\validacao_manual\\ZAMP3_ITR_2026-06-30_v1\\ZAMP3_ITR_2026-06-30.txt",
+  "cabecalho_fonte": [
+    "DOCUMENTO: ITR — 2026-06-30",
+    "EMPRESA CVM: 24317",
+    "VERSAO: 1"
+  ],
+  "git_commit": "504ce6de99e917d62867c4a111d35d2d56f92f7c",
+  "git_status": "?? avaliacao/validacao_manual/ZAMP3_ITR_2026-06-30_v1/\n",
+  "python": "3.12.6",
+  "progresso": [
+    {
+      "t": "2026-09-24T00:08:59.783866+00:00",
+      "etapa": "1/8",
+      "msg": "Validando ticker..."
+    },
+    {
+      "t": "2026-09-24T00:08:59.833062+00:00",
+      "etapa": "1/8",
+      "msg": "OK: ZAMP SA (24317)"
+    },
+    {
+      "t": "2026-09-24T00:08:59.833062+00:00",
+      "etapa": "2/8",
+      "msg": "Buscando ITR (2026-06-30 versao 1) na CVM..."
+    },
+    {
+      "t": "2026-09-24T00:09:01.242243+00:00",
+      "etapa": "2/8",
+      "msg": "OK: Periodo 2026-06-30 versao 1 encontrado (entregue em 2026-08-07)"
+    },
+    {
+      "t": "2026-09-24T00:09:01.242243+00:00",
+      "etapa": "3/8",
+      "msg": "Baixando dados estruturados..."
+    },
+    {
+      "t": "2026-09-24T00:09:05.624996+00:00",
+      "etapa": "3/8",
+      "msg": "OK: ZAMP3_ITR_2026-06-30.txt baixado (31 KB)"
+    },
+    {
+      "t": "2026-09-24T00:09:05.624996+00:00",
+      "etapa": "4/8",
+      "msg": "Extraindo secoes..."
+    },
+    {
+      "t": "2026-09-24T00:09:05.654010+00:00",
+      "etapa": "4/8",
+      "msg": "OK: 6 secoes extraidas (31,317 caracteres)"
+    },
+    {
+      "t": "2026-09-24T00:09:05.654010+00:00",
+      "etapa": "5/8",
+      "msg": "Indexando chunks..."
+    },
+    {
+      "t": "2026-09-24T00:09:19.090836+00:00",
+      "etapa": "5/8",
+      "msg": "OK: 6 chunks indexados"
+    },
+    {
+      "t": "2026-09-24T00:09:19.090836+00:00",
+      "etapa": "6/8",
+      "msg": "Recuperando contexto RAG..."
+    },
+    {
+      "t": "2026-09-24T00:09:30.017375+00:00",
+      "etapa": "6/8",
+      "msg": "OK: Contextos recuperados (8,541 chars numericos, 4,241 narrativos)"
+    },
+    {
+      "t": "2026-09-24T00:09:30.017375+00:00",
+      "etapa": "7/8",
+      "msg": "Calculando metricas (deterministico)..."
+    },
+    {
+      "t": "2026-09-24T00:09:30.020786+00:00",
+      "etapa": "7/8",
+      "msg": "Gerando analise - Prompt 2..."
+    },
+    {
+      "t": "2026-09-24T00:09:51.011601+00:00",
+      "etapa": "8/8",
+      "msg": "Auditando fidelidade numerica..."
+    },
+    {
+      "t": "2026-09-24T00:09:51.024880+00:00",
+      "etapa": "8/8",
+      "msg": "OK: 40/40 numeros conferem com a fonte (conformidade 100.0%)"
+    },
+    {
+      "t": "2026-09-24T00:09:51.024880+00:00",
+      "etapa": "OK",
+      "msg": "Analise de ZAMP3 concluida."
+    }
+  ]
+}
